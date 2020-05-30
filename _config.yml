@@ -29,21 +29,17 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    sal:
-      name:           Sal
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Hi, I am Sal, the author of Mundana, the theme you're currently previewing. I hope you like it!"
-      email:          wowthemesnet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
-
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+  gini:
+    name: Gini
+    display_name: Gini Gangadharan 
+    site: https://www.iamgini.com
+    avatar: 'assets/images/avatar.png'
+    gravatar: 1558aaf0c06196e6b9cb24c21e5ca858
+    email: net.gini@gmail.com
+    bio: "Backpacker, Foodie, Techie"
+    web: https://www.iamgini.com
+    twitter: https://twitter.com/ginigangadharan
+    description: "Backpacker, Foodie, Techie"
  
 # Defaults
 defaults:
