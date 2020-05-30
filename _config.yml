@@ -1,12 +1,22 @@
 # Site
-name: 'Mundana'
-description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+name: 'i am gini'
+title: "i am gini"
+description: 'backpacker, foodie, techie'
+logo: 'assets/images/logo-g-v1.png'
+favicon: 'assets/images/logo-g-v1.png'
+
+#url: "https://www.iamgini.com/"
+my_base_site: "https://www.iamgini.com"
 baseurl: '/sitev2'
-disqus: 'demowebsite'
+# If you are building a GitHub project page then use these settings:
+# url: "https://www.iamgini.com/site2/"
+# baseurl: "/site2"
+
+disqus: 'iamgini-com'
 email: 'wowthemesnet@gmail.com'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+
+google_analytics: 'UA-158250524-1'
 
 include: ["_pages"]
 permalink: /:title/
