@@ -4,7 +4,7 @@ title: Start Your OpenShift journey with OpenShift Interactive Learning Portal â
 author: gini
 categories: [ openshift ]
 image: "assets/images/2020/start-you-openshift-journey-with-openshift-interactive-learning-portal.jpg"
-tags: [OpenShift, Red Hat Training]
+tags: [OpenShift, Red Hat Training,featured]
 ext_url: https://www.techbeatly.com/2020/04/start-you-openshift-journey-with-openshift-interactive-learning-portal.html
 #show-avatar: false
 featured: false

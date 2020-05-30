@@ -4,7 +4,7 @@ title: How to Create Scheduled Snapshots in Google Cloud Platform
 author: gini
 categories: [ cloud ]
 image: "assets/images/how-to-create-scheduled-snapshots-in-google-cloud-platform.PNG"
-tags: [gcp, cloud, automation, backup]
+tags: [gcp, cloud, automation, backup,featured]
 ext_url: https://www.techbeatly.com/2020/01/how-to-create-scheduled-snapshots-in-google-cloud-platform.html
 #show-avatar: false
 featured: false

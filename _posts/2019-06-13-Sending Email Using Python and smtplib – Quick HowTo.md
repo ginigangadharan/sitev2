@@ -6,7 +6,7 @@ subtitle: Quick HowTo with Sample Python Code
 bigimg: /assets/images/sending-email-using-python-and-smtplib-quick-howto-1024x640.jpeg
 image: assets/images/sending-email-using-python-and-smtplib-quick-howto-1024x640.jpeg
 ext_url: https://www.techbeatly.com/2019/06/sending-email-using-python-and-smtplib-quick-howto.html
-tags: [python, email, smtplib]
+tags: [python, email, smtplib,featured]
 show-avatar: false
 ---
 

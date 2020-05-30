@@ -4,7 +4,7 @@ title: Installing oVirt 4 with Self-Hosted Engine on Enterprise Linux
 author: gini
 categories: [ oVirt ]
 image: "assets/images/2020/installing-ovirt-4-with-self-hosted-engine-on-enterprise-linux.jpg"
-tags: [oVirt, Virtualization]
+tags: [oVirt, Virtualization,featured]
 ext_url: https://www.techbeatly.com/2020/03/installing-ovirt-4-with-self-hosted-engine-on-enterprise-linux.html
 #show-avatar: false
 featured: false

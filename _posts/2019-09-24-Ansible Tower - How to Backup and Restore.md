@@ -6,7 +6,7 @@ categories: [ ansible, automation ]
 subtitle: Take a backup and restore
 #bigimg: /assets/images/ansible-tower-backup-and-restore-operations.jpg
 image: "assets/images/ansible-tower-backup-and-restore-operations.jpg"
-tags: [Ansible Tower, Backup, Restore, Ansible Automation]
+tags: [Ansible Tower, Backup, Restore, Ansible Automation, featured]
 ext_url: https://www.techbeatly.com/2019/09/ansible-tower-backup-and-restore-operations.html
 #show-avatar: false
 featured: false
