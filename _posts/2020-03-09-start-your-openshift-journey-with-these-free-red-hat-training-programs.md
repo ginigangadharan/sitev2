@@ -3,7 +3,7 @@ layout: post
 title: Start Your OpenShift Journey with these Free Red Hat Training Programs
 author: gini
 categories: [ openshift ]
-image: "assets/images/2020/redhat-openshift-free-courses.jpg"
+image: "assets/images/2020/start-your-openshift-journey-with-these-free-red-hat-training-programs.jpeg"
 tags: [OpenShift, Red Hat Training]
 ext_url: https://www.techbeatly.com/2020/03/start-your-openshift-journey-with-these-free-red-hat-training-programs.html
 #show-avatar: false
@@ -18,3 +18,5 @@ Fortunately Red Hat is offering some of the basic courses free of charge and you
 *(Image : https://unsplash.com/@annaelizaearl)*
 
 **See [Full Article](https://www.techbeatly.com/2020/03/start-your-openshift-journey-with-these-free-red-hat-training-programs.html)**
+
+*image : [@thefallofmath](https://unsplash.com/@thefallofmath)*

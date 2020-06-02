@@ -3,7 +3,7 @@ layout: post
 title: Installing oVirt 4 with Self-Hosted Engine on Enterprise Linux
 author: gini
 categories: [ oVirt ]
-image: "assets/images/2020/installing-ovirt-4-with-self-hosted-engine-on-enterprise-linux.jpg"
+image: "assets/images/2020/installing-ovirt-4-with-self-hosted-engine-on-enterprise-linux.jpeg"
 tags: [oVirt, Virtualization,featured]
 ext_url: https://www.techbeatly.com/2020/03/installing-ovirt-4-with-self-hosted-engine-on-enterprise-linux.html
 #show-avatar: false
@@ -18,3 +18,5 @@ Basically you will setup oVirt Engine (Controller) and add oVirt Nodes to the cl
 *(Image by [@tvick)](https://unsplash.com/@tvick)/[unsplash](https://unsplash.com/))*
 
 **See [Full Article](https://www.techbeatly.com/2020/03/installing-ovirt-4-with-self-hosted-engine-on-enterprise-linux.html)**
+
+*image: [@belart84](https://unsplash.com/@belart84)*
