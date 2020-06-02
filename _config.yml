@@ -7,7 +7,7 @@ favicon: 'assets/images/logo-g-v1.png'
 
 #url: "https://www.iamgini.com/"
 my_base_site: "https://www.iamgini.com"
-baseurl: '/sitev2'
+baseurl: ''
 # If you are building a GitHub project page then use these settings:
 # url: "https://www.iamgini.com/site2/"
 # baseurl: "/site2"
