@@ -1,11 +1,11 @@
 ---
-#layout: postnew
+#layout: post
 layout: page-sidebar
 title: About
 #author: gini
 categories: [ cloud ]
 image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
-tags: [cloud, automation, containers, kubernetes]
+#tags: [cloud, automation, containers, kubernetes]
 show-avatar: false
 permalink: /about
 featured: false
@@ -24,6 +24,3 @@ Contact me at **@ginigangadharan** / **[email](net.gini@gmail.com)**.
 Thank you,
 Gini Gangadharan
 
-
-#### Credits
-[Mediumish Jekyll Theme](https://www.wowthemes.net/mediumish-free-jekyll-template/) by WowThemes.net

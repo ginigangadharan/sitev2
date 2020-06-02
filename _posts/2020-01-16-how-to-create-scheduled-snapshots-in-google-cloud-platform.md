@@ -1,5 +1,5 @@
 ---
-layout: postnew
+layout: post
 title: How to Create Scheduled Snapshots in Google Cloud Platform
 author: gini
 categories: [ cloud ]
