@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Ansible Best Practices
-
-# 1. author: gini
+author: gini
 categories: [ ansible ]
 
-# 2. image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
-tags: []
+# image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
+tags: [ansible best practices, ansible automation]
 show-avatar: false
 permalink: /ansible-best-practices
 featured: false
@@ -17,20 +16,30 @@ Note : This document is based on original document - [Best Practices](https://do
 
 You can find some example playbooks illustrating these best practices in our `ansible-examples repository <https://github.com/ansible/ansible-examples>`_.  (NOTE: These may not use all of the features in the latest release, but are still an excellent reference!).
 
-<!-- TOC depthfrom:2 orderedlist:true -->
+<!-- TOC depthfrom:2 orderedlist:false -->
 
-- [2.1. References](#21-references)
-- [2.2. Content Organization](#22-content-organization)
+- [References](#references)
+- [Content Organization](#content-organization)
+  - [Directory Layout](#directory-layout)
+  - [Alternative Directory Layout](#alternative-directory-layout)
+- [Use Dynamic Inventory With Clouds](#use-dynamic-inventory-with-clouds)
+- [How to Differentiate Staging vs Production](#how-to-differentiate-staging-vs-production)
+- [Group And Host Variables](#group-and-host-variables)
+- [Top Level Playbooks Are Separated By Role](#top-level-playbooks-are-separated-by-role)
+- [Task And Handler Organization For A Role](#task-and-handler-organization-for-a-role)
+- [What This Organization Enables (Examples)](#what-this-organization-enables-examples)
+- [Deployment vs Configuration Organization](#deployment-vs-configuration-organization)
+- [Staging vs Production](#staging-vs-production)
 
 <!-- /TOC -->
 
-## 2.1. References
+## References
 - [Four Ansible Practices I Would Recommend](http://alesnosek.com/blog/2018/06/17/four-ansible-practices-i-would-recommend/)
 
 - https://www.ansible.com/hubfs/2018_Content/AA%20BOS%202018%20Slides/Ansible%20Best%20Practices.pdf
 - 
 
-## 2.2. Content Organization
+## Content Organization
 
 The following section shows one of many possible ways to organize playbook content.
 
@@ -41,11 +50,11 @@ of the main playbooks page.  You should take the time to read and understand the
 
 .. _directory_layout:
 
-Directory Layout
-````````````````
+### Directory Layout
 
 The top level of the directory would contain files and directories like so::
 
+```
     production                # inventory file for production servers
     staging                   # inventory file for staging environment
 
@@ -90,13 +99,13 @@ The top level of the directory would contain files and directories like so::
         webtier/              # same kind of structure as "common" was above, done for the webtier role
         monitoring/           # ""
         fooapp/               # ""
+```
 
 .. note: If you find yourself having too many top level playbooks (for instance you have a playbook you wrote for a specific hotfix, etc), it may make sense to have a playbooks/ directory instead.  This can be a good idea as you get larger.  If you do this, configure your roles_path in ansible.cfg to find your roles location.
 
 .. _alternative_directory_layout:
 
-Alternative Directory Layout
-````````````````````````````
+### Alternative Directory Layout
 
 Alternatively you can put each inventory file with its ``group_vars``/``host_vars`` in a separate directory. This is particularly useful if your ``group_vars``/``host_vars`` don't have that much in common in different environments. The layout could look something like this::
 
@@ -137,8 +146,7 @@ This layout gives you more flexibility for larger environments, as well as a tot
 
 .. _use_dynamic_inventory_with_clouds:
 
-Use Dynamic Inventory With Clouds
-`````````````````````````````````
+## Use Dynamic Inventory With Clouds
 
 If you are using a cloud provider, you should not be managing your inventory in a static file.  See :ref:`intro_dynamic_inventory`.
 
@@ -147,8 +155,7 @@ in your infrastructure, usage of dynamic inventory is a great idea in general.
 
 .. _staging_vs_prod:
 
-How to Differentiate Staging vs Production
-``````````````````````````````````````````
+## How to Differentiate Staging vs Production
 
 If managing static inventory, it is frequently asked how to differentiate different types of environments.  The following example
 shows a good way to do this.  Similar methods of grouping could be adapted to dynamic inventory (for instance, consider applying the AWS
@@ -197,8 +204,7 @@ It is suggested that you define groups based on purpose of the host (roles) and 
 
 .. _groups_and_hosts:
 
-Group And Host Variables
-````````````````````````
+## Group And Host Variables
 
 This section extends on the previous example.
 
@@ -235,8 +241,7 @@ variables from the file "group_vars/ec2_tag_class_webserver" automatically.
 
 .. _split_by_role:
 
-Top Level Playbooks Are Separated By Role
-`````````````````````````````````````````
+## Top Level Playbooks Are Separated By Role
 
 In site.yml, we import a playbook that defines our entire infrastructure.  This is a very short example, because it's just importing
 some other playbooks::
@@ -263,8 +268,7 @@ webservers.yml.  This is analogous to the "--limit" parameter to ansible but a l
 
 .. _role_organization:
 
-Task And Handler Organization For A Role
-````````````````````````````````````````
+## Task And Handler Organization For A Role
 
 Below is an example tasks file that explains how a role works.  Our common role here just sets up NTP, but it could do more if we wanted::
 
@@ -307,8 +311,7 @@ See :ref:`playbooks_reuse_roles` for more information.
 
 .. _organization_examples:
 
-What This Organization Enables (Examples)
-`````````````````````````````````````````
+## What This Organization Enables (Examples)
 
 Above we've shared our basic organizational structure.
 
@@ -348,8 +351,7 @@ And there are some useful commands to know::
 
 .. _dep_vs_config:
 
-Deployment vs Configuration Organization
-````````````````````````````````````````
+## Deployment vs Configuration Organization
 
 The above setup models a typical configuration topology.  When doing multi-tier deployments, there are going
 to be some additional playbooks that hop between tiers to roll out an application.  In this case, 'site.yml'
@@ -363,8 +365,7 @@ keep the OS configuration in separate playbooks from the app deployment.
 
 .. _staging_vs_production:
 
-Staging vs Production
-+++++++++++++++++++++
+## Staging vs Production
 
 As also mentioned above, a good way to keep your staging (or testing) and production environments separate is to use a separate inventory file for staging and production.   This way you pick with -i what you are targeting.  Keeping them all in one file can lead to surprises!
 
