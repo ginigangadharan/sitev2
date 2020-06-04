@@ -124,7 +124,13 @@ layout: default
             {% if page.comments != false %}
                 {% include comments.html %}
             {% endif %}
-            
+			
+			<!--- latest -->
+			{% include sidebar-latest.html %}
+
+			<!--- featured-->
+			{% include sidebar-featured-nonsticky.html %}    
+		
 		</div>
         
         
