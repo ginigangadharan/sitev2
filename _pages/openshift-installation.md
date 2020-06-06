@@ -32,15 +32,19 @@ hidden: false
 - [5. CodeRead Containers](#5-coderead-containers)
   - [5.1. Download Package](#51-download-package)
   - [5.2. Setup Cluster](#52-setup-cluster)
-  - [5.3. Troubleshooing VirtualBox VM](#53-troubleshooing-virtualbox-vm)
-  - [5.4. Access your Cluster](#54-access-your-cluster)
-- [6. OpenShift on Baremetal (UPI)](#6-openshift-on-baremetal-upi)
-- [7. OpenShift All-In-One - OKD Using Ansible](#7-openshift-all-in-one---okd-using-ansible)
-- [8. Extras OpenSHift 4.x](#8-extras-openshift-4x)
-  - [8.1. OpenShift 4.2 Installation](#81-openshift-42-installation)
-  - [8.2. OpenShift 4.1 Installation](#82-openshift-41-installation)
-  - [8.3. Baremetal Installation](#83-baremetal-installation)
-- [9. baremetal](#9-baremetal)
+  - [5.3. Access your Cluster](#53-access-your-cluster)
+  - [5.4. Troubleshooing VirtualBox VM](#54-troubleshooing-virtualbox-vm)
+- [6. OpenSHift 4.x](#6-openshift-4x)
+- [7. OpenShift 4.2 Installation](#7-openshift-42-installation)
+- [8. OpenShift 4.1 Installation](#8-openshift-41-installation)
+  - [8.1. Baremetal Installation](#81-baremetal-installation)
+- [9. OpenShift on Baremetal (UPI)](#9-openshift-on-baremetal-upi)
+- [10. OpenShift All-In-One - OKD Using Ansible](#10-openshift-all-in-one---okd-using-ansible)
+- [11. Extras OpenSHift 4.x](#11-extras-openshift-4x)
+  - [11.1. OpenShift 4.2 Installation](#111-openshift-42-installation)
+  - [11.2. OpenShift 4.1 Installation](#112-openshift-41-installation)
+  - [11.3. Baremetal Installation](#113-baremetal-installation)
+- [12. baremetal](#12-baremetal)
 
 <!-- /TOC -->
 
@@ -198,18 +202,33 @@ https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013
 - Choose install on Laptop -> https://cloud.redhat.com/openshift/install/crc/installer-provisioned
 - Download for your OS choise (Windows10, MacOS, Linux)
 - Move package to your machine folder
+- extract the package 
+  `tar -xf FILENAME.tar.xz`
+
+- Download and keep the pull secret from same location. You need that later during `crc start`
 
 ## 5.2. Setup Cluster
 
 ```
+$ cd crc-linux-1.11.0-amd64
 ### Usr normal user account
 $ crc setup
 
 ### Start cluster
 $ crc start
+
+### if you are on a terminal without GUI, you will have difficulty to copy/paste pull secret content. in that you can mention the pull secret ful
+$ crc start -p /path-to/pull-secret
+
 ```
 
-## 5.3. Troubleshooing VirtualBox VM
+## 5.3. Access your Cluster
+```
+$ eval $(crc oc-env)
+$ oc login -u developer -p developer
+```
+
+## 5.4. Troubleshooing VirtualBox VM
 
 if issue with VirtualBox Guest Additions and shared folder
 `sudo yum update && sudo yum -y install kernel-headers kernel-devel`
@@ -217,26 +236,7 @@ if issue with VirtualBox Guest Additions and shared folder
 Check vboxsf module 
 `sudo modprobe vboxsf`
 
-
-
-## 5.4. Access your Cluster
-```
-$ eval $(crc oc-env)
-$ oc login -u developer -p developer
-```
-
-# 6. OpenShift on Baremetal (UPI)
-
-- [Installing on OpenShift on Baremetal](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.4/html/installing_on_bare_metal/index)
-
-# 7. OpenShift All-In-One - OKD Using Ansible
-
-Ref:
-https://github.com/Gepardec/ansible-role-okd
-https://galaxy.ansible.com/gepardec/okd
-https://computingforgeeks.com/setup-openshift-origin-local-cluster-on-centos/
-
-# 8. Extras OpenSHift 4.x 
+# 6. OpenSHift 4.x 
 
 https://github.com/openshift/okd
 
@@ -252,13 +252,52 @@ clouds:
     region_name: RegionOne
 ``` 
 
-## 8.1. OpenShift 4.2 Installation
+# 7. OpenShift 4.2 Installation
 https://docs.openshift.com/container-platform/4.2/installing/installing_bare_metal/installing-bare-metal.html
 
-## 8.2. OpenShift 4.1 Installation
+# 8. OpenShift 4.1 Installation
 https://access.redhat.com/documentation/en-us/openshift_container_platform/4.1/html/installing/index
 
-## 8.3. Baremetal Installation
+## 8.1. Baremetal Installation
+https://access.redhat.com/documentation/en-us/openshift_container_platform/4.1/html/installing/installing-on-bare-metal
+https://docs.openshift.com/container-platform/4.1/installing/installing_bare_metal/installing-bare-metal.html
+https://blog.openshift.com/openshift-4-bare-metal-install-quickstart/
+
+
+# 9. OpenShift on Baremetal (UPI)
+
+- [Installing on OpenShift on Baremetal](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.4/html/installing_on_bare_metal/index)
+
+# 10. OpenShift All-In-One - OKD Using Ansible
+
+Ref:
+https://github.com/Gepardec/ansible-role-okd
+https://galaxy.ansible.com/gepardec/okd
+https://computingforgeeks.com/setup-openshift-origin-local-cluster-on-centos/
+
+# 11. Extras OpenSHift 4.x 
+
+https://github.com/openshift/okd
+
+Create `clouds.yaml`
+```
+clouds:
+  ocp4-dev:
+    auth:
+      auth_url: http://10.6.1.209:35357/
+      project_name: ocp4-dev
+      username: ocpadmin
+      password: ocpadmin
+    region_name: RegionOne
+``` 
+
+## 11.1. OpenShift 4.2 Installation
+https://docs.openshift.com/container-platform/4.2/installing/installing_bare_metal/installing-bare-metal.html
+
+## 11.2. OpenShift 4.1 Installation
+https://access.redhat.com/documentation/en-us/openshift_container_platform/4.1/html/installing/index
+
+## 11.3. Baremetal Installation
 https://access.redhat.com/documentation/en-us/openshift_container_platform/4.1/html/installing/installing-on-bare-metal
 https://docs.openshift.com/container-platform/4.1/installing/installing_bare_metal/installing-bare-metal.html
 https://blog.openshift.com/openshift-4-bare-metal-install-quickstart/
@@ -270,5 +309,5 @@ https://labs.consol.de/container/platform/openshift/2020/01/31/ocp43-installatio
 
 https://blogs.ovirt.org/2019/01/ovirt-openshift-part-1/
 
-# 9. baremetal
+# 12. baremetal
 https://docs.openshift.com/container-platform/4.3/installing/installing_bare_metal/installing-bare-metal.html#cluster-entitlements_installing-bare-metal
