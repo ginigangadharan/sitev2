@@ -31,9 +31,9 @@ hidden: false
 - [4. Method IV - OpenShift Full Cluster](#4-method-iv---openshift-full-cluster)
 - [5. CodeRead Containers](#5-coderead-containers)
   - [5.1. Download Package](#51-download-package)
-  - [5.2. Setup Cluster](#52-setup-cluster)
-  - [5.3. Access your Cluster](#53-access-your-cluster)
-  - [5.4. Troubleshooing VirtualBox VM](#54-troubleshooing-virtualbox-vm)
+  - [5.2. Required software packages](#52-required-software-packages)
+  - [5.3. Setup Cluster](#53-setup-cluster)
+  - [5.4. Access your Cluster](#54-access-your-cluster)
 - [6. OpenSHift 4.x](#6-openshift-4x)
 - [7. OpenShift 4.2 Installation](#7-openshift-42-installation)
 - [8. OpenShift 4.1 Installation](#8-openshift-41-installation)
@@ -207,7 +207,11 @@ https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013
 
 - Download and keep the pull secret from same location. You need that later during `crc start`
 
-## 5.2. Setup Cluster
+## 5.2. Required software packages
+CodeReady Containers requires the libvirt and NetworkManager packages. 
+`su -c 'yum install NetworkManager'
+
+## 5.3. Setup Cluster
 
 ```
 $ cd crc-linux-1.11.0-amd64
@@ -222,19 +226,14 @@ $ crc start -p /path-to/pull-secret
 
 ```
 
-## 5.3. Access your Cluster
+## 5.4. Access your Cluster
 ```
 $ eval $(crc oc-env)
 $ oc login -u developer -p developer
 ```
 
-## 5.4. Troubleshooing VirtualBox VM
 
-if issue with VirtualBox Guest Additions and shared folder
-`sudo yum update && sudo yum -y install kernel-headers kernel-devel`
 
-Check vboxsf module 
-`sudo modprobe vboxsf`
 
 # 6. OpenSHift 4.x 
 
