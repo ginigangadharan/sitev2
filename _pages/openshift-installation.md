@@ -29,11 +29,13 @@ hidden: false
   - [2.3. Start minishift cluster](#23-start-minishift-cluster)
 - [3. Method III - OpenShift 4 - All in One Quick Cluster](#3-method-iii---openshift-4---all-in-one-quick-cluster)
 - [4. Method IV - OpenShift Full Cluster](#4-method-iv---openshift-full-cluster)
-- [5. CodeRead Containers](#5-coderead-containers)
+- [5. CodeReady Containers - CRC (OpenShift 4.x)](#5-codeready-containers---crc-openshift-4x)
   - [5.1. Download Package](#51-download-package)
   - [5.2. Required software packages](#52-required-software-packages)
   - [5.3. Setup Cluster](#53-setup-cluster)
   - [5.4. Access your Cluster](#54-access-your-cluster)
+  - [5.5. Troubleshooting](#55-troubleshooting)
+    - [5.5.1. After crc start and crc console, oc login fails with Internal error occurred: unexpected response: 503 for a while #740](#551-after-crc-start-and-crc-console-oc-login-fails-with-internal-error-occurred-unexpected-response-503-for-a-while-740)
 - [6. OpenSHift 4.x](#6-openshift-4x)
 - [7. OpenShift 4.2 Installation](#7-openshift-42-installation)
 - [8. OpenShift 4.1 Installation](#8-openshift-41-installation)
@@ -184,7 +186,7 @@ https://github.com/openshift/okd/releases
 
 - [Installing OpenShift 4.1 Using Libvirt and KVM](http://alesnosek.com/blog/2019/07/08/installing-openshift-4-dot-1-using-libvirt-and-kvm/)
 
-# 5. CodeRead Containers
+# 5. CodeReady Containers - CRC (OpenShift 4.x)
 
 [Red Hat CodeReady Containers](https://developers.redhat.com/products/codeready-containers)
   
@@ -192,7 +194,6 @@ Ref:
 - [CodeRead Containers - Red Hat OpenShift 4 on your laptop](https://developers.redhat.com/blog/2019/09/05/red-hat-openshift-4-on-your-laptop-introducing-red-hat-codeready-containers/)
 - [Install OpenShift Container Platform 4](https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013a000002CtetAAC)
 - [CodeReady Containers on Ubuntu](https://labs.consol.de/devops/linux/2019/11/29/codeready-containers-on-ubuntu.html)
-
 
 
 ## 5.1. Download Package
@@ -230,10 +231,21 @@ $ crc start -p /path-to/pull-secret
 ```
 $ eval $(crc oc-env)
 $ oc login -u developer -p developer
+
+## see credentials
+$ crc console --credentials
+To login as a regular user, run 'oc login -u developer -p developer https://api.crc.testing:6443'.
+To login as an admin, run 'oc login -u kubeadmin -p 8rynV-SeYLc-h8Ij7-YPYcz https://api.crc.testing:6443'
+
+## Access Console
+$ crc console
+Opening the OpenShift Web Console in the default browser...
+
 ```
 
+## 5.5. Troubleshooting
 
-
+### 5.5.1. After crc start and crc console, oc login fails with Internal error occurred: unexpected response: 503 for a while #740
 
 # 6. OpenSHift 4.x 
 
