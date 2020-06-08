@@ -10,9 +10,9 @@ hidden: false
 ---
 
 # 1. Learning Materials for Ansible Automation.
+<br><br><br>
 - [Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/) - Ansible Learning Guide
 
-<br><br><br>
 <!-- TOC -->
 
 - [1. Learning Materials for Ansible Automation.](#1-learning-materials-for-ansible-automation)
