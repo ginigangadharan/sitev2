@@ -2,7 +2,7 @@
 layout: post
 title: Ansible - Learning Docs & References
 categories: [ cloud ]
-image: "assets/images/2020/ansible-banner-logo-transparent.jpg"
+image: "assets/images/2020/ansible-automation.png"
 tags: [cloud, automation, containers, kubernetes]
 permalink: /ansible
 featured: false
