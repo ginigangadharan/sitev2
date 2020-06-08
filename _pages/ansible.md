@@ -53,4 +53,3 @@ hidden: false
 ### 1.5.1. Red Hat Ansible Tower Life Cycle
 
 https://access.redhat.com/support/policy/updates/ansible-tower
-
