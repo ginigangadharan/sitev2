@@ -3,7 +3,7 @@ layout: post
 title: CKA & CKAD - Kubernetes Exam Tips, Learning Path and Certification
 author: gini
 categories: [ kubernetes ]
-image: "assets/images/2020/kubernetes-certification-cka-ckad-exam-tips-learning-path.png"
+image: "assets/images/2020/kubernetes-certification-cka-ckad-exam-tips-learning-path-n.png"
 tags: [kubernetes,sticky]
 ext_url: https://www.techbeatly.com/2020/05/kubernetes-certification-cka-ckad-exam-tips-learning-path.html
 #show-avatar: false
