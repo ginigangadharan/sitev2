@@ -14,3 +14,5 @@ hidden: false
 https://www.pluralsight.com/blog/it-ops/linux-hardening-secure-server-checklist
 
 https://www.cyberciti.biz/tips/linux-security.html
+
+(image: [@nathdah](https://unsplash.com/@nathdah))
