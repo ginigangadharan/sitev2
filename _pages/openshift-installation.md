@@ -32,10 +32,12 @@ hidden: false
 - [5. CodeReady Containers - CRC (OpenShift 4.x)](#5-codeready-containers---crc-openshift-4x)
   - [5.1. Download Package](#51-download-package)
   - [5.2. Required software packages](#52-required-software-packages)
+    - [5.2.1. Enable sudo for user](#521-enable-sudo-for-user)
   - [5.3. Setup Cluster](#53-setup-cluster)
   - [5.4. Access your Cluster](#54-access-your-cluster)
   - [5.5. Troubleshooting](#55-troubleshooting)
     - [5.5.1. After crc start and crc console, oc login fails with Internal error occurred: unexpected response: 503 for a while #740](#551-after-crc-start-and-crc-console-oc-login-fails-with-internal-error-occurred-unexpected-response-503-for-a-while-740)
+    - [5.5.2. Unable to connect to console](#552-unable-to-connect-to-console)
 - [6. OpenSHift 4.x](#6-openshift-4x)
 - [7. OpenShift 4.2 Installation](#7-openshift-42-installation)
 - [8. OpenShift 4.1 Installation](#8-openshift-41-installation)
@@ -194,9 +196,12 @@ Ref:
 - [CodeRead Containers - Red Hat OpenShift 4 on your laptop](https://developers.redhat.com/blog/2019/09/05/red-hat-openshift-4-on-your-laptop-introducing-red-hat-codeready-containers/)
 - [Install OpenShift Container Platform 4](https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013a000002CtetAAC)
 - [CodeReady Containers on Ubuntu](https://labs.consol.de/devops/linux/2019/11/29/codeready-containers-on-ubuntu.html)
+- [Trying out CRC - Jeff](https://www.jeffgeerling.com/blog/2019/trying-out-crc-code-ready-containers-run-openshift-4x-locally)
 
 
 ## 5.1. Download Package
+
+`wget https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz`
 https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013a000002CtetAAC
 
 - Visit https://www.openshift.com/try
@@ -209,13 +214,24 @@ https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013
 - Download and keep the pull secret from same location. You need that later during `crc start`
 
 ## 5.2. Required software packages
+
 CodeReady Containers requires the libvirt and NetworkManager packages. 
-`su -c 'yum install NetworkManager'
+`su -c 'yum install NetworkManager`
+`wget https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz`
+
+### 5.2.1. Enable sudo for user
+
+```
+[devops@node1 ~]$ sudo cat /etc/sudoers.d/devops
+[sudo] password for devops:
+devops ALL=(ALL) NOPASSWD: ALL
+```
 
 ## 5.3. Setup Cluster
 
 ```
 $ cd crc-linux-1.11.0-amd64
+$ export PATH=/home/devops/crc-linux-1.11.0-amd64:$PATH
 ### Usr normal user account
 $ crc setup
 
@@ -246,6 +262,14 @@ Opening the OpenShift Web Console in the default browser...
 ## 5.5. Troubleshooting
 
 ### 5.5.1. After crc start and crc console, oc login fails with Internal error occurred: unexpected response: 503 for a while #740
+
+### 5.5.2. Unable to connect to console
+
+```
+$ crc ip
+$ nmcli conn show
+
+```
 
 # 6. OpenSHift 4.x 
 
