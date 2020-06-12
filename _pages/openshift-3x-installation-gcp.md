@@ -36,7 +36,9 @@ hidden: false
 <!-- /TOC -->
 
 
-This is a quick guide to setup OpenShift Origin Cluster with 1 Master and 2 Nodes. We will use ansible playbooks provided by https://github.com/OpenShift/OpenShift-ansible. You need to setup a separate DNS server to manage internal DNS traffic.
+This is a quick guide to setup OpenShift Origin Cluster with 1 Master and 2 Nodes. We will use ansible playbooks provided by [OpenShift-ansible](https://github.com/OpenShift/OpenShift-ansible). 
+
+You need to setup a separate DNS server to manage internal DNS traffic.
 
 **Master server hosted on GCP**
 
