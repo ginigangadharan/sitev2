@@ -9,6 +9,9 @@ featured: false
 hidden: false
 ---
 
+https://www.youtube.com/watch?v=Ti6fQQcGy-Y&feature=youtu.be
+https://guacamole.apache.org/releases/1.1.0/
+
 ## Download Package and extract
 
 https://guacamole.apache.org/releases/1.1.0/
