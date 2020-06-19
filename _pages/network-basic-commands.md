@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible for Network Automation
+title: Basic Network Device Commands and Setup
 categories: [ cloud ]
 tags: []
 show-avatar: false
@@ -8,6 +8,8 @@ permalink: network-basic-commands
 featured: false
 hidden: false
 ---
+
+These are very basic network commands and setup instructions for my Ansible Network Automation labs. I am keeping those here for quick reference in case I am in trouble with a quick lab setup in GNS3.
 
 <!-- TOC -->
 
