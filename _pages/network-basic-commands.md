@@ -4,7 +4,7 @@ title: Ansible for Network Automation
 categories: [ cloud ]
 tags: []
 show-avatar: false
-permalink: network-basic-commands.md
+permalink: network-basic-commands
 featured: false
 hidden: false
 ---
