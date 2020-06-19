@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Network Device Commands and Setup
-categories: [ cloud ]
+categories: [ Network, Automation ]
 tags: []
 show-avatar: false
 permalink: network-basic-commands
