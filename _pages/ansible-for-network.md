@@ -24,6 +24,7 @@ hidden: false
   - [Change config](#change-config)
   - [Add VLAN nxos](#add-vlan-nxos)
   - [Add config isoconfig](#add-config-isoconfig)
+- [Download IOS Images](#download-ios-images)
 
 <!-- /TOC -->
 
@@ -295,3 +296,6 @@ ansible_connection=network_cli
 ansible_network_os=iso
 ansible_port=8181 #if diff port
 
+## Download IOS Images
+- [Where do I get IOS images?](https://docs.gns3.com/1vJwh4_whwtfjb8pQ8vKekcWrA1galIqA1eHgeClOsPY/index.html)
+- Virl.cisco.com
