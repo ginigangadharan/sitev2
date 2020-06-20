@@ -9,10 +9,11 @@ featured: false
 hidden: false
 ---
 
+# Ansible for Absolute Beginners
 
-**[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/)** 
+**[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/){:target="_blank"}** 
 
-You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is my attempt to cover Ansible in a simple and beginner level approach. Access all chapters on **[techbeatly.com](https://www.techbeatly.com/ansible/)**. 
+You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is my attempt to cover Ansible in a simple and beginner level approach. Access all chapters on **[techbeatly.com](https://www.techbeatly.com/ansible/){:target="_blank"}**. 
 
 - **[Ansible – Part 1 – Introduction](https://www.techbeatly.com/2018/06/ansible-part-1-introduction.html/){:target="_blank"}**
 - **[Ansible – Part 2 – Installing Ansible](https://www.techbeatly.com/2018/06/ansible-part-2-installing-ansible.html/){:target="_blank"}**
@@ -26,11 +27,14 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - *(Ansible – Part 10 – Jinja2 Templates with Ansible <In Progress … >)*
 - **[Ansible – Part 11 – Implementing Roles](https://www.techbeatly.com/2018/06/ansible-part-11-implementing-roles.html/){:target="_blank"}**
 - **[Ansible – Part 12 – Deploying Roles With Ansible Galaxy](https://www.techbeatly.com/2018/06/ansible-part-12-deploying-roles-with-ansible-galaxy.html/){:target="_blank"}**
-- *(More coming, give me some more time to prepare)*
+- *(More Chapters are coming, give me some more time to prepare)*
+
+<h3>Table of Contents</h3>
 
 <!-- TOC orderedlist:false -->
 
 - [Ansible for Absolute Beginners](#ansible-for-absolute-beginners)
+- [Ansible Videos for Beginners](#ansible-videos-for-beginners)
 - [Ansible Playbook References](#ansible-playbook-references)
 - [Tools for Ansible](#tools-for-ansible)
 - [Ansible for Network Automation](#ansible-for-network-automation)
@@ -41,7 +45,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 <!-- /TOC -->
 
-# Ansible for Absolute Beginners
+# Ansible Videos for Beginners
 
 - [Introduction to Ansible - Webinar](https://www.youtube.com/watch?v=iVWmbStE1MM){:target="_blank"} (YouTube)
 - [Ansible - A Beginner's Tutorial](https://www.youtube.com/watch?v=icR-df2Olm8){:target="_blank"} (YouTube)
