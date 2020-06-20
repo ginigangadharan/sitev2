@@ -31,8 +31,8 @@ hidden: false
 
 # Ansible for Absolute Beginners
 
-- [Introduction to Ansible - Webinar](https://www.youtube.com/watch?v=iVWmbStE1MM) (YouTube)
-- [Ansible - A Beginner's Tutorial](https://www.youtube.com/watch?v=icR-df2Olm8) (YouTube)
+- [Introduction to Ansible - Webinar](https://www.youtube.com/watch?v=iVWmbStE1MM){:target="_blank"} (YouTube)
+- [Ansible - A Beginner's Tutorial](https://www.youtube.com/watch?v=icR-df2Olm8){:target="_blank"} (YouTube)
 
 # Ansible Playbook References
 
