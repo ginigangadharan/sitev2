@@ -9,9 +9,24 @@ featured: false
 hidden: false
 ---
 
-**Learning Materials for Ansible Automation.**
 
-**[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/)** - Ansible Guide for Absolute Beginners
+**[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/)** 
+
+You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is my attempt to cover Ansible in a simple and beginner level approach. Access all chapters on **[techbeatly.com](https://www.techbeatly.com/ansible/)**. 
+
+- **[Ansible – Part 1 – Introduction](https://www.techbeatly.com/2018/06/ansible-part-1-introduction.html/){:target="_blank"}**
+- **[Ansible – Part 2 – Installing Ansible](https://www.techbeatly.com/2018/06/ansible-part-2-installing-ansible.html/){:target="_blank"}**
+- **[Ansible – Part 3 – Deployment](https://www.techbeatly.com/2018/06/ansible-part-3-deployment.html/){:target="_blank"}**
+- **[Ansible – Part 4 – Managing Inventory](https://www.techbeatly.com/2018/06/ansible-part-4-managing-inventory.html/){:target="_blank"}**
+- **[Ansible – Part 5 – Running Ad-Hoc commands](https://www.techbeatly.com/2018/06/ansible-part-5-running-ad-hoc-commands.html/){:target="_blank"}**
+- **[Ansible – Part 6 – Play with Playbooks](https://www.techbeatly.com/2018/06/ansible-part-6-play-with-playbooks.html/){:target="_blank"}**
+- **[Ansible – Part 7 – Managing Variables](https://www.techbeatly.com/2019/08/ansible-part-7-managing-variables.html/){:target="_blank"}**
+- **[Ansible – Part 8 – Managing Facts](https://www.techbeatly.com/2019/09/ansible-part-8-managing-facts.html/){:target="_blank"}**
+- *(Ansible – Part 9 – Task Control <In Progress … >)*
+- *(Ansible – Part 10 – Jinja2 Templates with Ansible <In Progress … >)*
+- **[Ansible – Part 11 – Implementing Roles](https://www.techbeatly.com/2018/06/ansible-part-11-implementing-roles.html/){:target="_blank"}**
+- **[Ansible – Part 12 – Deploying Roles With Ansible Galaxy](https://www.techbeatly.com/2018/06/ansible-part-12-deploying-roles-with-ansible-galaxy.html/){:target="_blank"}**
+- *(More coming, give me some more time to prepare)*
 
 <!-- TOC orderedlist:false -->
 
