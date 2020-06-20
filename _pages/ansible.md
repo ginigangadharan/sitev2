@@ -33,31 +33,31 @@ hidden: false
 
 # Ansible Playbook References
 
-- [Ansible Examples](https://github.com/ginigangadharan/ansible-examples) 
+- [Ansible Examples](https://github.com/ginigangadharan/ansible-examples){:target="_blank"}
 (*Forked from https://github.com/ansible/ansible-examples*)
-- [Ansible for DevOps](https://github.com/ginigangadharan/ansible-for-devops) 
+- [Ansible for DevOps](https://github.com/ginigangadharan/ansible-for-devops){:target="_blank"} 
 (*Forked from https://github.com/geerlingguy/ansible-for-devops*)
-- [Ansible NXOS Samples](https://github.com/ginigangadharan/Ansible-NXOS) (Network Automation)
+- [Ansible NXOS Samples](https://github.com/ginigangadharan/Ansible-NXOS){:target="_blank"} (Network Automation)
 
 # Tools for Ansible
 
-- [Ansible Silo](https://groupon.github.io/ansible-silo)
+- [Ansible Silo](https://groupon.github.io/ansible-silo){:target="_blank"}
 
 # Ansible for Network Automation
 
-- [Network Device Authentication with Ansible 2.3](https://www.ansible.com/blog/network-device-authentication-with-ansible-2-3)
+- [Network Device Authentication with Ansible 2.3](https://www.ansible.com/blog/network-device-authentication-with-ansible-2-3){:target="_blank"}
 
 # Ansible Blog/Articles to Follow
-- [MyDailyTutorials](http://www.mydailytutorials.com/category/tutorials/ansible/)
-- [Ansible Blog](https://www.ansible.com/blog)
-- [Ansible & Cisco](https://blogs.cisco.com/tag/ansible)
-- [ansiblejunky.com](https://www.ansiblejunky.com/)
-- [ansible linting - Abhijeet Kamble](https://medium.com/faun/linting-your-ansible-playbooks-and-make-a-continuous-integration-ci-solution-bcf8b4ea4c03)
+- [MyDailyTutorials](http://www.mydailytutorials.com/category/tutorials/ansible/){:target="_blank"}
+- [Ansible Blog](https://www.ansible.com/blog){:target="_blank"}
+- [Ansible & Cisco](https://blogs.cisco.com/tag/ansible){:target="_blank"}
+- [ansiblejunky.com](https://www.ansiblejunky.com/){:target="_blank"}
+- [ansible linting - Abhijeet Kamble](https://medium.com/faun/linting-your-ansible-playbooks-and-make-a-continuous-integration-ci-solution-bcf8b4ea4c03){:target="_blank"}
 
 # Ansible Interview Questions
-- [Question Bank 1](https://career.guru99.com/ansible-interview-questions-answers/)
-- [Question Bank 2](https://www.edureka.co/blog/interview-questions/ansible-interview-questions/)
-- [Question Bank 3](https://mindmajix.com/ansible-interview-questions)
+- [Question Bank 1](https://career.guru99.com/ansible-interview-questions-answers/){:target="_blank"}
+- [Question Bank 2](https://www.edureka.co/blog/interview-questions/ansible-interview-questions/){:target="_blank"}
+- [Question Bank 3](https://mindmajix.com/ansible-interview-questions){:target="_blank"}
 
 # Other References
 
