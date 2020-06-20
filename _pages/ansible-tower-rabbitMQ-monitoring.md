@@ -1,7 +1,6 @@
 
 ## Ansible Tower: RabbitMQ Monitoring
 
-
 Is it Possible to Monitor RabbitMQ for Ansible Tower?
 Yes! RabbitMQ allows the ability to monitor through a plugin called RabbitMQ Manager.
 RabbitMQ Manager allows users to view RabbitMQ message queues in real time through a UI implementation as well as through its own API interface.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GNS3 Infra Setup
-#author: gini
+author: gini
 categories: [ ansible ]
 #image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
 tags: []

@@ -12,7 +12,7 @@ hidden: false
 <!-- TOC orderedlist:false depthfrom:2 -->
 
 - [References](#references)
-- [Privilege Escalation](#privilege-escalation)
+- [Privilege Escalation for Network Devices in Ansible](#privilege-escalation-for-network-devices-in-ansible)
 - [Communication Protocols](#communication-protocols)
 - [Network modules](#network-modules)
 - [Ansible Network Playbooks](#ansible-network-playbooks)
@@ -23,18 +23,19 @@ hidden: false
   - [Backup eos](#backup-eos)
   - [Change config](#change-config)
   - [Add VLAN nxos](#add-vlan-nxos)
-  - [Add config isoconfig](#add-config-isoconfig)
-- [Download IOS Images](#download-ios-images)
+  - [Add config iso_config](#add-config-iso_config)
+- [Appendix](#appendix)
+  - [Download IOS Images](#download-ios-images)
 
 <!-- /TOC -->
 
-## References
-- [Ansible for Network Automation Tutorial](https://www.networkcomputing.com/networking/ansible-network-automation-tutorial)
-- [Ansible for Network Automation](https://docs.ansible.com/ansible/latest/network/index.html)
-- [Red Hat : NETWORK AUTOMATION WITH ANSIBLE](https://www.ansible.com/overview/networking)
+# References
+- **[Ansible for Network Automation Tutorial](https://www.networkcomputing.com/networking/ansible-network-automation-tutorial)**
+- **[Ansible for Network Automation](https://docs.ansible.com/ansible/latest/network/index.html)**
+- **[Red Hat : NETWORK AUTOMATION WITH ANSIBLE](https://www.ansible.com/overview/networking)**
+- **[Automating Network VLAN Deployments with Ansible](https://skyenet.tech/automating-network-vlan-deployments-with-ansible/)**
 
-
-## Privilege Escalation
+# Privilege Escalation for Network Devices in Ansible 
 
 Sample environment variable
 
@@ -45,7 +46,7 @@ ansible_become: yes
 ansible_become_method: enable
 ```
 
-## Communication Protocols
+# Communication Protocols
 
 | ansible_connection |	Protocol |	Requires |	Persistent? |
 |--------------------|-----------|-----------|--------------|
@@ -54,7 +55,7 @@ ansible_become_method: enable
 | httpapi     |	API over HTTP/HTTPS	| network_os setting  | yes |
 | local	      | depends on provider |	provider setting    |	no  |
 
-## Network modules
+# Network modules
 
 Arista EOS = eos_*
 Cisco IOS/IOS-XE = ios_*
@@ -72,7 +73,7 @@ and modules as
 
 And more
 
-## Ansible Network Playbooks
+# Ansible Network Playbooks
 
 Sample Playbookf or `ios`
 
@@ -97,7 +98,7 @@ Sample Playbookf or `ios`
 Another one for interface config
 ![Ansible Playbook](assets/images/2020/ansible-network-ios-interface-playbook.png)
 
-## Ansible Network Roles
+# Ansible Network Roles
 
 https://galaxy.ansible.com/ansible-network
 
@@ -124,9 +125,9 @@ Update existing role
 ansible-galaxy install ansible-network.network_engine,v2.7.0 --force
 ```
 
-## Task Reference
+# Task Reference
 
-### Using username and password for authentication
+## Using username and password for authentication
 
 ```
 - name: User usernname
@@ -143,7 +144,7 @@ ansible-galaxy install ansible-network.network_engine,v2.7.0 --force
         .
 ```
 
-### Reboot ios device
+## Reboot ios device
 
 ```
 ---
@@ -169,7 +170,7 @@ ansible-galaxy install ansible-network.network_engine,v2.7.0 --force
     delay: 10
 ```
 
-### Backup eos
+## Backup eos
 
 Backup configuration
 
@@ -209,7 +210,7 @@ Backup using `cli_command`
         dest: "{{inventory_hostname}}.backup"
 ```        
 
-### Change config
+## Change config
 
 ```
 # vars
@@ -244,7 +245,7 @@ ntp_commands: ntp server 192.168.1.1
       register: command_output
 ```        
 
-### Add VLAN nxos
+## Add VLAN nxos
 
 ```
 ---
@@ -260,7 +261,7 @@ ntp_commands: ntp server 192.168.1.1
         name: WEB
 ```
 
-### Add config iso_config
+## Add config iso_config
 
 ```
 ---
@@ -274,11 +275,6 @@ ntp_commands: ntp server 192.168.1.1
           - snmp-server community ansible-public RO
           - snmp-server community ansible-private RW
 ``` 
-
-
-
-
-
 
 
 # Appendix

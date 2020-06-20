@@ -46,6 +46,7 @@ These are very basic network commands and setup instructions for my Ansible Netw
 
 ```
 username user1 password mypassword
+username cisco password C!sco123
                                 # create a user with password
 username user1 privilege 15 
                                 # configure privilege     

@@ -6,16 +6,26 @@ categories: [ GNS3 ]
 #image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
 tags: []
 show-avatar: false
-permalink: /gns3-fortigate
+permalink: /gns3-ansible
 featured: false
 hidden: false
 ---
 
-# Reference
+# Ansible for Cisco
+
+## References
+
+- **Nexus 7K/N7K - [Cisco NX-OSv appliance](https://docs.gns3.com/appliances/cisco-nxosv.html)**
+  
+# Ansible for Fortigate 
+
+## Reference
 - https://www.linkedin.com/pulse/fortigate-inside-gns3-cli-web-access-issa-itani/
 - https://support.fortinet.com/Download/VMImages.aspx
 - https://www.gns3network.com/how-to-deploy-fortigate-virtual-firewall-in-gns3/
 
+
+## Configure Fortios Device
 
 ```
 FortiGate-VM64-KVM login: admin
