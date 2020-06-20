@@ -41,7 +41,6 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible Blog/Articles to Follow](#ansible-blogarticles-to-follow)
 - [Ansible Interview Questions](#ansible-interview-questions)
 - [Other References](#other-references)
-  - [Red Hat Ansible Tower Life Cycle](#red-hat-ansible-tower-life-cycle)
 
 <!-- /TOC -->
 
@@ -53,9 +52,9 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 # Ansible Playbook References
 
 - [Ansible Examples](https://github.com/ginigangadharan/ansible-examples){:target="_blank"}
-(*Forked from https://github.com/ansible/ansible-examples*)
+(*Forked from [@ansible](https://github.com/ansible/ansible-examples)*)
 - [Ansible for DevOps](https://github.com/ginigangadharan/ansible-for-devops){:target="_blank"} 
-(*Forked from https://github.com/geerlingguy/ansible-for-devops*)
+(*Forked from [geerlingguy](https://github.com/geerlingguy/ansible-for-devops)*)
 - [Ansible NXOS Samples](https://github.com/ginigangadharan/Ansible-NXOS){:target="_blank"} (Network Automation)
 
 # Tools for Ansible
@@ -80,6 +79,4 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 # Other References
 
-## Red Hat Ansible Tower Life Cycle
-
-https://access.redhat.com/support/policy/updates/ansible-tower
+- [Red Hat Ansible Tower Life Cycle](https://access.redhat.com/support/policy/updates/ansible-tower)
