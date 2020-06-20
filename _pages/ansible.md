@@ -9,15 +9,12 @@ featured: false
 hidden: false
 ---
 
-# Learning Materials for Ansible Automation.
+**Learning Materials for Ansible Automation.**
 
-<br><br>
-
-- **[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/)** - Ansible Guide for Absolute Beginners
+**[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/)** - Ansible Guide for Absolute Beginners
 
 <!-- TOC orderedlist:false -->
 
-- [Learning Materials for Ansible Automation.](#learning-materials-for-ansible-automation)
 - [Ansible for Absolute Beginners](#ansible-for-absolute-beginners)
 - [Ansible Playbook References](#ansible-playbook-references)
 - [Tools for Ansible](#tools-for-ansible)
