@@ -13,23 +13,22 @@ These are very basic network commands and setup instructions for my Ansible Netw
 
 <!-- TOC -->
 
-- [Enable SSH on Cisco Devices](#enable-ssh-on-cisco-devices)
+- [](#)
 - [Enable SSH on HPE Comware7 Devices](#enable-ssh-on-hpe-comware7-devices)
 - [Assign IP Address](#assign-ip-address)
-- [Configure SSH/tty and login](#configure-sshtty-and-login)
+- [Configure SSH/tty and login on Cisco Devices](#configure-sshtty-and-login-on-cisco-devices)
 - [Add a user for remote access](#add-a-user-for-remote-access)
 - [Configure Router interface](#configure-router-interface)
 - [Configure routes](#configure-routes)
 
 <!-- /TOC -->
 
-# Enable SSH on Cisco Devices
-
 # Enable SSH on HPE Comware7 Devices
 
 # Assign IP Address
 
-# Configure SSH/tty and login
+# Enable SSH/tty and login on Cisco Devices
+
 ```
 (config)# line vty 0 4
 (config-line)# transport input all

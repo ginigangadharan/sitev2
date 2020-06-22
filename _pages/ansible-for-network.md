@@ -23,6 +23,7 @@ hidden: false
   - [Backup eos](#backup-eos)
   - [Change config](#change-config)
   - [Add VLAN nxos](#add-vlan-nxos)
+  - [Add ACL (Access Control List)](#add-acl-access-control-list)
   - [Add config iso_config](#add-config-iso_config)
 - [Appendix](#appendix)
   - [Download IOS Images](#download-ios-images)
@@ -34,6 +35,7 @@ hidden: false
 - **[Ansible for Network Automation](https://docs.ansible.com/ansible/latest/network/index.html)**
 - **[Red Hat : NETWORK AUTOMATION WITH ANSIBLE](https://www.ansible.com/overview/networking)**
 - **[Automating Network VLAN Deployments with Ansible](https://skyenet.tech/automating-network-vlan-deployments-with-ansible/)**
+- **[Networking with Ansible 104](https://dodgydudes.se/ansible-net104/)**
 
 # Privilege Escalation for Network Devices in Ansible 
 
@@ -260,6 +262,11 @@ ntp_commands: ntp server 192.168.1.1
         admin_state: up
         name: WEB
 ```
+
+## Add ACL (Access Control List)
+
+https://dodgydudes.se/ansible-net104/
+
 
 ## Add config iso_config
 
