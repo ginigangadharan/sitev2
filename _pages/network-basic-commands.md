@@ -44,14 +44,17 @@ These are very basic network commands and setup instructions for my Ansible Netw
 # Add a user for remote access
 
 ```
+configure terminal
 username user1 password mypassword
-username cisco password C!sco123
                                 # create a user with password
 username user1 privilege 15 
                                 # configure privilege     
-configure terminal
 enable password mypassword
                                 # setting enable password                         
+### Sample
+username cisco password C!sco123
+username cisco privilege 15
+enable password C!sco123
 ```
 
 # Configure Router interface
