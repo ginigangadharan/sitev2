@@ -36,6 +36,7 @@ hidden: false
 - **[Red Hat : NETWORK AUTOMATION WITH ANSIBLE](https://www.ansible.com/overview/networking)**
 - **[Automating Network VLAN Deployments with Ansible](https://skyenet.tech/automating-network-vlan-deployments-with-ansible/)**
 - **[Networking with Ansible 104](https://dodgydudes.se/ansible-net104/)**
+- **[ANSIBLE - VLAN PROVISIONING](https://thenetworkstack.com/ansible-vlan-provisioning/)**
 
 # Privilege Escalation for Network Devices in Ansible 
 

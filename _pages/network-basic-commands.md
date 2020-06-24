@@ -53,8 +53,15 @@ enable password mypassword
                                 # setting enable password                         
 ### Sample
 username cisco password C!sco123
+
 username cisco privilege 15
+#or 
+username cisco role priv-15
+
 enable password C!sco123
+#or
+feature privilege
+enable secret 0 admin priv-lvl 15
 ```
 
 # Configure Router interface
@@ -100,3 +107,10 @@ C       2.2.2.2 is directly connected, Loopback0
 C       10.1.1.0 is directly connected, FastEthernet0/0
 
 ```
+
+## Enabled Terminal monitoring
+
+```
+# ter mon
+```
+
