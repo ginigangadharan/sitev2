@@ -2,9 +2,9 @@
 layout: post
 title: Skopeo Cheat Sheet
 categories: [ cloud ]
-image: "assets/images/2020/ansible-automation.png"
+#image: "assets/images/2020/ansible-automation.png"
 tags: [cloud, openshift, containers, kubernetes]
-permalink: skopeo-cheat-sheet
+permalink: skopeo
 author: gini
 featured: false
 hidden: false
