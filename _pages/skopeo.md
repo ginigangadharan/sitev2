@@ -16,6 +16,7 @@ hidden: false
 - **[Skopeo Help](https://www.systutorials.com/docs/linux/man/1-skopeo/)**
 - **[Skopeo 1.0 released](https://www.redhat.com/en/blog/skopeo-10-released)
 
+*Note : This is s a living document and I will update whenever needed*
 
 ```
 # copy local oci image to destination

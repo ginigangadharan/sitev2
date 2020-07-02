@@ -10,15 +10,21 @@ featured: false
 hidden: false
 ---
 
-# podman - introduction
+Also See **[Skopeo Cheat Sheet](skopeo)** for details.
 
-Check version
+*Note : This is s a living document and I will update whenever needed*
 
 ```
+# Check version
 podman --version
 
 # Login to Registry
-podman login -u USER_NAME REGISTRY_URL
+sudo podman login -u USER_NAME REGISTRY_URL
+
+# Create a container 
+sudo podman run -d --name TEST \
+  quay.io/USER_NAME/IMAGE_NAME:VERSION
+
 ```
 
 # Ref:
