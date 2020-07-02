@@ -18,7 +18,7 @@ Check version
 podman --version
 
 # Login to Registry
-podman login -u USER_NAME quay.io
+podman login -u USER_NAME REGISTRY_URL
 ```
 
 # Ref:
