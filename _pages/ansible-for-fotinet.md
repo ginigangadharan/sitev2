@@ -34,9 +34,7 @@ $ curl -k -i -X POST http://10.1.10.70/logout
 
 Ref: [Overriding FortiGuard website categorization](https://help.fortinet.com/fos60hlp/60/Content/FortiOS/fortigate-security-profiles/Web_Filter/Overriding%20FortiGuard%20website%20categorization.htm)
 
-- [fortios_webfilter_ftgd_local_cat](https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_ftgd_local_cat_module.html) - Configure FortiGuard Web Filter local categories in Fortinet’s FortiOS and FortiGate
-- [fortios_webfilter_ftgd_local_rating](https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_ftgd_local_rating_module.html) - Configure local FortiGuard Web Filter local ratings in Fortinet’s FortiOS and FortiGate
-CLI commands
+## CLI commands
 
 In the CLI, the term is local category.
 
@@ -72,6 +70,10 @@ config webfilter ftgd-local-rating
   end
 ```
 
+## Using Ansible Modules
+
+- [fortios_webfilter_ftgd_local_cat](https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_ftgd_local_cat_module.html) - Configure FortiGuard Web Filter local categories in Fortinet’s FortiOS and FortiGate
+- [fortios_webfilter_ftgd_local_rating](https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_ftgd_local_rating_module.html) - Configure local FortiGuard Web Filter local ratings in Fortinet’s FortiOS and FortiGate
 
 # 1.1. Prerequisites
 
@@ -87,27 +89,6 @@ Ref: https://pypi.org/project/fortiosapi/
 ## Install FortiOS Collection from Ansible Galaxy
 
 `ansible-galaxy collection install fortinet.fortios`
-
-# 1.2. Configuring a URL filter
-
-Consult the Maximum Values Table on the Fortinet Document Library site for the most current information on the number of URL filter entries allowed for your FortiGate.
-
-For this example, the URL www.example*.com will be used. You configure the list by adding one or more URLs to it.
-
-## 1.2.1. To add a URL to a URL filter
-Go to Security Profiles > Web Filter.
-Select a web filter to edit.
-Under Static URL Filter, enable URL Filter, and select Create New.
-Enter the URL, without the “http”, for example: www.example*.com.
-Select a Type: Simple , Regular Expression, or Wildcard. In this example, select Wildcard.
-Select the Action to take against matching URLs: Exempt, Block, Allow, or Monitor.
-Select Enable.
-Select OK.
-
-https://ftnt-ansible-docs.readthedocs.io/en/latest/fortios_modules/fortios_webfilter_urlfilter.html
-https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_urlfilter_module.html
-
-https://docs.ansible.com/ansible/latest/modules/fortios_firewall_policy_module.html
 
 # Appendix
 ```
@@ -170,4 +151,7 @@ A - Disable https and use http
 # References
 
 https://docs.fortinet.com/document/fortigate/6.2.3/cookbook/954635/getting-started
+https://ftnt-ansible-docs.readthedocs.io/en/latest/fortios_modules/fortios_webfilter_urlfilter.html
+https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_urlfilter_module.html
+https://docs.ansible.com/ansible/latest/modules/fortios_firewall_policy_module.html
 
