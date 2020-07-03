@@ -3,10 +3,9 @@ layout: post
 title: GNS3 Infra Setup
 author: gini
 categories: [ ansible ]
-#image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
-tags: []
-show-avatar: false
-permalink: /gns3-infra-howto-setup
+image: "assets/images/2020/photo-1456428746267-a1756408f782-@clintadair.jpg"
+tags: [network lab, network automation, ansible network automation]
+permalink: /gns3-infra-setup
 featured: false
 hidden: false
 ---
