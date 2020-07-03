@@ -75,6 +75,15 @@ config webfilter ftgd-local-rating
 - [fortios_webfilter_ftgd_local_cat](https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_ftgd_local_cat_module.html) - Configure FortiGuard Web Filter local categories in Fortinet’s FortiOS and FortiGate
 - [fortios_webfilter_ftgd_local_rating](https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_ftgd_local_rating_module.html) - Configure local FortiGuard Web Filter local ratings in Fortinet’s FortiOS and FortiGate
 
+
+# Add the new member to blacklist group
+
+https://help.fortinet.com/fos60hlp/60/Content/FortiOS/fortigate-firewall/Object%20Configuration/Addresses/Address%20Groups.htm?Highlight=add%20address%20to%20group
+
+https://docs.fortinet.com/vm/cisco-aci/fortigate/5.6/sdn-connector/5.6.3/617358/configuring-the-firewall-address-and-address-group
+
+
+
 # 1.1. Prerequisites
 
 ## 1.1.1. Install fortiosAPI
@@ -89,6 +98,8 @@ Ref: https://pypi.org/project/fortiosapi/
 ## Install FortiOS Collection from Ansible Galaxy
 
 `ansible-galaxy collection install fortinet.fortios`
+
+https://github.com/fortinet-ansible-dev/ansible-galaxy-fortios-collection/tree/fos_v6.0.0/galaxy_1.0.13
 
 # Appendix
 ```
