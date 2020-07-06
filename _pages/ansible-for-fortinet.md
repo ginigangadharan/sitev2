@@ -5,7 +5,7 @@ author: gini
 categories: [ ansible ]
 image: "assets/images/2020/photo-1456428746267-a1756408f782-@clintadair.jpg"
 tags: [network lab, network automation, ansible network automation]
-permalink: /ansible-for-fotinet
+permalink: /ansible-for-fortinet
 featured: false
 hidden: false
 ---
