@@ -5,7 +5,7 @@ author: gini
 categories: [ ansible ]
 image: "assets/images/2020/photo-1456428746267-a1756408f782-@clintadair.jpg"
 tags: [network lab, network automation, ansible network automation]
-permalink: /ansible-for-fortinet
+permalink: ansible-for-fortinet
 featured: false
 hidden: false
 ---
@@ -29,6 +29,24 @@ $ curl -k -i -X GET http://10.1.10.70/api/v2/cmdb/router/static -b headers.txt
 ### logout
 $ curl -k -i -X POST http://10.1.10.70/logout
 ```
+
+# 1.1. Prerequisites
+
+## 1.1.1. Install fortiosAPI
+
+```
+pip install fortiosapi
+#or
+pip3 install fortiosapi
+```
+Ref: https://pypi.org/project/fortiosapi/
+
+## Install FortiOS Collection from Ansible Galaxy
+
+`ansible-galaxy collection install fortinet.fortios`
+
+https://github.com/fortinet-ansible-dev/ansible-galaxy-fortios-collection/tree/fos_v6.0.0/galaxy_1.0.13
+
 
 # Web Rating Overrides
 
@@ -82,24 +100,47 @@ https://help.fortinet.com/fos60hlp/60/Content/FortiOS/fortigate-firewall/Object%
 
 https://docs.fortinet.com/vm/cisco-aci/fortigate/5.6/sdn-connector/5.6.3/617358/configuring-the-firewall-address-and-address-group
 
+```
+config firewall address
 
+  edit "test-tag"
 
-# 1.1. Prerequisites
+    set type dynamic
 
-## 1.1.1. Install fortiosAPI
+    set sdn aci
+
+    set tenant "TENANT-NAME"
+
+    set epg-name "AP-NAME|EPG-NAME"
+
+    set sdn-tag "TAG-NAME"
+
+  next
+
+end
+
+config firewall addrgrp
+
+  edit "test-group"
+
+    set member "test-tag" "Adobe Login"
+
+  next
+
+end
+```
 
 ```
-pip install fortiosapi
-#or
-pip3 install fortiosapi
+FortiGate-VM64-KVM # show firewall addrgrp blklist1
+config firewall addrgrp
+    edit "blklist1"
+        set uuid b257da0e-bd59-51ea-2067-4bd93d716b5f
+        set member "block-10.6.10.0/24"
+        set comment "Added via Ansible"
+        set color 6
+    next
+end
 ```
-Ref: https://pypi.org/project/fortiosapi/
-
-## Install FortiOS Collection from Ansible Galaxy
-
-`ansible-galaxy collection install fortinet.fortios`
-
-https://github.com/fortinet-ansible-dev/ansible-galaxy-fortios-collection/tree/fos_v6.0.0/galaxy_1.0.13
 
 # Appendix
 ```
