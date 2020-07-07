@@ -15,29 +15,29 @@ Also See **[Skopeo Cheat Sheet](skopeo)** for details.
 *Note : This is s a living document and I will update whenever needed*
 
 ```
-podman --version                    # Check version
+$ podman --version                    # Check version
 
-sudo podman login -u USER_NAME REGISTRY_URL
+$ $ sudo podman login -u USER_NAME REGISTRY_URL
                                     # Login to Registry
-sudo podman login -u USER_NAME \
+$ sudo podman login -u USER_NAME \
   -p ${TOKEN} \
   REGISTRY_URL  
                                     # Login with token or password
                                     # eg: in OpenShift, token can retrive as
                                     # $ TOKEN=$(oc whoami -t)
 
-podman search REGISTRY_URL/IMAGE_NAME
+$ podman search REGISTRY_URL/IMAGE_NAME
                                     # search for an image in registry
 
-sudo podman run -d --name TEST \
+$ sudo podman run -d --name TEST \
   quay.io/USER_NAME/IMAGE_NAME:VERSION
                                     # Create a container 
 
-sudo podman ps                      # List running containers
-sudo podman stop CONTAINER_NAME     # STOP running containers
-sudo podman rm CONTAINER_NAME       # remove running containers
+$ sudo podman ps                    # List running containers
+$ sudo podman stop CONTAINER_NAME   # STOP running containers
+$ sudo podman rm CONTAINER_NAME     # remove running containers
 
-sudo podman logs CONTAINER_NAME                    
+$ sudo podman logs CONTAINER_NAME                    
                                     # check logs of running container
 
                                     #

@@ -19,17 +19,17 @@ hidden: false
 *Note : This is s a living document and I will update whenever needed*
 
 ```
-skopeo copy \
+$ skopeo copy \
   oci:/home/USER/SOURCE_PATH \
   docker://quay.io/USER/IMAGE_NAME:VER
                                     # copy local oci image to destination
-skopeo copy \
+$ skopeo copy \
   --dest-creds=USER_NAME:TOKEN \
   oci:/home/USER/SOURCE_PATH \
   docker://REGISTRY_URL/USER/IMAGE_NAME:VER
                                     # copy using credential to destination
 
-skopeo inspect REGISTRY_URL/IMAGE_NAME
+$ skopeo inspect REGISTRY_URL/IMAGE_NAME
                                     # inspect the image
 
                                     #
