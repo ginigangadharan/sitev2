@@ -39,8 +39,6 @@ $ sudo podman rm CONTAINER_NAME     # remove running containers
 
 $ sudo podman logs CONTAINER_NAME                    
                                     # check logs of running container
-
-                                    #
 ```
 
 # Reference

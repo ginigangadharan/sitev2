@@ -31,6 +31,4 @@ $ skopeo copy \
 
 $ skopeo inspect REGISTRY_URL/IMAGE_NAME
                                     # inspect the image
-
-                                    #
 ```
