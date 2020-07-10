@@ -10,14 +10,27 @@ featured: false
 hidden: false
 ---
 
-<!-- TOC -->autoauto- [image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"](#image-assetsimagesgini-redhat-cloudevent-2019-2jpg)auto- [show-avatar: false](#show-avatar-false)auto- [Setup FortiNet device on GNS3](#setup-fortinet-device-on-gns3)auto- [API References](#api-references)auto- [Web Rating Overrides](#web-rating-overrides)auto- [1.1. Prerequisites](#11-prerequisites)auto  - [1.1.1. Install fortiosAPI](#111-install-fortiosapi)auto  - [Install FortiOS Collection from Ansible Galaxy](#install-fortios-collection-from-ansible-galaxy)auto- [1.2. Configuring a URL filter](#12-configuring-a-url-filter)auto  - [1.2.1. To add a URL to a URL filter](#121-to-add-a-url-to-a-url-filter)auto- [Appendix](#appendix)auto- [Troubleshooting](#troubleshooting)auto  - [HTTPS issue](#https-issue)auto- [References](#references)autoauto<!-- /TOC -->
+- [1. Setup FortiNet device on GNS3](#1-setup-fortinet-device-on-gns3)
+- [2. API References](#2-api-references)
+- [3. Prerequisites](#3-prerequisites)
+  - [3.1. Install fortiosAPI](#31-install-fortiosapi)
+  - [3.2. Install FortiOS Collection from Ansible Galaxy](#32-install-fortios-collection-from-ansible-galaxy)
+- [4. Web Rating Overrides](#4-web-rating-overrides)
+  - [4.1. CLI commands](#41-cli-commands)
+  - [4.2. Using Ansible Modules](#42-using-ansible-modules)
+- [5. Add the new member to blacklist group](#5-add-the-new-member-to-blacklist-group)
+- [6. Appendix](#6-appendix)
+  - [6.1. ansible-fortios-generic module](#61-ansible-fortios-generic-module)
+- [7. Troubleshooting](#7-troubleshooting)
+  - [7.1. HTTPS issue](#71-https-issue)
+- [8. References](#8-references)
 
 
-# Setup FortiNet device on GNS3
+# 1. Setup FortiNet device on GNS3
 
 Refer : **[Fortinet Device Setup in GNS3](gns3-device-setup)**
 
-# API References
+# 2. API References
 
 - https://github.com/eoprede/ansible_fortios_api
 - [Use REST API Access FortiGate](https://kb.fortinet.com/kb/documentLink.do?externalID=FD46329)
@@ -30,9 +43,9 @@ $ curl -k -i -X GET http://10.1.10.70/api/v2/cmdb/router/static -b headers.txt
 $ curl -k -i -X POST http://10.1.10.70/logout
 ```
 
-# 1.1. Prerequisites
+# 3. Prerequisites
 
-## 1.1.1. Install fortiosAPI
+## 3.1. Install fortiosAPI
 
 ```
 pip install fortiosapi
@@ -41,18 +54,18 @@ pip3 install fortiosapi
 ```
 Ref: https://pypi.org/project/fortiosapi/
 
-## Install FortiOS Collection from Ansible Galaxy
+## 3.2. Install FortiOS Collection from Ansible Galaxy
 
 `ansible-galaxy collection install fortinet.fortios`
 
 https://github.com/fortinet-ansible-dev/ansible-galaxy-fortios-collection/tree/fos_v6.0.0/galaxy_1.0.13
 
 
-# Web Rating Overrides
+# 4. Web Rating Overrides
 
 Ref: [Overriding FortiGuard website categorization](https://help.fortinet.com/fos60hlp/60/Content/FortiOS/fortigate-security-profiles/Web_Filter/Overriding%20FortiGuard%20website%20categorization.htm)
 
-## CLI commands
+## 4.1. CLI commands
 
 In the CLI, the term is local category.
 
@@ -88,13 +101,13 @@ config webfilter ftgd-local-rating
   end
 ```
 
-## Using Ansible Modules
+## 4.2. Using Ansible Modules
 
 - [fortios_webfilter_ftgd_local_cat](https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_ftgd_local_cat_module.html) - Configure FortiGuard Web Filter local categories in Fortinet’s FortiOS and FortiGate
 - [fortios_webfilter_ftgd_local_rating](https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_ftgd_local_rating_module.html) - Configure local FortiGuard Web Filter local ratings in Fortinet’s FortiOS and FortiGate
 
 
-# Add the new member to blacklist group
+# 5. Add the new member to blacklist group
 
 https://help.fortinet.com/fos60hlp/60/Content/FortiOS/fortigate-firewall/Object%20Configuration/Addresses/Address%20Groups.htm?Highlight=add%20address%20to%20group
 
@@ -142,7 +155,7 @@ config firewall addrgrp
 end
 ```
 
-# Appendix
+# 6. Appendix
 ```
 config firewall address
 edit "eg  block ip1"
@@ -189,20 +202,20 @@ edit 1
     next
 end
 ```
-## ansible-fortios-generic module 
+## 6.1. ansible-fortios-generic module 
 
 Ref: [ansible-fortios-generic](https://github.com/fortinet/ansible-fortios-generic)
 
-# Troubleshooting
+# 7. Troubleshooting
 
-## HTTPS issue
+## 7.1. HTTPS issue
 [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1076)')))
 
 A - Disable https and use http
 
 
 
-# References
+# 8. References
 
 https://docs.fortinet.com/document/fortigate/6.2.3/cookbook/954635/getting-started
 https://ftnt-ansible-docs.readthedocs.io/en/latest/fortios_modules/fortios_webfilter_urlfilter.html
