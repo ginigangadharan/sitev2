@@ -42,5 +42,31 @@ s2i-test
 #-- configure all templated files as needed before creating image
 
 #-- Create the builder image
+$ cd s2i-test
+$ sudo podman build -t s2i-do288-httpd .
+
+#-- see images
+$ sudo podman images
+
+#-- Build application image by combining builder image + application
+#-- and output as Dockerfile in destination
+$ s2i build test/test-app/ \
+  s2i-do288-httpd s2i-sample-app \
+  --as-dockerfile ~/s2i-sample-app/Dockerfile
+
+$ cd ~/s2i-sample-app
+$ tree .
+.
+├── Dockerfile
+├── downloads
+│   ├── defaultScripts
+│   └── scripts
+└── upload
+    ├── scripts
+    └── src
+        └── index.html
+
+6 directories, 2 files
+
 
 ```

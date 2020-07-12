@@ -20,7 +20,7 @@ Also see,
 ```
 $ podman --version                    # Check version
 
-$ $ sudo podman login -u USER_NAME REGISTRY_URL
+$ sudo podman login -u USER_NAME REGISTRY_URL
                                     # Login to Registry
 $ sudo podman login -u USER_NAME \
   -p ${TOKEN} \
@@ -32,6 +32,9 @@ $ sudo podman login -u USER_NAME \
 $ podman search REGISTRY_URL/IMAGE_NAME
                                     # search for an image in registry
 
+$ sudo podman run --name test -u 1234 \
+  -p 8080:8080 -d s2i-sample-app
+
 $ sudo podman run -d --name TEST \
   quay.io/USER_NAME/IMAGE_NAME:VERSION
                                     # Create a container 
@@ -42,6 +45,10 @@ $ sudo podman rm CONTAINER_NAME     # remove running containers
 
 $ sudo podman logs CONTAINER_NAME                    
                                     # check logs of running container
+
+$ sudo podman build -t NAME .       # build container image from Dockerfile and spec
+$ sudo podman images                # see available images
+
 ```
 
 # Reference

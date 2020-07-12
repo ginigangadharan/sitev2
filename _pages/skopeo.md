@@ -24,16 +24,26 @@ Also see,
 *Note : This is s a living document and I will update whenever needed*
 
 ```
+#-- copy local oci image to destination
 $ skopeo copy \
   oci:/home/USER/SOURCE_PATH \
   docker://quay.io/USER/IMAGE_NAME:VER
-                                    # copy local oci image to destination
+
+#-- copy using credential to destination
 $ skopeo copy \
   --dest-creds=USER_NAME:TOKEN \
   oci:/home/USER/SOURCE_PATH \
   docker://REGISTRY_URL/USER/IMAGE_NAME:VER
-                                    # copy using credential to destination
 
+$ sudo skopeo copy \
+  containers-storage:localhost/IMAGE_NAME \
+  docker://REGISTRY_URL/USER/IMAGE_NAME:VER
+
+#-- inspect the image                               
 $ skopeo inspect REGISTRY_URL/IMAGE_NAME
-                                    # inspect the image
+
+#-- delete an image
+$ sudo skopeo delete \
+  docker://REGISTRY_URL/USER/IMAGE_NAME:VER
+
 ```
