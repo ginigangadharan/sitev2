@@ -32,7 +32,7 @@ Refer : **[Fortinet Device Setup in GNS3](gns3-device-setup)**
 
 # API References
 
-- https://github.com/eoprede/ansible_fortios_api
+- [GitHub : ansible_fortios_api](https://github.com/eoprede/ansible_fortios_api)
 - [Use REST API Access FortiGate](https://kb.fortinet.com/kb/documentLink.do?externalID=FD46329)
 
 ```
@@ -217,6 +217,7 @@ A - Disable https and use http
 
 # References
 
+- [GitHub : ansible-galaxy-fortios-collection](https://github.com/fortinet-ansible-dev/ansible-galaxy-fortios-collection)
 https://docs.fortinet.com/document/fortigate/6.2.3/cookbook/954635/getting-started
 https://ftnt-ansible-docs.readthedocs.io/en/latest/fortios_modules/fortios_webfilter_urlfilter.html
 https://docs.ansible.com/ansible/latest/modules/fortios_webfilter_urlfilter_module.html
