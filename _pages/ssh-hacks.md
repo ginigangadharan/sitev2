@@ -11,6 +11,7 @@ image: "assets/images/tools-1426927308491-6380b6a9936f.jpeg"
 ---
 - [SSH Login to Remote Server over Jumphost](#ssh-login-to-remote-server-over-jumphost)
 - [NFS over SSH Tunnel](#nfs-over-ssh-tunnel)
+- [Install python3 offline - Centos](#install-python3-offline---centos)
 
 
 ## SSH Login to Remote Server over Jumphost
@@ -33,3 +34,6 @@ ssh -fNv -L 3049:localhost:2049 user@JUMP_HOST
 mount -t nfs -o port=3049 localhost:/PATH_TO_DIR /mnt/MOUNT_PATH
 ```
     
+## Install python3 offline - Centos
+- [Python3 on CentOS Offline](https://medium.com/@CurtisForrester/installing-python3-in-centos-7-6-offline-69d45ca48054)
+- [Another one](https://7thzero.com/blog/preparing-an-offline-installation-of-python-3-4-packages-for-centos-6)

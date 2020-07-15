@@ -30,6 +30,9 @@ hidden: false
 
 <!-- /TOC -->
 
+
+Read : [How Network Automation is Different](https://docs.ansible.com/ansible/latest/network/getting_started/network_differences.html)
+
 # References
 - **[Ansible for Network Automation Tutorial](https://www.networkcomputing.com/networking/ansible-network-automation-tutorial)**
 - **[Ansible for Network Automation](https://docs.ansible.com/ansible/latest/network/index.html)**
