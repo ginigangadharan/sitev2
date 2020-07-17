@@ -13,11 +13,10 @@ hidden: true
 
 Here see the best tips for Kubernetes Exams - Certified Kubernetes Administrator (CKA) & Certified Kubernetes Application Developer (CKAD).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tpzA3AJt2jQ" frameborder="0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 <div class="videocontainer">
 <iframe src="https://www.youtube.com/embed/tpzA3AJt2jQ" 
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoiframe"></iframe>
 </div>
 
+<br><br>
 **[Watch Full Video](https://www.youtube.com/watch?v=tpzA3AJt2jQ&t=239s)**
