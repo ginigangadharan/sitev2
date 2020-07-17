@@ -6,8 +6,7 @@ categories: [ kubernetes ]
 image: "assets/images/2020/kubernetes-certification-cka-ckad-exam-tips-learning-path-n.png"
 tags: [kubernetes,sticky]
 ext_url: https://www.techbeatly.com/2020/05/kubernetes-certification-cka-ckad-exam-tips-learning-path.html
-#show-avatar: false
-featured: true
+featured: false
 hidden: true
 ---
 
