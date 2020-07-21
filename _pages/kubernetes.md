@@ -46,6 +46,7 @@ These are collection of reference documents and blog posts from different expert
 
 - **[k8slens.dev](https://k8slens.dev/)** - Kuberenetes IDE for developers
 - **[portworx.com](https://install.portworx.com)** - Kubernetes spec generator
+- **[k9s]([Kubernetes CLI To Manage Your Clusters In Style](https://k9scli.io/))** - K9s is a terminal based UI to interact with your Kubernetes clusters. The aim of this project is to make it easier to navigate, observe and manage your deployed applications in the wild. K9s continually watches Kubernetes for changes and offers subsequent commands to interact with your observed resources.
 
 # 3. Career on Kubernetes
 
