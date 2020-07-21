@@ -29,6 +29,9 @@ $ sudo podman login -u USER_NAME \
                                     # eg: in OpenShift, token can retrive as
                                     # $ TOKEN=$(oc whoami -t)
 
+$ podman logout quay.io             # Remove login credentials for registry.redhat.io
+$ podman logout --all               # Remove login credentials for all registries
+
 $ podman search REGISTRY_URL/IMAGE_NAME
                                     # search for an image in registry
 
