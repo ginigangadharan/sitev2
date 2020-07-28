@@ -9,5 +9,18 @@ permalink: terraform
 featured: false
 hidden: false
 ---
+**Warning: Scrap notes only, DO NOT refer for production !!!**
 
 https://github.com/collabnix/terraform/blob/master/beginners/README.md
+
+https://www.youtube.com/watch?v=SLB_c_ayRMo&feature=youtu.be
+
+https://cloud.ibm.com/docs/terraform?topic=terraform-ansible
+
+https://victorops.com/blog/writing-ansible-playbooks-for-new-terraform-servers
+
+```
+provisioner "local-exec" {
+  command = "sleep 120; ansible-playbook -i '${digitalocean_droplet.www-example.ipv4_address}' playbook.yml"
+}
+```

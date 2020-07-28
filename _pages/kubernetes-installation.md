@@ -65,6 +65,9 @@ You can also mention the kubernetes version you need to install.
 
 ```
 minikube start --kubernetes-version v1.16.0
+
+# or 
+sudo minikube start --vm-driver=none --wait=false --kubernetes-version=v1.18.3
 ```
 
 ### 2.3.1. Start minikube cluster

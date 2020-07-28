@@ -40,6 +40,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible for Network Automation](#ansible-for-network-automation)
 - [Ansible Blog/Articles to Follow](#ansible-blogarticles-to-follow)
 - [Ansible Interview Questions](#ansible-interview-questions)
+- [Ansible Modules](#ansible-modules)
 - [Other References](#other-references)
 
 <!-- /TOC -->
@@ -76,6 +77,12 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Question Bank 1](https://career.guru99.com/ansible-interview-questions-answers/){:target="_blank"}
 - [Question Bank 2](https://www.edureka.co/blog/interview-questions/ansible-interview-questions/){:target="_blank"}
 - [Question Bank 3](https://mindmajix.com/ansible-interview-questions){:target="_blank"}
+
+# Ansible Modules
+
+- [Foreman Ansible Modules](https://github.com/theforeman/foreman-ansible-modules)
+
+
 
 # Other References
 
