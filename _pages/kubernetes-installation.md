@@ -212,4 +212,4 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 - https://www.youtube.com/watch?v=kMKkpgB6IwM
 - https://kubernetes.io/blog/2019/03/15/kubernetes-setup-using-ansible-and-vagrant/
 - https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-7c6b5c031a5d
-
+- https://www.azavea.com/blog/2014/10/30/running-vagrant-with-ansible-provisioning-on-windows/
