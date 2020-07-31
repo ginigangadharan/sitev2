@@ -27,4 +27,4 @@ provisioner "local-exec" {
 
 - [HashiCorp Infrastructure Automation Certification](https://www.hashicorp.com/certification/terraform-associate/)
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/terraform/certification/terraform-associate-study-guide)
-- 
+- [HashiCorp Certified Terraform Associate - Overview](https://www.youtube.com/watch?v=vhZEdqlXlSs) (Video)
