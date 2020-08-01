@@ -20,7 +20,8 @@ These are collection of reference documents and blog posts from different expert
 - [2. Kuberenets ToolBox](#2-kuberenets-toolbox)
 - [3. Career on Kubernetes](#3-career-on-kubernetes)
   - [3.1. Kubernetes Interview Questions](#31-kubernetes-interview-questions)
-- [4. References](#4-references)
+- [4. Tanzu Kubernetes Grid - TNG](#4-tanzu-kubernetes-grid---tng)
+- [5. References](#5-references)
 
 <!-- /TOC -->
 
@@ -45,13 +46,19 @@ These are collection of reference documents and blog posts from different expert
 
 - **[k8slens.dev](https://k8slens.dev/)** - Kuberenetes IDE for developers
 - **[portworx.com](https://install.portworx.com)** - Kubernetes spec generator
+- **[k9s]([Kubernetes CLI To Manage Your Clusters In Style](https://k9scli.io/))** - K9s is a terminal based UI to interact with your Kubernetes clusters. The aim of this project is to make it easier to navigate, observe and manage your deployed applications in the wild. K9s continually watches Kubernetes for changes and offers subsequent commands to interact with your observed resources.
 
 # 3. Career on Kubernetes
 
 ## 3.1. Kubernetes Interview Questions
 - [30 Best Kubernetes Interview Questions and Answers](https://www.whizlabs.com/blog/top-kubernetes-interview-questions/)
 
-# 4. References
+# 4. Tanzu Kubernetes Grid - TNG
+- [Cluster API](https://github.com/kubernetes-sigs/cluster-api)
+- [The Cluster API Book](https://cluster-api.sigs.k8s.io/)
+
+# 5. References
 
 - [Kubernetes Configuration & Best Practices](https://bcouetil.gitlab.io/academy/BP-kubernetes.html)
 - [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
+

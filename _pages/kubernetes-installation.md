@@ -13,7 +13,6 @@ hidden: false
 
 <!-- TOC orderedlist:true -->
 
-- [1. Installing Kubernetes](#1-installing-kubernetes)
 - [2. minikube](#2-minikube)
   - [2.1. Just to test ? Use this Lab](#21-just-to-test--use-this-lab)
   - [2.2. Download and Install minikube](#22-download-and-install-minikube)
@@ -25,6 +24,7 @@ hidden: false
 - [4. Installing Kubernetes the Hardway](#4-installing-kubernetes-the-hardway)
   - [4.1. Install virtualbox and vagarnt](#41-install-virtualbox-and-vagarnt)
   - [4.2. then....](#42-then)
+- [Kubernetes Installation using Ansible](#kubernetes-installation-using-ansible)
 
 <!-- /TOC -->
 
@@ -65,6 +65,9 @@ You can also mention the kubernetes version you need to install.
 
 ```
 minikube start --kubernetes-version v1.16.0
+
+# or 
+sudo minikube start --vm-driver=none --wait=false --kubernetes-version=v1.18.3
 ```
 
 ### 2.3.1. Start minikube cluster
@@ -203,3 +206,10 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 ## 4.1. Install virtualbox and vagarnt
 
 ## 4.2. then....
+
+# Kubernetes Installation using Ansible
+
+- https://www.youtube.com/watch?v=kMKkpgB6IwM
+- https://kubernetes.io/blog/2019/03/15/kubernetes-setup-using-ansible-and-vagrant/
+- https://medium.com/faun/how-to-create-your-own-kubernetes-cluster-using-ansible-7c6b5c031a5d
+- https://www.azavea.com/blog/2014/10/30/running-vagrant-with-ansible-provisioning-on-windows/

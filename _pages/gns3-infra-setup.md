@@ -3,10 +3,9 @@ layout: post
 title: GNS3 Infra Setup
 author: gini
 categories: [ ansible ]
-#image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
-tags: []
-show-avatar: false
-permalink: /gns3-infra-howto-setup
+image: "assets/images/2020/photo-1456428746267-a1756408f782-@clintadair.jpg"
+tags: [network lab, network automation, ansible network automation]
+permalink: /gns3-infra-setup
 featured: false
 hidden: false
 ---
@@ -47,3 +46,29 @@ Connect to real network
 ```
 sudo apt install  gns3-server
 ```
+
+# Prepare GNS3 VM for oVirt
+
+## Install GNS3 on a remote server
+
+Ref: [Install GNS3 on a remote server](https://docs.gns3.com/1c2Iyiczy6efnv-TS_4Hc7p11gn03-ytz9ukgwFfckDk/index.html)
+
+```
+cd /tmp
+curl https://raw.githubusercontent.com/GNS3/gns3-server/master/scripts/remote-install.sh > gns3-remote-install.sh
+
+## without VPN
+bash gns3-remote-install.sh --with-iou --with-i386-repository
+
+## with VPN
+bash gns3-remote-install.sh --with-openvpn --with-iou --with-i386-repository
+```
+Access the GNS3 Server on - http://YOUR_IP:3080/
+
+## [NOT Tried Yet] Convert VirtualBox to KVM format
+
+- Download GNS3 VM for VirtualBOx
+- Convert to `qcow2` format
+
+`qemu-img convert -f vdi -O qcow2 disk-1.vdi disk-2.qcow2`
+

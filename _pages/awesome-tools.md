@@ -1,13 +1,9 @@
 ---
 layout: post
 title: Awesome DevSecSysOps Tools on Internet
-
-# author: gini
+author: gini
 categories: [ cloud ]
-
-# image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
 tags: [cloud, automation, containers, kubernetes]
-show-avatar: false
 permalink: awesome-tools
 featured: false
 hidden: false
