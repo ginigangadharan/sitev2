@@ -14,3 +14,7 @@ hidden: false
 - Security
 - Operations
 
+```
+/bin/start_consul.sh
+
+```
