@@ -83,7 +83,8 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Foreman Ansible Modules](https://github.com/theforeman/foreman-ansible-modules)
 
 
-
 # Other References
 
 - [Red Hat Ansible Tower Life Cycle](https://access.redhat.com/support/policy/updates/ansible-tower)
+- [Red Hat Ansible Automation Platform Workshops](https://github.com/ansible/workshops)
+- [DEEP DIVE INTO ANSIBLE NETWORK RESOURCE MODULE](https://www.ansible.com/deep-dive-into-ansible-network-resource-module)
