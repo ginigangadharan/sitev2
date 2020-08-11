@@ -7,8 +7,8 @@ image: "assets/images/2020/10-tips-for-kuberenetes-exam-cka-ckad.png"
 tags: [kubernetes,sticky]
 ext_url: https://www.youtube.com/watch?v=tpzA3AJt2jQ&t=239s
 #show-avatar: false
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 Here see the best tips for Kubernetes Exams - Certified Kubernetes Administrator (CKA) & Certified Kubernetes Application Developer (CKAD).
