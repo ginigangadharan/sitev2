@@ -4,7 +4,7 @@ title: Deploy Minikube Using Vagrant and Ansible on VirtualBox – Infrastructur
 author: gini
 categories: [ kubernetes ]
 image: "assets/images/2020/minikube-ansible-vagrant-virtualbox-iac.jpg"
-tags: [kubernetes,sticky]
+tags: [kubernetes]
 ext_url: https://www.techbeatly.com/2020/08/deploy-minikube-using-vagrant-and-ansible-on-virtualbox-infrastructure-as-code.html
 #show-avatar: false
 featured: true
