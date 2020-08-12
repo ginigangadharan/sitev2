@@ -51,8 +51,16 @@ $ curl -k -i -X POST http://10.1.10.70/logout
 pip install fortiosapi
 #or
 pip3 install fortiosapi
+
+#or
+python3.6 -m pip install <module>
 ```
 Ref: https://pypi.org/project/fortiosapi/
+
+**Dependancy**
+- oyaml
+- 
+
 
 ## Install FortiOS Collection from Ansible Galaxy
 
