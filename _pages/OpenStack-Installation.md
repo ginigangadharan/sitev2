@@ -292,3 +292,6 @@ systemctl restart openstack-swift-proxy.service
 systemctl restart openvswitch.service
 systemctl restart rabbitmq-server.service
 ```
+
+
+Refer : [ALL-IN-ONE RED HAT OPENSTACK PLATFORM INSTALLATION](https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/16.0/html/quick_start_guide/all-in-one-openstack-installation)
