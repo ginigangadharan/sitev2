@@ -42,10 +42,11 @@ hidden: false
     - [Check Comware Ansible Documentation](#check-comware-ansible-documentation)
     - [Assign port with VLAN](#assign-port-with-vlan)
 - [Appendix](#appendix-2)
-  - [Troubleshooting](#troubleshooting)
+- [Troubleshooting](#troubleshooting)
   - [SSH Error](#ssh-error)
   - [discovered_interpreter_python": "/usr/bin/python"](#discovered_interpreter_python-usrbinpython)
   - [Ansible with netconf](#ansible-with-netconf)
+  - [Enable scp on IOS device](#enable-scp-on-ios-device)
   - [References](#references)
 
 <!-- /TOC -->
@@ -421,7 +422,7 @@ line vty 0 15
 # Appendix
 - [Connect GNS3 to the Internet (local server)](https://docs.gns3.com/1vFs-KENh2uUFfb47Q2oeSersmEK4WahzWX-HrMIMd00/index.html)
 
-## Troubleshooting
+# Troubleshooting
 https://docs.ansible.com/ansible/latest/network/user_guide/network_debug_troubleshooting.html
 
 ## SSH Error
@@ -447,6 +448,25 @@ fatal: [ac-02]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "
 - [Netconf enabled Platform Options](https://docs.ansible.com/ansible/latest/network/user_guide/platform_netconf_enabled.html)
 
 
+## Enable scp on IOS device
+scp ~/Downloads/c2960x-universalk9-mz.152-2.E5.bin sysadmin1@192.0.2.1:flash2:/
+Password:
+Administratively disabled.
+
+To fix that, get into config mode and run:
+
+ip scp server enable
+
+Ref: https://www.ispcolohost.com/2016/08/16/scping-an-ios-image-to-a-cisco-2960xr-stack/
+
+
+- sometimes it happens due to encryption or integrity mismatch between SCP server and ASA. so you can support all cipher methods by the following 2 command (I face the same issue and TAC fixed bu those command)
+- 
+```
+ssh cipher encryption all
+
+ssh cipher integrity all
+```
 
 ## References
 - [Getting Started with Ansible for Network Automation](https://docs.ansible.com/ansible/latest/network/getting_started/index.html)
