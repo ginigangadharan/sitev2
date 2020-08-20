@@ -14,12 +14,27 @@ Reference Documents for Red Hat Products
 <!-- TOC -->
 
 - [1. Subscription](#1-subscription)
+  - [1.1. Subscription Reference](#11-subscription-reference)
 - [2. Repository & Satellite](#2-repository--satellite)
 - [3. Useful Links](#3-useful-links)
 
 <!-- /TOC -->
 
 # 1. Subscription
+
+```
+subscription-manager register
+subscription-manager register --username <username> --password <password> --auto-attach
+subscription-manager refresh
+subscription-manager attach --auto
+
+# Unregistering a system
+subscription-manager remove --all
+subscription-manager unregister
+subscription-manager clean
+```
+
+## 1.1. Subscription Reference
 
 - [How to register and subscribe a system offline to the Red Hat Customer Portal](https://access.redhat.com/solutions/3121571)
 - [How to register and subscribe a system to the Red Hat Customer Portal using Red Hat Subscription-Manager](https://access.redhat.com/solutions/253273)
