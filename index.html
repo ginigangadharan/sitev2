@@ -29,7 +29,7 @@ description: "Personal Notes, Guides and Blogs"
                 <div style="padding: 20px; vertical-align: middle;">
                     {% for post in site.pages %} 
                         {% if post.titleshort %}
-                            <a class="sscroll btn btn-light btn-sm font-weight-bold" style="padding: 3px; margin: 3px;" href="{{site.baseurl}}{{post.url}}">{{ post.titleshort | downcase }}</a>
+                            <a class="sscroll btn btn-light btn-sm font-weight-bold" style="padding: 6px; margin: 6px;" href="{{site.baseurl}}{{post.url}}">{{ post.titleshort | downcase }}</a>
                         {% endif %}
                     {% endfor %}
                 </div>
@@ -182,14 +182,6 @@ description: "Personal Notes, Guides and Blogs"
 </div> 
 {% endif %}
 {% endfor %}
-
-
-<!-- testing -->
-<div>
-{% for post in site.pages %} 
-<a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}{{post.url}}">{{ post.title | downcase }}</a>
-{% endfor %}
-</div>
 
 {% endif %} <!--endif page url is / -->
     
