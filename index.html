@@ -25,11 +25,11 @@ description: "Personal Notes, Guides and Blogs"
                 <a href="{{ site.baseurl }}/about" class="btn btn-dark">Read More</a>
             </div>
             <!-- removed d-none from below-->
-            <div class="col-md-6  d-md-block pr-0" style="background-position: center;">	
-                <div style="padding: 20px;">
+            <div class="col-md-6  d-md-block pr-0" style="vertical-align: middle;">	
+                <div style="padding: 20px; vertical-align: middle;">
                     {% for post in site.pages %} 
                         {% if post.titleshort %}
-                            <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}{{post.url}}">{{ post.titleshort | downcase }}</a>
+                            <a class="sscroll btn btn-light btn-sm font-weight-bold" style="padding: 3px; margin: 3px;" href="{{site.baseurl}}{{post.url}}">{{ post.titleshort | downcase }}</a>
                         {% endif %}
                     {% endfor %}
                 </div>
