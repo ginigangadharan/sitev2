@@ -9,10 +9,8 @@ show-avatar: false
 permalink: /kubernetes-installation
 featured: false
 hidden: false
-showindex: true
+titleshort: Kubernetes Installation
 ---
-
-<!-- TOC orderedlist:true -->
 
 - [2. minikube](#2-minikube)
   - [2.1. Just to test ? Use this Lab](#21-just-to-test--use-this-lab)
@@ -26,8 +24,6 @@ showindex: true
   - [4.1. Install virtualbox and vagarnt](#41-install-virtualbox-and-vagarnt)
   - [4.2. then....](#42-then)
 - [Kubernetes Installation using Ansible](#kubernetes-installation-using-ansible)
-
-<!-- /TOC -->
 
 # 2. minikube
 

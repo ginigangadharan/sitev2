@@ -7,7 +7,7 @@ show-avatar: false
 permalink: ansible-for-vmware
 featured: false
 hidden: false
-showindex: true
+titleshort: Ansible VMWare
 ---
 
 Ref: [VMware Guide for Ansible](https://docs.ansible.com/ansible/latest/scenario_guides/guide_vmware.html)

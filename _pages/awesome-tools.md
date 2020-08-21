@@ -8,12 +8,10 @@ permalink: awesome-tools
 featured: false
 hidden: false
 image: "assets/images/tools-1426927308491-6380b6a9936f.jpeg"
-showindex: true
+titleshort: Tools
 ---
 
 This is a page where I keep all those list of tools on internet, which we use for our day-to-day tasks.
-
-<!-- TOC depthfrom:2 orderedlist:false -->
 
 - [Utilities](#utilities)
 - [Cloud Management](#cloud-management)
@@ -22,8 +20,6 @@ This is a page where I keep all those list of tools on internet, which we use fo
 - [Diagram and Flowcharts Maker](#diagram-and-flowcharts-maker)
 - [Collaboration Tools](#collaboration-tools)
 - [Kubernetes](#kubernetes)
-
-<!-- /TOC -->
 
 ## Utilities
 

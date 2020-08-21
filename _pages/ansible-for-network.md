@@ -7,7 +7,7 @@ show-avatar: false
 permalink: ansible-for-network
 featured: false
 hidden: false
-showindex: true
+titleshort: Ansible Network
 ---
 
 <!-- TOC orderedlist:false depthfrom:2 -->

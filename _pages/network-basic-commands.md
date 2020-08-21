@@ -7,7 +7,7 @@ show-avatar: false
 permalink: network-basic-commands
 featured: false
 hidden: false
-showindex: true
+titleshort: Network
 ---
 
 These are very basic network commands and setup instructions for my Ansible Network Automation labs. I am keeping those here for quick reference in case I am in trouble with a quick lab setup in GNS3.

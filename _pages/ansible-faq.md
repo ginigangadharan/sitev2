@@ -7,16 +7,12 @@ show-avatar: false
 permalink: ansible-faq
 featured: false
 hidden: false
-showindex: true
+titleshort: Ansible FAQ
 ---
-<!-- TOC depthfrom:3 orderedlist:false -->
-
 - [What is Ansible](#what-is-ansible)
 - [What is Ansible Tower](#what-is-ansible-tower)
 - [Why Ansible is different than other automation tools](#why-ansible-is-different-than-other-automation-tools)
-- [Can I use Ansible for Auto Remediation ?](#can-i-use-ansible-for-auto-remediation)
-
-<!-- /TOC -->
+- [Can I use Ansible for Auto Remediation ?](#can-i-use-ansible-for-auto-remediation-)
 
 ### What is Ansible  
 

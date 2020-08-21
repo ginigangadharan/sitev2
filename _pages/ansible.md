@@ -7,7 +7,7 @@ tags: [cloud, automation, containers, kubernetes]
 permalink: /ansible
 featured: false
 hidden: false
-showindex: true
+titleshort: Ansible
 ---
 
 # Ansible for Absolute Beginners

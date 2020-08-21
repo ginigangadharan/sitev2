@@ -1,19 +1,15 @@
 ---
 layout: post
 title: Ansible Use Case Gallery
-
-# author: gini
+author: gini
 categories: [ ansible ]
-
-# image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
 tags: []
 show-avatar: false
 permalink: /ansible-use-case-gallery
 featured: false
 hidden: false
-showindex: true
+titleshort: Ansible Use Case
 ---
-<!-- TOC depthfrom:2 orderedlist:false -->
 
 - [Immutable Infrastructure](#immutable-infrastructure)
 - [Provisioning](#provisioning)
@@ -30,9 +26,7 @@ showindex: true
   - [Ansible Oracles Modules](#ansible-oracles-modules)
   - [Database binary patching](#database-binary-patching)
 - [Service license agreements](#service-license-agreements)
-
-<!-- /TOC -->
-
+  
 ## Immutable Infrastructure
 
 - Configure your re-buildable replicas of server set or application stack.

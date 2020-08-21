@@ -7,7 +7,7 @@ show-avatar: false
 permalink: oci-cert-developer-associate
 featured: false
 hidden: false
-showindex: true
+titleshort: Oracle Cloud
 ---
 <!-- TOC orderedlist:false -->
 

@@ -7,7 +7,7 @@ show-avatar: false
 permalink: /openshift-installation
 featured: false
 hidden: false
-showindex: true
+titleshort: OpenShift Installation
 ---
 
 

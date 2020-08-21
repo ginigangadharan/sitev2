@@ -25,11 +25,11 @@ description: "Personal Notes, Guides and Blogs"
                 <a href="{{ site.baseurl }}/about" class="btn btn-dark">Read More</a>
             </div>
             <!-- removed d-none from below-->
-            <div class="col-md-6  d-md-block pr-0" style="background-position: center; background-size:cover;background-image:url({{site.baseurl}}/assets/images/gini-redhat-cloudevent-2019-2.jpg);">	
-                <div>
+            <div class="col-md-6  d-md-block pr-0" style="background-position: center;">	
+                <div style="padding: 20px;">
                     {% for post in site.pages %} 
-                        {% if post.showindex == true %}
-                            <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}{{post.url}}">{{ post.title | downcase }}</a>
+                        {% if post.titleshort %}
+                            <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}{{post.url}}">{{ post.titleshort | downcase }}</a>
                         {% endif %}
                     {% endfor %}
                 </div>

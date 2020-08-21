@@ -8,7 +8,7 @@ permalink: s2i
 author: gini
 featured: false
 hidden: false
-showindex: true
+titleshort: s2i
 ---
 
 Also See,

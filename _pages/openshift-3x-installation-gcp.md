@@ -7,10 +7,8 @@ show-avatar: false
 permalink: /openshift-3x-installation-gcp
 featured: false
 hidden: false
-showindex: true
+titleshort: OCP 3x
 ---
-
-<!-- TOC -->
 
 - [Master Server Configuration](#master-server-configuration)
 	- [Step 1 : Update system](#step-1--update-system)
@@ -33,8 +31,6 @@ showindex: true
 	- [Uninstalling OCP Cluster](#uninstalling-ocp-cluster)
 - [Appendix](#appendix)
 	- [References](#references)
-
-<!-- /TOC -->
 
 
 This is a quick guide to setup OpenShift Origin Cluster with 1 Master and 2 Nodes. We will use ansible playbooks provided by [OpenShift-ansible](https://github.com/OpenShift/OpenShift-ansible). 

@@ -8,7 +8,7 @@ permalink: skopeo
 author: gini
 featured: false
 hidden: false
-showindex: true
+titleshort: skopeo
 ---
 
 Also see,

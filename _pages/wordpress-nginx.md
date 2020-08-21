@@ -11,50 +11,10 @@ show-avatar: false
 permalink: /wordpress-nginx
 featured: false
 hidden: false
-showindex: true
+titleshort: Wordpress nginx
 ---
 
-<!-- TOC orderedlist:true -->
-
-- [3. Install LEMP stack on Debian 10](#3-install-lemp-stack-on-debian-10)
-  - [3.1. Set Up a Firewall with UFW on Debian](#31-set-up-a-firewall-with-ufw-on-debian)
-    - [3.1.1. Install firewall - ufw](#311-install-firewall---ufw)
-    - [3.1.2. Configure Firewall policy](#312-configure-firewall-policy)
-    - [3.1.3. Enable ufw and check status](#313-enable-ufw-and-check-status)
-  - [3.2. Install nginx](#32-install-nginx)
-  - [3.3. Installing MariaDB](#33-installing-mariadb)
-  - [3.4. Installing PHP](#34-installing-php)
-  - [3.5. Configuring Nginx to Use the PHP Processor](#35-configuring-nginx-to-use-the-php-processor)
-    - [3.5.1. Create your project directory](#351-create-your-project-directory)
-    - [3.5.2. Create a configuration for your domain](#352-create-a-configuration-for-your-domain)
-    - [3.5.3. Activate new configuration](#353-activate-new-configuration)
-    - [3.5.4. Test config and reload nginx](#354-test-config-and-reload-nginx)
-    - [3.5.5. Create Test php file](#355-create-test-php-file)
-  - [3.6. Secure Nginx with Let's Encrypt on Debian 9](#36-secure-nginx-with-lets-encrypt-on-debian-9)
-    - [3.6.1. Installing Certbot](#361-installing-certbot)
-    - [3.6.2. Confirming Nginx’s Configuration](#362-confirming-nginxs-configuration)
-    - [3.6.3. Verify and reload nginx config](#363-verify-and-reload-nginx-config)
-    - [3.6.4. Obtaining an SSL Certificate](#364-obtaining-an-ssl-certificate)
-    - [3.6.5. Verifying Certbot Auto-Renewal](#365-verifying-certbot-auto-renewal)
-- [4. Configure Wordpress on LEMP Stack](#4-configure-wordpress-on-lemp-stack)
-  - [4.1. Create Database and User](#41-create-database-and-user)
-  - [4.2. Installing Additional PHP Extensions](#42-installing-additional-php-extensions)
-  - [4.3. Configuring Nginx](#43-configuring-nginx)
-  - [4.4. Downloading WordPress](#44-downloading-wordpress)
-  - [4.5. Setting up the WordPress Configuration File](#45-setting-up-the-wordpress-configuration-file)
-  - [4.6. Access the site and finish wordpress setup](#46-access-the-site-and-finish-wordpress-setup)
-- [5. Migrating or Moving a Wordpress sire](#5-migrating-or-moving-a-wordpress-sire)
-  - [5.1. Export Database](#51-export-database)
-  - [5.2. Backup website files in zip file](#52-backup-website-files-in-zip-file)
-  - [5.3. Copy databse and website backup to new server](#53-copy-databse-and-website-backup-to-new-server)
-  - [5.4. Restore database on new server](#54-restore-database-on-new-server)
-  - [5.5. Restore website files](#55-restore-website-files)
-  - [5.6. Update and Verify your wp-config.php](#56-update-and-verify-your-wp-configphp)
-- [6. Troubleshooting](#6-troubleshooting)
-  - [6.1. How to fix 404 not found nginx problem?](#61-how-to-fix-404-not-found-nginx-problem)
-- [7. Appendix:](#7-appendix)
-
-<!-- /TOC -->
+<!-- TOC orderedList:true -->autoauto1. [1. author: gini](#1-author-gini)auto2. [2. image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"](#2-image-assetsimagesgini-redhat-cloudevent-2019-2jpg)auto3. [3. Install LEMP stack on Debian 10](#3-install-lemp-stack-on-debian-10)auto  1. [3.1. Set Up a Firewall with UFW on Debian](#31-set-up-a-firewall-with-ufw-on-debian)auto    1. [3.1.1. Install firewall - ufw](#311-install-firewall---ufw)auto    2. [3.1.2. Configure Firewall policy](#312-configure-firewall-policy)auto    3. [3.1.3. Enable ufw and check status](#313-enable-ufw-and-check-status)auto  2. [3.2. Install nginx](#32-install-nginx)auto  3. [3.3. Installing MariaDB](#33-installing-mariadb)auto  4. [3.4. Installing PHP](#34-installing-php)auto  5. [3.5. Configuring Nginx to Use the PHP Processor](#35-configuring-nginx-to-use-the-php-processor)auto    1. [3.5.1. Create your project directory](#351-create-your-project-directory)auto    2. [3.5.2. Create a configuration for your domain](#352-create-a-configuration-for-your-domain)auto    3. [3.5.3. Activate new configuration](#353-activate-new-configuration)auto    4. [3.5.4. Test config and reload nginx](#354-test-config-and-reload-nginx)auto    5. [3.5.5. Create Test php file](#355-create-test-php-file)auto  6. [3.6. Secure Nginx with Let's Encrypt on Debian 9](#36-secure-nginx-with-lets-encrypt-on-debian-9)auto    1. [3.6.1. Installing Certbot](#361-installing-certbot)auto    2. [3.6.2. Confirming Nginx’s Configuration](#362-confirming-nginxs-configuration)auto    3. [3.6.3. Verify and reload nginx config](#363-verify-and-reload-nginx-config)auto    4. [3.6.4. Obtaining an SSL Certificate](#364-obtaining-an-ssl-certificate)auto    5. [3.6.5. Verifying Certbot Auto-Renewal](#365-verifying-certbot-auto-renewal)auto4. [4. Configure Wordpress on LEMP Stack](#4-configure-wordpress-on-lemp-stack)auto  1. [4.1. Create Database and User](#41-create-database-and-user)auto  2. [4.2. Installing Additional PHP Extensions](#42-installing-additional-php-extensions)auto  3. [4.3. Configuring Nginx](#43-configuring-nginx)auto  4. [4.4. Downloading WordPress](#44-downloading-wordpress)auto  5. [4.5. Setting up the WordPress Configuration File](#45-setting-up-the-wordpress-configuration-file)auto  6. [4.6. Access the site and finish wordpress setup](#46-access-the-site-and-finish-wordpress-setup)auto5. [5. Migrating or Moving a Wordpress sire](#5-migrating-or-moving-a-wordpress-sire)auto  1. [5.1. Export Database](#51-export-database)auto  2. [5.2. Backup website files in zip file](#52-backup-website-files-in-zip-file)auto  3. [5.3. Copy databse and website backup to new server](#53-copy-databse-and-website-backup-to-new-server)auto  4. [5.4. Restore database on new server](#54-restore-database-on-new-server)auto  5. [5.5. Restore website files](#55-restore-website-files)auto  6. [5.6. Update and Verify your wp-config.php](#56-update-and-verify-your-wp-configphp)auto6. [6. Troubleshooting](#6-troubleshooting)auto  1. [6.1. How to fix 404 not found nginx problem?](#61-how-to-fix-404-not-found-nginx-problem)auto7. [7. Appendix:](#7-appendix)autoauto<!-- /TOC -->
 
 
 # 3. Install LEMP stack on Debian 10

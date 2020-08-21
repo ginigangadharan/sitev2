@@ -7,7 +7,7 @@ tags: [cloud, automation, ovirt]
 permalink: /ansible-ovirt-rhv
 featured: false
 hidden: false
-showindex: true
+titleshort: Ansible RHV
 ---
 
 ## Modules

@@ -8,7 +8,7 @@ tags: [iac, terraform]
 permalink: terraform
 featured: false
 hidden: false
-showindex: true
+titleshort: terraform
 ---
 
 # References to Start

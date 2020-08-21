@@ -7,19 +7,12 @@ show-avatar: false
 permalink: /redhat-kb
 featured: false
 hidden: false
-showindex: true
+titleshort: Red Hat KB
 ---
 
 Reference Documents for Red Hat Products
 
-<!-- TOC -->
-
-- [1. Subscription](#1-subscription)
-  - [1.1. Subscription Reference](#11-subscription-reference)
-- [2. Repository & Satellite](#2-repository--satellite)
-- [3. Useful Links](#3-useful-links)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [1. Subscription](#1-subscription)auto  - [1.1. Subscription Reference](#11-subscription-reference)auto- [2. Repository & Satellite](#2-repository--satellite)auto- [3. Useful Links](#3-useful-links)autoauto<!-- /TOC -->
 
 # 1. Subscription
 

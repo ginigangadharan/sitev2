@@ -7,7 +7,7 @@ show-avatar: false
 permalink: vagrant
 featured: false
 hidden: false
-showindex: true
+titleshort: Vagrant
 ---
 
 <!-- TOC -->autoauto- [Installing vagrant](#installing-vagrant)auto- [Project Setup](#project-setup)auto- [Boxes](#boxes)auto  - [Manually downloading Boxes](#manually-downloading-boxes)auto  - [List down available boxes](#list-down-available-boxes)auto- [Configure Vagrantfile](#configure-vagrantfile)auto- [Vagrant Up and SSH to your machine](#vagrant-up-and-ssh-to-your-machine)auto- [Connect to your instance](#connect-to-your-instance)auto- [Synced Folders](#synced-folders)auto- [Provisioning](#provisioning)auto  - [Create bootstrap.sh](#create-bootstrapsh)auto- [Networking](#networking)auto  - [Port Forwarding](#port-forwarding)auto  - [Other Networking](#other-networking)auto- [Vagrant Share](#vagrant-share)auto- [Cleanup your vagrant environment](#cleanup-your-vagrant-environment)auto  - [Suspend](#suspend)auto  - [Halt](#halt)auto  - [Destroy](#destroy)auto- [Rebuilding the Environment](#rebuilding-the-environment)auto- [Providers](#providers)autoauto<!-- /TOC -->
