@@ -7,15 +7,10 @@ show-avatar: false
 permalink: /openshift-installation
 featured: false
 hidden: false
+showindex: true
 ---
 
-<!-- TOC -->
-
-- [1. VirtualBox Guest Addtion on CLI](#1-virtualbox-guest-addtion-on-cli)
-- [2. Troubleshooing VirtualBox VM](#2-troubleshooing-virtualbox-vm)
-  - [2.1. Unable to mount Shared folders in CLI](#21-unable-to-mount-shared-folders-in-cli)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [1. VirtualBox Guest Addtion on CLI](#1-virtualbox-guest-addtion-on-cli)auto- [2. Troubleshooing VirtualBox VM](#2-troubleshooing-virtualbox-vm)auto  - [2.1. Unable to mount Shared folders in CLI](#21-unable-to-mount-shared-folders-in-cli)autoauto<!-- /TOC -->
 
 # 1. VirtualBox Guest Addtion on CLI
 

@@ -24,7 +24,15 @@ description: "Personal Notes, Guides and Blogs"
                 </p>
                 <a href="{{ site.baseurl }}/about" class="btn btn-dark">Read More</a>
             </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-position: center; background-size:cover;background-image:url({{site.baseurl}}/assets/images/gini-redhat-cloudevent-2019-2.jpg);">	
+            <!-- removed d-none from below-->
+            <div class="col-md-6  d-md-block pr-0" style="background-position: center; background-size:cover;background-image:url({{site.baseurl}}/assets/images/gini-redhat-cloudevent-2019-2.jpg);">	
+                <div>
+                    {% for post in site.pages %} 
+                        {% if post.showindex == true %}
+                            <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}{{post.url}}">{{ post.title | downcase }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
@@ -151,7 +159,9 @@ description: "Personal Notes, Guides and Blogs"
     </div>
     
 </div>
-    
+
+
+
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
 {% for post in site.posts %} 
 {% if post.tags contains "sticky" %}
@@ -174,8 +184,12 @@ description: "Personal Notes, Guides and Blogs"
 {% endfor %}
 
 
-    
-
+<!-- testing -->
+<div>
+{% for post in site.pages %} 
+<a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}{{post.url}}">{{ post.title | downcase }}</a>
+{% endfor %}
+</div>
 
 {% endif %} <!--endif page url is / -->
     
@@ -189,7 +203,6 @@ description: "Personal Notes, Guides and Blogs"
         
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
-
         {% for post in paginator.posts %}
         
             {% include main-loop-card.html %}

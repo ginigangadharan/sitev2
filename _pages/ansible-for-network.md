@@ -7,6 +7,7 @@ show-avatar: false
 permalink: ansible-for-network
 featured: false
 hidden: false
+showindex: true
 ---
 
 <!-- TOC orderedlist:false depthfrom:2 -->

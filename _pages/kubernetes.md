@@ -8,6 +8,7 @@ tags: [cloud, automation, containers, kubernetes]
 permalink: kubernetes
 featured: false
 hidden: false
+showindex: true
 ---
 
 These are collection of reference documents and blog posts from different experts around.

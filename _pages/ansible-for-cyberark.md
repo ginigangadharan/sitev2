@@ -8,6 +8,7 @@ tags: [ansible, security, automation]
 permalink: ansible-for-cyberark
 featured: false
 hidden: false
+showindex: true
 ---
 
 - [References](#references)

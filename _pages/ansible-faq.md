@@ -7,6 +7,7 @@ show-avatar: false
 permalink: ansible-faq
 featured: false
 hidden: false
+showindex: true
 ---
 <!-- TOC depthfrom:3 orderedlist:false -->
 

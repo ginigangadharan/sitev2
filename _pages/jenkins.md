@@ -8,6 +8,7 @@ tags: [cloud, automation, containers, kubernetes]
 permalink: kubernetes
 featured: false
 hidden: false
+showindex: true
 ---
 
 - [Reference](#reference)

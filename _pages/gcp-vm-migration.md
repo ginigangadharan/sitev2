@@ -7,6 +7,7 @@ show-avatar: false
 permalink: gcp-vm-migration
 featured: false
 hidden: false
+showindex: true
 ---
 
 ## VM Migration: Planning

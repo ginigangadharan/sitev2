@@ -9,6 +9,7 @@ show-avatar: false
 permalink: /gns3-device-setup
 featured: false
 hidden: false
+showindex: true
 ---
 
 

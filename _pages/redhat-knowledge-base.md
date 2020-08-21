@@ -7,6 +7,7 @@ show-avatar: false
 permalink: /redhat-kb
 featured: false
 hidden: false
+showindex: true
 ---
 
 Reference Documents for Red Hat Products

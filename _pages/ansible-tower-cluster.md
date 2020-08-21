@@ -7,6 +7,7 @@ tags: [cloud, automation, containers, kubernetes]
 permalink: /ansible-tower-load-balancer
 featured: false
 hidden: false
+showindex: true
 ---
 
 

@@ -8,6 +8,7 @@ permalink: awesome-tools
 featured: false
 hidden: false
 image: "assets/images/tools-1426927308491-6380b6a9936f.jpeg"
+showindex: true
 ---
 
 This is a page where I keep all those list of tools on internet, which we use for our day-to-day tasks.

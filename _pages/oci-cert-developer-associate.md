@@ -7,6 +7,7 @@ show-avatar: false
 permalink: oci-cert-developer-associate
 featured: false
 hidden: false
+showindex: true
 ---
 <!-- TOC orderedlist:false -->
 

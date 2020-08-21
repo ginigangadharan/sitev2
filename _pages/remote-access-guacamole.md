@@ -7,6 +7,7 @@ show-avatar: false
 permalink: apache-guacamole
 featured: false
 hidden: false
+showindex: true
 ---
 
 https://www.youtube.com/watch?v=Ti6fQQcGy-Y&feature=youtu.be

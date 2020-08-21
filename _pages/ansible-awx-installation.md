@@ -11,6 +11,7 @@ show-avatar: false
 permalink: /awx-installation
 featured: false
 hidden: false
+showindex: true
 ---
 Ref: 
 - [Ansible AWX Project](https://github.com/ansible/awx)

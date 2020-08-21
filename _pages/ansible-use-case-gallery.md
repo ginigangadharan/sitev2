@@ -11,6 +11,7 @@ show-avatar: false
 permalink: /ansible-use-case-gallery
 featured: false
 hidden: false
+showindex: true
 ---
 <!-- TOC depthfrom:2 orderedlist:false -->
 

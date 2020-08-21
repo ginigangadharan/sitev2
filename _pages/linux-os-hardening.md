@@ -9,6 +9,7 @@ tags: [Linux, automation, security]
 permalink: linux-os-hardening
 featured: false
 hidden: false
+showindex: true
 ---
 
 https://www.pluralsight.com/blog/it-ops/linux-hardening-secure-server-checklist

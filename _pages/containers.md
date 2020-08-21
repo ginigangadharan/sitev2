@@ -4,6 +4,7 @@ title: Containers - Reference Notes
 #bigimg: /img/containers-dark.jpg
 permalink: /containers
 comments: false
+showindex: true
 ---
 
 # Containers - Reference Notes

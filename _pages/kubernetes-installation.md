@@ -9,6 +9,7 @@ show-avatar: false
 permalink: /kubernetes-installation
 featured: false
 hidden: false
+showindex: true
 ---
 
 <!-- TOC orderedlist:true -->

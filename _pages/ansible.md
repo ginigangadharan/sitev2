@@ -7,6 +7,7 @@ tags: [cloud, automation, containers, kubernetes]
 permalink: /ansible
 featured: false
 hidden: false
+showindex: true
 ---
 
 # Ansible for Absolute Beginners
@@ -31,19 +32,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 <h3>Table of Contents</h3>
 
-<!-- TOC orderedlist:false -->
-
-- [Ansible for Absolute Beginners](#ansible-for-absolute-beginners)
-- [Ansible Videos for Beginners](#ansible-videos-for-beginners)
-- [Ansible Playbook References](#ansible-playbook-references)
-- [Tools for Ansible](#tools-for-ansible)
-- [Ansible for Network Automation](#ansible-for-network-automation)
-- [Ansible Blog/Articles to Follow](#ansible-blogarticles-to-follow)
-- [Ansible Interview Questions](#ansible-interview-questions)
-- [Ansible Modules](#ansible-modules)
-- [Other References](#other-references)
-
-<!-- /TOC -->
+<!-- TOC orderedList:false -->autoauto- [Ansible for Absolute Beginners](#ansible-for-absolute-beginners)auto- [Ansible Videos for Beginners](#ansible-videos-for-beginners)auto- [Ansible Playbook References](#ansible-playbook-references)auto- [Tools for Ansible](#tools-for-ansible)auto- [Ansible for Network Automation](#ansible-for-network-automation)auto- [Ansible Blog/Articles to Follow](#ansible-blogarticles-to-follow)auto- [Ansible Interview Questions](#ansible-interview-questions)auto- [Ansible Modules](#ansible-modules)auto- [Other References](#other-references)autoauto<!-- /TOC -->
 
 # Ansible Videos for Beginners
 

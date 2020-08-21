@@ -7,21 +7,12 @@ show-avatar: false
 permalink: network-basic-commands
 featured: false
 hidden: false
+showindex: true
 ---
 
 These are very basic network commands and setup instructions for my Ansible Network Automation labs. I am keeping those here for quick reference in case I am in trouble with a quick lab setup in GNS3.
 
-<!-- TOC -->
-
-- [](#)
-- [Enable SSH on HPE Comware7 Devices](#enable-ssh-on-hpe-comware7-devices)
-- [Assign IP Address](#assign-ip-address)
-- [Configure SSH/tty and login on Cisco Devices](#configure-sshtty-and-login-on-cisco-devices)
-- [Add a user for remote access](#add-a-user-for-remote-access)
-- [Configure Router interface](#configure-router-interface)
-- [Configure routes](#configure-routes)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [Enable SSH on HPE Comware7 Devices](#enable-ssh-on-hpe-comware7-devices)auto- [Assign IP Address](#assign-ip-address)auto- [Enable SSH/tty and login on Cisco Devices](#enable-sshtty-and-login-on-cisco-devices)auto- [Add a user for remote access](#add-a-user-for-remote-access)auto- [Configure Router interface](#configure-router-interface)auto- [Configure routes](#configure-routes)auto  - [Enabled Terminal monitoring](#enabled-terminal-monitoring)autoauto<!-- /TOC -->
 
 # Enable SSH on HPE Comware7 Devices
 

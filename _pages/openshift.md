@@ -10,6 +10,7 @@ tags: [cloud, automation, containers, kubernetes]
 permalink: /openshift
 featured: false
 hidden: false
+showindex: true
 ---
 
 

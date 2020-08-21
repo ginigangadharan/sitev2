@@ -7,6 +7,7 @@ show-avatar: false
 permalink: ansible-wait-for-samples
 featured: false
 hidden: false
+showindex: true
 ---
 
 Ansible sample methods to wait for a machine to boot or a port to be ready.

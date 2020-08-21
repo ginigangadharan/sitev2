@@ -9,6 +9,7 @@ show-avatar: false
 permalink: /wordpress-apache
 featured: false
 hidden: false
+showindex: true
 ---
 
 Notes on Wordpress Site Migration

@@ -9,6 +9,7 @@ show-avatar: false
 permalink: /Notes-DevOps-Essentials
 featured: false
 hidden: false
+showindex: true
 ---
 
 ## What is DevOps

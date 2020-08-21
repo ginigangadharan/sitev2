@@ -11,6 +11,7 @@ show-avatar: false
 permalink: /wordpress-nginx
 featured: false
 hidden: false
+showindex: true
 ---
 
 <!-- TOC orderedlist:true -->

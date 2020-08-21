@@ -8,33 +8,13 @@ tags: [network lab, network automation, ansible network automation]
 permalink: ansible-for-data
 featured: false
 hidden: false
+showindex: true
 ---
 
 # Process JSON Data
 
-```
-  tasks: 
-    - name: Display the JSON file and collect data
-      shell: cat {{ cve_json_file }}
-      register: result
- 
-    - name: Save the Json data to a Variable
-      set_fact:
-         jsondata: "{{ result.stdout | from_json }}"
+Refer [Sample Playbook](https://gist.github.com/ginigangadharan/3c9a5842676bf00aa10f13ed82d3aa81)
 
-    - name: setDomainName
-      set_fact:
-          domain_name: "{{ jsondata | json_query(jmesquery) }}"
-      vars:
-          jmesquery: 'domain.name'
-
-    - name: Server Names
-      set_fact:  
-        servernames:  "{{ jsondata | json_query(jmesquery) }}"
-      vars:
-        jmesquery: '*.servers[*].name'
-```
-
-Ref:
+# References
 - [Ansible read JSON file – JSON file Parsing](https://www.middlewareinventory.com/blog/ansible-playbook-read-json-file/)
 - [JSON Query Filter](https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html#json-query-filter)

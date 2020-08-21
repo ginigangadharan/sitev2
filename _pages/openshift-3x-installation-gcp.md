@@ -7,6 +7,7 @@ show-avatar: false
 permalink: /openshift-3x-installation-gcp
 featured: false
 hidden: false
+showindex: true
 ---
 
 <!-- TOC -->

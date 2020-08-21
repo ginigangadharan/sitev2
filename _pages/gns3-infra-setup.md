@@ -8,6 +8,7 @@ tags: [network lab, network automation, ansible network automation]
 permalink: /gns3-infra-setup
 featured: false
 hidden: false
+showindex: true
 ---
 
 Step 1

@@ -10,6 +10,7 @@ show-avatar: false
 permalink: /ansible-best-practices
 featured: false
 hidden: false
+showindex: true
 ---
 
 Note : This document is based on original document - [Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html) - and I am keeping a modified copy with more details for my own references.

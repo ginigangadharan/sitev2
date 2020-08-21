@@ -9,6 +9,7 @@ show-avatar: false
 permalink: gmail-access-deletegated-account-from-mobile
 featured: false
 hidden: false
+showindex: true
 ---
 
 Instead of sharing password of your gmail account, you can easilty setup email delegation by which the delegated user can access same email account with his primary gmail login. 

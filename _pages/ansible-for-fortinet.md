@@ -8,6 +8,7 @@ tags: [network lab, network automation, ansible network automation]
 permalink: ansible-for-fortinet
 featured: false
 hidden: false
+showindex: true
 ---
 
 - [Setup FortiNet device on GNS3](#setup-fortinet-device-on-gns3)

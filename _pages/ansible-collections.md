@@ -7,6 +7,7 @@ show-avatar: false
 permalink: ansible-collections
 featured: false
 hidden: false
+showindex: true
 ---
 <!-- TOC depthfrom:1 orderedlist:false -->
 
