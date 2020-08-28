@@ -16,6 +16,8 @@ titleshort: terraform
 - [Get Started](https://learn.hashicorp.com/terraform)
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-study)
 - [Exam Review - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-review)
+
+
 - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - [Terraform Beginners Track](https://github.com/collabnix/terraform/blob/master/beginners/README.md) - (collabnix - GitHub)
 - [Using Ansible to automate app deployment on Terraform-provided infrastructure](https://cloud.ibm.com/docs/terraform?topic=terraform-ansible)
