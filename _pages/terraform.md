@@ -11,12 +11,20 @@ hidden: false
 titleshort: terraform
 ---
 
-# References to Start
+- [1. Introduction](#1-introduction)
+  - [1.1. References to Start](#11-references-to-start)
+- [2. Creating first Instance using Terraform](#2-creating-first-instance-using-terraform)
+  - [2.1. Configure AWS Credential](#21-configure-aws-credential)
+  - [2.2. Create your first terraform fie](#22-create-your-first-terraform-fie)
+  - [2.3. Destroying Resource](#23-destroying-resource)
+  - [2.4. Terraform DigitlOcean Droplet](#24-terraform-digitlocean-droplet)
+
+# 1. Introduction
+## 1.1. References to Start
 
 - [Get Started](https://learn.hashicorp.com/terraform)
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-study)
 - [Exam Review - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-review)
-
 
 - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - [Terraform Beginners Track](https://github.com/collabnix/terraform/blob/master/beginners/README.md) - (collabnix - GitHub)
@@ -26,11 +34,76 @@ titleshort: terraform
 - [HashiCorp Infrastructure Automation Certification](https://www.hashicorp.com/certification/terraform-associate/)
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/terraform/certification/terraform-associate-study-guide)
 - [HashiCorp Certified Terraform Associate - Overview](https://www.youtube.com/watch?v=vhZEdqlXlSs) (Video)
-  
-**Disclaimer: Scrap notes only, DO NOT refer for production !!!**
+- [terraform-beginner-to-advanced-resource - GitHub](https://github.com/zealvora/terraform-beginner-to-advanced-resource)
+
 
 ```
 provisioner "local-exec" {
   command = "sleep 120; ansible-playbook -i '${digitalocean_droplet.www-example.ipv4_address}' playbook.yml"
+}
+```
+
+# 2. Creating first Instance using Terraform
+
+-[Providers](https://www.terraform.io/docs/providers/index.html)
+
+eg: AWS credential can give as,
+- Static credentials
+- Environment variables
+- Shared credentials/configuration file
+- CodeBuild, ECS, and EKS Roles
+- EC2 Instance Metadata Service (IMDS and IMDSv2)
+
+## 2.1. Configure AWS Credential
+- IAM -> Users -> Create New user, Programatic Access
+- Attach Exisiting Policies -> Add Administrator Access
+- Take Access Key and Secret Key
+
+## 2.2. Create your first terraform fie
+
+```
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
+}
+
+resource "aws_instance" "web" {
+  ami           = data.aws_ami.ubuntu.id
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
+```
+
+Then, 
+- `terraform init` which will download and configure plugins which we have mentioned in the terraform file.
+- `terraform plan` will show you the items going to create
+- `terraform apply` will create the resources as per terraform template.
+
+## 2.3. Destroying Resource
+
+- `terraform destoy` will delete the resources
+- `terraform destroy -target aws_instance.web` - destroy specific resource only.
+- also you can comment out the resource, then terraform will detect it as not needed and will remove when you `plan` or `apply`
+
+## 2.4. Terraform DigitlOcean Droplet
+To generate API tokens from Digital Ocean
+
+https://cloud.digitalocean.com/account/api/tokens
+
+```
+provider "digitalocean" {
+  token = "PUT-YOUR-TOKEN-HERE"
+}
+
+
+resource "digitalocean_droplet" "kplabsdroplet" {
+  image  = "ubuntu-18-04-x64"
+  name   = "web-1"
+  region = "nyc1"
+  size   = "s-1vcpu-1gb"
 }
 ```
