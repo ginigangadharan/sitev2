@@ -18,6 +18,11 @@ titleshort: terraform
   - [2.2. Create your first terraform fie](#22-create-your-first-terraform-fie)
   - [2.3. Destroying Resource](#23-destroying-resource)
   - [2.4. Terraform DigitlOcean Droplet](#24-terraform-digitlocean-droplet)
+  - [Terraform State File](#terraform-state-file)
+  - [Desired State and Current State](#desired-state-and-current-state)
+  - [Provider Architecture](#provider-architecture)
+- [Appendix A - Useful References](#appendix-a---useful-references)
+- [Appendix B - Notes](#appendix-b---notes)
 
 # 1. Introduction
 ## 1.1. References to Start
@@ -107,3 +112,42 @@ resource "digitalocean_droplet" "kplabsdroplet" {
   size   = "s-1vcpu-1gb"
 }
 ```
+
+## Terraform State File
+- will keep every info about the resource
+
+## Desired State and Current State
+
+Terraform always make current state to desired state. 
+
+- `terraform refresh` - will refresh the state by checking current state
+- `terraform plan` will do `refresh` automatically in background.
+- `terraform show` will give you the details of state (intstead of opening `.tfstate` file)
+- Desired state always follow your `.tf` content.
+
+## Provider Architecture
+
+```
+                                                       +-------------------+
++-------------+     +---------------+  +-----------+   |                   |
+|             |     |               |  |           |   |   Resources       |
+|  .tf file   +---->+   terraform   +->+ Provider  +-->+   in              |
+|             |     |               |  |           |   |   Provider        |
++-------------+     +---------------+  +-----------+   |                   |
+                                                       +-------------------+
+```
+
+# Appendix A - Useful References
+- [Ansible, Terraform Excel Among Site Reliability Engineers, DevOps](https://thenewstack.io/ansible-terraform-excel-among-site-reliability-engineers-devops/)
+
+
+# Appendix B - Notes
+
+Declarative Infrastructure Management
+- trackable via vcs
+- automation CI/CD
+- Reproducible env
+- safe and predictable
+- workflow
+- opensource providers
+
