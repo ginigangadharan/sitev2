@@ -21,6 +21,8 @@ titleshort: terraform
   - [Terraform State File](#terraform-state-file)
   - [Desired State and Current State](#desired-state-and-current-state)
   - [Provider Architecture](#provider-architecture)
+  - [Types of Terraform Provides](#types-of-terraform-provides)
+    - [Configure 3rd Party provider](#configure-3rd-party-provider)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 
@@ -136,6 +138,46 @@ Terraform always make current state to desired state.
 +-------------+     +---------------+  +-----------+   |                   |
                                                        +-------------------+
 ```
+- provider will have different versions, if nothing mentioned it will take the latest.
+- for production, mention specific version of provider as needed. 
+- 
+```
+>=1.0             Greater than equal to the version
+<=1.0             Less than equal to the version
+~>2.0             Any version in the 2.x range
+>=2.10, <=2.30    Any version between 2.10 and 2.30
+```
+
+## Types of Terraform Provides
+1. Hashicorp Distributed
+   - Download automatically during `terraform init`
+2. Third Party or Community providers
+   - For cases where official providers not supporting some features.
+   - for some proprierart platform to use with Terraform
+
+### Configure 3rd Party provider
+- Place the plugin in specific directory
+  - Windows: `%APPDATA%\terraform.d\plugins`
+  - All other systems: `~/.terraform.d/plugins`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Appendix A - Useful References
 - [Ansible, Terraform Excel Among Site Reliability Engineers, DevOps](https://thenewstack.io/ansible-terraform-excel-among-site-reliability-engineers-devops/)
