@@ -55,6 +55,11 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 - [Network Device Authentication with Ansible 2.3](https://www.ansible.com/blog/network-device-authentication-with-ansible-2-3){:target="_blank"}
 
+# Ansible Tower
+
+- [What Happens to an Ansible Tower Installation After the Subscription/License has Expired?](https://access.redhat.com/solutions/3389421)
+
+
 # Ansible Blog/Articles to Follow
 - [MyDailyTutorials](http://www.mydailytutorials.com/category/tutorials/ansible/){:target="_blank"}
 - [Ansible Blog](https://www.ansible.com/blog){:target="_blank"}
@@ -70,7 +75,6 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 # Ansible Modules
 
 - [Foreman Ansible Modules](https://github.com/theforeman/foreman-ansible-modules)
-
 
 # Other References
 
