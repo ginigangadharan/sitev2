@@ -23,6 +23,7 @@ titleshort: terraform
   - [Provider Architecture](#provider-architecture)
   - [Types of Terraform Provides](#types-of-terraform-provides)
     - [Configure 3rd Party provider](#configure-3rd-party-provider)
+- [Managing Configurations](#managing-configurations)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 
@@ -161,7 +162,10 @@ Terraform always make current state to desired state.
   - All other systems: `~/.terraform.d/plugins`
 
 
+# Managing Configurations
 
+- keep configurations in directories
+- 
 
 
 
