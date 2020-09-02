@@ -24,6 +24,7 @@ titleshort: terraform
   - [Types of Terraform Provides](#types-of-terraform-provides)
     - [Configure 3rd Party provider](#configure-3rd-party-provider)
 - [Managing Configurations](#managing-configurations)
+  - [Understanding Attributes](#understanding-attributes)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 
@@ -165,7 +166,8 @@ Terraform always make current state to desired state.
 # Managing Configurations
 
 - keep configurations in directories
-- 
+
+## Understanding Attributes
 
 
 
