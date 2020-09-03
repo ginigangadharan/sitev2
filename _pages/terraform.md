@@ -24,7 +24,11 @@ titleshort: terraform
   - [2.8. Types of Terraform Provides](#28-types-of-terraform-provides)
     - [2.8.1. Configure 3rd Party provider](#281-configure-3rd-party-provider)
 - [3. Managing Configurations](#3-managing-configurations)
-  - [3.1. Understanding Attributes](#31-understanding-attributes)
+  - [3.1. Understanding Attributes & Outputs](#31-understanding-attributes--outputs)
+  - [3.2. Referencing Cross-Account Resource attributes](#32-referencing-cross-account-resource-attributes)
+  - [3.3. Terraform Variables](#33-terraform-variables)
+  - [3.4. Variable Assignment](#34-variable-assignment)
+  - [3.5. Datatypes for Variables](#35-datatypes-for-variables)
 - [4. Appendix A - Useful References](#4-appendix-a---useful-references)
 - [5. Appendix B - Notes](#5-appendix-b---notes)
 
@@ -178,11 +182,122 @@ required_providers {
 
 - keep configurations in directories
 
-## 3.1. Understanding Attributes
+## 3.1. Understanding Attributes & Outputs
 
+Get details of created resources and use it for further steps.
 
+```
+resource "aws_s3_bucket" "mys3" {
+  bucket = "demo-onboarding-20200903"
+}
 
+output "mys3bucket" {
+  value = aws_s3_bucket.mys3.bucket_domain_name
+}
+```
 
+then output will be,
+```
+.
+.
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+eip = 13.251.177.36
+mys3bucket = demo-onboarding-20200903.s3.amazonaws.com
+```
+
+- There are more attributes we can use; check documentation and under **Attribute Refernce** in each resource type.
+- If we dont mention attribute, then terraform will display all attribues associated with the resource.
+
+## 3.2. Referencing Cross-Account Resource attributes
+
+You can associate resources by referring attributes of resources.
+
+Eg: Assigning EIP to an instance
+
+```
+resource "aws_eip_association" "eip_assoc" {
+  instance_id =  aws_instance.web.id
+  allocation_id = aws_eip.mylb.id
+}
+```
+
+## 3.3. Terraform Variables
+
+- Create variables and store values for repeated usage
+
+```
+variable "my_ip" {
+  default = "10.1.10.10/32"
+}
+```
+
+and use the variable,
+```
+resource "aws_security_group" "allow_tls" {
+  name        = "test-allow_tls"
+  ingress {
+    description = "TLS from VPC"
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = [var.my_ip]
+  }
+
+}
+```
+
+## 3.4. Variable Assignment
+
+1. Environment variables - can use environment variable with a prefix `TF_VAR_`. 
+   eg: `export TF_VAR_instance_type=t2.micro`
+
+2. Command Line Flags
+   
+   `terraform plan -var="instancetype=t2.small"`
+
+3. From a File - use `terraform.tfvars` - terraform will load all variables from this file. 
+   - if different var files to be used, then `terraform plan -var-file="custom.tfvars`
+   
+4. Variable Defaults - can keep variable default in another `.tf` file.
+   ```
+   $ cat variables.tf 
+  variable "my_ip" {
+    default = "10.1.10.10/32"
+  }
+  ```
+
+- if no value mentioned, then `default` value will be used.
+- if `default` value not defined, then terraform will ask for variable when do `apply` or `plan`
+
+## 3.5. Datatypes for Variables
+
+Restict to use specific variable type
+
+- number
+- string
+- list
+- map 
+
+variables.tf: 
+```
+variable "image_id" {
+  type = string   
+}
+
+variable "az" {
+  type = list
+}
+```
+
+and `terraform.tfvars`
+```
+elb_name="myelb"
+timeout="400"
+az=["us-west-1a","us-west-1b"]
+```
 
 
 
