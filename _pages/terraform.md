@@ -3,7 +3,7 @@ layout: post
 title: Terraform
 author: gini
 categories: [ iac, cloud ]
-image: "assets/images/2020/photo-1456428746267-a1756408f782-@clintadair.jpg"
+image: "assets/images/2020/infrastructure.jpg"
 tags: [iac, terraform]
 permalink: terraform
 featured: false
