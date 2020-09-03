@@ -31,6 +31,7 @@ titleshort: terraform
   - [Datatypes for Variables](#datatypes-for-variables)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
+- [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
 
 # Introduction
 ## References to Start
@@ -292,6 +293,21 @@ variable "image_id" {
 variable "az" {
   type = list
 }
+
+variable "list"  {
+  type = list
+  defaults = ["m5.large","m5.xlarge","t2.micro"]
+}
+
+variable "types"  {
+  type = map
+  defaults = {
+    us-east-1 = "t2.micro"
+    us-west-2 = "t2.nano"
+    ap-south-1 = "t2.small"
+  }
+}
+
 ```
 
 and `terraform.tfvars`
@@ -301,7 +317,12 @@ timeout="400"
 az=["us-west-1a","us-west-1b"]
 ```
 
+**Fetching Data from maps and list**
 
+You can call variable as 
+ - `instance_type = var.types["us-west-1a"]` - for a map
+ - `instance_type = var.list[0]` - for list
+```
 
 
 
@@ -326,4 +347,8 @@ Declarative Infrastructure Management
 - safe and predictable
 - workflow
 - opensource providers
+
+# Appendix C - Frequently Asked Questions
+
+**Q. Is it mandatory to keep the variables in `variables.tf` ?**
 
