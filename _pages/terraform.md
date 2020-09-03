@@ -11,29 +11,29 @@ hidden: false
 titleshort: terraform
 ---
 
-- [1. Introduction](#1-introduction)
-  - [1.1. References to Start](#11-references-to-start)
-- [2. Creating first Instance using Terraform](#2-creating-first-instance-using-terraform)
-  - [2.1. Configure AWS Credential](#21-configure-aws-credential)
-  - [2.2. Create your first terraform fie](#22-create-your-first-terraform-fie)
-  - [2.3. Destroying Resource](#23-destroying-resource)
-  - [2.4. Terraform DigitlOcean Droplet](#24-terraform-digitlocean-droplet)
-  - [2.5. Terraform State File](#25-terraform-state-file)
-  - [2.6. Desired State and Current State](#26-desired-state-and-current-state)
-  - [2.7. Provider Architecture](#27-provider-architecture)
-  - [2.8. Types of Terraform Provides](#28-types-of-terraform-provides)
-    - [2.8.1. Configure 3rd Party provider](#281-configure-3rd-party-provider)
-- [3. Managing Configurations](#3-managing-configurations)
-  - [3.1. Understanding Attributes & Outputs](#31-understanding-attributes--outputs)
-  - [3.2. Referencing Cross-Account Resource attributes](#32-referencing-cross-account-resource-attributes)
-  - [3.3. Terraform Variables](#33-terraform-variables)
-  - [3.4. Variable Assignment](#34-variable-assignment)
-  - [3.5. Datatypes for Variables](#35-datatypes-for-variables)
-- [4. Appendix A - Useful References](#4-appendix-a---useful-references)
-- [5. Appendix B - Notes](#5-appendix-b---notes)
+- [Introduction](#introduction)
+  - [References to Start](#references-to-start)
+- [Creating first Instance using Terraform](#creating-first-instance-using-terraform)
+  - [Configure AWS Credential](#configure-aws-credential)
+  - [Create your first terraform fie](#create-your-first-terraform-fie)
+  - [Destroying Resource](#destroying-resource)
+  - [Terraform DigitlOcean Droplet](#terraform-digitlocean-droplet)
+  - [Terraform State File](#terraform-state-file)
+  - [Desired State and Current State](#desired-state-and-current-state)
+  - [Provider Architecture](#provider-architecture)
+  - [Types of Terraform Provides](#types-of-terraform-provides)
+    - [Configure 3rd Party provider](#configure-3rd-party-provider)
+- [Managing Configurations](#managing-configurations)
+  - [Understanding Attributes & Outputs](#understanding-attributes--outputs)
+  - [Referencing Cross-Account Resource attributes](#referencing-cross-account-resource-attributes)
+  - [Terraform Variables](#terraform-variables)
+  - [Variable Assignment](#variable-assignment)
+  - [Datatypes for Variables](#datatypes-for-variables)
+- [Appendix A - Useful References](#appendix-a---useful-references)
+- [Appendix B - Notes](#appendix-b---notes)
 
-# 1. Introduction
-## 1.1. References to Start
+# Introduction
+## References to Start
 
 - [Get Started](https://learn.hashicorp.com/terraform)
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-study)
@@ -43,6 +43,8 @@ titleshort: terraform
 - [Terraform Beginners Track](https://github.com/collabnix/terraform/blob/master/beginners/README.md) - (collabnix - GitHub)
 - [Using Ansible to automate app deployment on Terraform-provided infrastructure](https://cloud.ibm.com/docs/terraform?topic=terraform-ansible)
 - [Writing Ansible Playbooks for New Terraform Servers](https://victorops.com/blog/writing-ansible-playbooks-for-new-terraform-servers) - (victorops.com)
+- [What Is Immutable Infrastructure?](https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure)
+- [What is Mutable vs. Immutable Infrastructure?](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure/)
 - [Terraform Course - Automate your AWS cloud infrastructure](https://www.youtube.com/watch?v=SLB_c_ayRMo) (freeCodeCamp.org)
 - [HashiCorp Infrastructure Automation Certification](https://www.hashicorp.com/certification/terraform-associate/)
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/terraform/certification/terraform-associate-study-guide)
@@ -56,7 +58,7 @@ provisioner "local-exec" {
 }
 ```
 
-# 2. Creating first Instance using Terraform
+# Creating first Instance using Terraform
 
 -[Providers](https://www.terraform.io/docs/providers/index.html)
 
@@ -67,12 +69,12 @@ eg: AWS credential can give as,
 - CodeBuild, ECS, and EKS Roles
 - EC2 Instance Metadata Service (IMDS and IMDSv2)
 
-## 2.1. Configure AWS Credential
+## Configure AWS Credential
 - IAM -> Users -> Create New user, Programatic Access
 - Attach Exisiting Policies -> Add Administrator Access
 - Take Access Key and Secret Key
 
-## 2.2. Create your first terraform fie
+## Create your first terraform fie
 
 ```
 provider "aws" {
@@ -96,13 +98,13 @@ Then,
 - `terraform plan` will show you the items going to create
 - `terraform apply` will create the resources as per terraform template.
 
-## 2.3. Destroying Resource
+## Destroying Resource
 
 - `terraform destoy` will delete the resources
 - `terraform destroy -target aws_instance.web` - destroy specific resource only.
 - also you can comment out the resource, then terraform will detect it as not needed and will remove when you `plan` or `apply`
 
-## 2.4. Terraform DigitlOcean Droplet
+## Terraform DigitlOcean Droplet
 To generate API tokens from Digital Ocean
 
 https://cloud.digitalocean.com/account/api/tokens
@@ -121,10 +123,10 @@ resource "digitalocean_droplet" "kplabsdroplet" {
 }
 ```
 
-## 2.5. Terraform State File
+## Terraform State File
 - will keep every info about the resource
 
-## 2.6. Desired State and Current State
+## Desired State and Current State
 
 Terraform always make current state to desired state. 
 
@@ -133,7 +135,7 @@ Terraform always make current state to desired state.
 - `terraform show` will give you the details of state (intstead of opening `.tfstate` file)
 - Desired state always follow your `.tf` content.
 
-## 2.7. Provider Architecture
+## Provider Architecture
 
 ```
                                                        +-------------------+
@@ -165,24 +167,24 @@ required_providers {
 }
 ```
 
-## 2.8. Types of Terraform Provides
+## Types of Terraform Provides
 1. Hashicorp Distributed
    - Download automatically during `terraform init`
 2. Third Party or Community providers
    - For cases where official providers not supporting some features.
    - for some proprierart platform to use with Terraform
 
-### 2.8.1. Configure 3rd Party provider
+### Configure 3rd Party provider
 - Place the plugin in specific directory
   - Windows: `%APPDATA%\terraform.d\plugins`
   - All other systems: `~/.terraform.d/plugins`
 
 
-# 3. Managing Configurations
+# Managing Configurations
 
 - keep configurations in directories
 
-## 3.1. Understanding Attributes & Outputs
+## Understanding Attributes & Outputs
 
 Get details of created resources and use it for further steps.
 
@@ -211,7 +213,7 @@ mys3bucket = demo-onboarding-20200903.s3.amazonaws.com
 - There are more attributes we can use; check documentation and under **Attribute Refernce** in each resource type.
 - If we dont mention attribute, then terraform will display all attribues associated with the resource.
 
-## 3.2. Referencing Cross-Account Resource attributes
+## Referencing Cross-Account Resource attributes
 
 You can associate resources by referring attributes of resources.
 
@@ -224,7 +226,7 @@ resource "aws_eip_association" "eip_assoc" {
 }
 ```
 
-## 3.3. Terraform Variables
+## Terraform Variables
 
 - Create variables and store values for repeated usage
 
@@ -249,7 +251,7 @@ resource "aws_security_group" "allow_tls" {
 }
 ```
 
-## 3.4. Variable Assignment
+## Variable Assignment
 
 1. Environment variables - can use environment variable with a prefix `TF_VAR_`. 
    eg: `export TF_VAR_instance_type=t2.micro`
@@ -272,7 +274,7 @@ resource "aws_security_group" "allow_tls" {
 - if no value mentioned, then `default` value will be used.
 - if `default` value not defined, then terraform will ask for variable when do `apply` or `plan`
 
-## 3.5. Datatypes for Variables
+## Datatypes for Variables
 
 Restict to use specific variable type
 
@@ -311,11 +313,11 @@ az=["us-west-1a","us-west-1b"]
 
 
 
-# 4. Appendix A - Useful References
+# Appendix A - Useful References
 - [Ansible, Terraform Excel Among Site Reliability Engineers, DevOps](https://thenewstack.io/ansible-terraform-excel-among-site-reliability-engineers-devops/)
 
 
-# 5. Appendix B - Notes
+# Appendix B - Notes
 
 Declarative Infrastructure Management
 - trackable via vcs
