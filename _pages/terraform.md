@@ -18,15 +18,15 @@ titleshort: terraform
   - [2.2. Create your first terraform fie](#22-create-your-first-terraform-fie)
   - [2.3. Destroying Resource](#23-destroying-resource)
   - [2.4. Terraform DigitlOcean Droplet](#24-terraform-digitlocean-droplet)
-  - [Terraform State File](#terraform-state-file)
-  - [Desired State and Current State](#desired-state-and-current-state)
-  - [Provider Architecture](#provider-architecture)
-  - [Types of Terraform Provides](#types-of-terraform-provides)
-    - [Configure 3rd Party provider](#configure-3rd-party-provider)
-- [Managing Configurations](#managing-configurations)
-  - [Understanding Attributes](#understanding-attributes)
-- [Appendix A - Useful References](#appendix-a---useful-references)
-- [Appendix B - Notes](#appendix-b---notes)
+  - [2.5. Terraform State File](#25-terraform-state-file)
+  - [2.6. Desired State and Current State](#26-desired-state-and-current-state)
+  - [2.7. Provider Architecture](#27-provider-architecture)
+  - [2.8. Types of Terraform Provides](#28-types-of-terraform-provides)
+    - [2.8.1. Configure 3rd Party provider](#281-configure-3rd-party-provider)
+- [3. Managing Configurations](#3-managing-configurations)
+  - [3.1. Understanding Attributes](#31-understanding-attributes)
+- [4. Appendix A - Useful References](#4-appendix-a---useful-references)
+- [5. Appendix B - Notes](#5-appendix-b---notes)
 
 # 1. Introduction
 ## 1.1. References to Start
@@ -117,10 +117,10 @@ resource "digitalocean_droplet" "kplabsdroplet" {
 }
 ```
 
-## Terraform State File
+## 2.5. Terraform State File
 - will keep every info about the resource
 
-## Desired State and Current State
+## 2.6. Desired State and Current State
 
 Terraform always make current state to desired state. 
 
@@ -129,7 +129,7 @@ Terraform always make current state to desired state.
 - `terraform show` will give you the details of state (intstead of opening `.tfstate` file)
 - Desired state always follow your `.tf` content.
 
-## Provider Architecture
+## 2.7. Provider Architecture
 
 ```
                                                        +-------------------+
@@ -142,7 +142,7 @@ Terraform always make current state to desired state.
 ```
 - provider will have different versions, if nothing mentioned it will take the latest.
 - for production, mention specific version of provider as needed. 
-- 
+
 ```
 >=1.0             Greater than equal to the version
 <=1.0             Less than equal to the version
@@ -150,24 +150,35 @@ Terraform always make current state to desired state.
 >=2.10, <=2.30    Any version between 2.10 and 2.30
 ```
 
-## Types of Terraform Provides
+**Example**
+
+```
+terraform{
+required_version = "~>0.12.0"
+
+required_providers {
+  aws = "~>2.6"  # is equivalent to >= 2.6, < 2.7
+}
+```
+
+## 2.8. Types of Terraform Provides
 1. Hashicorp Distributed
    - Download automatically during `terraform init`
 2. Third Party or Community providers
    - For cases where official providers not supporting some features.
    - for some proprierart platform to use with Terraform
 
-### Configure 3rd Party provider
+### 2.8.1. Configure 3rd Party provider
 - Place the plugin in specific directory
   - Windows: `%APPDATA%\terraform.d\plugins`
   - All other systems: `~/.terraform.d/plugins`
 
 
-# Managing Configurations
+# 3. Managing Configurations
 
 - keep configurations in directories
 
-## Understanding Attributes
+## 3.1. Understanding Attributes
 
 
 
@@ -185,11 +196,11 @@ Terraform always make current state to desired state.
 
 
 
-# Appendix A - Useful References
+# 4. Appendix A - Useful References
 - [Ansible, Terraform Excel Among Site Reliability Engineers, DevOps](https://thenewstack.io/ansible-terraform-excel-among-site-reliability-engineers-devops/)
 
 
-# Appendix B - Notes
+# 5. Appendix B - Notes
 
 Declarative Infrastructure Management
 - trackable via vcs
