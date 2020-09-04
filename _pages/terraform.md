@@ -39,6 +39,7 @@ titleshort: terraform
   - [Validate Terraform File](#validate-terraform-file)
   - [Load Order & Semantics](#load-order--semantics)
   - [Dynamic Blocks](#dynamic-blocks)
+  - [Terraform Taint](#terraform-taint)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -520,13 +521,59 @@ resource "aws_instance" "app-dev" {
 
 ## Dynamic Blocks
 
+[Doc](https://www.terraform.io/docs/configuration/expressions.html)
+
 - for repeated steps or like loops
 
+Normal blocks:
+
+```
+resource "aws_security_group" "demo_sg" {
+  name        = "sample-sg"
+
+ ingress {
+    from_port   = 8200
+    to_port     = 8200
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    from_port   = 8201
+    to_port     = 8201
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
 ```
 
+With dynamic blocks:
 
+```
+variable "sg_ports" {
+  type        = list(number)
+  description = "list of ingress ports"
+  default     = [8200, 8201,8300, 9200, 9500]
+}
 
+resource "aws_security_group" "dynamicsg" {
+  name        = "dynamic-sg"
+  description = "Ingress for Vault"
 
+  dynamic "ingress" {
+    for_each = var.sg_ports
+    iterator = port
+    content {
+      from_port   = port.value
+      to_port     = port.value
+      protocol    = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+  }
+}
+```
+
+## Terraform Taint
 
 
 
