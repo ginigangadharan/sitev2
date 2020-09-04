@@ -37,6 +37,8 @@ titleshort: terraform
   - [Debugging in Terraform](#debugging-in-terraform)
   - [Terraform Format](#terraform-format)
   - [Validate Terraform File](#validate-terraform-file)
+  - [Load Order & Semantics](#load-order--semantics)
+  - [Dynamic Blocks](#dynamic-blocks)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -504,6 +506,39 @@ resource "aws_instance" "app-dev" {
 - Use `terraform fmt` to cleanup the code
 
 ## Validate Terraform File
+
+- `terraform validate`
+
+## Load Order & Semantics
+
+- Terraform generally loads all the config files - `.tf` & `.tf.json` - within the directory, specified in alphabetical order.
+- Split the code into multiple files, eg:
+  - provider.tf
+  - variables.tf
+  - ec2.tf
+  - iam.tf etc.
+
+## Dynamic Blocks
+
+- for repeated steps or like loops
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
