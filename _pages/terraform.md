@@ -30,6 +30,7 @@ titleshort: terraform
   - [Variable Assignment](#variable-assignment)
   - [Datatypes for Variables](#datatypes-for-variables)
   - [Count and Count Index](#count-and-count-index)
+  - [Conditional Expression](#conditional-expression)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -342,7 +343,7 @@ resource "aws_instance" "multi-instance" {
 }
 ```
 
-Also use the `count.index` to fetch details from a `list` and use it fro names.
+Also use the `count.index` to fetch details from a `list` and use it from names.
 ```
 variable "instance_names"  {
   type = list
@@ -354,6 +355,36 @@ and,
 ```
   Name = var.instance_names[count.index]
 ```
+
+## Conditional Expression
+
+- Terraform create and act based on conditional expressions
+
+```
+variable "istest" {}
+
+resource "aws_instance" "prod" {
+  ami           = "ami-0cd31be676780afa7"
+  instance_type = "t2.micro"
+  # if var.istest is false, then create 1 instance, else 0 instance
+  count = var.istest == false ? 1 : 0
+}
+
+resource "aws_instance" "dev" {
+  ami           = "ami-0cd31be676780afa7"
+  instance_type = "t2.large"
+  # if var.istest is true, then create 1 instance, else 0 instance
+  count = var.istest == true ? 1 : 0
+}
+```
+then, mention your default value in `terraform.tfvars`
+
+```
+istest = true
+```
+
+
+
 
 
 
