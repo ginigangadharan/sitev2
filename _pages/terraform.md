@@ -31,6 +31,12 @@ titleshort: terraform
   - [Datatypes for Variables](#datatypes-for-variables)
   - [Count and Count Index](#count-and-count-index)
   - [Conditional Expression](#conditional-expression)
+  - [Local Values](#local-values)
+  - [Terraform Functions](#terraform-functions)
+  - [Data Sources](#data-sources)
+  - [Debugging in Terraform](#debugging-in-terraform)
+  - [Terraform Format](#terraform-format)
+  - [Validate Terraform File](#validate-terraform-file)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -383,9 +389,121 @@ then, mention your default value in `terraform.tfvars`
 istest = true
 ```
 
+## Local Values
 
+[Doc - Local Values](https://www.terraform.io/docs/configuration/locals.html)
 
+- define and use inside resources
 
+```
+locals {
+  common_tags = {
+    Owner = "Dev Team"
+    Service = "Backend"
+  }
+}
+
+# in resource
+resource "aws_instance" "dev" {
+  ami           = "ami-0cd31be676780afa7"
+  instance_type = "t2.large"
+  tags = local.common_tags
+}
+
+resource "aws_ebs_volume" "db_ebs" {
+  availability_zone = "us-west-2a"
+  size              = 8
+  tags = local.common_tags
+}
+
+``` 
+
+## Terraform Functions
+
+[Doc - Built-in Functions](https://www.terraform.io/docs/configuration/functions.html)
+
+`function (argument1, argument2)`
+
+- Test functins by `terraform console`
+  
+
+```
+locals {
+  time = formatdate("DD MMM YYYY hh:mm ZZZ", timestamp())
+}
+
+variable "region" {
+  default = "ap-south-1"
+}
+
+variable "tags" {
+  type = list
+  default = ["firstec2","secondec2"]
+}
+
+variable "ami" {
+  type = map
+  default = {
+    "us-east-1" = "ami-0323c3dd2da7fb37d"
+    "us-west-2" = "ami-0d6621c01e8c2de2c"
+    "ap-south-1" = "ami-0470e33cd681b2476"
+  }
+}
+
+resource "aws_key_pair" "loginkey" {
+  key_name   = "login-key"
+  public_key = file("${path.module}/id_rsa.pub")
+}
+
+resource "aws_instance" "app-dev" {
+   ami = lookup(var.ami,var.region)
+   instance_type = "t2.micro"
+   key_name = aws_key_pair.loginkey.key_name
+   count = 2
+
+   tags = {
+     Name = element(var.tags,count.index)
+   }
+}
+```
+
+## Data Sources
+
+[Doc - Data Source](https://www.terraform.io/docs/configuration/data-sources.html)
+
+- Allow data to be fetched from external sources
+
+```
+data "aws_ami" "app_ami" {
+  most_recent = true
+  owners = ["amazon"]
+
+  filter {
+    name = "name"
+    values = ["amzn2-ami-hvm*"]
+  }
+}
+
+# then use the data variable in resource
+resource "aws_instance" "app-dev" {
+   ami = data.aws_ami.app_ami.id 
+   instance_type = "t2.micro"
+}
+```
+
+## Debugging in Terraform
+
+[Doc](https://www.terraform.io/docs/internals/debugging.html)
+
+- enable `TF_LOG` variable with appropriate values - `TRACE`, `DEBUG`, `INFO`, `WARN` or `ERROR`
+- `export TF_LOG=TRACE` to see details logs
+- `export TF_LOG_PATH=YOUR_PATH_FOR_LOG` will save logs in file
+
+## Terraform Format
+
+- Use `terraform fmt` to cleanup the code
+
+## Validate Terraform File
 
 
 
