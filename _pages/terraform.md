@@ -29,6 +29,7 @@ titleshort: terraform
   - [Terraform Variables](#terraform-variables)
   - [Variable Assignment](#variable-assignment)
   - [Datatypes for Variables](#datatypes-for-variables)
+  - [Count and Count Index](#count-and-count-index)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -322,11 +323,37 @@ az=["us-west-1a","us-west-1b"]
 You can call variable as 
  - `instance_type = var.types["us-west-1a"]` - for a map
  - `instance_type = var.list[0]` - for list
+
+## Count and Count Index
+
+- Create multipe resources of same type
+- use `count` parameter
+- use `count.index` for counts and use it for indentifying resource. 
+
+```
+resource "aws_instance" "multi-instance" {
+  ami           = "ami-0cd31be676780afa7"
+  instance_type = "t2.micro"
+  count = 3
+
+  tags = {
+    Name = "hello-${count.index}"
+  }
+}
 ```
 
+Also use the `count.index` to fetch details from a `list` and use it fro names.
+```
+variable "instance_names"  {
+  type = list
+  default = ["web-front","web-back","db"]
+}
+```
 
-
-
+and, 
+```
+  Name = var.instance_names[count.index]
+```
 
 
 
