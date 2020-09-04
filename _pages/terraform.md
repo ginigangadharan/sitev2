@@ -40,6 +40,11 @@ titleshort: terraform
   - [Load Order & Semantics](#load-order--semantics)
   - [Dynamic Blocks](#dynamic-blocks)
   - [Terraform Taint](#terraform-taint)
+  - [Splat Expression](#splat-expression)
+  - [Terraform Graph](#terraform-graph)
+  - [Saving Terraform Plan to a file](#saving-terraform-plan-to-a-file)
+  - [Terraform Output](#terraform-output)
+- [Terraform Provisioners](#terraform-provisioners)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -50,7 +55,8 @@ titleshort: terraform
 - [Get Started](https://learn.hashicorp.com/terraform)
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-study)
 - [Exam Review - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-review)
-
+- [Sample Questions - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-questions)
+- [250 Practice Questions For Terraform Associate Certification](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
 - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - [Terraform Beginners Track](https://github.com/collabnix/terraform/blob/master/beginners/README.md) - (collabnix - GitHub)
 - [Using Ansible to automate app deployment on Terraform-provided infrastructure](https://cloud.ibm.com/docs/terraform?topic=terraform-ansible)
@@ -575,11 +581,63 @@ resource "aws_security_group" "dynamicsg" {
 
 ## Terraform Taint
 
+- manually marks a terraform managed resource as trainted and forcing it to be destroyed and recreated on the next apply.
+- `terraform taint` command will make modification in the `tfstate` file and recreate action will happen in next apply.
+- `terraform taint` command will not modify the `.tf` file or infrastructure.
 
+```
+terraform taint aws_instance.myec2
+```
 
+## Splat Expression
 
+- use wildcards to get multiple resource information. 
+- 
+```
+# single resource
+output "arn-single" {
+  value = aws_iam_user.lb[0].arn
+}
 
+# multiple resource
+output "arns" {
+  value = aws_iam_user.lb[*].arn
+}
+```
 
+## Terraform Graph
+
+- Generate visual representation of either a configuration or execution plan.
+  
+```
+terraform graph > graph.dot
+```
+
+- DOT format and can convert to an image (Use 3rd party tool)
+
+```
+sudo apt-get install graphviz
+# or 
+sudo yum install graphviz
+
+# then
+cat graph.dot | dot -Tsvg > graph.svg
+```
+
+## Saving Terraform Plan to a file
+
+- Save terraform plan content for later use - `terraform plan -out=backpup-01` (will be a binary file)
+- Later use this file to create resource - `terraform apply backpup-01` 
+
+## Terraform Output
+
+- To display or extract the value of an output variable from the state file.
+
+```
+terraform output iam_names
+```
+
+# Terraform Provisioners
 
 
 
