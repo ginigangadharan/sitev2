@@ -45,6 +45,9 @@ titleshort: terraform
   - [Saving Terraform Plan to a file](#saving-terraform-plan-to-a-file)
   - [Terraform Output](#terraform-output)
 - [Terraform Provisioners](#terraform-provisioners)
+  - [Types of Provisioners](#types-of-provisioners)
+    - [remote-exec Provisioners](#remote-exec-provisioners)
+    - [local-exec Provisioner](#local-exec-provisioner)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -639,9 +642,65 @@ terraform output iam_names
 
 # Terraform Provisioners
 
+- Can be used to model specific actions on the local machine or on a remote machine in order to prepare servers or other infra objects for service.
+
+Ref: 
+- [Provisioners](https://www.terraform.io/docs/provisioners/index.html)
+- [Provision Infrastructure with Packer](https://learn.hashicorp.com/tutorials/terraform/packer)
 
 
+## Types of Provisioners
 
+Options:
+- `on_failure = continue` or `fail` 
+- `when    = destroy` - only execute during destroy action
+
+### remote-exec Provisioners
+
+Ref: [Provisioner Connection Settings](https://www.terraform.io/docs/provisioners/connection.html)
+
+- invoke actions on remote machine which terraform created
+
+```
+resource "aws_instance" "myec2" {
+   ami = "ami-082b5a644766e0e6f"
+   instance_type = "t2.micro"
+   key_name = "kplabs-terraform"
+
+   provisioner "remote-exec" {
+     inline = [
+       "sudo amazon-linux-extras install -y nginx1.12",
+       "sudo systemctl start nginx"
+     ]
+
+   connection {
+     type = "ssh"
+     user = "ec2-user"
+     private_key = file("./kplabs-terraform.pem")
+     host = self.public_ip
+   }
+   }
+}
+```
+
+- A `connection` block nested directly within a resource affects all of that resource's provisioners.
+- A `connection` block nested in a provisioner block only affects that provisioner, and overrides any resource-level connection settings.
+
+### local-exec Provisioner
+
+- invoke local executable after resource is created
+- can execute ansible playbooks on the created server
+  
+```
+resource "aws_instance" "myec2" {
+   ami = "ami-082b5a644766e0e6f"
+   instance_type = "t2.micro"
+
+   provisioner "local-exec" {
+    command = "echo ${aws_instance.myec2.private_ip} >> private_ips.txt"
+  }
+}
+```
 
 
 
