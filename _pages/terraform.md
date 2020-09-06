@@ -48,6 +48,13 @@ titleshort: terraform
   - [Types of Provisioners](#types-of-provisioners)
     - [remote-exec Provisioners](#remote-exec-provisioners)
     - [local-exec Provisioner](#local-exec-provisioner)
+- [Modules and Workspaces](#modules-and-workspaces)
+  - [Understanding DRY Principle](#understanding-dry-principle)
+  - [Implementing Module](#implementing-module)
+  - [Varialbls and Modules](#varialbls-and-modules)
+  - [Terrform Registry](#terrform-registry)
+  - [Terraform Workspace](#terraform-workspace)
+- [Remote State Management](#remote-state-management)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -701,6 +708,188 @@ resource "aws_instance" "myec2" {
   }
 }
 ```
+
+# Modules and Workspaces
+
+## Understanding DRY Principle
+- "Dont Repeat Yourself"
+- redution repetition of software patters
+- define in source and refer it in resources
+
+## Implementing Module
+
+[Doc](https://www.terraform.io/docs/configuration/modules.html)
+
+Define the structure in modile dir.
+
+`project_dir/modules/ec2` : 
+
+```
+resource "aws_instance" "myec2" {
+   ami = "ami-082b5a644766e0e6f"
+   instance_type = var.instance_type
+}
+```
+
+and in project just reference the same
+
+`project_dir/a-project/` : 
+```
+module "ec2module" {
+  source = "../../modules/ec2"
+}
+```
+
+Dir structure :
+```
+$ tree ../module-demo/
+../module-demo/
+├── a-project
+│   ├── myec2.tf
+│   └── provider.tf
+├── b-project
+│   ├── myec2.tf
+│   └── provider.tf
+└── modules
+    └── ec2
+        └── module-ec2.tf
+
+4 directories, 5 files
+```
+
+## Varialbls and Modules
+
+- you cannot change argument values while calling the module as the values are hardcoded in module; instead use variable in module
+
+```
+resource "aws_instance" "myec2" {
+  ami           = "ami-0cd31be676780afa7"
+  instance_type = var.instance_type
+}
+```
+
+- and the variable need to define in module directory - `variables.tf`, with default values.
+
+```
+variable "instance_type" {
+  default = "t2.micro"
+}
+```
+
+- and from project, you can overwrite the variable as needed while calling the module
+
+```
+module "ec2module" {
+  source        = "../modules/ec2"
+  instance_type = "t2.large"
+}
+```
+
+## Terrform Registry
+
+[Terraform Registry](https://registry.terraform.io/)
+
+- repository of modules writtern by the Terraform community
+- you can use available modules from registry instead of writing your own.
+- verified modules which are maintained by 3rd party vendors are also available in Terraform Registry
+- a blue verification badge appears next to the module
+- Search in `registry.terraform.io` and filter with verified modules.
+- Basic usage samples, variables etc will be displayed in the module page
+- You can reference to the module directly from Terraform registry
+- mention the module version as needed
+
+Ref: [ec2-instance](https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/2.15.0)
+
+```
+module "ec2_cluster" {
+  source                 = "terraform-aws-modules/ec2-instance/aws"
+  version                = "~> 2.0"
+
+  name                   = "my-cluster"
+  instance_count         = 5
+
+  ami                    = "ami-ebd02392"
+  instance_type          = "t2.micro"
+  key_name               = "user1"
+  monitoring             = true
+  vpc_security_group_ids = ["sg-12345678"]
+  subnet_id              = "subnet-eddcdzz4"
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+}
+```
+
+- When you do `terraform init`, terraform will download the module to local path `./.terraform/modules/`
+
+## Terraform Workspace
+
+[Workspaces](https://www.terraform.io/docs/state/workspaces.html)
+
+- different workspace to manage environment, eg; different variables.
+
+```
+$ terraform workspace show
+default
+
+$ terraform workspace new dev
+Created and switched to workspace "dev"!
+
+You're now on a new, empty workspace. Workspaces isolate their state,
+so if you run "terraform plan" Terraform will not see any existing state
+for this configuration.
+
+$ terraform workspace list
+  default
+* dev
+
+$ terraform workspace select dev
+Switched to workspace "dev".
+```
+
+Sample usage:
+```
+provider "aws" {
+  region     = "ap-southeast-1"
+  shared_credentials_file = "$HOME/.aws/credentials"
+  profile                 = "default"
+  version = ">=2.0"
+}
+
+resource "aws_instance" "myec2" {
+  ami           = "ami-0cd31be676780afa7"
+  instance_type = lookup(var.instance_type,terraform.workspace)
+
+}
+
+variable "instance_type" {
+ type = map
+
+ default = {
+   default = "t2.nano"
+   stage = "t2.nano"
+   dev = "t2.micro"
+   prod = "t2.large"
+ }
+}
+```
+- terraform will create separate `terraform.tfstate` files in `terraform.tfstate.d` directory in the project directoy
+
+```
+$ tree terraform.tfstate.d/
+terraform.tfstate.d/
+├── dev
+│   └── terraform.tfstate
+├── prod
+└── stage
+    └── terraform.tfstate
+
+3 directories, 2 files
+```
+
+# Remote State Management
 
 
 
