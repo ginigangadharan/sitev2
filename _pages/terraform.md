@@ -55,6 +55,16 @@ titleshort: terraform
   - [Terrform Registry](#terrform-registry)
   - [Terraform Workspace](#terraform-workspace)
 - [Remote State Management](#remote-state-management)
+  - [Remote Backend](#remote-backend)
+  - [Implementing S3 Backend](#implementing-s3-backend)
+  - [Understanding State File Locking](#understanding-state-file-locking)
+  - [Using DynamoDB with S3 for State Locking](#using-dynamodb-with-s3-for-state-locking)
+  - [Terraform State Management](#terraform-state-management)
+  - [Importing Existing Resource](#importing-existing-resource)
+- [Security](#security)
+  - [Multi-region and Multi-profile deployment](#multi-region-and-multi-profile-deployment)
+  - [Terraform with STS](#terraform-with-sts)
+  - [Handling Sensitive Data in Output](#handling-sensitive-data-in-output)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -890,6 +900,199 @@ terraform.tfstate.d/
 ```
 
 # Remote State Management
+
+[Remote State](https://www.terraform.io/docs/state/remote.html)
+
+- never keep credentials or secrets in repo; use safer methods
+eg: `password = "${file(../db_password.txt)}"` 
+- DO NOT store `terraform.tfstate` file in repo as it will store credentials or secrets in plain text
+
+## Remote Backend
+- Store tfstate in remote location securly
+- Multiple options supported by terraform
+  - Standard Backend - State Storage and Locking
+  - Enhanced Backend - All features of Standard and Remote Management
+
+## Implementing S3 Backend
+
+[Doc](https://www.terraform.io/docs/backends/types/s3.html)
+
+- create an s2 bucket manually and create `backend` to store the tfstate
+  
+```
+terraform {
+  backend "s3" {
+    bucket = "terraform-remote-demo"
+    key    = "remote-terraform-state-demo.tfstate"
+    region = "ap-southeast-1"
+  }
+}
+```
+
+## Understanding State File Locking
+- consider issue when multiple people working on the tarraform config parallel writing on `tfstate` file.
+- terraform will lock the `tfstate` file.
+- need to mention the locking in backend (S3 by default not support any locking)
+
+## Using DynamoDB with S3 for State Locking
+
+- create a DynamoDB table for storing lock details
+Table Name : <your-table-name>
+Primay Key : <LockID>
+
+- and update the `backend` with `dynamodb_table` entry
+
+```
+terraform {
+  backend "s3" {
+    bucket = "terraform-remote-demo"
+    key    = "remote-terraform-state-demo.tfstate"
+    region = "ap-southeast-1"
+    dynamodb_table = "tf-state-demo"
+  }
+}
+```
+- now, when you run `terraform plan` or `apply`, you will see an entry in dynamodb table but only until the command finish. This will allow terraform to avoid multiple actions to be run on same tfstate file.
+
+## Terraform State Management
+
+- `terraform state` - for advanced state management
+
+```
+Subcommands:
+    list                List resources in the state
+    mv                  Move an item in the state
+    pull                Pull current state and output to stdout
+    push                Update remote state from a local state file
+    replace-provider    Replace provider in the state
+    rm                  Remove instances from the state 
+                        but it will not remove the resouce from cloud/provider
+    show                Show a resource in the state
+```
+
+Eg:
+
+
+- if you rename or change something on a resource, terraform will destroy and recreate the resource with new name. To avoud this, you can use `terraform state move`
+
+```
+$ terraform state list
+aws_iam_user.lb
+aws_instance.myec2
+
+$ terraform state mv aws_instance.myec2 aws_instance.myec2new
+Move "aws_instance.myec2" to "aws_instance.myec2new"
+Successfully moved 1 object(s).
+
+$ terraform state list
+aws_iam_user.lb
+aws_instance.myec2new
+```
+
+- `terraform state rm` will remove the resource from state but it will not remove the resouce from cloud/provider.
+```
+$ terraform state rm aws_instance.myec2
+Removed aws_instance.myec2
+Successfully removed 1 resource instance(s).
+```
+
+- but next time when you run `terraform plan` or `apply`, terraform will recreate the instance as again as the resource definition is still there.
+- `terraform state show RESOURCE_NAME` will show details of a specific resource
+
+```
+$ terraform state show aws_instance.myec2
+``` 
+
+## Importing Existing Resource 
+- importe resources which are created manually
+- create the `.tf` file based on existing resource
+```
+resource "aws_instance" "myec2" {
+  ami                   = "ami-0b1e534a4ff9019e0"
+  instance_type         = "t2.micro"
+  vpc_security_group_id = ["vpc-4a59ba2c"]
+  key_name              = "tf-20200805"
+  subnet_id             = "subnet-3f9f5877"
+
+  tags {
+    Name = "test"
+  }
+}
+```
+- now import the resource to state
+
+```
+$ terraform import aws_instance.myec2 i-034503eb8b60d3a51
+aws_instance.myec2: Importing from ID "i-034503eb8b60d3a51"...
+aws_instance.myec2: Import prepared!
+  Prepared aws_instance for import
+aws_instance.myec2: Refreshing state... [id=i-034503eb8b60d3a51]
+
+Import successful!
+
+The resources that were imported are shown above. These resources are now in
+your Terraform state and will henceforth be managed by Terraform.
+```
+
+# Security
+
+- keep provider credential out of project place (like use aws cli etc)
+
+## Multi-region and Multi-profile deployment
+
+- define multiple provider blocks with alias and refer provider in resource block
+- also add separate profile in provider block
+
+```
+provider "aws" {
+  region     =  "us-west-1"
+}
+
+provider "aws" {
+  alias      =  "aws02"
+  region     =  "ap-south-1"
+  profile    =  "account02"
+}
+```
+
+and in resources, call proper providers.
+```
+resource "aws_eip" "myeip" {
+  vpc = "true"
+}
+
+resource "aws_eip" "myeip01" {
+  vpc = "true"
+  provider = "aws.aws02"
+}
+```
+
+## Terraform with STS
+
+```
+provider "aws" {
+  region                  = "ap-southeast-1"
+  assume_role {
+    role_arn = "YOUR_ROLE_ARN"
+    session_name = "sts-arn-demo"
+  }
+}
+```
+
+## Handling Sensitive Data in Output
+
+```
+locals {
+  db_password = {
+    admin = "password"
+  }
+}
+
+output "db_password" {
+  value = local.db_password
+  sensitive   = true
+}
+```
 
 
 
