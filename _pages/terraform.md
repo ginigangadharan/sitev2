@@ -67,6 +67,7 @@ titleshort: terraform
   - [Handling Sensitive Data in Output](#handling-sensitive-data-in-output)
 - [Terraform Cloud](#terraform-cloud)
   - [Sentinel](#sentinel)
+  - [Overview of Remote Backends](#overview-of-remote-backends)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -1118,6 +1119,43 @@ main = rule {
   }
 }
 ```
+
+## Overview of Remote Backends
+
+[Doc](https://www.terraform.io/docs/backends/types/remote.html)
+
+- Terraform operations can execute in Terraform cloud and can see the output in local terminal
+```
+terraform {
+  #required_version = "~> 0.12.0"
+  backend "remote" {}
+}
+
+resource "aws_iam_user" "lb" {
+  name = "remoteuser"
+  path = "/system/"
+}
+```
+
+and, we have `backend.hcl`
+```
+workspaces { name = "terraform-iac-usecases" }
+hostname     = "app.terraform.io"
+organization = "techbeatly"
+```
+
+Then, `terraform login` which will ask for token from [API](https://app.terraform.io/app/settings/tokens) and will show the success message.
+
+Then, `terraform init` with `backend`
+```
+$ terraform init -backend-config=backend.hcl
+
+$ terraform apply
+```
+
+
+
+
 
 
 
