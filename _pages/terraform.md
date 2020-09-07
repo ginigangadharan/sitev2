@@ -65,6 +65,8 @@ titleshort: terraform
   - [Multi-region and Multi-profile deployment](#multi-region-and-multi-profile-deployment)
   - [Terraform with STS](#terraform-with-sts)
   - [Handling Sensitive Data in Output](#handling-sensitive-data-in-output)
+- [Terraform Cloud](#terraform-cloud)
+  - [Sentinel](#sentinel)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
@@ -145,7 +147,7 @@ Then,
 ## Terraform DigitlOcean Droplet
 To generate API tokens from Digital Ocean
 
-https://cloud.digitalocean.com/account/api/tokens
+[Generate DigitalOcean Token](https://cloud.digitalocean.com/account/api/tokens)
 
 ```
 provider "digitalocean" {
@@ -1094,9 +1096,28 @@ output "db_password" {
 }
 ```
 
+# Terraform Cloud
 
+GUI
 
+## Sentinel
 
+[Doc](https://docs.hashicorp.com/sentinel/terraform/)
+
+- embeded policy-as-code framework
+- paid feature
+
+```
+import "tfplan"
+ 
+main = rule {
+  all tfplan.resources.aws_instance as _, instances {
+    all instances as _, r {
+      (length(r.applied.tags) else 0) > 0
+    }
+  }
+}
+```
 
 
 
