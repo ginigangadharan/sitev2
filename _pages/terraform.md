@@ -57,7 +57,9 @@ titleshort: terraform
   - [Terrform Registry](#terrform-registry)
   - [Terraform Workspace](#terraform-workspace)
 - [Remote State Management](#remote-state-management)
-  - [Remote Backend](#remote-backend)
+  - [Terraform and Git Integration for Team Management](#terraform-and-git-integration-for-team-management)
+  - [Module Sources in Terraform](#module-sources-in-terraform)
+  - [Remote State Management with Terraform](#remote-state-management-with-terraform)
   - [Implementing S3 Backend](#implementing-s3-backend)
   - [Understanding State File Locking](#understanding-state-file-locking)
   - [Using DynamoDB with S3 for State Locking](#using-dynamodb-with-s3-for-state-locking)
@@ -699,9 +701,6 @@ Ref:
 
 ## Types of Provisioners
 
-
-
-
 **Types**
 
 1. Creation-Time Provisiones
@@ -946,11 +945,36 @@ terraform.tfstate.d/
 
 [Remote State](https://www.terraform.io/docs/state/remote.html)
 
+## Terraform and Git Integration for Team Management 
+DOTHIS
+
+
 - never keep credentials or secrets in repo; use safer methods
 eg: `password = "${file(../db_password.txt)}"` 
 - DO NOT store `terraform.tfstate` file in repo as it will store credentials or secrets in plain text
 
-## Remote Backend
+## Module Sources in Terraform
+
+**Supported Module Sources**
+- Local Path - Must be `./` or `../` to indicate the local path is intended
+- 
+```
+module "ec2module" {
+  source = "../../modules/ec2"
+}
+```
+
+- Terraform Registry
+- GitHub
+- BitBucket
+- Generic Git, Mercurial Repos
+- HTTP URLs
+- S3 buckets
+- GCS Buckets
+
+
+
+## Remote State Management with Terraform
 - Store tfstate in remote location securly
 - Multiple options supported by terraform
   - Standard Backend - State Storage and Locking
