@@ -44,6 +44,8 @@ titleshort: terraform
   - [Terraform Graph](#terraform-graph)
   - [Saving Terraform Plan to a file](#saving-terraform-plan-to-a-file)
   - [Terraform Output](#terraform-output)
+  - [Terraform Settings](#terraform-settings)
+  - [Handliing Larger Infrastructure](#handliing-larger-infrastructure)
 - [Terraform Provisioners](#terraform-provisioners)
   - [Types of Provisioners](#types-of-provisioners)
     - [remote-exec Provisioners](#remote-exec-provisioners)
@@ -141,6 +143,7 @@ Then,
 - `terraform init` which will download and configure plugins which we have mentioned in the terraform file.
 - `terraform plan` will show you the items going to create
 - `terraform apply` will create the resources as per terraform template.
+- `-auto-approve` will not ask for confirmation
 
 ## Destroying Resource
 
@@ -663,6 +666,28 @@ cat graph.dot | dot -Tsvg > graph.svg
 terraform output iam_names
 ```
 
+## Terraform Settings
+- To configure the behavior of terraform itself we can use `terraform` bock
+
+```
+terraform {
+  required_version = "> 0.12.0"
+
+  required_providers {
+    aws = "~> 2.0"
+    mycloud = {
+      source = "mycloud/mycloud"
+      version = "~> 1.0"
+    }
+  }
+}
+```
+## Handliing Larger Infrastructure
+- always split into smaller files and explicitly call
+- use `-refresh=false` to prevent terraform from querying the current state during operations like `terraform plan`
+- use `-target=resource` flag to do terraform action only on that resource
+- 
+
 # Terraform Provisioners
 
 - Can be used to model specific actions on the local machine or on a remote machine in order to prepare servers or other infra objects for service.
@@ -674,9 +699,21 @@ Ref:
 
 ## Types of Provisioners
 
-Options:
-- `on_failure = continue` or `fail` 
-- `when    = destroy` - only execute during destroy action
+
+
+
+**Types**
+
+1. Creation-Time Provisiones
+  - if creation time provisioner fails, the resource will be marked as tainted.
+  
+2. Destroy-Time Provisioners
+  - run only when there is `when = destroy` option mentioned.
+
+**Failure Behaviours Options**
+
+- `on_failure = continue` - Ignore and continue with creation or destroy action
+- `on_failure = continue` - Stop applying and show error; also taint the resource if this is a creation task
 
 ### remote-exec Provisioners
 
