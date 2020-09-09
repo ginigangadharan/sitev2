@@ -59,6 +59,7 @@ titleshort: terraform
 - [Remote State Management](#remote-state-management)
   - [Terraform and Git Integration for Team Management](#terraform-and-git-integration-for-team-management)
   - [Module Sources in Terraform](#module-sources-in-terraform)
+  - [Terraform and .gitignore](#terraform-and-gitignore)
   - [Remote State Management with Terraform](#remote-state-management-with-terraform)
   - [Implementing S3 Backend](#implementing-s3-backend)
   - [Understanding State File Locking](#understanding-state-file-locking)
@@ -80,6 +81,7 @@ titleshort: terraform
 - [Appendix E - Questions](#appendix-e---questions)
 
 # Introduction
+
 ## References to Start
 
 - [Get Started](https://learn.hashicorp.com/terraform)
@@ -98,13 +100,7 @@ titleshort: terraform
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/terraform/certification/terraform-associate-study-guide)
 - [HashiCorp Certified Terraform Associate - Overview](https://www.youtube.com/watch?v=vhZEdqlXlSs) (Video)
 - [terraform-beginner-to-advanced-resource - GitHub](https://github.com/zealvora/terraform-beginner-to-advanced-resource)
-
-
-```
-provisioner "local-exec" {
-  command = "sleep 120; ansible-playbook -i '${digitalocean_droplet.www-example.ipv4_address}' playbook.yml"
-}
-```
+- [s](https://medium.com/@ravadonis/guidance-on-hashicorp-certified-terraform-associate-1fa6f04af1d2)
 
 # Creating first Instance using Terraform
 
@@ -313,12 +309,13 @@ resource "aws_security_group" "allow_tls" {
    - if different var files to be used, then `terraform plan -var-file="custom.tfvars`
    
 4. Variable Defaults - can keep variable default in another `.tf` file.
-   ```
-   $ cat variables.tf 
-  variable "my_ip" {
-    default = "10.1.10.10/32"
-  }
-  ```
+  
+```
+$ cat variables.tf 
+variable "my_ip" {
+  default = "10.1.10.10/32"
+}
+```
 
 - if no value mentioned, then `default` value will be used.
 - if `default` value not defined, then terraform will ask for variable when do `apply` or `plan`
@@ -623,7 +620,7 @@ terraform taint aws_instance.myec2
 ## Splat Expression
 
 - use wildcards to get multiple resource information. 
-- 
+
 ```
 # single resource
 output "arn-single" {
@@ -758,6 +755,13 @@ resource "aws_instance" "myec2" {
    provisioner "local-exec" {
     command = "echo ${aws_instance.myec2.private_ip} >> private_ips.txt"
   }
+}
+```
+
+Another example:
+```
+provisioner "local-exec" {
+  command = "sleep 120; ansible-playbook -i '${digitalocean_droplet.www-example.ipv4_address}' playbook.yml"
 }
 ```
 
@@ -957,7 +961,7 @@ eg: `password = "${file(../db_password.txt)}"`
 
 **Supported Module Sources**
 - Local Path - Must be `./` or `../` to indicate the local path is intended
-- 
+  
 ```
 module "ec2module" {
   source = "../../modules/ec2"
@@ -965,14 +969,75 @@ module "ec2module" {
 ```
 
 - Terraform Registry
-- GitHub
-- BitBucket
-- Generic Git, Mercurial Repos
+- GitHub, BitBucket, Generic Git, Mercurial Repos
+- 
+```
+module "vpc" {
+  source = "git::https://example.com/vpc.git"
+}
+
+module "storage" {
+  source = "git::ssh://username@example.com/storage.git"
+}
+
+module "vpc" {
+  source = "git::https://example.com/vpc.git?ref=v1.2.0"
+}
+
+module "mymodule" {
+  source = "github.com/techbeatly/module-repo"
+}
+```
+
 - HTTP URLs
 - S3 buckets
 - GCS Buckets
 
+## Terraform and .gitignore
 
+Files to ignore
+- `.terraform` 
+- `terraform.tfvars` - sensitive data like username or password
+- `terraform.tfstate` - should be stored in the remote side
+- `crash.log
+
+Sample `.gitignore`
+```
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Exclude all .tfvars files, which are likely to contain sentitive data, such as
+# password, private keys, and other secrets. These should not be part of version 
+# control as they are data points which are potentially sensitive and subject 
+# to change depending on the environment.
+#
+*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include override files you do wish to add to version control using negated pattern
+#
+# !example_override.tf
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+```
 
 ## Remote State Management with Terraform
 - Store tfstate in remote location securly
@@ -1073,6 +1138,7 @@ $ terraform state show aws_instance.myec2
 ## Importing Existing Resource 
 - importe resources which are created manually
 - create the `.tf` file based on existing resource
+
 ```
 resource "aws_instance" "myec2" {
   ami                   = "ami-0b1e534a4ff9019e0"
@@ -1086,6 +1152,7 @@ resource "aws_instance" "myec2" {
   }
 }
 ```
+
 - now import the resource to state
 
 ```
@@ -1211,18 +1278,20 @@ organization = "techbeatly"
 Then, `terraform login` which will ask for token from [API](https://app.terraform.io/app/settings/tokens) and will show the success message.
 
 Then, `terraform init` with `backend`
+
 ```
 $ terraform init -backend-config=backend.hcl
 
 $ terraform apply
 ```
 
-
-
-
-
-
-
+The same settings can alternatively be specified on the command line as follows:
+```
+$ terraform init \
+    -backend-config="address=demo.consul.io" \
+    -backend-config="path=example_app/terraform_state" \
+    -backend-config="scheme=https"
+```
 
 # Appendix A - Useful References
 - [Ansible, Terraform Excel Among Site Reliability Engineers, DevOps](https://thenewstack.io/ansible-terraform-excel-among-site-reliability-engineers-devops/)
