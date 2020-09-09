@@ -70,7 +70,10 @@ titleshort: terraform
   - [Overview of Remote Backends](#overview-of-remote-backends)
 - [Appendix A - Useful References](#appendix-a---useful-references)
 - [Appendix B - Notes](#appendix-b---notes)
+  - [Terraform Enterprise and Terraform Cloud](#terraform-enterprise-and-terraform-cloud)
 - [Appendix C - Frequently Asked Questions](#appendix-c---frequently-asked-questions)
+- [Appendix D - Other Commands to Refer](#appendix-d---other-commands-to-refer)
+- [Appendix E - Questions](#appendix-e---questions)
 
 # Introduction
 ## References to Start
@@ -529,7 +532,7 @@ resource "aws_instance" "app-dev" {
 
 - enable `TF_LOG` variable with appropriate values - `TRACE`, `DEBUG`, `INFO`, `WARN` or `ERROR`
 - `export TF_LOG=TRACE` to see details logs
-- `export TF_LOG_PATH=YOUR_PATH_FOR_LOG` will save logs in file
+- `export TF_LOG_PATH=YOUR_PATH_FOR_LOG` will save logs in file. (You should set `TF_LOG`)
 
 ## Terraform Format
 
@@ -1174,7 +1177,44 @@ Declarative Infrastructure Management
 - workflow
 - opensource providers
 
+Primary Benefits of Infrastructure as Code
+- Automation
+- Versioning
+- Reusability
+
+## Terraform Enterprise and Terraform Cloud
+- SSO
+- Auditing
+- Private Data Center Networking
+- Clustering
+
+
+
 # Appendix C - Frequently Asked Questions
 
 **Q. Is it mandatory to keep the variables in `variables.tf` ?**
+
+# Appendix D - Other Commands to Refer
+
+Unlock terraform state
+```
+terraform force-unlock LOCK_ID [DIR]
+```
+
+Upgrade the provider version to the latest acceptable one. 
+```
+terraform init -upgrade
+```
+
+# Appendix E - Questions
+
+Q. Which among these offerings are unique to Terrafo=rm Enterprise and are not available in Terraform Open Source as well as Terraform Cloud.
+- Audit Logging
+- Clustering
+- Private Network Connectivity
+
+[Ref](https://www.hashicorp.com/products/terraform/pricing/)
+
+
+
 
