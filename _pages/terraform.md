@@ -100,7 +100,7 @@ titleshort: terraform
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/terraform/certification/terraform-associate-study-guide)
 - [HashiCorp Certified Terraform Associate - Overview](https://www.youtube.com/watch?v=vhZEdqlXlSs) (Video)
 - [terraform-beginner-to-advanced-resource - GitHub](https://github.com/zealvora/terraform-beginner-to-advanced-resource)
-- [s](https://medium.com/@ravadonis/guidance-on-hashicorp-certified-terraform-associate-1fa6f04af1d2)
+- [Guidance on HashiCorp Certified — Terraform Associate](https://medium.com/@ravadonis/guidance-on-hashicorp-certified-terraform-associate-1fa6f04af1d2) -(Ravichandran Somasundaram on Medium)
 
 # Creating first Instance using Terraform
 
@@ -845,6 +845,11 @@ module "ec2module" {
 
 [Terraform Registry](https://registry.terraform.io/)
 
+[Doc](https://www.terraform.io/docs/cloud/registry/using.html)
+
+The public registry uses a three-part <NAMESPACE>/<MODULE NAME>/<PROVIDER> format,
+Private modules use a four-part <HOSTNAME>/<ORGANIZATION>/<MODULE NAME>/<PROVIDER> format.
+
 - repository of modules writtern by the Terraform community
 - you can use available modules from registry instead of writing your own.
 - verified modules which are maintained by 3rd party vendors are also available in Terraform Registry
@@ -970,7 +975,7 @@ module "ec2module" {
 
 - Terraform Registry
 - GitHub, BitBucket, Generic Git, Mercurial Repos
-- 
+
 ```
 module "vpc" {
   source = "git::https://example.com/vpc.git"
