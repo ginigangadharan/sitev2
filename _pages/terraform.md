@@ -13,6 +13,7 @@ titleshort: terraform
 
 - [Introduction](#introduction)
   - [References to Start](#references-to-start)
+  - [- Study Guide - Terraform Associate Certification](#ullistudy-guide---terraform-associate-certificationliul)
 - [Creating first Instance using Terraform](#creating-first-instance-using-terraform)
   - [Configure AWS Credential](#configure-aws-credential)
   - [Create your first terraform fie](#create-your-first-terraform-fie)
@@ -88,16 +89,21 @@ titleshort: terraform
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-study)
 - [Exam Review - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-review)
 - [Sample Questions - Terraform Associate Certification](https://learn.hashicorp.com/tutorials/terraform/associate-questions)
-- [250 Practice Questions For Terraform Associate Certification](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
+- [Terraform Commands (CLI)](https://www.terraform.io/docs/commands/)
 - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+- [HashiCorp Infrastructure Automation Certification](https://www.hashicorp.com/certification/terraform-associate/)
+- [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/terraform/certification/terraform-associate-study-guide)
+---
+- [What is Mutable vs. Immutable Infrastructure?](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure/)(hashicorp)
+- [What Is Immutable Infrastructure?](https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure)(digitalocean)
+
+
+---
+- [250 Practice Questions For Terraform Associate Certification](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
 - [Terraform Beginners Track](https://github.com/collabnix/terraform/blob/master/beginners/README.md) - (collabnix - GitHub)
 - [Using Ansible to automate app deployment on Terraform-provided infrastructure](https://cloud.ibm.com/docs/terraform?topic=terraform-ansible)
 - [Writing Ansible Playbooks for New Terraform Servers](https://victorops.com/blog/writing-ansible-playbooks-for-new-terraform-servers) - (victorops.com)
-- [What Is Immutable Infrastructure?](https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure)
-- [What is Mutable vs. Immutable Infrastructure?](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure/)
 - [Terraform Course - Automate your AWS cloud infrastructure](https://www.youtube.com/watch?v=SLB_c_ayRMo) (freeCodeCamp.org)
-- [HashiCorp Infrastructure Automation Certification](https://www.hashicorp.com/certification/terraform-associate/)
-- [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/terraform/certification/terraform-associate-study-guide)
 - [HashiCorp Certified Terraform Associate - Overview](https://www.youtube.com/watch?v=vhZEdqlXlSs) (Video)
 - [terraform-beginner-to-advanced-resource - GitHub](https://github.com/zealvora/terraform-beginner-to-advanced-resource)
 - [Guidance on HashiCorp Certified — Terraform Associate](https://medium.com/@ravadonis/guidance-on-hashicorp-certified-terraform-associate-1fa6f04af1d2) -(Ravichandran Somasundaram on Medium)
@@ -122,17 +128,18 @@ eg: AWS credential can give as,
 
 ```
 provider "aws" {
-  region     = "us-west-2"
+  region     = "ap-southeast-1"
   access_key = "my-access-key"
   secret_key = "my-secret-key"
+  version = ">=2.0"
 }
 
 resource "aws_instance" "web" {
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
+  ami           = "ami-0cd31be676780afa7"
+  instance_type = "t2.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "FirstEC2"
   }
 }
 ```
@@ -147,7 +154,7 @@ Then,
 
 - `terraform destoy` will delete the resources
 - `terraform destroy -target aws_instance.web` - destroy specific resource only.
-- also you can comment out the resource, then terraform will detect it as not needed and will remove when you `plan` or `apply`
+- also you can comment out the resource, then terraform will detect it as not part of config and will remove when you do `plan` or `apply`
 
 ## Terraform DigitlOcean Droplet
 To generate API tokens from Digital Ocean
@@ -156,13 +163,12 @@ To generate API tokens from Digital Ocean
 
 ```
 provider "digitalocean" {
-  token = "PUT-YOUR-TOKEN-HERE"
+  token = "YOUR-TOKEN"
 }
 
-
-resource "digitalocean_droplet" "kplabsdroplet" {
+resource "digitalocean_droplet" "doinstance" {
   image  = "ubuntu-18-04-x64"
-  name   = "web-1"
+  name   = "prod"
   region = "nyc1"
   size   = "s-1vcpu-1gb"
 }
@@ -202,7 +208,6 @@ Terraform always make current state to desired state.
 ```
 
 **Example**
-
 ```
 terraform{
 required_version = "~>0.12.0"
