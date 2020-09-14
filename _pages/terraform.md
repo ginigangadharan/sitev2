@@ -709,7 +709,7 @@ Ref:
 **Failure Behaviours Options**
 
 - `on_failure = continue` - Ignore and continue with creation or destroy action
-- `on_failure = continue` - Stop applying and show error; also taint the resource if this is a creation task
+- `on_failure = fail` - Stop applying and show error; also taint the resource if this is a creation task
 
 ### remote-exec Provisioners
 

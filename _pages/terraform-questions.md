@@ -48,3 +48,19 @@ True
 Q. Which of the following can we use to make Terraform configuration dynamic and reusable?
 Input Variables
 ```
+
+Q. Can you run scripts inside a provisioner block without being attached to any "real" resource?
+
+False
+
+Q. When using remote state, state is only ever held in memory when used by Terraform.
+True
+
+Q.Terraform workspaces are technically equivalent to renaming your state file.
+True
+
+Q. Which command can be used to inspect the current state?
+`terraform show`
+
+Q. Hanah is writing a terraform configuration with nested modules, there are multiple places where she has to use the same conditional expression but she wants to avoid repeating the same values or expressions multiple times in the configuration,. What is a better approach to dealing with this?
+
