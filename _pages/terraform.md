@@ -18,27 +18,26 @@ titleshort: terraform
   - [Configure AWS Credential](#configure-aws-credential)
   - [Create your first terraform fie](#create-your-first-terraform-fie)
   - [Destroying Resource](#destroying-resource)
-  - [Terraform DigitlOcean Droplet](#terraform-digitlocean-droplet)
+  - [Terraform DigitalOcean Droplet](#terraform-digitalocean-droplet)
   - [Terraform State File](#terraform-state-file)
   - [Desired State and Current State](#desired-state-and-current-state)
   - [Provider Architecture](#provider-architecture)
   - [Types of Terraform Provides](#types-of-terraform-provides)
     - [Configure 3rd Party provider](#configure-3rd-party-provider)
 - [Managing Configurations](#managing-configurations)
-  - [Understanding Attributes & Outputs](#understanding-attributes--outputs)
+  - [Attributes & Outputs in Terraform](#attributes--outputs-in-terraform)
   - [Referencing Cross-Account Resource attributes](#referencing-cross-account-resource-attributes)
   - [Terraform Variables](#terraform-variables)
   - [Variable Assignment](#variable-assignment)
-  - [Datatypes for Variables](#datatypes-for-variables)
-  - [Count and Count Index](#count-and-count-index)
-  - [Conditional Expression](#conditional-expression)
+  - [Count and Count Index in Terraform](#count-and-count-index-in-terraform)
+  - [Conditional Expression in Terraform](#conditional-expression-in-terraform)
   - [Local Values](#local-values)
   - [Terraform Functions](#terraform-functions)
-  - [Data Sources](#data-sources)
+  - [Data Sources in Terraform](#data-sources-in-terraform)
   - [Debugging in Terraform](#debugging-in-terraform)
-  - [Terraform Format](#terraform-format)
-  - [Validate Terraform File](#validate-terraform-file)
-  - [Load Order & Semantics](#load-order--semantics)
+  - [Formatting in Terraform](#formatting-in-terraform)
+  - [Validate Terraform Files](#validate-terraform-files)
+  - [Load Order & Semantics in Terraform](#load-order--semantics-in-terraform)
   - [Dynamic Blocks](#dynamic-blocks)
   - [Terraform Taint](#terraform-taint)
   - [Splat Expression](#splat-expression)
@@ -156,7 +155,7 @@ Then,
 - `terraform destroy -target aws_instance.web` - destroy specific resource only.
 - also you can comment out the resource, then terraform will detect it as not part of config and will remove when you do `plan` or `apply`
 
-## Terraform DigitlOcean Droplet
+## Terraform DigitalOcean Droplet
 To generate API tokens from Digital Ocean
 
 [Generate DigitalOcean Token](https://cloud.digitalocean.com/account/api/tokens)
@@ -234,7 +233,7 @@ required_providers {
 
 - keep configurations in directories
 
-## Understanding Attributes & Outputs
+## Attributes & Outputs in Terraform
 
 Get details of created resources and use it for further steps.
 
@@ -297,21 +296,22 @@ resource "aws_security_group" "allow_tls" {
     protocol    = "tcp"
     cidr_blocks = [var.my_ip]
   }
-
 }
 ```
 
 ## Variable Assignment
 
-1. Environment variables - can use environment variable with a prefix `TF_VAR_`. 
-   eg: `export TF_VAR_instance_type=t2.micro`
+1. Environment variables - can use environment variable with a prefix `TF_VAR_`. eg: 
+   
+   `export TF_VAR_instance_type=t2.micro`
 
 2. Command Line Flags
    
    `terraform plan -var="instancetype=t2.small"`
 
-3. From a File - use `terraform.tfvars` - terraform will load all variables from this file. 
-   - if different var files to be used, then `terraform plan -var-file="custom.tfvars`
+3. From a File - use `terraform.tfvars` - terraform will load all variables from this file. If different var files to be used, then
+   
+   `terraform plan -var-file="custom.tfvars`
    
 4. Variable Defaults - can keep variable default in another `.tf` file.
   
@@ -325,7 +325,7 @@ variable "my_ip" {
 - if no value mentioned, then `default` value will be used.
 - if `default` value not defined, then terraform will ask for variable when do `apply` or `plan`
 
-## Datatypes for Variables
+##Variables Datatypes
 
 Restict to use specific variable type
 
@@ -373,7 +373,7 @@ You can call variable as
  - `instance_type = var.types["us-west-1a"]` - for a map
  - `instance_type = var.list[0]` - for list
 
-## Count and Count Index
+## Count and Count Index in Terraform
 
 - Create multipe resources of same type
 - use `count` parameter
@@ -404,7 +404,7 @@ and,
   Name = var.instance_names[count.index]
 ```
 
-## Conditional Expression
+## Conditional Expression in Terraform
 
 - Terraform create and act based on conditional expressions
 
@@ -435,7 +435,7 @@ istest = true
 
 [Doc - Local Values](https://www.terraform.io/docs/configuration/locals.html)
 
-- define and use inside resources
+- Define and use inside resources
 
 ```
 locals {
@@ -457,7 +457,6 @@ resource "aws_ebs_volume" "db_ebs" {
   size              = 8
   tags = local.common_tags
 }
-
 ``` 
 
 ## Terraform Functions
@@ -466,7 +465,7 @@ resource "aws_ebs_volume" "db_ebs" {
 
 `function (argument1, argument2)`
 
-- Test functins by `terraform console`
+- You can test functions by `terraform console`
   
 
 ```
@@ -509,11 +508,11 @@ resource "aws_instance" "app-dev" {
 }
 ```
 
-## Data Sources
+## Data Sources in Terraform
 
 [Doc - Data Source](https://www.terraform.io/docs/configuration/data-sources.html)
 
-- Allow data to be fetched from external sources
+- Allow data to be fetched from external sources and use inside config dynamically.
 
 ```
 data "aws_ami" "app_ami" {
@@ -537,26 +536,28 @@ resource "aws_instance" "app-dev" {
 
 [Doc](https://www.terraform.io/docs/internals/debugging.html)
 
-- enable `TF_LOG` variable with appropriate values - `TRACE`, `DEBUG`, `INFO`, `WARN` or `ERROR`
-- `export TF_LOG=TRACE` to see details logs
+- enable `TF_LOG` variable with appropriate values - `TRACE`, `DEBUG`, `INFO`, `WARN` or `ERROR` 
+- `export TF_LOG=TRACE` to see details logs (`TRACE` is the most verbose one)
 - `export TF_LOG_PATH=YOUR_PATH_FOR_LOG` will save logs in file. (You should set `TF_LOG`)
 
-## Terraform Format
+## Formatting in Terraform
 
 - Use `terraform fmt` to cleanup the code
 
-## Validate Terraform File
+## Validate Terraform Files
 
-- `terraform validate`
+- `terraform validate` - Check whether a configuration is syntactically valid or not
+- check if any unsupported arguments, any undeclared variables etc
 
-## Load Order & Semantics
+## Load Order & Semantics in Terraform
 
 - Terraform generally loads all the config files - `.tf` & `.tf.json` - within the directory, specified in alphabetical order.
 - Split the code into multiple files, eg:
-  - provider.tf
-  - variables.tf
-  - ec2.tf
-  - iam.tf etc.
+  - `provider.tf`
+  - `variables.tf`
+  - `ec2.tf`
+  - `iam.tf` 
+  - etc.
 
 ## Dynamic Blocks
 
@@ -611,6 +612,7 @@ resource "aws_security_group" "dynamicsg" {
   }
 }
 ```
+- Use `iterator` for better reading (eg: `iterator = port` above)
 
 ## Terraform Taint
 
@@ -671,7 +673,8 @@ terraform output iam_names
 ```
 
 ## Terraform Settings
-- To configure the behavior of terraform itself we can use `terraform` bock
+- To configure the behavior of terraform itself we can use `terraform` block
+- `required_providers` - specifies all of the providers needed for the modules, mapping each local provider names to a source address and a version constraints.
 
 ```
 terraform {
@@ -690,7 +693,6 @@ terraform {
 - always split into smaller files and explicitly call
 - use `-refresh=false` to prevent terraform from querying the current state during operations like `terraform plan`
 - use `-target=resource` flag to do terraform action only on that resource
-- 
 
 # Terraform Provisioners
 
@@ -699,7 +701,6 @@ terraform {
 Ref: 
 - [Provisioners](https://www.terraform.io/docs/provisioners/index.html)
 - [Provision Infrastructure with Packer](https://learn.hashicorp.com/tutorials/terraform/packer)
-
 
 ## Types of Provisioners
 
