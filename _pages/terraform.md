@@ -221,13 +221,12 @@ required_providers {
    - Download automatically during `terraform init`
 2. Third Party or Community providers
    - For cases where official providers not supporting some features.
-   - for some proprierart platform to use with Terraform
+   - for some proprietary platform to use with Terraform
 
 ### Configure 3rd Party provider
 - Place the plugin in specific directory
   - Windows: `%APPDATA%\terraform.d\plugins`
   - All other systems: `~/.terraform.d/plugins`
-
 
 # Managing Configurations
 
