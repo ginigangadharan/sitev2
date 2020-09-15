@@ -64,3 +64,9 @@ Q. Which command can be used to inspect the current state?
 
 Q. Hanah is writing a terraform configuration with nested modules, there are multiple places where she has to use the same conditional expression but she wants to avoid repeating the same values or expressions multiple times in the configuration,. What is a better approach to dealing with this?
 
+Q. Which among these offerings are unique to Terraform Enterprise and are not available in Terraform Open Source as well as Terraform Cloud.
+- Audit Logging
+- Clustering
+- Private Network Connectivity
+
+[Ref](https://www.hashicorp.com/products/terraform/pricing/)

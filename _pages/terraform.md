@@ -109,7 +109,7 @@ titleshort: terraform
 
 # Creating first Instance using Terraform
 
--[Providers](https://www.terraform.io/docs/providers/index.html)
+[Providers](https://www.terraform.io/docs/providers/index.html)
 
 eg: AWS credential can give as,
 - Static credentials
@@ -1353,12 +1353,6 @@ terraform init -upgrade
 
 # Appendix E - Questions
 
-Q. Which among these offerings are unique to Terrafo=rm Enterprise and are not available in Terraform Open Source as well as Terraform Cloud.
-- Audit Logging
-- Clustering
-- Private Network Connectivity
-
-[Ref](https://www.hashicorp.com/products/terraform/pricing/)
 
 
 
