@@ -13,7 +13,6 @@ titleshort: terraform
 
 - [Introduction](#introduction)
   - [References to Start](#references-to-start)
-  - [- Study Guide - Terraform Associate Certification](#ullistudy-guide---terraform-associate-certificationliul)
 - [Creating first Instance using Terraform](#creating-first-instance-using-terraform)
   - [Configure AWS Credential](#configure-aws-credential)
   - [Create your first terraform fie](#create-your-first-terraform-fie)
@@ -92,6 +91,7 @@ titleshort: terraform
 - [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 - [HashiCorp Infrastructure Automation Certification](https://www.hashicorp.com/certification/terraform-associate/)
 - [Study Guide - Terraform Associate Certification](https://learn.hashicorp.com/terraform/certification/terraform-associate-study-guide)
+
 ---
 - [What is Mutable vs. Immutable Infrastructure?](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure/)(hashicorp)
 - [What Is Immutable Infrastructure?](https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure)(digitalocean)
