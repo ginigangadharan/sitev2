@@ -750,6 +750,8 @@ resource "aws_instance" "myec2" {
 
 ### local-exec Provisioner
 
+[Doc](https://www.terraform.io/docs/provisioners/local-exec.html)
+
 - invoke local executable after resource is created
 - can execute ansible playbooks on the created server
   
@@ -774,7 +776,8 @@ provisioner "local-exec" {
 # Modules and Workspaces
 
 ## Understanding DRY Principle
-- "Dont Repeat Yourself"
+
+- **Dont Repeat Yourself*
 - redution repetition of software patters
 - define in source and refer it in resources
 
@@ -853,9 +856,10 @@ module "ec2module" {
 
 [Doc](https://www.terraform.io/docs/cloud/registry/using.html)
 
-The public registry uses a three-part <NAMESPACE>/<MODULE NAME>/<PROVIDER> format,
-Private modules use a four-part <HOSTNAME>/<ORGANIZATION>/<MODULE NAME>/<PROVIDER> format.
+- The public registry uses a three-part <NAMESPACE>/<MODULE_NAME>/<PROVIDER> format,
+- Private modules use a four-part <HOSTNAME>/<ORGANIZATION>/<MODULE_NAME>/<PROVIDER> format.
 
+Notes :
 - repository of modules writtern by the Terraform community
 - you can use available modules from registry instead of writing your own.
 - verified modules which are maintained by 3rd party vendors are also available in Terraform Registry
@@ -942,7 +946,7 @@ variable "instance_type" {
  }
 }
 ```
-- terraform will create separate `terraform.tfstate` files in `terraform.tfstate.d` directory in the project directoy
+- terraform will create separate `terraform.tfstate` files in `terraform.tfstate.d/WORKSPACE_NAME/` directories in the project directoy
 
 ```
 $ tree terraform.tfstate.d/
@@ -961,12 +965,10 @@ terraform.tfstate.d/
 [Remote State](https://www.terraform.io/docs/state/remote.html)
 
 ## Terraform and Git Integration for Team Management 
-DOTHIS
-
 
 - never keep credentials or secrets in repo; use safer methods
 eg: `password = "${file(../db_password.txt)}"` 
-- DO NOT store `terraform.tfstate` file in repo as it will store credentials or secrets in plain text
+- **DO NOT** store `terraform.tfstate` file in repo as it will store credentials or secrets in plain text
 
 ## Module Sources in Terraform
 
@@ -1010,9 +1012,10 @@ Files to ignore
 - `.terraform` 
 - `terraform.tfvars` - sensitive data like username or password
 - `terraform.tfstate` - should be stored in the remote side
-- `crash.log
+- `crash.log`
 
 Sample `.gitignore`
+
 ```
 # Local .terraform directories
 **/.terraform/*
@@ -1051,10 +1054,11 @@ terraform.rc
 ```
 
 ## Remote State Management with Terraform
+
 - Store tfstate in remote location securly
 - Multiple options supported by terraform
   - Standard Backend - State Storage and Locking
-  - Enhanced Backend - All features of Standard and Remote Management
+  - Enhanced Backend - All features of Standard + Remote Management
 
 ## Implementing S3 Backend
 
