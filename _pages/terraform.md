@@ -79,6 +79,8 @@ titleshort: terraform
 - [Appendix D - Other Commands to Refer](#appendix-d---other-commands-to-refer)
 - [Appendix E - Questions](#appendix-e---questions)
 
+<a target="_blank" href="https://shareasale.com/r.cfm?b=1612350&amp;u=2435164&amp;m=59485&amp;urllink=&amp;afftrack="><img src="https://static.shareasale.com/image/59485/September_PromoAds_901x501.png" border="0" /></a>
+
 # Introduction
 
 ## References to Start
@@ -1353,6 +1355,6 @@ terraform init -upgrade
 # Appendix E - Questions
 
 
-
+<a target="_blank" href="https://shareasale.com/r.cfm?b=1612350&amp;u=2435164&amp;m=59485&amp;urllink=&amp;afftrack="><img src="https://static.shareasale.com/image/59485/September_PromoAds_901x501.png" border="0" /></a>
 
 
