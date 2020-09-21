@@ -38,6 +38,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Tools for Ansible](#tools-for-ansible)
 - [Ansible for Network Automation](#ansible-for-network-automation)
 - [Ansible Tower](#ansible-tower)
+- [Ansible and Python 3](#ansible-and-python-3)
 - [Ansible Blog/Articles to Follow](#ansible-blogarticles-to-follow)
 - [Ansible Interview Questions](#ansible-interview-questions)
 - [Ansible Modules](#ansible-modules)
@@ -67,6 +68,20 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 # Ansible Tower
 
 - [What Happens to an Ansible Tower Installation After the Subscription/License has Expired?](https://access.redhat.com/solutions/3389421)
+
+# Ansible and Python 3
+
+- [Python 3 Support](https://docs.ansible.com/ansible/latest/reference_appendices/python_3_support.html)
+- [How Can I Use Virtual Environment with Python3 on RHEL 7 for Ansible Tower?](https://access.redhat.com/solutions/4371201)
+- [How do I use Python 3 in Ansible Tower?](https://access.redhat.com/solutions/3569661)
+
+Ansible 2.5 and above work with Python 3.
+
+```
+[ansible@vm-ans-02 ~]$ ansible --version |grep python
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  python version = 2.7.5 (default, Sep 26 2019, 13:23:47) [GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+```
 
 
 # Ansible Blog/Articles to Follow
