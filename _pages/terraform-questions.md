@@ -7,7 +7,7 @@ Local state files cannot be unlocked by another process.
 Q. The parent module has to provide input variables and providers to a child module explicitly in the module block as this information can not be passed down to descendent modules implicitly through inheritance.
 False
 
-Q. The terraform import command currently can only import one resource at a time.
+- Q. The terraform import command currently can only import one resource at a time.
 True
 
 Q. Terraform recommends using provisioners instead of configuration management tools to invoke scripts or installing software on a newly built VMs.
@@ -16,7 +16,7 @@ False
 Q. The Terraform Registry is a public registry. For private use of such a browsable marketplace of modules, you must use the Private Registry available in the Terraform Cloud or Enterprise version.
 True
 
-Q. What command you can use to get human-readable output from a state or plan file?
+-Q. What command you can use to get human-readable output from a state or plan file?
 `terraform show`
 
 Q. How to add provider to Terraform v0.12 configuration?
@@ -24,7 +24,7 @@ Q. How to add provider to Terraform v0.12 configuration?
 - Add any resources from required provider and Terraform will automatically download the provider while running `terraform init` command
 
 ---
-Q. If you remove resources from the Terraform state, resources will be physically destroyed from real-world infrastructure.
+-Q. If you remove resources from the Terraform state, resources will be physically destroyed from real-world infrastructure.
 False
 
 Q. In Terraform 0.12  terraform init cannot automatically download third-party providers.
@@ -36,7 +36,7 @@ True
 Q. A module can access all the variables of the parent module.
 False
 
-Q. Which of the following is the most verbose log level in Terraform?
+- Q. Which of the following is the most verbose log level in Terraform?
 TRACE
 
 Q. Destroy provisioner runs only during a destroy operation. Hence destroy-time provisioner within a resource will run even if the resource is tainted manually.
