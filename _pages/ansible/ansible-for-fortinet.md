@@ -33,8 +33,10 @@ Refer : **[Fortinet Device Setup in GNS3](gns3-device-setup)**
 
 # API References
 
+- [Run Your First Playbook](https://ansible-galaxy-fortios-docs.readthedocs.io/en/latest/playbook.html)
 - [GitHub : ansible_fortios_api](https://github.com/eoprede/ansible_fortios_api)
 - [Use REST API Access FortiGate](https://kb.fortinet.com/kb/documentLink.do?externalID=FD46329)
+- [Fortinet Ansible Modules Documentation](https://readthedocs.org/projects/ftnt-ansible-docs/downloads/pdf/latest/)
 
 ```
 $ curl -k -i -X POST http://10.1.10.70/logincheck -d "username=admin&secretkey=password" --dump-header headers.txt -c cookies.txt

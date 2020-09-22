@@ -38,7 +38,8 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Tools for Ansible](#tools-for-ansible)
 - [Ansible for Network Automation](#ansible-for-network-automation)
 - [Ansible Tower](#ansible-tower)
-- [Ansible and Python 3](#ansible-and-python-3)
+- [Ansible and Python Modules](#ansible-and-python-modules)
+  - [Ansible and Python 3](#ansible-and-python-3)
 - [Ansible Blog/Articles to Follow](#ansible-blogarticles-to-follow)
 - [Ansible Interview Questions](#ansible-interview-questions)
 - [Ansible Modules](#ansible-modules)
@@ -69,11 +70,44 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 - [What Happens to an Ansible Tower Installation After the Subscription/License has Expired?](https://access.redhat.com/solutions/3389421)
 
-# Ansible and Python 3
+# Ansible and Python Modules
+[How to install pip on Red Hat Enterprise Linux?](https://access.redhat.com/solutions/1519803)
+
+
+pip install --target=/your/pyinstalldir loremipsum
+pip install fortiosapi --target=/var/lib/awx/venv/ansible/lib/python2.7/site-packages
+
+pip list --target=/var/lib/awx/venv/ansible/lib/python2.7/site-packages
+
+[Running in a virtualenv](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#running-in-a-virtualenv)
+
+```
+# subscription-manager repos --enable rhel-server-rhscl-7-rpms
+# yum install python27-python-pip
+```
+
+Switch to a normal user and check the pip
+```
+$ scl enable python27 bash
+$ which pip
+$ pip -V
+```
+
+**For Existing Tower**
+
+```
+# source /var/lib/awx/venv/ansible/bin/activate
+# umask 0022
+# pip install --upgrade pywinrm
+# deactivate
+```
+
+## Ansible and Python 3
 
 - [Python 3 Support](https://docs.ansible.com/ansible/latest/reference_appendices/python_3_support.html)
 - [How Can I Use Virtual Environment with Python3 on RHEL 7 for Ansible Tower?](https://access.redhat.com/solutions/4371201)
 - [How do I use Python 3 in Ansible Tower?](https://access.redhat.com/solutions/3569661)
+- [Ansible and Python 3](https://docs.ansible.com/ansible/latest/dev_guide/developing_python_3.html#ansible-and-python-3) (docs.ansible.com/)
 
 Ansible 2.5 and above work with Python 3.
 

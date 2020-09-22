@@ -68,3 +68,12 @@ SSL certificate validation can be prevented for Git connections originating from
   "GIT_SSL_NO_VERIFY": "True"
 }
 ```
+
+[Reference](https://access.redhat.com/solutions/3131461)
+
+Note : For cloning repo, use below methods
+```
+git config --global http.sslverify false
+#or
+export GIT_SSL_NO_VERIFY=true
+```
