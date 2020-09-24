@@ -106,6 +106,7 @@ titleshort: terraform
 - [HashiCorp Certified Terraform Associate - Overview](https://www.youtube.com/watch?v=vhZEdqlXlSs) (Video)
 - [terraform-beginner-to-advanced-resource - GitHub](https://github.com/zealvora/terraform-beginner-to-advanced-resource)
 - [Guidance on HashiCorp Certified — Terraform Associate](https://medium.com/@ravadonis/guidance-on-hashicorp-certified-terraform-associate-1fa6f04af1d2) -(Ravichandran Somasundaram on Medium)
+- [100DaysOfIaC](https://github.com/starkfell/100DaysOfIaC/blob/master/README.md) (Ryan Irujo on GitHub)
 
 # Creating first Instance using Terraform
 
