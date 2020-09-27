@@ -1,14 +1,12 @@
-# 1. Troubleshooting Ansible
+# Troubleshooting Ansible
 
-<!-- TOC orderedlist:true -->
+- [Troubleshooting Ansible](#troubleshooting-ansible)
+  - [Error with Self Signed SSL Cert on SCM server](#error-with-self-signed-ssl-cert-on-scm-server)
+    - [Resolution](#resolution)
+  - [Error:module 'enum' has no attribute 'IntFlag'](#errormodule-enum-has-no-attribute-intflag)
+    - [Solution :](#solution-)
 
-- [1. Troubleshooting Ansible](#1-troubleshooting-ansible)
-  - [1.1. Error with Self Signed SSL Cert on SCM server](#11-error-with-self-signed-ssl-cert-on-scm-server)
-    - [1.1.1. Resolution](#111-resolution)
-
-<!-- /TOC -->
-
-## 1.1. Error with Self Signed SSL Cert on SCM server
+## Error with Self Signed SSL Cert on SCM server
 
 Error : Peer's certificate issuer has been marked as not trusted by the user
 
@@ -59,7 +57,7 @@ Error : Peer's certificate issuer has been marked as not trusted by the user
 }
 ```
 
-### 1.1.1. Resolution
+### Resolution
 Resolution
 SSL certificate validation can be prevented for Git connections originating from Tower by adding the following settings in the Tower UI at Settings >> Configure Tower >> Jobs in JSON format:
 
@@ -77,3 +75,20 @@ git config --global http.sslverify false
 #or
 export GIT_SSL_NO_VERIFY=true
 ```
+
+## Error:module 'enum' has no attribute 'IntFlag'
+{
+    "exception": "Traceback (most recent call last):\n  File \"/var/lib/awx/.ansible/tmp/ansible-tmp-1599103337.21-17-81526385316505/AnsiballZ_fortios_facts.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/var/lib/awx/.ansible/tmp/ansible-tmp-1599103337.21-17-81526385316505/AnsiballZ_fortios_facts.py\", line 17, in _ansiballz_main\n    import base64\n  File \"/usr/lib64/python3.6/base64.py\", line 9, in <module>\n    import re\n  File \"/usr/lib64/python3.6/re.py\", line 142, in <module>\n    class RegexFlag(enum.IntFlag):\nAttributeError: module 'enum' has no attribute 'IntFlag'\n",
+    "_ansible_no_log": false,
+    "_ansible_delegated_vars": {
+        "ansible_host": "localhost"
+    },
+    "module_stderr": "Traceback (most recent call last):\n  File \"/var/lib/awx/.ansible/tmp/ansible-tmp-1599103337.21-17-81526385316505/AnsiballZ_fortios_facts.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/var/lib/awx/.ansible/tmp/ansible-tmp-1599103337.21-17-81526385316505/AnsiballZ_fortios_facts.py\", line 17, in _ansiballz_main\n    import base64\n  File \"/usr/lib64/python3.6/base64.py\", line 9, in <module>\n    import re\n  File \"/usr/lib64/python3.6/re.py\", line 142, in <module>\n    class RegexFlag(enum.IntFlag):\nAttributeError: module 'enum' has no attribute 'IntFlag'\n",
+    "changed": false,
+    "module_stdout": "",
+    "rc": 1,
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"
+}
+
+### Solution :
+https://access.redhat.com/solutions/4282031
