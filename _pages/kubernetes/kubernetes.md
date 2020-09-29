@@ -13,19 +13,16 @@ titleshort: Kubernetes
 
 These are collection of reference documents and blog posts from different experts around.
 
-<!-- TOC -->
-
 - [1. Learn Kubernetes](#1-learn-kubernetes)
   - [1.1. Kubernetes Certification](#11-kubernetes-certification)
-  - [1.2. Learn Kubernetes from VMWare](#12-learn-kubernetes-from-vmware)
+  - [1.2. CKSS-Certified-Kubernetes-Security-Specialist](#12-ckss-certified-kubernetes-security-specialist)
+  - [1.3. Learn Kubernetes from VMWare](#13-learn-kubernetes-from-vmware)
 - [2. Kuberenets ToolBox](#2-kuberenets-toolbox)
-- [kubectl References](#kubectl-references)
-- [3. Career on Kubernetes](#3-career-on-kubernetes)
-  - [3.1. Kubernetes Interview Questions](#31-kubernetes-interview-questions)
-- [4. Tanzu Kubernetes Grid - TNG](#4-tanzu-kubernetes-grid---tng)
-- [5. References](#5-references)
-
-<!-- /TOC -->
+- [3. kubectl References](#3-kubectl-references)
+- [4. Career on Kubernetes](#4-career-on-kubernetes)
+  - [4.1. Kubernetes Interview Questions](#41-kubernetes-interview-questions)
+- [5. Tanzu Kubernetes Grid - TNG](#5-tanzu-kubernetes-grid---tng)
+- [6. References](#6-references)
 
 # 1. Learn Kubernetes 
 
@@ -38,7 +35,11 @@ These are collection of reference documents and blog posts from different expert
   - Certified Kubernetes Administrator (CKA) - [kodekloud](http://bit.ly/ckacourse1) | [Udemy](http://bit.ly/ckacourse2)
   - Certified Kubernetes Application Developer (CKAD) - [Kodekloud](https://bit.ly/ckadcourse2) | [Udemy](https://bit.ly/ckadcourse1)
   
-## 1.2. Learn Kubernetes from VMWare
+## 1.2. CKSS-Certified-Kubernetes-Security-Specialist
+
+- [CKSS-Certified-Kubernetes-Security-Specialist](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)
+ 
+## 1.3. Learn Kubernetes from VMWare
 
 | <img src="https://kube.academy/wp-content/themes/k8s/assets/img/logo.svg?t=1588603776" width="200" style="max-width:30vw" alt="KubeAcademy"> | [KubeAcademy](https://kube.academy) |
   
@@ -56,19 +57,19 @@ These are collection of reference documents and blog posts from different expert
 - **[Cluster API](#)**
 - **[containerlabs.kubedaily.com](https://containerlabs.kubedaily.com/)**
 
-# kubectl References
+# 3. kubectl References
 - [Kubectl Command Cheatsheet](https://www.bluematador.com/learn/kubectl-cheatsheet)
   
-# 3. Career on Kubernetes
+# 4. Career on Kubernetes
 
-## 3.1. Kubernetes Interview Questions
+## 4.1. Kubernetes Interview Questions
 - [30 Best Kubernetes Interview Questions and Answers](https://www.whizlabs.com/blog/top-kubernetes-interview-questions/)
 
-# 4. Tanzu Kubernetes Grid - TNG
+# 5. Tanzu Kubernetes Grid - TNG
 - [Cluster API](https://github.com/kubernetes-sigs/cluster-api)
 - [The Cluster API Book](https://cluster-api.sigs.k8s.io/)
 
-# 5. References
+# 6. References
 
 - [Kubernetes Configuration & Best Practices](https://bcouetil.gitlab.io/academy/BP-kubernetes.html)
 - [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
