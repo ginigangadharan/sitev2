@@ -66,8 +66,8 @@ These are collection of reference documents and blog posts from different expert
 - [30 Best Kubernetes Interview Questions and Answers](https://www.whizlabs.com/blog/top-kubernetes-interview-questions/)
 
 # 5. Tanzu Kubernetes Grid - TNG
-- [Cluster API](https://github.com/kubernetes-sigs/cluster-api)
-- [The Cluster API Book](https://cluster-api.sigs.k8s.io/)
+
+- Read [VMWare Tanzu](vmware-tanzu)
 
 # 6. References
 
