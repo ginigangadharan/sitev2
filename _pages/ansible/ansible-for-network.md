@@ -42,6 +42,10 @@ Read : [How Network Automation is Different](https://docs.ansible.com/ansible/la
 - **[Networking with Ansible 104](https://dodgydudes.se/ansible-net104/)**
 - **[ANSIBLE - VLAN PROVISIONING](https://thenetworkstack.com/ansible-vlan-provisioning/)**
 
+
+- [Using Ansible to Mitigate Network Vulnerabilities](https://www.ansible.com/blog/using-ansible-to-mitigate-network-vulnerabilities)
+
+
 # Privilege Escalation for Network Devices in Ansible 
 
 Sample environment variable
