@@ -23,6 +23,7 @@ titleshort: rhel-kickstart-installation
   - [6.1. References](#61-references)
   - [6.2. Maintaining the Kickstart File](#62-maintaining-the-kickstart-file)
     - [6.2.1. Changes in Kickstart Syntax](#621-changes-in-kickstart-syntax)
+  - [Sample `ks.cfg` files](#sample-kscfg-files)
 
 # 1. Pre-Requisites
 
@@ -71,7 +72,10 @@ Refer : [Product Downloads](https://access.redhat.com/downloads/)
 
 - [PREPARING INSTALLATION SOURCES](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-making-media-additional-sources)
 - [HOW DO YOU PERFORM A KICKSTART INSTALLATION?](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-kickstart-howto)
-
+- [PREPARING FOR A NETWORK INSTALLATION](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/chap-installation-server-setup)
+- [RHEL/CentOS 8 Kickstart example](https://www.golinuxcloud.com/rhel-centos-8-kickstart-example-generator/)
+- [SAMPLE KICKSTART CONFIGURATIONS](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-kickstart-examples)
+  
 ## 6.2. Maintaining the Kickstart File
 
 ```
@@ -85,3 +89,7 @@ $ ksvalidator /path/to/kickstart.ks
 $ ksverdiff -f RHEL6 -t RHEL7
 ```
 
+## Sample `ks.cfg` files
+
+- [kickstart basic sample](kickstart-sample-simple-ks.cfg)
+- [kickstart with Software RAID1 + LVM](kickstart-sample-with-raid.cfg)
