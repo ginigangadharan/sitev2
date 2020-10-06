@@ -21,8 +21,7 @@ titleshort: rhel-kickstart-installation
   - [5.1. Automated Booting and Installation](#51-automated-booting-and-installation)
 - [6. Appendix](#6-appendix)
   - [6.1. References](#61-references)
-  - [6.2. Maintaining the Kickstart File](#62-maintaining-the-kickstart-file)
-    - [6.2.1. Changes in Kickstart Syntax](#621-changes-in-kickstart-syntax)
+  - [6.2. Validating Kickstart File - `ksvalidator`](#62-validating-kickstart-file---ksvalidator)
   - [Sample `ks.cfg` files](#sample-kscfg-files)
 
 # 1. Pre-Requisites
@@ -76,16 +75,13 @@ Refer : [Product Downloads](https://access.redhat.com/downloads/)
 - [RHEL/CentOS 8 Kickstart example](https://www.golinuxcloud.com/rhel-centos-8-kickstart-example-generator/)
 - [SAMPLE KICKSTART CONFIGURATIONS](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/installation_guide/sect-kickstart-examples)
   
-## 6.2. Maintaining the Kickstart File
+## 6.2. Validating Kickstart File - `ksvalidator`
 
 ```
 # yum install pykickstart
 $ ksvalidator /path/to/kickstart.ks
-```
 
-### 6.2.1. Changes in Kickstart Syntax
-
-```
+## Changes in Kickstart Syntax
 $ ksverdiff -f RHEL6 -t RHEL7
 ```
 
