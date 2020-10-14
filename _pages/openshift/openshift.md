@@ -19,6 +19,11 @@ These are collection of reference documents and blog posts from different expert
 ## OpenShift Articles
 -  in [techbeatly.com](https://www.techbeatly.com/category/cloud/openshift/)
 
+## Azure Red Hat OpenShift (aro)
+
+- [Azure Red Hat OpenShift 4 Documentation](https://docs.openshift.com/aro/4/welcome/index.html)
+- [Tutorial: Create an Azure Red Hat OpenShift 4 cluster](https://docs.microsoft.com/en-us/azure/openshift/tutorial-create-cluster)
+- 
 ## Learn OpenShift
 
 - **[Ansible Operator in OpenShift](https://learn.openshift.com/ansibleop/ansible-operator-overview/)**

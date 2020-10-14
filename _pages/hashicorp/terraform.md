@@ -42,3 +42,8 @@ titleshort: terraform
 
 ---
 - [Manage Your Entire VMware Infrastructure as Code with HashiCorp Terraform](https://www.youtube.com/watch?v=i0aaWM6nREI) (YouTube)
+
+
+---
+- [HashiCorp Workshops](https://hashicorp.github.io/workshops/)
+
