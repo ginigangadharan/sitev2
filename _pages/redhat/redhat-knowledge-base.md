@@ -49,3 +49,8 @@ subscription-manager clean
 # 3. Useful Links
 
 - [Red Hat on GitHub](https://redhatofficial.github.io/)
+
+
+# Appendix
+
+
