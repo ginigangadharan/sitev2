@@ -1,10 +1,19 @@
-# Troubleshooting Ansible
+---
+layout: post
+title: Troubleshooting Ansible
+categories: [ ansible ]
+image: "assets/images/2020/ansible-automation.png"
+tags: [automation]
+permalink: /ansible-troubleshooting
+featured: false
+hidden: false
+titleshort: Troubleshooting Ansible
+---
 
-- [Troubleshooting Ansible](#troubleshooting-ansible)
-  - [Error with Self Signed SSL Cert on SCM server](#error-with-self-signed-ssl-cert-on-scm-server)
-    - [Resolution](#resolution)
-  - [Error:module 'enum' has no attribute 'IntFlag'](#errormodule-enum-has-no-attribute-intflag)
-    - [Solution :](#solution-)
+- [Error with Self Signed SSL Cert on SCM server](#error-with-self-signed-ssl-cert-on-scm-server)
+- [Error:module 'enum' has no attribute 'IntFlag'](#errormodule-enum-has-no-attribute-intflag)
+- [Error with `nosuid` when read/write files](#error-with-nosuid-when-readwrite-files)
+
 
 ## Error with Self Signed SSL Cert on SCM server
 
@@ -57,7 +66,7 @@ Error : Peer's certificate issuer has been marked as not trusted by the user
 }
 ```
 
-### Resolution
+**Solution**
 Resolution
 SSL certificate validation can be prevented for Git connections originating from Tower by adding the following settings in the Tower UI at Settings >> Configure Tower >> Jobs in JSON format:
 
@@ -70,6 +79,7 @@ SSL certificate validation can be prevented for Git connections originating from
 [Reference](https://access.redhat.com/solutions/3131461)
 
 Note : For cloning repo, use below methods
+
 ```
 git config --global http.sslverify false
 #or
@@ -77,6 +87,8 @@ export GIT_SSL_NO_VERIFY=true
 ```
 
 ## Error:module 'enum' has no attribute 'IntFlag'
+
+```
 {
     "exception": "Traceback (most recent call last):\n  File \"/var/lib/awx/.ansible/tmp/ansible-tmp-1599103337.21-17-81526385316505/AnsiballZ_fortios_facts.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/var/lib/awx/.ansible/tmp/ansible-tmp-1599103337.21-17-81526385316505/AnsiballZ_fortios_facts.py\", line 17, in _ansiballz_main\n    import base64\n  File \"/usr/lib64/python3.6/base64.py\", line 9, in <module>\n    import re\n  File \"/usr/lib64/python3.6/re.py\", line 142, in <module>\n    class RegexFlag(enum.IntFlag):\nAttributeError: module 'enum' has no attribute 'IntFlag'\n",
     "_ansible_no_log": false,
@@ -89,6 +101,25 @@ export GIT_SSL_NO_VERIFY=true
     "rc": 1,
     "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error"
 }
+```
 
-### Solution :
+**Solution**
+
 https://access.redhat.com/solutions/4282031
+
+## Error with `nosuid` when read/write files
+
+```
+sudo: effective uid is not 0, is /usr/bin/sudo on a file system with the 'nosuid' option set or an NFS file system without root privileges?
+```
+
+**Solution**
+
+It isn't possible to use Tower with local action to escalate to the root user. It will be necessary to alter your task to connect via SSH and then escalate to root using another user(not AWX). This is done purposefully to avoid security risks associated with our user having root level access to the system.
+
+*NOTE : It is not recommended that sudo access be given to AWX user. You'll need to adjust your playbook to SSH rather than use a local connection.*
+
+Root Cause: The AWX service user is intentionally restricted from sudo operations.
+
+https://access.redhat.com/solutions/3223501 
+
