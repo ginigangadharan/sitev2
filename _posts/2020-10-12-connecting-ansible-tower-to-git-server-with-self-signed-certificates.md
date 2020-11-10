@@ -7,8 +7,8 @@ image: "assets/images/2020/connecting-ansible-tower-to-git-server-with-self-sign
 tags: [ ansible ]
 ext_url: https://www.techbeatly.com/2020/10/connecting-ansible-tower-to-git-server-with-self-signed-certificates.html
 #show-avatar: false
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 So many questioned me when I mention git server in an Ansible Tower environment; and later I realized that, most of them are keeping their projects inside Ansible Tower !!!

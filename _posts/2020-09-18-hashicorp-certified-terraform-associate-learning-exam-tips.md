@@ -7,8 +7,8 @@ image: "assets/images/2020/hashicorp-certified-terraform-associate-learning-exam
 tags: [kubernetes]
 ext_url: https://www.techbeatly.com/2020/09/hashicorp-certified-terraform-associate-learning-exam-tips.html
 #show-avatar: false
-featured: true
-hidden: true
+featured: false
+hidden: false
 ---
 
 I started using Terraform somewhere in 2018, but very limited usage as I thought it is just another tool for provisioning infrastructure and other services – or a variant of Vagrant; and I never expected that Terraform will grow in such way that, most of the organizations prefer to use it, especially when they have multi-cloud architecture.
