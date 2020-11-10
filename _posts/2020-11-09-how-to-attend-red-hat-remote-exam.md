@@ -18,7 +18,7 @@ In this video I will explain about Red Hat Remote Exams and how to prepare for a
 Please note, I am not affiliated or associated with Red Hat, or any of its affiliates right now. This is purely based on my personal experience with Red Hat Remote exams. 
 
 <div class="videocontainer">
-<iframe src="https://www.youtube.com/embed/tpzA3AJt2jQ" 
+<iframe src="https://www.youtube.com/embed/XmiX1x-LYF0" 
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoiframe"></iframe>
 </div>
 <br>
