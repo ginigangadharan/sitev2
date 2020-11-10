@@ -44,6 +44,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible Interview Questions](#ansible-interview-questions)
 - [Ansible Modules](#ansible-modules)
 - [Other References](#other-references)
+- [Ansible for IBM Power](#ansible-for-ibm-power)
 
 # Ansible Videos for Beginners
 
@@ -139,3 +140,7 @@ Ansible 2.5 and above work with Python 3.
 - [Red Hat Ansible Tower Life Cycle](https://access.redhat.com/support/policy/updates/ansible-tower)
 - [Red Hat Ansible Automation Platform Workshops](https://github.com/ansible/workshops)
 - [DEEP DIVE INTO ANSIBLE NETWORK RESOURCE MODULE](https://www.ansible.com/deep-dive-into-ansible-network-resource-module)
+
+# Ansible for IBM Power
+
+- [IBM Power Systems AIX collection](https://github.com/IBM/ansible-power-aix)
