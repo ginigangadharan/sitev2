@@ -17,6 +17,12 @@ In this video I will explain about Red Hat Remote Exams and how to prepare for a
 
 Please note, I am not affiliated or associated with Red Hat, or any of its affiliates right now. This is purely based on my personal experience with Red Hat Remote exams. 
 
+<div class="videocontainer">
+<iframe src="https://www.youtube.com/embed/tpzA3AJt2jQ" 
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoiframe"></iframe>
+</div>
+<br>
+
 --- Chapters ---
 0:00 Introduction
 1:30 Available Remote Exams
@@ -32,6 +38,7 @@ Please note, I am not affiliated or associated with Red Hat, or any of its affil
 16:01 Am I ready for Remote Exam ?
 17:35 Can I have Drinks and Snacks During Exam ?
 
+<br>
 Read Full Video here -  **[How to attend Red Hat Remote Exam ? Every details you need to know](https://www.youtube.com/watch?v=XmiX1x-LYF0)**
 
 - **[Subscribe to YouTube Channel](https://www.youtube.com/techbeatly?sub_confirmation=1)**
