@@ -17,7 +17,7 @@ These are collection of reference documents and blog posts from different expert
   - [1.1. Kubernetes Certification](#11-kubernetes-certification)
   - [1.2. CKSS-Certified-Kubernetes-Security-Specialist](#12-ckss-certified-kubernetes-security-specialist)
   - [1.3. Learn Kubernetes from VMWare](#13-learn-kubernetes-from-vmware)
-  - [Learn Containers](#learn-containers)
+  - [Learn ECS and EKS](#learn-ecs-and-eks)
 - [2. Kuberenets ToolBox](#2-kuberenets-toolbox)
 - [3. kubectl References](#3-kubectl-references)
 - [4. Career on Kubernetes](#4-career-on-kubernetes)
@@ -46,11 +46,14 @@ These are collection of reference documents and blog posts from different expert
   
  <br />  
 
-## Learn Containers
+## Learn ECS and EKS
 
 - [ECS Workshop by AWS](https://ecsworkshop.com/)
 - [AWS CodeDeploy now supports linear and canary deployments for Amazon ECS](https://aws.amazon.com/blogs/containers/aws-codedeploy-now-supports-linear-and-canary-deployments-for-amazon-ecs/)
 - [AWS Container Security](https://share-w-partners.s3.amazonaws.com/PartnerTrainingCourses/CT%20-%20Containers%20Technical/NewContainerSecurityVideo_08NOV2019.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJYWZKITQ46EGQ5PA/20201111/ap-southeast-1/s3/aws4_request&X-Amz-Date=20201111T035355Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=7143eac1f3222bd078e5b7f313303ee744e9ba1a9a0977fa0b7fc5405687661d)
+- [Serverless Workshops](https://github.com/aws-samples/aws-serverless-workshops/)
+- [Building Serverless Web Applications with React and AWS Amplify](https://github.com/dabit3/aws-amplify-workshop-react)
+- [WILD RYDES](https://webapp.serverlessworkshops.io/)
 
 # 2. Kuberenets ToolBox
 
