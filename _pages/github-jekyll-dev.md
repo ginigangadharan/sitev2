@@ -38,7 +38,8 @@ If the github-pages gem on your computer is out of date with the github-pages ge
 
 # If no Gemfile
 
+```
 bundle init
 bundle add jekyll
 bundle install --path vendor/bundle
-
+```
