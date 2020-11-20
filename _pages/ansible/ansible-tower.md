@@ -1,3 +1,15 @@
+---
+layout: post
+title: Ansible Tower - Load Balancing
+categories: [ ansible ]
+image: "assets/images/2020/ansible-automation.png"
+tags: [cloud, automation, containers, kubernetes]
+permalink: ansible-tower
+featured: false
+hidden: false
+showindex: true
+---
+
 # 1. Ansible Tower Installation 
 
 <!-- TOC orderedlist:true -->
@@ -22,3 +34,11 @@ https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html
 
 ## 2.1. Ansible Tower: RabbitMQ Monitoring
 https://access.redhat.com/articles/3394961
+
+- [Ansible Tower High Availability and Disaster Recovery](https://www.redhat.com/en/blog/ansible-tower-high-availability-and-disaster-recovery)
+
+https://access.redhat.com/solutions/3110791
+https://keithtenzer.com/2017/12/12/ansible-tower-cluster-configuration-guide/
+https://100things.wzzrd.com/2017/03/13/Building-a-highly-available-Ansible-Tower-cluster.html
+
+https://www.jeffgeerling.com/blog/2019/run-ansible-tower-or-awx-kubernetes-or-openshift-tower-operator
