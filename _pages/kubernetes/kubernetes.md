@@ -66,6 +66,7 @@ These are collection of reference documents and blog posts from different expert
 - **[kops](#)**
 - **[Cluster API](#)**
 - **[containerlabs.kubedaily.com](https://containerlabs.kubedaily.com/)**
+- **[50+ Useful Kubernetes Tools for 2020](https://caylent.com/50-useful-kubernetes-tools-for-2020)**
 
 # 3. kubectl References
 - [Kubectl Command Cheatsheet](https://www.bluematador.com/learn/kubectl-cheatsheet)
