@@ -94,6 +94,9 @@ server {
 }
 ```
 
-
-
 (*Photo by [luis gomes](https://www.pexels.com/@luis-gomes-166706?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from Pexels*)
+
+# References
+
+- [How to Redirect a Domain without Changing the URL(.htaccess and apache)](https://www.inmotionhosting.com/support/domain-names/redirect-without-changing-url/)
+- [My post on serverfault.com](https://serverfault.com/questions/1044292/nginx-and-wordpress-site2-com-need-to-load-content-of-of-site1-com-site2-witho)
