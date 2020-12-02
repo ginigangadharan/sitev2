@@ -45,6 +45,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible Modules](#ansible-modules)
 - [Other References](#other-references)
 - [Ansible for IBM Power](#ansible-for-ibm-power)
+- [Ansible for Arista Networks](#ansible-for-arista-networks)
 
 # Ansible Videos for Beginners
 
@@ -144,3 +145,7 @@ Ansible 2.5 and above work with Python 3.
 # Ansible for IBM Power
 
 - [IBM Power Systems AIX collection](https://github.com/IBM/ansible-power-aix)
+
+# Ansible for Arista Networks
+
+- [Ansible Modules for Arista CloudVision Platform](https://github.com/aristanetworks/ansible-cvp)
