@@ -12,13 +12,16 @@ showindex: true
 titleshort: jenkins
 ---
 
-- [Start Jenkin inside a container](#start-jenkin-inside-a-container)
-- [Sample docker-compose.yml](#sample-docker-composeyml)
+- [Start Jenkins inside a container](#start-jenkins-inside-a-container)
+  - [Run `jenkins` as a docker container](#run-jenkins-as-a-docker-container)
+  - [Get the Password](#get-the-password)
+  - [Login to Jenkins GUI for the first time](#login-to-jenkins-gui-for-the-first-time)
+  - [Sample docker-compose.yml](#sample-docker-composeyml)
 - [Reference](#reference)
 
-# Start Jenkin inside a container
+# Start Jenkins inside a container
 
-1. Run `jenkins` as a docker container
+## Run `jenkins` as a docker container
 
 ```
 docker run \
@@ -32,19 +35,19 @@ docker run \
   jenkins/jenkins:lts
 ```  
 
-2. Get the Password
+## Get the Password
 
 First Admin password can be found at `/var/jenkins_home/secrets/initialAdminPassword`
 or 
 check `docker logs CONTAINER_ID` and get the password.   
 
-3. Login to Jenkins GUI for the first time 
+## Login to Jenkins GUI for the first time 
 
 - Open a web browser and goto `localhost:8080`
 - enter the password collected from previous step.
 
 
-# Sample docker-compose.yml
+## Sample docker-compose.yml
 
 ```
 version: '3'
