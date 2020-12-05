@@ -38,7 +38,7 @@ Refer : **[Fortinet Device Setup in GNS3](gns3-device-setup)**
 - [Use REST API Access FortiGate](https://kb.fortinet.com/kb/documentLink.do?externalID=FD46329)
 - [Fortinet Ansible Modules Documentation](https://readthedocs.org/projects/ftnt-ansible-docs/downloads/pdf/latest/)
 
-```
+```bash
 $ curl -k -i -X POST http://10.1.10.70/logincheck -d "username=admin&secretkey=password" --dump-header headers.txt -c cookies.txt
 $ curl -k -i -X GET http://10.1.10.70/api/v2/cmdb/router/static -b headers.txt
 
@@ -50,7 +50,7 @@ $ curl -k -i -X POST http://10.1.10.70/logout
 
 ## Install fortiosAPI
 
-```
+```bash
 pip install fortiosapi
 #or
 pip3 install fortiosapi
@@ -81,14 +81,14 @@ Ref: [Overriding FortiGuard website categorization](https://help.fortinet.com/fo
 In the CLI, the term is local category.
 
 To create a local category:
-```
+```bash
 config webfilter ftgd-local-cat
   edit local_category_1
     set id 140
   end
 ```
 eg:
-```
+```bash
 config webfilter ftgd-local-cat
   edit custom_category
     set id 150
@@ -96,7 +96,7 @@ config webfilter ftgd-local-cat
 ```
 
 To set a rating to a Local Category:
-```
+```bash
 config webfilter ftgd-local-rating
   edit <url_str>
     set rating {[<category_int>] [group_str] . . .]
@@ -104,7 +104,7 @@ config webfilter ftgd-local-rating
   end
 ```
 eg:
-```
+```bash
 config webfilter ftgd-local-rating
   edit testurl101.com
     set rating 150
@@ -124,7 +124,7 @@ https://help.fortinet.com/fos60hlp/60/Content/FortiOS/fortigate-firewall/Object%
 
 https://docs.fortinet.com/vm/cisco-aci/fortigate/5.6/sdn-connector/5.6.3/617358/configuring-the-firewall-address-and-address-group
 
-```
+```bash
 config firewall address
 
   edit "test-tag"
@@ -154,7 +154,7 @@ config firewall addrgrp
 end
 ```
 
-```
+```bash
 FortiGate-VM64-KVM # show firewall addrgrp blklist1
 config firewall addrgrp
     edit "blklist1"
@@ -167,7 +167,7 @@ end
 ```
 
 # Appendix
-```
+```bash
 config firewall address
 edit "eg  block ip1"
         set subnet 192.168.82.82 255.255.255.255

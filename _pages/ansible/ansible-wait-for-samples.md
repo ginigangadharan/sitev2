@@ -12,7 +12,7 @@ showindex: true
 
 Ansible sample methods to wait for a machine to boot or a port to be ready.
 
-```
+```yaml
     - name: Waits for SSH, don't start checking for 5 seconds
       wait_for:
         host: "{{ inventory_hostname }}"

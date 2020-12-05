@@ -19,7 +19,7 @@ titleshort: Troubleshooting Ansible
 
 Error : Peer's certificate issuer has been marked as not trusted by the user
 
-```
+```yaml
 {
     "stderr_lines": [
         "fatal: unable to access 'https://$encrypted$:$encrypted$@vm-gitnode-01.lab.local/ansible/network-automation.git/': Peer's certificate issuer has been marked as not trusted by the user."
@@ -70,7 +70,7 @@ Error : Peer's certificate issuer has been marked as not trusted by the user
 Resolution
 SSL certificate validation can be prevented for Git connections originating from Tower by adding the following settings in the Tower UI at Settings >> Configure Tower >> Jobs in JSON format:
 
-```
+```json
 {
   "GIT_SSL_NO_VERIFY": "True"
 }
@@ -80,7 +80,7 @@ SSL certificate validation can be prevented for Git connections originating from
 
 Note : For cloning repo, use below methods
 
-```
+```bash
 git config --global http.sslverify false
 #or
 export GIT_SSL_NO_VERIFY=true
@@ -88,7 +88,7 @@ export GIT_SSL_NO_VERIFY=true
 
 ## Error:module 'enum' has no attribute 'IntFlag'
 
-```
+```yaml
 {
     "exception": "Traceback (most recent call last):\n  File \"/var/lib/awx/.ansible/tmp/ansible-tmp-1599103337.21-17-81526385316505/AnsiballZ_fortios_facts.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/var/lib/awx/.ansible/tmp/ansible-tmp-1599103337.21-17-81526385316505/AnsiballZ_fortios_facts.py\", line 17, in _ansiballz_main\n    import base64\n  File \"/usr/lib64/python3.6/base64.py\", line 9, in <module>\n    import re\n  File \"/usr/lib64/python3.6/re.py\", line 142, in <module>\n    class RegexFlag(enum.IntFlag):\nAttributeError: module 'enum' has no attribute 'IntFlag'\n",
     "_ansible_no_log": false,
@@ -109,7 +109,7 @@ https://access.redhat.com/solutions/4282031
 
 ## Error with `nosuid` when read/write files
 
-```
+```yaml
 sudo: effective uid is not 0, is /usr/bin/sudo on a file system with the 'nosuid' option set or an NFS file system without root privileges?
 ```
 
