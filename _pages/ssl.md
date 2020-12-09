@@ -12,13 +12,20 @@ showindex: true
 titleshort: ssl
 ---
 
-```bash
-- create CA and lines below (find CA step from net)
-## create CA and sign it.
-## emove the -des3 option for non-password protected key 
-openssl genrsa -des3 -out myserver-CA.key  4096
-openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out myserver-CA.pem
+### Create a Root CA
 
+```bash
+## create CA key
+## remove the -des3 option for non-password protected key 
+openssl genrsa -des3 -out myserver-CA.key  4096
+
+## self-sign CA Certificate
+openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out myserver-CA.pem
+```
+
+### Create Server Key, CSR and Certificate
+
+```bash
 ## Create a new SSL Key for server/app
 openssl genrsa -out myserver.key 2048
 
