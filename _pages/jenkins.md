@@ -3,7 +3,7 @@ layout: post
 title: Jenkins
 author: gini
 categories: [ automation, cicd ]
-#image: "assets/images/how-to-create-scheduled-snapshots-in-google-cloud-platform.PNG"
+image: "assets/images/2020/jon-moore-bBavss4ZQcA-unsplash-locks.jpg"
 tags: [cloud, automation, containers, kubernetes]
 permalink: jenkins
 featured: false
