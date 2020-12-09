@@ -3,7 +3,7 @@ layout: post
 title: SSL Certificate Management - Quick Reference
 author: gini
 categories: [ security]
-#image: "assets/images/how-to-create-scheduled-snapshots-in-google-cloud-platform.PNG"
+image: "assets/images/2020/jon-moore-bBavss4ZQcA-unsplash-locks.jpg"
 tags: [cloud, automation, containers, kubernetes]
 permalink: ssl
 featured: false
