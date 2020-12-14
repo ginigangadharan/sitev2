@@ -4,10 +4,10 @@ title: VirtualBox Notes
 categories: [ openshift ]
 tags: [ OpenShift Installation ]
 show-avatar: false
-permalink: /openshift-installation
+permalink: /Virtualbox
 featured: false
 hidden: false
-titleshort: VirtualBox
+titleshort: Virtualbox
 ---
 
 <!-- TOC -->autoauto- [1. VirtualBox Guest Addtion on CLI](#1-virtualbox-guest-addtion-on-cli)auto- [2. Troubleshooing VirtualBox VM](#2-troubleshooing-virtualbox-vm)auto  - [2.1. Unable to mount Shared folders in CLI](#21-unable-to-mount-shared-folders-in-cli)autoauto<!-- /TOC -->
