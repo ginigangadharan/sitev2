@@ -49,7 +49,6 @@ titleshort: OpenShift Installation
   - [11.3. Baremetal Installation](#113-baremetal-installation)
 - [12. baremetal](#12-baremetal)
 
-
 # 1. Method I - Setup an OpenShift All-In-One 
 
 ## 1.1. Install required packages
