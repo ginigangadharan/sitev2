@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OpenShift - Best References
-#author: gini
+author: gini
 categories: [ cloud ]
 image: "assets/images/2020/how-to-create-increase-or-decrease-project-quota-in-openshift.jpg"
 tags: [cloud, automation, containers, kubernetes]

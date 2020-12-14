@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OpenShift Installation Methods - Examples
+author: gini
 categories: [ openshift ]
 tags: [ OpenShift Installation ]
 show-avatar: false
