@@ -11,70 +11,81 @@ hidden: false
 titleshort: OpenShift Installation
 ---
 
-- [1. Method I - Setup an OpenShift All-In-One](#1-method-i---setup-an-openshift-all-in-one)
-  - [1.1. Install required packages](#11-install-required-packages)
-  - [1.2. Disable Firewall](#12-disable-firewall)
-  - [1.3. Installing OpenShift CLI](#13-installing-openshift-cli)
-    - [1.3.1. Method 1 - Standard CentOS repositories](#131-method-1---standard-centos-repositories)
-    - [1.3.2. Method 2 - Download and extract openshift origin](#132-method-2---download-and-extract-openshift-origin)
-      - [1.3.2.1. Add the directory you untarred the release into to your path:](#1321-add-the-directory-you-untarred-the-release-into-to-your-path)
-  - [1.4. Configure the Docker daemon with an insecure registry parameter of 172.30.0.0/16](#14-configure-the-docker-daemon-with-an-insecure-registry-parameter-of-172300016)
-    - [1.4.1. Restart docker service](#141-restart-docker-service)
-  - [1.5. Initiate cluster](#15-initiate-cluster)
-    - [1.5.1. Ref:](#151-ref)
-    - [1.5.2. Add a user](#152-add-a-user)
-- [2. Method II - Setup minishift](#2-method-ii---setup-minishift)
-  - [2.1. Setup Virtual Environment](#21-setup-virtual-environment)
-  - [2.2. Install minishift](#22-install-minishift)
-  - [2.3. Start minishift cluster](#23-start-minishift-cluster)
-- [3. Method III - OpenShift 4 - All in One Quick Cluster](#3-method-iii---openshift-4---all-in-one-quick-cluster)
-- [4. Method IV - OpenShift Full Cluster](#4-method-iv---openshift-full-cluster)
-- [5. CodeReady Containers - CRC (OpenShift 4.x)](#5-codeready-containers---crc-openshift-4x)
-  - [5.1. Download Package](#51-download-package)
-  - [5.2. Required software packages](#52-required-software-packages)
-    - [5.2.1. Enable sudo for user](#521-enable-sudo-for-user)
-  - [5.3. Setup Cluster](#53-setup-cluster)
-  - [5.4. Access your Cluster](#54-access-your-cluster)
-  - [5.5. Troubleshooting](#55-troubleshooting)
-    - [5.5.1. After crc start and crc console, oc login fails with Internal error occurred: unexpected response: 503 for a while #740](#551-after-crc-start-and-crc-console-oc-login-fails-with-internal-error-occurred-unexpected-response-503-for-a-while-740)
-    - [5.5.2. Unable to connect to console](#552-unable-to-connect-to-console)
-- [6. OpenSHift 4.x](#6-openshift-4x)
-- [7. OpenShift 4.2 Installation](#7-openshift-42-installation)
-- [8. Red Hat OpenShift 4.x Installation (Evaluation)](#8-red-hat-openshift-4x-installation-evaluation)
-  - [8.1. Baremetal Installation](#81-baremetal-installation)
-- [9. OpenShift on Baremetal (UPI)](#9-openshift-on-baremetal-upi)
-- [10. OpenShift All-In-One - OKD Using Ansible](#10-openshift-all-in-one---okd-using-ansible)
-- [11. Extras OpenSHift 4.x](#11-extras-openshift-4x)
-  - [11.1. OpenShift 4.2 Installation](#111-openshift-42-installation)
-  - [11.2. OpenShift 4.1 Installation](#112-openshift-41-installation)
-  - [11.3. Baremetal Installation](#113-baremetal-installation)
-- [12. baremetal](#12-baremetal)
+- [1. Installing an OKD 4.x Cluster](#1-installing-an-okd-4x-cluster)
+- [2. Install OpenShift 4.x](#2-install-openshift-4x)
+- [3. Method I - Setup an OpenShift All-In-One](#3-method-i---setup-an-openshift-all-in-one)
+  - [3.1. Install required packages](#31-install-required-packages)
+  - [3.2. Disable Firewall](#32-disable-firewall)
+  - [3.3. Installing OpenShift CLI](#33-installing-openshift-cli)
+    - [3.3.1. Method 1 - Standard CentOS repositories](#331-method-1---standard-centos-repositories)
+    - [3.3.2. Method 2 - Download and extract openshift origin](#332-method-2---download-and-extract-openshift-origin)
+      - [3.3.2.1. Add the directory you untarred the release into to your path:](#3321-add-the-directory-you-untarred-the-release-into-to-your-path)
+  - [3.4. Configure the Docker daemon with an insecure registry parameter of 172.30.0.0/16](#34-configure-the-docker-daemon-with-an-insecure-registry-parameter-of-172300016)
+    - [3.4.1. Restart docker service](#341-restart-docker-service)
+  - [3.5. Initiate cluster](#35-initiate-cluster)
+    - [3.5.1. Ref:](#351-ref)
+    - [3.5.2. Add a user](#352-add-a-user)
+- [4. Method II - Setup minishift](#4-method-ii---setup-minishift)
+  - [4.1. Setup Virtual Environment](#41-setup-virtual-environment)
+  - [4.2. Install minishift](#42-install-minishift)
+  - [4.3. Start minishift cluster](#43-start-minishift-cluster)
+- [5. Method III - OpenShift 4 - All in One Quick Cluster](#5-method-iii---openshift-4---all-in-one-quick-cluster)
+- [6. Method IV - OpenShift Full Cluster](#6-method-iv---openshift-full-cluster)
+- [7. CodeReady Containers - CRC (OpenShift 4.x)](#7-codeready-containers---crc-openshift-4x)
+  - [7.1. Download Package](#71-download-package)
+  - [7.2. Required software packages](#72-required-software-packages)
+    - [7.2.1. Enable sudo for user](#721-enable-sudo-for-user)
+  - [7.3. Setup Cluster](#73-setup-cluster)
+  - [7.4. Access your Cluster](#74-access-your-cluster)
+  - [7.5. Troubleshooting](#75-troubleshooting)
+    - [7.5.1. After crc start and crc console, oc login fails with Internal error occurred: unexpected response: 503 for a while #740](#751-after-crc-start-and-crc-console-oc-login-fails-with-internal-error-occurred-unexpected-response-503-for-a-while-740)
+    - [7.5.2. Unable to connect to console](#752-unable-to-connect-to-console)
+- [8. OpenSHift 4.x](#8-openshift-4x)
+- [9. OpenShift 4.2 Installation](#9-openshift-42-installation)
+- [10. Red Hat OpenShift 4.x Installation (Evaluation)](#10-red-hat-openshift-4x-installation-evaluation)
+  - [10.1. Baremetal Installation](#101-baremetal-installation)
+- [11. OpenShift on Baremetal (UPI)](#11-openshift-on-baremetal-upi)
+- [12. OpenShift All-In-One - OKD Using Ansible](#12-openshift-all-in-one---okd-using-ansible)
+- [13. Extras OpenSHift 4.x](#13-extras-openshift-4x)
+  - [13.1. OpenShift 4.2 Installation](#131-openshift-42-installation)
+  - [13.2. OpenShift 4.1 Installation](#132-openshift-41-installation)
+  - [13.3. Baremetal Installation](#133-baremetal-installation)
+- [14. baremetal](#14-baremetal)
 
-# 1. Method I - Setup an OpenShift All-In-One 
+# 1. Installing an OKD 4.x Cluster
 
-## 1.1. Install required packages
+[Reference](https://www.openshift.com/blog/guide-to-installing-an-okd-4-4-cluster-on-your-home-lab)
+[Installing an OKD 4.5 Cluster](https://medium.com/@craig_robinson/guide-installing-an-okd-4-5-cluster-508a2631cbee)
+
+# 2. Install OpenShift 4.x
+
+[How to install OpenShift 4 on Bare Metal - (UPI)](https://www.youtube.com/watch?v=d03xg2PKOPg) (Video)
+
+# 3. Method I - Setup an OpenShift All-In-One 
+
+## 3.1. Install required packages
 ```
 yum install ansible docker wget -y
 systemctl enable docker
 systemctl start docker
 ```
 
-## 1.2. Disable Firewall
+## 3.2. Disable Firewall
 Or you have to open required ports.
 ```
 systemctl disable firewalld
 systemctl stop firewalld
 ```
 
-## 1.3. Installing OpenShift CLI
+## 3.3. Installing OpenShift CLI
 
-### 1.3.1. Method 1 - Standard CentOS repositories
+### 3.3.1. Method 1 - Standard CentOS repositories
 ```
 yum -y install centos-release-openshift-origin39
 yum -y install origin-clients
 ```
 
-### 1.3.2. Method 2 - Download and extract openshift origin
+### 3.3.2. Method 2 - Download and extract openshift origin
 
 Create a directory for data (anywhere)
 ```
@@ -89,7 +100,7 @@ tar -xzvf openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz
 cd openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit
 ```
 
-#### 1.3.2.1. Add the directory you untarred the release into to your path:
+#### 3.3.2.1. Add the directory you untarred the release into to your path:
 ```
 export PATH=$PATH:/data/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit/
 
@@ -98,7 +109,7 @@ export PATH=$PATH:/data/openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bi
 export PATH=$PATH:`pwd`
 ```
 
-## 1.4. Configure the Docker daemon with an insecure registry parameter of 172.30.0.0/16
+## 3.4. Configure the Docker daemon with an insecure registry parameter of 172.30.0.0/16
 ```
 cat > /etc/docker/daemon.json <<DELIM
 {
@@ -109,12 +120,12 @@ cat > /etc/docker/daemon.json <<DELIM
 DELIM
 ```
 
-### 1.4.1. Restart docker service
+### 3.4.1. Restart docker service
 ```
 service docker restart
 ```
 
-## 1.5. Initiate cluster
+## 3.5. Initiate cluster
 ```
 oc cluster up --base-dir="/data/clusterup" --public-hostname=<IP>
 ```
@@ -124,12 +135,12 @@ oc cluster up --base-dir="/data/clusterup" --public-hostname=<IP>
 openshift.local.clusterup/openshift-controller-manager/openshift-master.kubeconfig
 
 
-### 1.5.1. Ref:
+### 3.5.1. Ref:
 - https://github.com/openshift/origin/blob/release-3.11/docs/cluster_up_down.md
 - https://medium.com/@fabiojose/working-with-oc-cluster-up-a052339ea219
 
 
-### 1.5.2. Add a user
+### 3.5.2. Add a user
 ```
 # oc create user redhat
 user.user.openshift.io/redhat created
@@ -137,14 +148,14 @@ user.user.openshift.io/redhat created
 cluster role "cluster-admin" added: "redhat"
 ```
 
-# 2. Method II - Setup minishift
+# 4. Method II - Setup minishift
 
-## 2.1. Setup Virtual Environment
+## 4.1. Setup Virtual Environment
 
 - setup KVM or virtualbox (or other virtulization)
 Ref: [Set up your virtualization environment](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html)
 
-## 2.2. Install minishift
+## 4.2. Install minishift
 - [Download](https://github.com/minishift/minishift/releases) and manually install 
 
 or 
@@ -156,7 +167,7 @@ brew cask install minishift
 
 * in case issue to install `export HOMEBREW_NO_ENV_FILTERING=1`*
 
-## 2.3. Start minishift cluster
+## 4.3. Start minishift cluster
 
 ```
 minishift start --vm-driver virtualbox
@@ -178,15 +189,15 @@ export PATH="/home/john/.minishift/cache/oc/v1.5.0:$PATH"
 # eval $(minishift oc-env)
 ```
 
-# 3. Method III - OpenShift 4 - All in One Quick Cluster
+# 5. Method III - OpenShift 4 - All in One Quick Cluster
 
 https://github.com/openshift/okd/releases
 
-# 4. Method IV - OpenShift Full Cluster
+# 6. Method IV - OpenShift Full Cluster
 
 - [Installing OpenShift 4.1 Using Libvirt and KVM](http://alesnosek.com/blog/2019/07/08/installing-openshift-4-dot-1-using-libvirt-and-kvm/)
 
-# 5. CodeReady Containers - CRC (OpenShift 4.x)
+# 7. CodeReady Containers - CRC (OpenShift 4.x)
 
 [Red Hat CodeReady Containers](https://developers.redhat.com/products/codeready-containers)
   
@@ -198,12 +209,11 @@ Ref:
 - [RED HAT CODEREADY CONTAINERS](https://access.redhat.com/documentation/en-us/red_hat_codeready_containers/1.13/html-single/getting_started_guide/index)
 
 
-## 5.1. Download Package
+## 7.1. Download Package
 
-`wget https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz`
-https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013a000002CtetAAC
+Refer : **[Install OpenShift on a laptop with CodeReady Containers](https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013a000002CtetAAC)**
 
-- Visit https://www.openshift.com/try
+- Visit [https://www.openshift.com/try](https://www.openshift.com/try)
 - Choose install on Laptop -> https://cloud.redhat.com/openshift/install/crc/installer-provisioned
 - Download for your OS choise (Windows10, MacOS, Linux)
 - Move package to your machine folder
@@ -212,13 +222,15 @@ https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013
 
 - Download and keep the pull secret from same location. You need that later during `crc start`
 
-## 5.2. Required software packages
+## 7.2. Required software packages
 
 CodeReady Containers requires the libvirt and NetworkManager packages. 
-`su -c 'yum install NetworkManager`
-`wget https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz`
+```shell
+yum install NetworkManager
+wget https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz
+```
 
-### 5.2.1. Enable sudo for user
+### 7.2.1. Enable sudo for user
 
 ```
 [devops@node1 ~]$ sudo cat /etc/sudoers.d/devops
@@ -226,23 +238,23 @@ CodeReady Containers requires the libvirt and NetworkManager packages.
 devops ALL=(ALL) NOPASSWD: ALL
 ```
 
-## 5.3. Setup Cluster
+## 7.3. Setup Cluster
 
-```
+```bash
 $ cd crc-linux-1.11.0-amd64
 $ export PATH=/home/devops/crc-linux-1.11.0-amd64:$PATH
-### Usr normal user account
+
+## set up your host operating system for the CodeReady Containers virtual machine.
+## Use normal user account
 $ crc setup
 
-### Start cluster
-$ crc start
-
-### if you are on a terminal without GUI, you will have difficulty to copy/paste pull secret content. in that you can mention the pull secret ful
+## Start cluster
+## if you are on a terminal without GUI, you will have difficulty to copy/paste pull secret content. in that you can mention the pull secret ful
 $ crc start -p /path-to/pull-secret
 
 ```
 
-## 5.4. Access your Cluster
+## 7.4. Access your Cluster
 ```
 $ eval $(crc oc-env)
 $ oc login -u developer -p developer
@@ -258,11 +270,11 @@ Opening the OpenShift Web Console in the default browser...
 
 ```
 
-## 5.5. Troubleshooting
+## 7.5. Troubleshooting
 
-### 5.5.1. After crc start and crc console, oc login fails with Internal error occurred: unexpected response: 503 for a while #740
+### 7.5.1. After crc start and crc console, oc login fails with Internal error occurred: unexpected response: 503 for a while #740
 
-### 5.5.2. Unable to connect to console
+### 7.5.2. Unable to connect to console
 
 ```
 $ crc ip
@@ -270,7 +282,7 @@ $ nmcli conn show
 
 ```
 
-# 6. OpenSHift 4.x 
+# 8. OpenSHift 4.x 
 
 https://github.com/openshift/okd
 
@@ -286,33 +298,33 @@ clouds:
     region_name: RegionOne
 ``` 
 
-# 7. OpenShift 4.2 Installation
+# 9. OpenShift 4.2 Installation
 https://docs.openshift.com/container-platform/4.2/installing/installing_bare_metal/installing-bare-metal.html
 
-# 8. Red Hat OpenShift 4.x Installation (Evaluation)
+# 10. Red Hat OpenShift 4.x Installation (Evaluation)
 https://access.redhat.com/documentation/en-us/openshift_container_platform/4.1/html/installing/index
 
 - [Get Evaluation](https://www.redhat.com/en/technologies/cloud-computing/openshift/try-it/success)
 - [Installation](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.5/html/architecture/architecture-installation#installation-overview_architecture-installation)
 
-## 8.1. Baremetal Installation
+## 10.1. Baremetal Installation
 https://access.redhat.com/documentation/en-us/openshift_container_platform/4.1/html/installing/installing-on-bare-metal
 https://docs.openshift.com/container-platform/4.1/installing/installing_bare_metal/installing-bare-metal.html
 https://blog.openshift.com/openshift-4-bare-metal-install-quickstart/
 
 
-# 9. OpenShift on Baremetal (UPI)
+# 11. OpenShift on Baremetal (UPI)
 
 - [Installing on OpenShift on Baremetal](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.4/html/installing_on_bare_metal/index)
 
-# 10. OpenShift All-In-One - OKD Using Ansible
+# 12. OpenShift All-In-One - OKD Using Ansible
 
 Ref:
 https://github.com/Gepardec/ansible-role-okd
 https://galaxy.ansible.com/gepardec/okd
 https://computingforgeeks.com/setup-openshift-origin-local-cluster-on-centos/
 
-# 11. Extras OpenSHift 4.x 
+# 13. Extras OpenSHift 4.x 
 
 https://github.com/openshift/okd
 
@@ -328,13 +340,13 @@ clouds:
     region_name: RegionOne
 ``` 
 
-## 11.1. OpenShift 4.2 Installation
+## 13.1. OpenShift 4.2 Installation
 https://docs.openshift.com/container-platform/4.2/installing/installing_bare_metal/installing-bare-metal.html
 
-## 11.2. OpenShift 4.1 Installation
+## 13.2. OpenShift 4.1 Installation
 https://access.redhat.com/documentation/en-us/openshift_container_platform/4.1/html/installing/index
 
-## 11.3. Baremetal Installation
+## 13.3. Baremetal Installation
 https://access.redhat.com/documentation/en-us/openshift_container_platform/4.1/html/installing/installing-on-bare-metal
 https://docs.openshift.com/container-platform/4.1/installing/installing_bare_metal/installing-bare-metal.html
 https://blog.openshift.com/openshift-4-bare-metal-install-quickstart/
@@ -346,5 +358,5 @@ https://labs.consol.de/container/platform/openshift/2020/01/31/ocp43-installatio
 
 https://blogs.ovirt.org/2019/01/ovirt-openshift-part-1/
 
-# 12. baremetal
+# 14. baremetal
 https://docs.openshift.com/container-platform/4.3/installing/installing_bare_metal/installing-bare-metal.html#cluster-entitlements_installing-bare-metal
