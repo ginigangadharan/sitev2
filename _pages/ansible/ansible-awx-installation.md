@@ -8,7 +8,7 @@ categories: [ cloud ]
 # 2. image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
 tags: [cloud, automation, containers, kubernetes]
 show-avatar: false
-permalink: /awx-installation
+permalink: awx-installation
 featured: false
 hidden: false
 titleshort: AWX
