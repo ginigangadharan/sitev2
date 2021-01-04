@@ -44,7 +44,7 @@ where,
 ## Get the Password
 
 - First Admin password can be found at `/var/jenkins_home/secrets/initialAdminPassword`
-- 
+
 ```
 $ sudo docker exec -it 198b7deb5f7d /bin/bash
 jenkins@198b7deb5f7d:/$ cat /var/jenkins_home/secrets/initialAdminPassword
