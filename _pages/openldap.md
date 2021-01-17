@@ -155,8 +155,21 @@ and
 # ldapadd -Y EXTERNAL -x -D cn=Manager,dc=example,dc=com -W -f baseldapdomain.ldif
 ```
 
-## 
+# Configure Client using SSSD
 
+```
+## Install packages
+yum install sssd sssd-client
+
+## Configure System
+authconfig --enablesssd --enablesssdauth --ldapserver="<ldapserver>" --ldapbasedn="<ldap-base-dn>" --enableldaptls --update
+
+## eg:
+authconfig --enablesssd --enablesssdauth --ldapserver="ldap.jumpcloud.com" --ldapbasedn="ou=Users,o=5ffd6b642482a16659721d5c,dc=jumpcloud,dc=com" --enableldaptls --update
+```
+
+
+# Appendix
 
 **[Reference](https://www.howtoforge.com/linux_openldap_setup_server_client)**
 https://www.tecmint.com/install-openldap-server-for-centralized-authentication/
