@@ -5,14 +5,15 @@
   - [1.2. Disocvering RKE](#12-disocvering-rke)
     - [1.2.1. Node Preparation](#121-node-preparation)
     - [1.2.2. Creating the Cluster Configuration File](#122-creating-the-cluster-configuration-file)
-    - [Certificate Options](#certificate-options)
+    - [1.2.3. Certificate Options](#123-certificate-options)
   - [1.3. Day Two Operations For RKE](#13-day-two-operations-for-rke)
     - [1.3.1. Secure the Installation Files](#131-secure-the-installation-files)
     - [1.3.2. Backups and DR](#132-backups-and-dr)
-    - [Upgrade an RKE Cluster](#upgrade-an-rke-cluster)
-    - [Certificate Management](#certificate-management)
-    - [Adding and Removing Nodes](#adding-and-removing-nodes)
-- [2. References](#2-references)
+    - [1.3.3. Upgrade an RKE Cluster](#133-upgrade-an-rke-cluster)
+    - [1.3.4. Certificate Management](#134-certificate-management)
+    - [1.3.5. Adding and Removing Nodes](#135-adding-and-removing-nodes)
+- [2. Installing Rancher](#2-installing-rancher)
+- [3. References](#3-references)
 
 
 # 1. Introduction to Rancher & RKE
@@ -57,7 +58,7 @@ $ rke up --ssh-agent-auth
 
 [Creating the Cluster Configuration File](https://rancher.com/docs/rke/latest/en/installation/#using-rke-config)
 
-### Certificate Options
+### 1.2.3. Certificate Options
 
 ## 1.3. Day Two Operations For RKE
 
@@ -72,19 +73,31 @@ Save `kube_config_cluster.yaml` and `cluster.rkestate`
 - minio to keep snapshots
 - `rke etcd snapshot-restore --name BACKUP_FILE` to restore
 
-### Upgrade an RKE Cluster
+### 1.3.3. Upgrade an RKE Cluster
 
 - Use `rke config` to list the versions of Kubernetes supported by this version of rke
 - modify config to new version - [Ref](https://rancher.com/docs/rke/latest/en/upgrades/#upgrading-kubernetes)
 
-### Certificate Management
+### 1.3.4. Certificate Management
 
 - Automatic Certificate Rotation - `rke cert rotate`
 
-### Adding and Removing Nodes
+### 1.3.5. Adding and Removing Nodes
 
 - amend the `cluster.yaml` and do `rke up`
 
-# 2. References
+# 2. Installing Rancher
+
+```
+$ docker run -d --restart=unless-stopped -p 80:80 -p 443:443 -v \
+  /opt/rancher:/var/lib/rancher rancher/rancher:v2.4.1
+```
+
+or `rancher/rancher:stable`
+- persistent data at `/var/lib/rancher` (a docker volume)
+- 
+- 
+
+# 3. References
 - [KMC - Hands On with K3s Support in Rancher 2.4 - 2020-06-16](https://www.youtube.com/watch?v=7tPseWagth8) (video)
 - [What’s the difference between k3s vs k8s](https://www.civo.com/blog/k8s-vs-k3s)
