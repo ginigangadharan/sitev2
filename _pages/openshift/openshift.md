@@ -18,6 +18,7 @@ These are collection of reference documents and blog posts from different expert
 
 ## OpenShift Articles
 -  in [techbeatly.com](https://www.techbeatly.com/category/cloud/openshift/)
+-  [OpenShift Community of Practice - uncontained.io](http://uncontained.io/)
 
 ## Azure Red Hat OpenShift (aro)
 

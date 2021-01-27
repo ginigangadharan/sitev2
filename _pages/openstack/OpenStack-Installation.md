@@ -1,30 +1,51 @@
-# Setup your OpenStack Infra
 
-## Install OS
+- [1. Setup your OpenStack Infra](#1-setup-your-openstack-infra)
+	- [1.1. Install OS](#11-install-os)
+	- [1.2. Update](#12-update)
+	- [1.3. Update /etc/hosts](#13-update-etchosts)
+	- [1.4. Stop and Disable Firewall](#14-stop-and-disable-firewall)
+	- [1.5. Stop and Disable NetworkManager](#15-stop-and-disable-networkmanager)
+	- [1.6. Verify Network Connectivity](#16-verify-network-connectivity)
+	- [1.7. Update SELinux and Verify](#17-update-selinux-and-verify)
+	- [1.8. Install epel Repo](#18-install-epel-repo)
+	- [1.9. Install Necessary Packages](#19-install-necessary-packages)
+	- [1.10. NTP Installation](#110-ntp-installation)
+	- [1.11. Install openstack repository](#111-install-openstack-repository)
+	- [1.12. Remove epel Repo](#112-remove-epel-repo)
+	- [1.13. Install openvswitch](#113-install-openvswitch)
+	- [1.14. Configure NIC card configuration files](#114-configure-nic-card-configuration-files)
+	- [1.15. Install Dependency Packages](#115-install-dependency-packages)
+	- [1.16. Install packstack](#116-install-packstack)
+	- [1.17. Install Openstack](#117-install-openstack)
+- [2. Openstack all services list](#2-openstack-all-services-list)
+
+# 1. Setup your OpenStack Infra
+
+## 1.1. Install OS
 Install CentOS7/RHEL7 with minimal installation type
 
-## Update
+## 1.2. Update
 yum update -y
 
-## Update /etc/hosts
+## 1.3. Update /etc/hosts
 Ensure the hostname entry in `/etc/hosts` file
 hostnamectl set-hostname node1.lab.local
 
-## Stop and Disable Firewall
+## 1.4. Stop and Disable Firewall
 ```
 systemctl disable firewalld;systemctl stop firewalld;systemctl status firewalld
 ```
 
-## Stop and Disable NetworkManager
+## 1.5. Stop and Disable NetworkManager
 (Don't do this step in your laptop as you may lose your Wired/Wireless connection. This step is only applicable on Production servers)
 ```
 systemctl disable NetworkManager;systemctl stop NetworkManager;systemctl status NetworkManager
 ```
 
-## Verify Network Connectivity
+## 1.6. Verify Network Connectivity
 Now check the internet connectivity from the linux machine by the way of pinging some website from linux machine.
 
-## Update SELinux and Verify
+## 1.7. Update SELinux and Verify
 Change the SElinux, edit and update value to `SELINUX=permissive
 To check the current selinux status (if you still see enforcing then reboot your machine)
 ```
@@ -33,7 +54,7 @@ To check the current selinux status (if you still see enforcing then reboot your
 Permissive
 ```
 
-## Install epel Repo
+## 1.8. Install epel Repo
 Install epel-release repository ; This repository will help to install all packages
 (If you are using RHEL Subscribed version, no need to do this.)
 
@@ -43,13 +64,13 @@ yum install epel-release
 yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 ```
 
-## Install Necessary Packages
+## 1.9. Install Necessary Packages
 (Skip this steps if you are using RHEL Subscribed version)
 ```
 yum install erlang* vim -y
 ```
 
-## NTP Installation
+## 1.10. NTP Installation
 ```
 yum install ntp -y
 systemctl start ntpd
@@ -62,7 +83,7 @@ systemctl status ntpd
 ntpdate -q 0.ro.pool.ntp.org 1.ro.pool.ntp.org
 ```
 
-## Install openstack repository 
+## 1.11. Install openstack repository 
 (Skip this steps if you are using RHEL Subscribed version)
 
 ```
@@ -72,7 +93,7 @@ http://mirror.centos.org/centos/7/cloud/x86_64/openstack-mitaka/
 ```
 *https://repos.fedorapeople.org/openstack/openstack-mitaka/rdo-release-mitaka-7.noarch.rpm*
 
-## Remove epel Repo
+## 1.12. Remove epel Repo
 (Skip this steps if you are using RHEL Subscribed version)
 Since erlang package is getting conflict with openstack,remove the epel repo as per the following steps.
 ```
@@ -82,7 +103,7 @@ Since erlang package is getting conflict with openstack,remove the epel repo as 
 # yum repolist
 ```
 
-## Install openvswitch
+## 1.13. Install openvswitch
 ```
 yum install -y openvswitch
 systemctl start openvswitch
@@ -109,7 +130,7 @@ Create bridge in the linux before start the openstack
     ovs_version: "2.5.0"
 ```
 
-## Configure NIC card configuration files
+## 1.14. Configure NIC card configuration files
 ```
 # vim /etc/sysconfig/network-scripts/ifcfg-eno16777736
 ```
@@ -165,13 +186,13 @@ eccb252f-f4f1-43cc-8b84-42255c4e3912
 	ovs_version: "2.1.3"
 ```
 
-## Install Dependency Packages
+## 1.15. Install Dependency Packages
 before start the actual openstack installation please install the package dependencies.....
 ```
 yum install -y puppet hiera openssh-clients tar nc rubygem-json
 ```
 
-## Install packstack
+## 1.16. Install packstack
 Check the openstack package now is available or not
 ```
 [root@opstack yum.repos.d]# yum list *packstack*
@@ -188,7 +209,7 @@ Install the packstack package
 # yum install openstack-packstack
 ```
 
-## Install Openstack
+## 1.17. Install Openstack
 Create answer file to customise the openstack installation
 ```
 packstack --gen-answer-file=/root/answers.txt
@@ -231,7 +252,7 @@ Please, find your login credentials stored in the keystonerc_admin in your home 
  * The generated manifests are available at: /var/tmp/packstack/20170609-002635-SZiNrX/manifests
 ```
  
-# Openstack all services list
+# 2. Openstack all services list
 ```
 systemctl restart httpd.service                            	 
 systemctl restart iscsi.service                            	 

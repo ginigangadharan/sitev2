@@ -51,6 +51,8 @@ titleshort: OpenShift Installation
   - [13.2. OpenShift 4.1 Installation](#132-openshift-41-installation)
   - [13.3. Baremetal Installation](#133-baremetal-installation)
 - [14. baremetal](#14-baremetal)
+- [15. Deploy OpenShift Using OpenShift Installer (AWS)](#15-deploy-openshift-using-openshift-installer-aws)
+  - [15.1. Using OpenShift Installer](#151-using-openshift-installer)
 
 # 1. Installing an OKD 4.x Cluster
 
@@ -297,7 +299,6 @@ clouds:
       password: ocpadmin
     region_name: RegionOne
 ``` 
-
 # 9. OpenShift 4.2 Installation
 https://docs.openshift.com/container-platform/4.2/installing/installing_bare_metal/installing-bare-metal.html
 
@@ -360,3 +361,29 @@ https://blogs.ovirt.org/2019/01/ovirt-openshift-part-1/
 
 # 14. baremetal
 https://docs.openshift.com/container-platform/4.3/installing/installing_bare_metal/installing-bare-metal.html#cluster-entitlements_installing-bare-metal
+
+# 15. Deploy OpenShift Using OpenShift Installer (AWS)
+(27 Jan 2021)
+- [OpenShift Installer](https://www.openshift.com/try)
+  
+Installer configures entire cloud infrastructure:
+- VMs
+- Load balancers
+- Storage
+- Networking
+- Other resources
+
+## 15.1. Using OpenShift Installer
+
+```
+openshift-install create cluster --dir=$HOME/mycluster
+```
+Installer prompts for
+- SSH public key
+- Platform: aws
+- Region: Default in AWS is us-east-1
+- Base domain: Public route 53 domain, needs to exist prior to installation
+- Cluster name: Must be unique within AWS account
+- Pull secret: From Get Started with OpenShift as single-line JSON
+
+
