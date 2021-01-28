@@ -53,6 +53,13 @@ titleshort: OpenShift Installation
 - [14. baremetal](#14-baremetal)
 - [15. Deploy OpenShift Using OpenShift Installer (AWS)](#15-deploy-openshift-using-openshift-installer-aws)
   - [15.1. Using OpenShift Installer](#151-using-openshift-installer)
+  - [Setup Bastion Host](#setup-bastion-host)
+    - [Configure Bastion VM to Run OpenShift Installer](#configure-bastion-vm-to-run-openshift-installer)
+    - [Install OpenShift Container Platform](#install-openshift-container-platform)
+    - [multi-step installation.](#multi-step-installation)
+    - [Clean Up Cluster](#clean-up-cluster)
+    - [Validate Cluster](#validate-cluster)
+  - [References](#references)
 
 # 1. Installing an OKD 4.x Cluster
 
@@ -386,4 +393,209 @@ Installer prompts for
 - Cluster name: Must be unique within AWS account
 - Pull secret: From Get Started with OpenShift as single-line JSON
 
+## Setup Bastion Host
+- Create a bastion node and login to the host.
+
+```
+$ ssh user@bastion-host
+$ echo $GUID
+d0ce
+```
+
+### Configure Bastion VM to Run OpenShift Installer
+
+**Install AWS CLI**
+
+```
+# Download the latest AWS Command Line Interface
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+unzip awscli-bundle.zip
+
+# Install the AWS CLI into /bin/aws
+./awscli-bundle/install -i /usr/local/aws -b /bin/aws
+
+# Validate that the AWS CLI works
+aws --version
+
+# Clean up downloaded files
+rm -rf /root/awscli-bundle /root/awscli-bundle.zip
+```
+
+**Download OpenShift Installation Binary**
+```
+OCP_VERSION=4.6.4
+wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${OCP_VERSION}/openshift-install-linux-${OCP_VERSION}.tar.gz
+tar zxvf openshift-install-linux-${OCP_VERSION}.tar.gz -C /usr/bin
+rm -f openshift-install-linux-${OCP_VERSION}.tar.gz /usr/bin/README.md
+chmod +x /usr/bin/openshift-install
+```
+
+**Download and Install OC CLI**
+```
+wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${OCP_VERSION}/openshift-client-linux-${OCP_VERSION}.tar.gz
+tar zxvf openshift-client-linux-${OCP_VERSION}.tar.gz -C /usr/bin
+rm -f openshift-client-linux-${OCP_VERSION}.tar.gz /usr/bin/README.md
+chmod +x /usr/bin/oc
+```
+
+- Check that the OpenShift installer and CLI are in /usr/bin:
+
+```bash
+ls -l /usr/bin/{oc,openshift-install}
+
+# Setup auto-completion
+oc completion bash >/etc/bash_completion.d/openshift
+```
+
+- logout from `root`
+
+**Configure AWS CLI Credential**
+```bash
+export AWSKEY=<YOURACCESSKEY>
+export AWSSECRETKEY=<YOURSECRETKEY>
+export REGION=us-east-2
+
+mkdir $HOME/.aws
+cat << EOF >>  $HOME/.aws/credentials
+[default]
+aws_access_key_id = ${AWSKEY}
+aws_secret_access_key = ${AWSSECRETKEY}
+region = $REGION
+EOF
+
+# test AWS Access
+aws sts get-caller-identity
+```
+
+- Open https://www.openshift.com/try and select "Try it in the Cloud", Select AWS
+- Choose "Installer-Provisioned-Infrastructure"
+- Copy the Pull Secret (save to file for copy)
+
+- Create an ssh key pair
+
+```
+ssh-keygen -f ~/.ssh/cluster-${GUID}-key -N ''
+```
+
+### Install OpenShift Container Platform
+
+- Installer will generate Ignition configs for the bootstrap, master, and worker machines. 
+- The process for bootstrapping a cluster looks like the following:
+  - The bootstrap machine boots and starts hosting the remote resources required for the master machines to boot.
+  - The master machines fetch the remote resources from the bootstrap machine and finish booting.
+  - The master machines use the bootstrap node to form an etcd cluster.
+  - The bootstrap node starts a temporary Kubernetes control plane using the newly created etcd cluster.
+  - The temporary control plane schedules the production control plane to the master machines.
+  - The temporary control plane shuts down, yielding to the production control plane.
+  - The bootstrap node injects OpenShift-specific components into the newly formed control plane.
+  - The installer then tears down the bootstrap node.
+
+- The result of this bootstrapping process is a fully running OpenShift cluster. The cluster will then download and configure the remaining components needed for day-to-day operation, including the creation of worker machines on supported platforms.
+
+**Run OpenShift Installer**
+
+Run the OpenShift installer and answer the prompts:
+- Select your Public Key (which you have created earlier)
+- Select aws as the Platform.
+- Select any Region near you.
+- Select `cluster.yourdomain.com` as the Base Domain.
+- For the Cluster Name, type cluster-101 (or any other name)
+- When prompted, paste the contents of your Pull Secret in JSON format. Do not include any spaces or white characters and make sure it is in one line
+
+```bash
+$ openshift-install create cluster --dir $HOME/cluster-101
+
+# Sample answers
+? SSH Public Key /home/user/.ssh/cluster-101-key.pub
+? Platform aws
+INFO Credentials loaded from the "default" profile in file "/home/user/.aws/credentials"
+? Region us-east-2 (Ohio)
+? Base Domain cluster.yourdomain.com
+? Cluster Name cluster-101
+? Pull Secret [? for help] ***************************************************************************************************************************************************************
+
+# wait for installer to finish
+
+*********************************************
+INFO Creating infrastructure resources...
+INFO Waiting up to 20m0s for the Kubernetes API at https://api.cluster-d0ce.d0ce.sandbox1072.opentlc.com:6443... 
+INFO API v1.19.0+9f84db3 up
+INFO Waiting up to 30m0s for bootstrapping to complete...
+INFO Destroying the bootstrap resources...        
+INFO Waiting up to 40m0s for the cluster at https://api.cluster-d0ce.d0ce.sandbox1072.opentlc.com:6443 to initialize... 
+INFO Waiting up to 10m0s for the openshift-console route to be created... 
+INFO Install complete!
+INFO To access the cluster as the system:admin user when using 'oc', run 'export KUBECONFIG=/home/gineesh.madapparambath-fujitsu.c/cluster-d0ce/auth/kubeconfig'
+INFO Access the OpenShift web-console here: https://console-openshift-console.apps.cluster-d0ce.d0ce.sandbox1072.opentlc.com
+INFO Login to the console with user: "kubeadmin", and password: "6TVYn-33gLY-7ZjrA-eqRQE" 
+INFO Time elapsed: 37m56s
+```
+
+- Make note of the following items from the output of the install command:
+  - The location of the kubeconfig file, which is required for setting the KUBECONFIG environment variable and, as suggested, sets the OpenShift user ID to `system:admin`.
+  - The kubeadmin user ID and associated password (GEveR-tBVTB-jJUJB-iC9Jn in the example).
+  - The password for the kubeadmin user is also written into the auth/kubeadmin-password file.
+  - The URL of the web console - (https://console-openshift-console.apps.cluster-<GUID>.sandbox<SANDBOXID>.opentlc.com in the example) and the credentials (again) to log into the web console.
+
+- Refer `${HOME}/cluster-101/.openshift_install.log` for logs and troubleshooting.
+
+
+
+### multi-step installation.
+
+```bash
+# Create the installation configuration: 
+openshift-install create install-config --dir $HOME/cluster-${GUID}.
+
+# Update the generated install-config.yaml file—for example, change the AWS EC2 instance types.
+
+# Create the YAML manifest templates: 
+openshift-install create manifests --dir $HOME/cluster-${GUID}.
+#  Changing the manifest templates is unsupported.
+
+# Create the YAML manifests:
+openshift-install create manifests --dir $HOME/cluster-${GUID}
+#  Changing the manifests is unsupported.
+
+# Create the Ignition configuration files: 
+openshift-install create ignition-configs --dir $HOME/cluster-${GUID}.
+# Changing the Ignition configuration files is unsupported.
+
+# Install the cluster: 
+openshift-install create cluster --dir $HOME/cluster-${GUID}.
+
+# To delete the cluster, use: 
+openshift-install destroy cluster --dir $HOME/cluster-${GUID}.
+
+```
+
+### Clean Up Cluster
+
+```bash
+openshift-install destroy cluster --dir $HOME/cluster-${GUID}
+
+# Delete all of the files created by the OpenShift installer:
+rm -rf $HOME/.kube
+rm -rf $HOME/cluster-${GUID}
+```
+
+### Validate Cluster
+
+```bash
+# Setup CLI
+export KUBECONFIG=$HOME/cluster-${GUID}/auth/kubeconfig
+echo "export KUBECONFIG=$HOME/cluster-${GUID}/auth/kubeconfig" >>$HOME/.bashrc
+
+$ oc whoami
+system:admin
+
+# get console and login with kubeadmin & password from installation log
+$ oc whoami --show-console
+https://console-openshift-console.apps.cluster-d0ce.d0ce.sandbox1072.opentlc.com
+
+
+```
+## References
+- [Installing a cluster quickly on AWS](https://docs.openshift.com/container-platform/4.6/installing/installing_aws/installing-aws-default.html)
+- [OpenShift Installer overview on GitHub](https://github.com/openshift/installer/blob/master/docs/user/overview.md)
 
