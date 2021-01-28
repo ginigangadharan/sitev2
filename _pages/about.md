@@ -13,7 +13,7 @@ hidden: false
 comments: true
 ---
 
-I'm Gini Gangadharan, officially known as **[Gineesh Madapparambath](https://www.linkedin.com/in/gineesh/).**
+I am **[Gineesh Madapparambath](https://www.linkedin.com/in/gineesh/)**, <br>aka **[Gini Gangadharan](https://www.iamgini.com)**.
 
 An IT professional born and raised in Kerala/India and currently working in Singapore.
 
