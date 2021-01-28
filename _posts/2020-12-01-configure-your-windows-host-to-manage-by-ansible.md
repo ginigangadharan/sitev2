@@ -3,7 +3,7 @@ layout: post
 title: Configure Your Windows Host to be Managed by Ansible
 author: gini
 categories: [ redhat, ansible ]
-image: "assets/images/2020/karen-vardazaryan-JBrfoV-BZts-unsplash-collections.jpg"
+image: "assets/images/2020/pexels-charles-parker-5845505-1-1536x1024.jpg"
 tags: [ ansible, automation ]
 ext_url: https://www.techbeatly.com/2020/12/configure-your-windows-host-to-manage-by-ansible.html
 #show-avatar: false
