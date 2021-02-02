@@ -1,4 +1,19 @@
 ---
+layout: post
+title: Ansible Dictionary Sample
+categories: [ ansible ]
+tags: [ansible]
+show-avatar: false
+permalink: ansible-dictionary
+featured: false
+hidden: false
+showindex: false
+---
+
+Sample Playbook to Handle Ansible dictionary
+
+```
+---
 - name: Test play for dictionary
   hosts: all
   vars:
@@ -19,3 +34,4 @@
     - name: Looping 2
       debug:
         msg: "Int1 : {{ interfaces['ansible-node-2']['int1']['intname'] }}"
+```
