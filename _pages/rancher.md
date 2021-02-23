@@ -13,6 +13,9 @@
     - [1.3.4. Certificate Management](#134-certificate-management)
     - [1.3.5. Adding and Removing Nodes](#135-adding-and-removing-nodes)
 - [2. Installing Rancher](#2-installing-rancher)
+  - [Open the url(IP) in a browser and set `admin` password](#open-the-urlip-in-a-browser-and-set-admin-password)
+  - [Upgrading Rancher](#upgrading-rancher)
+  - [Installing and Managing Rancher With Kubernetes - Deploying Into RKE](#installing-and-managing-rancher-with-kubernetes---deploying-into-rke)
 - [3. References](#3-references)
 
 
@@ -94,9 +97,62 @@ $ docker run -d --restart=unless-stopped -p 80:80 -p 443:443 -v \
 ```
 
 or `rancher/rancher:stable`
+
 - persistent data at `/var/lib/rancher` (a docker volume)
+- `-d` daemonize
+- `-p 80:80 -p 443:443` to pass throufh ports 80 and 443
+- `--restart=undelss-stopped` 
+
+- Option A: Default Rancher-generated Self-signed Certificate
+```
+docker run -d --restart=unless-stopped \
+  -p 80:80 -p 443:443 \
+  --privileged \
+  rancher/rancher:latest
+```
+
+- Option B: Bring Your Own Certificate, Self-signed
+```
+docker run -d --restart=unless-stopped \
+  -p 80:80 -p 443:443 \
+  -v /<CERT_DIRECTORY>/<FULL_CHAIN.pem>:/etc/rancher/ssl/cert.pem \
+  -v /<CERT_DIRECTORY>/<PRIVATE_KEY.pem>:/etc/rancher/ssl/key.pem \
+  -v /<CERT_DIRECTORY>/<CA_CERTS.pem>:/etc/rancher/ssl/cacerts.pem \
+  --privileged \
+  rancher/rancher:latest
+```
+
+- Option C: Bring Your Own Certificate, Signed by a Recognized CA
+
+```
+docker run -d --restart=unless-stopped \
+  -p 80:80 -p 443:443 \
+  -v /<CERT_DIRECTORY>/<FULL_CHAIN.pem>:/etc/rancher/ssl/cert.pem \
+  -v /<CERT_DIRECTORY>/<PRIVATE_KEY.pem>:/etc/rancher/ssl/key.pem \
+  --privileged \
+  rancher/rancher:latest \
+  --no-cacert
+```
+
+- Option D: Let’s Encrypt Certificate
+```
+docker run -d --restart=unless-stopped \
+  -p 80:80 -p 443:443 \
+  --privileged \
+  rancher/rancher:latest \
+  --acme-domain <YOUR.DNS.NAME>
+```
+
+## Open the url(IP) in a browser and set `admin` password
+  
+- [Installing Rancher on a Single Node Using Docker](https://rancher.com/docs/rancher/v2.x/en/installation/other-installation-methods/single-node-docker/)
 - 
-- 
+
+## Upgrading Rancher
+
+## Installing and Managing Rancher With Kubernetes - Deploying Into RKE
+
+
 
 # 3. References
 - [KMC - Hands On with K3s Support in Rancher 2.4 - 2020-06-16](https://www.youtube.com/watch?v=7tPseWagth8) (video)
