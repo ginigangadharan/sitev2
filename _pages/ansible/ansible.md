@@ -46,6 +46,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Other References](#other-references)
 - [Ansible for IBM Power](#ansible-for-ibm-power)
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
+- [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
 
 # Ansible Videos for Beginners
 
@@ -149,3 +150,6 @@ Ansible 2.5 and above work with Python 3.
 # Ansible for Arista Networks
 
 - [Ansible Modules for Arista CloudVision Platform](https://github.com/aristanetworks/ansible-cvp)
+
+# Ansible for CIS Hardening/CIS Check
+- [DevSec Hardening Framework](https://github.com/dev-sec) / [devops + security - Server Hardening Automation](https://dev-sec.io/)
