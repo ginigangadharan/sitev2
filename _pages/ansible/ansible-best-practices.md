@@ -3,8 +3,7 @@ layout: post
 title: Ansible Best Practices
 author: gini
 categories: [ ansible ]
-
-# image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
+image: "assets/images/2021/pexels-pixabay-209954-best-practices.jpg"
 tags: [ansible best practices, ansible automation]
 show-avatar: false
 permalink: /ansible-best-practices
@@ -14,13 +13,6 @@ showindex: true
 titleshort: Ansible Best Practices
 ---
 
-Note : This document is based on original document - [Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html) - and I am keeping a modified copy with more details for my own references.
-
-You can find some example playbooks illustrating these best practices in our `ansible-examples repository <https://github.com/ansible/ansible-examples>`_.  (NOTE: These may not use all of the features in the latest release, but are still an excellent reference!).
-
-<!-- TOC depthfrom:2 orderedlist:false -->
-
-- [References](#references)
 - [Content Organization](#content-organization)
   - [Directory Layout](#directory-layout)
   - [Alternative Directory Layout](#alternative-directory-layout)
@@ -32,14 +24,15 @@ You can find some example playbooks illustrating these best practices in our `an
 - [What This Organization Enables (Examples)](#what-this-organization-enables-examples)
 - [Deployment vs Configuration Organization](#deployment-vs-configuration-organization)
 - [Staging vs Production](#staging-vs-production)
+- [References](#references)
+
+Note : This document is somewhat based on original document - [Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html) - and I am keeping a modified copy with more details for my own references.
+
+*Photo by [Pixabay](https://www.pexels.com/@pixabay?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from Pexels*
+<!-- TOC depthfrom:2 orderedlist:false -->
+
 
 <!-- /TOC -->
-
-## References
-- [Four Ansible Practices I Would Recommend](http://alesnosek.com/blog/2018/06/17/four-ansible-practices-i-would-recommend/)
-
-- https://www.ansible.com/hubfs/2018_Content/AA%20BOS%202018%20Slides/Ansible%20Best%20Practices.pdf
-- 
 
 ## Content Organization
 
@@ -532,3 +525,8 @@ This best practice has no limit on the amount of variable and vault files or the
        Complete playbook files from the github project source
    `Mailing List <https://groups.google.com/group/ansible-project>`_
        Questions? Help? Ideas?  Stop by the list on Google Groups
+
+
+## References
+- [Four Ansible Practices I Would Recommend](http://alesnosek.com/blog/2018/06/17/four-ansible-practices-i-would-recommend/)
+- [ANSIBLE BEST PRACTICES: THE ESSENTIALS](https://www.ansible.com/hubfs/2018_Content/AA%20BOS%202018%20Slides/Ansible%20Best%20Practices.pdf) (PDF Slides)
