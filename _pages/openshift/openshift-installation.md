@@ -26,13 +26,13 @@ titleshort: OpenShift Installation
     - [3.5.1. Ref:](#351-ref)
     - [3.5.2. Add a user](#352-add-a-user)
 - [4. Method II - Setup minishift](#4-method-ii---setup-minishift)
-  - [4.1. Setup Virtual Environment](#41-setup-virtual-environment)
-  - [4.2. Install minishift](#42-install-minishift)
-  - [4.3. Start minishift cluster](#43-start-minishift-cluster)
-- [5. Method III - OpenShift 4 - All in One Quick Cluster](#5-method-iii---openshift-4---all-in-one-quick-cluster)
+    - [4.1. Setup Virtual Environment](#41-setup-virtual-environment)
+    - [4.2. Install minishift](#42-install-minishift)
+    - [4.3. Start minishift cluster](#43-start-minishift-cluster)
+- [5. Method III - OpenShift 4 - OKD - All in One Quick Cluster](#5-method-iii---openshift-4---okd---all-in-one-quick-cluster)
 - [6. Method IV - OpenShift Full Cluster](#6-method-iv---openshift-full-cluster)
 - [7. CodeReady Containers - CRC (OpenShift 4.x)](#7-codeready-containers---crc-openshift-4x)
-  - [7.1. Download Package](#71-download-package)
+  - [7.1. Download CRC Package](#71-download-crc-package)
   - [7.2. Required software packages](#72-required-software-packages)
     - [7.2.1. Enable sudo for user](#721-enable-sudo-for-user)
   - [7.3. Setup Cluster](#73-setup-cluster)
@@ -159,46 +159,39 @@ cluster role "cluster-admin" added: "redhat"
 
 # 4. Method II - Setup minishift
 
-## 4.1. Setup Virtual Environment
+### 4.1. Setup Virtual Environment
 
 - setup KVM or virtualbox (or other virtulization)
 Ref: [Set up your virtualization environment](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html)
 
-## 4.2. Install minishift
-- [Download](https://github.com/minishift/minishift/releases) and manually install 
+### 4.2. Install minishift
+- [Download](https://github.com/minishift/minishift/releases) and manually install minishift.
+- On mac `brew cask install minishift` (*in case of issue to install, try `export HOMEBREW_NO_ENV_FILTERING=1`*)
 
-or 
+### 4.3. Start minishift cluster
 
-Installation on mac
-```
-brew cask install minishift
-```
-
-* in case issue to install `export HOMEBREW_NO_ENV_FILTERING=1`*
-
-## 4.3. Start minishift cluster
-
-```
+```bash
 minishift start --vm-driver virtualbox
 
-# setup VirtualBox Permanently
+## setup VirtualBox Permanently
 minishift config set vm-driver virtualbox
 ```
 
 Once started, access the console using url or open in browser
-```
+```bash
 minishift console
 ```
 
-setup oc access
-```
+Setup `oc` access
+```bash
 $ minishift oc-env
 export PATH="/home/john/.minishift/cache/oc/v1.5.0:$PATH"
-# Run this command to configure your shell:
+
+## Run this command to configure your shell:
 # eval $(minishift oc-env)
 ```
 
-# 5. Method III - OpenShift 4 - All in One Quick Cluster
+# 5. Method III - OpenShift 4 - OKD - All in One Quick Cluster
 
 https://github.com/openshift/okd/releases
 
@@ -218,7 +211,7 @@ Ref:
 - [RED HAT CODEREADY CONTAINERS](https://access.redhat.com/documentation/en-us/red_hat_codeready_containers/1.13/html-single/getting_started_guide/index)
 
 
-## 7.1. Download Package
+## 7.1. Download CRC Package
 
 Refer : **[Install OpenShift on a laptop with CodeReady Containers](https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013a000002CtetAAC)**
 
@@ -234,7 +227,8 @@ Refer : **[Install OpenShift on a laptop with CodeReady Containers](https://clou
 ## 7.2. Required software packages
 
 CodeReady Containers requires the libvirt and NetworkManager packages. 
-```shell
+
+```bash
 yum install NetworkManager
 wget https://mirror.openshift.com/pub/openshift-v4/clients/crc/latest/crc-linux-amd64.tar.xz
 ```
