@@ -2,9 +2,9 @@
 layout: post
 title: DevOps Certifications and Promotions
 author: gini
-categories: [ certifications ]
+categories: [ certifications, DevOps, Career ]
 image: "assets/images/2021/pexels-rfstudio-3060324-books.jpg"
-tags: [certifications, devop]
+tags: [certifications, devops]
 permalink: certifications
 featured: false
 hidden: false
@@ -21,3 +21,4 @@ titleshort: certifications
 | [Certified Calico Operator: Level 1](https://academy.tigera.io/course/certified-calico-operator-level-1/) | Learn Kubernetes networking and security fundamentals using Calico. | FREE |
 | [JumpCloud Core Certification](https://jumpcloud.com/university/certifications/core) | The Core certification validates the strong foundational knowledge needed to execute standard implementation, configurations, and daily operations across the JumpCloud platform. |  $150 (**currently waiving fees**) | 
 
+<br><br><br>
