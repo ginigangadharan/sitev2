@@ -12,6 +12,8 @@ showindex: true
 titleshort: certifications
 ---
 
+*Note: These are collected list of FREE Certifications and Promotions on Certifications and Courses. I am not updating this page everyday, hence please pardon me if you find any wrong or expired information below. Feel free to share new or updated information via [gini@techbeatly.com](mailto:gini@techbeatly.com)*
+
 | Certification      |	Description |	Expense | 
 |--------------------|-----------|------------|
 | [Aviatrix Certified Engineer](https://aviatrix.teachable.com/) 	| Multi-Cloud Networking & Security Course and Certification (ACE)  | FREE for Limited time | 
