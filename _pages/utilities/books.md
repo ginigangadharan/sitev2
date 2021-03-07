@@ -30,3 +30,4 @@ titleshort: books
 - [IT Ebooks](https://it-ebooks.info/)
 - [smtebooks.com](https://smtebooks.com/)
 - [All IT Books](https://allitbooks.net/) / [All IT EBOOKS](https://www.allitebooks.in/)
+- [z-lib.org](https://z-lib.org/)
