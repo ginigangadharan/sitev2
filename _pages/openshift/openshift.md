@@ -7,7 +7,7 @@ image: "assets/images/2020/how-to-create-increase-or-decrease-project-quota-in-o
 tags: [cloud, automation, containers, kubernetes]
 #show-avatar: false
 #bigimg: /img/Kubernetes_1920x1080.jpg
-permalink: /openshift
+permalink: openshift
 featured: false
 hidden: false
 showindex: true
