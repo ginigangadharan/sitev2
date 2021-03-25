@@ -20,6 +20,7 @@ This is a page where I keep all those list of tools on internet, which we use fo
 - [Diagram and Flowcharts Maker](#diagram-and-flowcharts-maker)
 - [Collaboration Tools](#collaboration-tools)
 - [Kubernetes](#kubernetes)
+- [Email/SMTP Servers with Free Trials](#emailsmtp-servers-with-free-trials)
 - [Meeting Tools](#meeting-tools)
 
 ## Utilities
@@ -62,6 +63,12 @@ This is a page where I keep all those list of tools on internet, which we use fo
 - **[Kubernetes spec generator](https://install.portworx.com)**
 
 
+## Email/SMTP Servers with Free Trials 
+
+This is useful for testing email functionality from your application or solutions as you dont need to setup an SMTP server by your own.
+- [SendinBlue](https://app.sendinblue.com/account/billing)
+- [mailtrap](https://mailtrap.io/)
+  
 ## Meeting Tools
 - [Egg Timer](https://e.ggtimer.com/) -  a simple countdown timer.
 
