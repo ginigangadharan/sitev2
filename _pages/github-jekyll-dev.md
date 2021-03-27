@@ -6,9 +6,17 @@
 Ref: https://jekyllrb.com/docs/installation/ubuntu/
 
 ## Install packages
-```
+
+
+```bash
+## Ubuntu
 sudo apt-get install ruby-full build-essential zlib1g-dev
+
+## RHEL8/CentOS8
+sudo dnf install ruby ruby-devel
+sudo dnf group install "Development Tools"
 ```
+
 
 ## Configure gem path
 ```
