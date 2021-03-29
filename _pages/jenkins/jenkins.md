@@ -94,3 +94,7 @@ networks:
 - [salaboy/online-store](https://github.com/salaboy/online-store)
 - [salaboy/customers-service](https://github.com/salaboy/customers-service)
 - [cd.foundation](https://cd.foundation/)
+
+
+more...
+- [Complete Jenkins Pipeline Tutorial | Jenkinsfile explained](https://www.youtube.com/watch?v=7KCS70sCoK0)

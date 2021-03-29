@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes - References
+title: Kubernetes Collection
 author: gini
 categories: [ cloud ]
 image: "assets/images/how-to-create-scheduled-snapshots-in-google-cloud-platform.PNG"
@@ -17,8 +17,11 @@ These are collection of reference documents and blog posts from different expert
   - [1.1. Kubernetes Certification](#11-kubernetes-certification)
   - [1.2. CKSS-Certified-Kubernetes-Security-Specialist](#12-ckss-certified-kubernetes-security-specialist)
   - [1.3. Learn Kubernetes from VMWare](#13-learn-kubernetes-from-vmware)
-  - [Learn ECS and EKS](#learn-ecs-and-eks)
+  - [1.4. Learn ECS and EKS](#14-learn-ecs-and-eks)
 - [2. Kuberenets ToolBox](#2-kuberenets-toolbox)
+  - [Kubernetes Cluster Management Tools](#kubernetes-cluster-management-tools)
+  - [2.1. Kubernetes Development Tools](#21-kubernetes-development-tools)
+  - [2.2. Kubernetes Security Tools](#22-kubernetes-security-tools)
 - [3. kubectl References](#3-kubectl-references)
 - [4. Career on Kubernetes](#4-career-on-kubernetes)
   - [4.1. Kubernetes Interview Questions](#41-kubernetes-interview-questions)
@@ -46,7 +49,7 @@ These are collection of reference documents and blog posts from different expert
   
  <br />  
 
-## Learn ECS and EKS
+## 1.4. Learn ECS and EKS
 
 - [ECS Workshop by AWS](https://ecsworkshop.com/)
 - [AWS CodeDeploy now supports linear and canary deployments for Amazon ECS](https://aws.amazon.com/blogs/containers/aws-codedeploy-now-supports-linear-and-canary-deployments-for-amazon-ecs/)
@@ -57,17 +60,29 @@ These are collection of reference documents and blog posts from different expert
 
 # 2. Kuberenets ToolBox
 
+## Kubernetes Cluster Management Tools
+
+
+- **[kubespray](https://github.com/kubernetes-sigs/kubespray)** - Deploy a Production Ready Kubernetes Cluster using Ansible. 
+  - **[Deploying Kubernetes with Kubespray](https://www.youtube.com/watch?v=JdgQAsEItTc)** - Video Guide
+- **[kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/)** - Kubeadm is a tool built to provide kubeadm init and kubeadm join as best-practice "fast paths" for creating Kubernetes clusters.
+- **[kops](https://github.com/kubernetes/kops)** - kOps - Kubernetes Operations
+- **[k9s]([Kubernetes CLI To Manage Your Clusters In Style](https://k9scli.io/))** - K9s is a terminal based UI to interact with your Kubernetes clusters. The aim of this project is to make it easier to navigate, observe and manage your deployed applications in the wild. K9s continually watches Kubernetes for changes and offers subsequent commands to interact with your observed resources.
+- ~~**[kube-up.sh](#)**~~ - deprecated.
+- **[Cluster API](https://cluster-api.sigs.k8s.io/)** - Cluster API is a Kubernetes sub-project focused on providing declarative APIs and tooling to simplify provisioning, upgrading, and operating multiple Kubernetes clusters.
+- **[metalk8s](https://github.com/scality/metalk8s)** - An opinionated Kubernetes distribution with a focus on long-term on-prem deployments
+- **[Rancher](https://github.com/rancher/rancher)** - Rancher is an open source project that provides a container management platform built for organizations that deploy containers in production. Rancher makes it easy to run Kubernetes everywhere, meet IT requirements, and empower DevOps teams.
+## 2.1. Kubernetes Development Tools
+
 - **[k8slens.dev](https://k8slens.dev/)** - Kuberenetes IDE for developers
 - **[portworx.com](https://install.portworx.com)** - Kubernetes spec generator
-- **[k9s]([Kubernetes CLI To Manage Your Clusters In Style](https://k9scli.io/))** - K9s is a terminal based UI to interact with your Kubernetes clusters. The aim of this project is to make it easier to navigate, observe and manage your deployed applications in the wild. K9s continually watches Kubernetes for changes and offers subsequent commands to interact with your observed resources.
-- **[kube-up.sh](#)**
-- **[kubespray](#)**
-- **[kubeadm](#)**
-- **[kops](#)**
-- **[Cluster API](#)**
 - **[containerlabs.kubedaily.com](https://containerlabs.kubedaily.com/)**
 - **[50+ Useful Kubernetes Tools for 2020](https://caylent.com/50-useful-kubernetes-tools-for-2020)**
 
+## 2.2. Kubernetes Security Tools
+
+- **[kubestriker](https://github.com/vchinnipilli/kubestriker)** - A Blazing fast Security Auditing tool for kubernetes!!
+- 
 # 3. kubectl References
 - [Kubectl Command Cheatsheet](https://www.bluematador.com/learn/kubectl-cheatsheet)
   
