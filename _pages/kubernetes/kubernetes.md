@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Kubernetes Collection - Tools, Learnings, 
+title: Kubernetes Collection - Tools, Learning Guides, References
 author: gini
-categories: [ cloud ]
+categories: [ kubernets ]
 image: "assets/images/2021/boat-20427_1920-kubernetes-helm.jpg"
 tags: [cloud, automation, containers, kubernetes]
 permalink: kubernetes
@@ -22,6 +22,7 @@ These are collection of reference documents and blog posts from different expert
   - [Kubernetes Cluster Management Tools](#kubernetes-cluster-management-tools)
   - [Kubernetes Development Tools](#kubernetes-development-tools)
   - [Kubernetes Monitoring Tools](#kubernetes-monitoring-tools)
+  - [Kubernetes Network Policy Tools](#kubernetes-network-policy-tools)
   - [Kubernetes Security Tools](#kubernetes-security-tools)
   - [Kubernetes Tracing and Logging Tools](#kubernetes-tracing-and-logging-tools)
   - [Kuberenetes Command Line Utlities](#kuberenetes-command-line-utlities)
@@ -88,6 +89,12 @@ These are collection of reference documents and blog posts from different expert
 - **[thanos](https://github.com/thanos-io/thanos) **- Thanos is a set of components that can be composed into a highly available metric system with unlimited storage capacity, which can be added seamlessly on top of existing Prometheus deployments.
 - **[prometheus](https://github.com/prometheus/prometheus)** - Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts when specified conditions are observed.
 - **[grafana](https://github.com/grafana/grafana)** - The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more.
+
+## Kubernetes Network Policy Tools 
+
+- **[kubepox](https://github.com/aporeto-inc/kubepox)** - Kubernetes network Policy eXploration tool: A simple tools that allows you to query all the defined network policies, and associated affected Pods.
+- **[calico](https://github.com/projectcalico/calico)** - Cloud native networking and network security
+- **[kokotap](https://github.com/redhat-nfvpe/kokotap)** - Tools for kubernetes pod network tapping
 ## Kubernetes Security Tools
 
 - **[kubestriker](https://github.com/vchinnipilli/kubestriker)** - A Blazing fast Security Auditing tool for kubernetes!!
