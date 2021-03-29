@@ -15,7 +15,7 @@ These are collection of reference documents and blog posts from different expert
 
 - [Learn Kubernetes](#learn-kubernetes)
   - [Kubernetes Certification](#kubernetes-certification)
-  - [CKSS-Certified-Kubernetes-Security-Specialist](#ckss-certified-kubernetes-security-specialist)
+  - [CKS-Certified-Kubernetes-Security-Specialist](#cks-certified-kubernetes-security-specialist)
   - [Learn Kubernetes from VMWare](#learn-kubernetes-from-vmware)
   - [Learn ECS and EKS](#learn-ecs-and-eks)
 - [Kuberenets ToolBox](#kuberenets-toolbox)
@@ -23,9 +23,10 @@ These are collection of reference documents and blog posts from different expert
   - [Kubernetes Development Tools](#kubernetes-development-tools)
   - [Kubernetes Monitoring Tools](#kubernetes-monitoring-tools)
   - [Kubernetes Network Policy Tools](#kubernetes-network-policy-tools)
+  - [Kubernetes Service Mesh Tools](#kubernetes-service-mesh-tools)
   - [Kubernetes Security Tools](#kubernetes-security-tools)
   - [Kubernetes Tracing and Logging Tools](#kubernetes-tracing-and-logging-tools)
-  - [Kuberenetes Command Line Utlities](#kuberenetes-command-line-utlities)
+  - [Kubernetes Command Line Utlities](#kubernetes-command-line-utlities)
 - [Career in Kubernetes](#career-in-kubernetes)
   - [Kubernetes Interview Questions](#kubernetes-interview-questions)
 - [Tanzu Kubernetes Grid - TNG](#tanzu-kubernetes-grid---tng)
@@ -35,22 +36,19 @@ These are collection of reference documents and blog posts from different expert
 
 ## Kubernetes Certification
 
-- Read my article on Certification & Exam Tips, Learning Paths
-  [Certified Kubernetes Administrator (CKA) & Certified Kubernetes Application Developer (CKAD) – Learning Path and Certification](https://www.techbeatly.com/2020/05/kubernetes-certification-cka-ckad-exam-tips-learning-path.html)
+- Read my article on Certification & Exam Tips, Learning Paths -  **[Certified Kubernetes Administrator (CKA) & Certified Kubernetes Application Developer (CKAD) – Learning Path and Certification](https://www.techbeatly.com/2020/05/kubernetes-certification-cka-ckad-exam-tips-learning-path.html)**
 
-- Recommended Course.
+- **Recommended Courses** 
   - Certified Kubernetes Administrator (CKA) - [kodekloud](http://bit.ly/ckacourse1) | [Udemy](http://bit.ly/ckacourse2)
   - Certified Kubernetes Application Developer (CKAD) - [Kodekloud](https://bit.ly/ckadcourse2) | [Udemy](https://bit.ly/ckadcourse1)
   
-## CKSS-Certified-Kubernetes-Security-Specialist
+## CKS-Certified-Kubernetes-Security-Specialist
 
 - [CKSS-Certified-Kubernetes-Security-Specialist](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)
  
 ## Learn Kubernetes from VMWare
 
-| <img src="https://kube.academy/wp-content/themes/k8s/assets/img/logo.svg?t=1588603776" width="200" style="max-width:30vw" alt="KubeAcademy"> | [KubeAcademy](https://kube.academy) |
-  
- <br />  
+- [KubeAcademy](https://kube.academy) 
 
 ## Learn ECS and EKS
 
@@ -76,6 +74,7 @@ These are collection of reference documents and blog posts from different expert
 - **[Rancher](https://github.com/rancher/rancher)** - Rancher is an open source project that provides a container management platform built for organizations that deploy containers in production. Rancher makes it easy to run Kubernetes everywhere, meet IT requirements, and empower DevOps teams.
 - **[kind](https://github.com/kubernetes-sigs/kind)** - Kubernetes IN Docker - local clusters for testing Kubernetes
 - **[KubeSphere](https://github.com/kubesphere/kubesphere)** - Enterprise-grade container platform tailored for multicloud and multi-cluster management
+- 
 ## Kubernetes Development Tools
 
 - **[k8slens.dev](https://k8slens.dev/)** - Kuberenetes IDE for developers
@@ -95,18 +94,28 @@ These are collection of reference documents and blog posts from different expert
 - **[kubepox](https://github.com/aporeto-inc/kubepox)** - Kubernetes network Policy eXploration tool: A simple tools that allows you to query all the defined network policies, and associated affected Pods.
 - **[calico](https://github.com/projectcalico/calico)** - Cloud native networking and network security
 - **[kokotap](https://github.com/redhat-nfvpe/kokotap)** - Tools for kubernetes pod network tapping
+
+## Kubernetes Service Mesh Tools
+
+- **[traefik](https://github.com/traefik/traefik)** - The Cloud Native Application Proxy
+- **[istio](https://github.com/istio/istio)** - Connect, secure, control, and observe services.
+- **[kubernetes-ingress](https://github.com/nginxinc/kubernetes-ingress)** - NGINX and NGINX Plus Ingress Controllers for Kubernetes
+- **[autopilot](https://docs.solo.io/autopilot/latest)** - Autopilot is an SDK and toolkit for developing and deploying service mesh operators.
+- 
 ## Kubernetes Security Tools
 
 - **[kubestriker](https://github.com/vchinnipilli/kubestriker)** - A Blazing fast Security Auditing tool for kubernetes!!
 - **[terrascan](https://github.com/accurics/terrascan)** - Detect compliance and security violations across Infrastructure as Code to mitigate risk before provisioning cloud native infrastructure.
 - **[kube-bench](https://github.com/aquasecurity/kube-bench) **- Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
+- 
 ## Kubernetes Tracing and Logging Tools
+
 - **[Loki](https://github.com/grafana/loki)** - like Prometheus, but for logs.
 - **[elastic](https://www.elastic.co/what-is/kubernetes-monitoring)** - Bring Kubernetes logs, metrics, and traces together
 - **[Kiali](https://github.com/kiali/kiali)**- Kiali provides answers to the questions: What microservices are part of my Istio service mesh and how are they connected?
 - **[jaeger](https://github.com/jaegertracing/jaeger)** - Distributed Tracing System
 
-## Kuberenetes Command Line Utlities
+## Kubernetes Command Line Utlities
 
 - **[Kubectl Command Cheatsheet](https://www.bluematador.com/learn/kubectl-cheatsheet)**
 - **[kuttle](https://github.com/kayrus/kuttle)** - kubectl wrapper for sshuttle without SSH
@@ -114,6 +123,7 @@ These are collection of reference documents and blog posts from different expert
 # Career in Kubernetes
 
 ## Kubernetes Interview Questions
+
 - [30 Best Kubernetes Interview Questions and Answers](https://www.whizlabs.com/blog/top-kubernetes-interview-questions/)
 
 # Tanzu Kubernetes Grid - TNG
