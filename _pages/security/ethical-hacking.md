@@ -22,4 +22,14 @@ sudo nmap -sU 192.168.1.1         # UDP Scan, will take time
 sudo nmap -sO 192.168.1.1         # Protocol scanning, will take time
 sudo nmap -r 192.168.1.1          # disable randomizing ports
 sudo nmap -O vm1                  # OS Fingerprint (detect OS)
+
+nmap -sP 192.168.1.0/24           # Network scanning
+nmap -sP 192.168.1.1-10.          # Network scanning
 ```
+## Packet Sniffers
+
+Applications that monitor, filter and capture data packets transferred over network.
+- Network Monitor
+- tcpdump
+
+
