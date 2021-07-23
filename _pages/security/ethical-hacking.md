@@ -28,8 +28,25 @@ nmap -sP 192.168.1.1-10.          # Network scanning
 ```
 ## Packet Sniffers
 
-Applications that monitor, filter and capture data packets transferred over network.
+Applications that monitor, filter and capture data packets transferred over network. (libpcap/winpcap is library commonly used by sniffers)
+
 - Network Monitor
 - tcpdump
 
+**Tools**
+
+- Wireshark
+- tcpdump/windump
+- snort
+- suricata
+- Zeek
+- Kismet
+
+## Blackbox Testing 
+
+- Pentest, EH
+
+## Whitebox Testing
+
+- System Analysis
 
