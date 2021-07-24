@@ -50,3 +50,17 @@ Applications that monitor, filter and capture data packets transferred over netw
 
 - System Analysis
 
+# Tools
+
+## Nessus
+
+**Nessus** is a proprietary vulnerability scanner developed by Tenable, Inc. ([Download](https://www.tenable.com/products/nessus))
+
+```shell
+$ sudo service nessusd start
+
+# Reset Nessus Password
+/opt/nessus/sbin/nessuscli chpasswd
+/opt/nessus/sbin/nessuscli lsuser
+
+```
