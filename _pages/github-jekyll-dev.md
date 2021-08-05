@@ -1,4 +1,15 @@
-
+---
+layout: post
+title: How to Configure and Use GitHub Jekyll Local Environment
+author: gini
+categories: [ jekyll ]
+image: "assets/images/2020/infrastructure.jpg"
+tags: [web, jekyll]
+permalink: jekyll-local
+featured: false
+hidden: false
+titleshort: jekyll
+---
 # Install Jekyll & Bundler
 
 (Ubuntu)
