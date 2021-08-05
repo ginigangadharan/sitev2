@@ -5,7 +5,7 @@ author: gini
 categories: [ jekyll ]
 image: "assets/images/2020/infrastructure.jpg"
 tags: [web, jekyll]
-permalink: jekyll-local
+permalink: jekyll
 featured: false
 hidden: false
 titleshort: jekyll
