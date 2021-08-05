@@ -12,9 +12,9 @@ titleshort: jekyll
 ---
 # Install Jekyll & Bundler
 
-(Ubuntu)
+Refer the documentation based on your Operating System.
 
-Ref: https://jekyllrb.com/docs/installation/ubuntu/
+[Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/) | [MacOS](https://jekyllrb.com/docs/installation/macos/) | [Linux](https://jekyllrb.com/docs/installation/other-linux/) | [Windows](https://jekyllrb.com/docs/installation/windows/)
 
 ## Install packages
 
