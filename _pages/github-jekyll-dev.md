@@ -41,12 +41,65 @@ ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-darwin20]
 
 If you’re running a previous version of macOS, you’ll have to install a newer version of Ruby. 
 
+## Install Ruby using `rbenv` (Multiple Ruby versions)
+
+This is very useful when you need to be able to run a given Ruby version on a project.
+
+```shell
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install rbenv and ruby-build
+brew install rbenv
+
+# Set up rbenv integration with your shell
+rbenv init
+
+# Check your installation
+curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
+```
+
+Re-Open the terminal and the version
+
+```shell
+## Install 3.0.0
+$ rbenv install 3.0.0
+$ rbenv global 3.0.0
+
+$ ruby -v
+ruby 3.0.0p0 (2020-12-25 revision 95aff21468)
+
+## Install 2.7.0
+$rbenv install 2.7.0
+
+## set global version
+$ rbenv global 2.7.0
+$ ruby -v
+ruby 3.0.0p0 (2020-12-25 revision 95aff21468)
+
+## check versions
+% rbenv versions     
+* system (set by /Users/gini/.rbenv/version)
+  2.7.0
+  3.0.0
+
+## set local version
+% rbenv local 2.7.0
+
+## show current local version
+% rbenv version    
+2.7.0 (set by /Users/gini/codes/ginigangadharan.github.io/.ruby-version)
+gini@greenmango ginigangadharan.github.io % 
+
+```
+
 ## Install Jekyll
 
 (Use localinstall rathr than Global Install)
 
 ```shell
 gem install --user-install bundler jekyll
+## --[no-]user-install          Install in user's home directory instead
 ```
 
 Append your path file with the following, replacing the X.X with the first two digits of your Ruby version:
@@ -92,7 +145,7 @@ source ~/.bashrc
 
 ## Install jekyll & bundler
 ```
-gem install jekyll bundler
+gem install --user-install bundler jekyll
 ```
 
 # Test your site

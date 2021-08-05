@@ -77,7 +77,7 @@ DEPENDENCIES
   kramdown-parser-gfm
 
 RUBY VERSION
-   ruby 2.5.5p157
+   ruby 2.7.0p0
 
 BUNDLED WITH
-   2.2.15
+   2.2.25
