@@ -1,3 +1,7 @@
+
+- [Tools](#tools)
+  - [Nessus](#nessus)
+
 ## TCP Flag Definitions
 
 - SYN - The beginning of connection
@@ -64,3 +68,12 @@ $ sudo service nessusd start
 /opt/nessus/sbin/nessuscli lsuser
 
 ```
+
+Nessus only supports RSA/DSA key types for the authentication.
+
+```shell
+ssh-keygen -m PEM -t rsa
+# or Convert the OPENSSH key to .PEM:
+ssh-keygen -p -m PEM -f /path/to/private_key
+```
+

@@ -12,6 +12,12 @@ hidden: false
 titleshort: ansible-automation-platform
 ---
 
+## Important References
+
+- [Red Hat Ansible Tower Life Cycle](https://access.redhat.com/support/policy/updates/ansible-tower): Details about Ansible Tower and Ansible Automation Platform Life Cycle, End of Life, End of Support etc.
+
+
+
 # Preparing for Ansible Automation Platform Installation
 
 [Download the Ansible Automation Platform Installation Program](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/download_tower.html)
