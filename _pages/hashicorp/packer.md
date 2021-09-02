@@ -105,3 +105,74 @@ variable "docker_image" {
 }
 ```
 
+```shell
+$ touch example.pkrvars.hcl
+
+docker_image = "ubuntu:bionic"
+
+# build with varible file
+$ packer build --var-file=example.pkrvars.hcl docker-ubuntu.pkr.hcl
+```
+
+Packer will automatically load any variable file that matches the name `*.auto.pkrvars.hcl`, without the need to pass the file via the command line.
+
+**Build image with command line flag**
+
+```shell
+$ packer build --var docker_image=ubuntu:groovy .
+```
+
+# Packer Parallel Build
+
+Add multiple sources
+
+```json
+source "docker" "ubuntu" {
+  image  = var.docker_image
+  commit = true
+}
+
+source "docker" "ubuntu-bionic" {
+  image  = "ubuntu:bionic"
+  commit = true
+}
+```
+
+Add multiple sources in build
+
+```json
+build {
+  name    = "learn-packer"
+  sources = [
+    "source.docker.ubuntu",
+    "source.docker.ubuntu-bionic",
+  ]
+.
+.
+```
+
+# Packer Post-Processors
+
+While provisioners are run against an instance while it is running, post-processors run only after Packer saves the instance as an image.
+
+eg:
+
+- compress artifacts
+- upload artifacts
+- create some files
+
+**Adding a docker tag using post-processor**
+
+```json
+post-processor "docker-tag" {
+  repository = "learn-packer"
+  tags       = ["ubuntu-xenial", "packer-rocks"]
+  only       = ["docker.ubuntu"]
+}
+
+post-processor "docker-tag" {
+  repository = "learn-packer"
+  tags       = ["ubuntu-bionic", "packer-rocks"]
+  only       = ["docker.ubuntu-bionic"]
+}
+```
