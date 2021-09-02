@@ -21,6 +21,7 @@ Packer use cases and samples are kept in this [GitHub](https://github.com/giniga
   - [Init and Build Packer](#init-and-build-packer)
   - [Adding provisioner](#adding-provisioner)
   - [Variables](#variables)
+  - [Handling Sensitive Data](#handling-sensitive-data)
 - [Packer Parallel Build](#packer-parallel-build)
 - [Packer Post-Processors](#packer-post-processors)
 - [Packer with AWS](#packer-with-aws)
@@ -137,6 +138,15 @@ Packer will automatically load any variable file that matches the name `*.auto.p
 
 ```shell
 $ packer build --var docker_image=ubuntu:groovy .
+```
+
+## Handling Sensitive Data
+
+```json
+local "secret_key" {
+  key = "${var.secret_key}"
+  sensitive  = true
+}
 ```
 
 # Packer Parallel Build
