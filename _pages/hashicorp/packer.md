@@ -163,16 +163,49 @@ eg:
 
 **Adding a docker tag using post-processor**
 
+Post
 ```json
-post-processor "docker-tag" {
-  repository = "learn-packer"
-  tags       = ["ubuntu-xenial", "packer-rocks"]
-  only       = ["docker.ubuntu"]
-}
+build {
+  name    = "learn-packer"
+  .
+  .
+  post-processor "docker-tag" {
+    repository = "learn-packer"
+    tags       = ["ubuntu-xenial", "packer-rocks"]
+    only       = ["docker.ubuntu"]
+  }
 
-post-processor "docker-tag" {
-  repository = "learn-packer"
-  tags       = ["ubuntu-bionic", "packer-rocks"]
-  only       = ["docker.ubuntu-bionic"]
-}
+  post-processor "docker-tag" {
+    repository = "learn-packer"
+    tags       = ["ubuntu-bionic", "packer-rocks"]
+    only       = ["docker.ubuntu-bionic"]
+  }
 ```
+
+**Sequential post-processing steps**
+
+- Use `post-processors` instead of `post-processor`
+- Use the post-processors (note the pluralization) block to create post-processing pipelines where the output of one post-processor becomes the input to another post-processor.
+
+```json
+  post-processors {
+    post-processor "docker-import" {
+      repository = "swampdragons/testpush"
+      tag        = "0.7"
+    }
+    post-processor "docker-push" {}
+  }
+```
+
+# Packer with AWS
+
+## Manage AWS Credentials for Packer
+
+Configure environment variables.
+
+```shell
+$ export AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY
+$ export AWS_SECRET_ACCESS_KEY=YOUR_SECRET_KEY
+```
+
+
