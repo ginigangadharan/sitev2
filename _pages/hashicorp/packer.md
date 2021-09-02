@@ -3,7 +3,7 @@ layout: post
 title: Packer by Hashicorp
 author: gini
 categories: [ iac, cloud ]
-image: "assets/images/2020/pexels-cottonbro-4568726-packing.jpg"
+image: "assets/images/2021/pexels-cottonbro-4568726-packing.jpg"
 tags: [iac, packer]
 permalink: packer
 featured: false
