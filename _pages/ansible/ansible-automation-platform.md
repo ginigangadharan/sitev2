@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Ansible Automation Platform
 author: gini
 categories: [ cloud ]
 image: "assets/images/2020/pexels-mike-van-schoonderwalt-automation.jpg"

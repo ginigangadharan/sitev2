@@ -113,6 +113,7 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 - **[kube-bench](https://github.com/aquasecurity/kube-bench)**- Checks whether Kubernetes is deployed according to security best practices as defined in the CIS Kubernetes Benchmark
 - **[kubescape](https://github.com/armosec/kubescape)** - kubescape is the first tool for testing if Kubernetes is deployed securely as defined in Kubernetes Hardening Guidance by to NSA and CISA
 - [Kubernetes Hardening Guidance](https://www.nsa.gov/News-Features/Feature-Stories/Article-View/Article/2716980/nsa-cisa-release-kubernetes-hardening-guidance/)
+
 ## Kubernetes Tracing and Logging Tools
 
 - **[Loki](https://github.com/grafana/loki)** - like Prometheus, but for logs.

@@ -35,6 +35,8 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible for Absolute Beginners](#ansible-for-absolute-beginners)
 - [Ansible Videos for Beginners](#ansible-videos-for-beginners)
 - [Ansible - Frequently Asked Questions](#ansible---frequently-asked-questions)
+- [Ansible Automation Platform](#ansible-automation-platform)
+  - [Preparing for Ansible Automation Platform Installation](#preparing-for-ansible-automation-platform-installation)
 - [Ansible Playbook References](#ansible-playbook-references)
 - [Tools for Ansible](#tools-for-ansible)
 - [Ansible for Network Automation](#ansible-for-network-automation)
@@ -68,6 +70,26 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 10.	Who is Ansible for? Who should learn Ansible?
 11.	What are prerequisites to learning Ansible?
 
+# Ansible Automation Platform
+
+- [Ansible Automation Platform 2.0 Early Access Homepage](https://access.redhat.com/articles/6145072) (Need to Login with Red Hat Account)
+- [What’s New in Ansible Automation Controller 4.0](https://access.redhat.com/articles/6184841) (Need to Login with Red Hat Account)
+- [Red Hat Ansible Tower Life Cycle](https://access.redhat.com/support/policy/updates/ansible-tower): Details about Ansible Tower and Ansible Automation Platform Life Cycle, End of Life, End of Support etc.
+- [Preparing for the Ansible Automation Platform Installation](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/prepare.html)
+- [Ansible Automation Platform Quick Installation Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
+- [Installing Ansible Automation Platform](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/install_script.html)
+
+- [Ansible Automation Platform Installation and Reference Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/installandreference/index.html)
+- [INSTALLING PRIVATE AUTOMATION HUB](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/installing_private_automation_hub/index)
+
+## Preparing for Ansible Automation Platform Installation
+
+[Download the Ansible Automation Platform Installation Program](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/download_tower.html)
+
+*Note : The Ansible Automation Platform installer only supports Red Hat Enterprise Linux and CentOS.*
+
+- [Download](https://access.redhat.com/downloads/content/480?extIdCarryOver=true&intcmp=7013a000002CtetAAC&sc_cid=701f2000001OH6uAAG) the installation package or bundle.
+  
 # Ansible Playbook References
 
 - [Ansible Examples](https://github.com/ginigangadharan/ansible-examples){:target="_blank"}
