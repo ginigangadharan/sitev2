@@ -12,6 +12,11 @@ titleshort: Ansible
 
 # Ansible for Absolute Beginners
 
+- [Ansible for Absolute Beginners - 30 Days of Ansible][techbeatly.com/ansible-course]{:target="_blank"} (YouTube)
+- [Ansible Real Life Scenarios][techbeatly.com/ansible-real-life]{:target="_blank"} (YouTube)
+
+## Ansible Guides
+
 **[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/){:target="_blank"}** 
 
 You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is my attempt to cover Ansible in a simple and beginner level approach. Access all chapters on **[techbeatly.com](https://www.techbeatly.com/ansible/){:target="_blank"}**. 
@@ -33,7 +38,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 <h3>Table of Contents</h3>
 
 - [Ansible for Absolute Beginners](#ansible-for-absolute-beginners)
-- [Ansible Videos for Beginners](#ansible-videos-for-beginners)
+  - [Ansible Guides](#ansible-guides)
 - [Ansible - Frequently Asked Questions](#ansible---frequently-asked-questions)
 - [Ansible Automation Platform](#ansible-automation-platform)
   - [Preparing for Ansible Automation Platform Installation](#preparing-for-ansible-automation-platform-installation)
@@ -50,11 +55,6 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible for IBM Power](#ansible-for-ibm-power)
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
 - [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
-
-# Ansible Videos for Beginners
-
-- [Introduction to Ansible - Webinar](https://www.youtube.com/watch?v=iVWmbStE1MM){:target="_blank"} (YouTube)
-- [Ansible - A Beginner's Tutorial](https://www.youtube.com/watch?v=icR-df2Olm8){:target="_blank"} (YouTube)
 
 # Ansible - Frequently Asked Questions
 
