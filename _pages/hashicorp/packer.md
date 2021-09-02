@@ -3,7 +3,7 @@ layout: post
 title: Packer by Hashicorp
 author: gini
 categories: [ iac, cloud ]
-image: "assets/images/2020/infrastructure.jpg"
+image: "assets/images/2020/pexels-cottonbro-4568726-packing.jpg"
 tags: [iac, packer]
 permalink: packer
 featured: false
@@ -12,6 +12,8 @@ titleshort: packer
 ---
 
 Packer use cases and samples are kept in this [GitHub](https://github.com/ginigangadharan/packer-usecases) Repo.
+
+*Photo by [cottonbro](https://www.pexels.com/@cottonbro?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) from [Pexels](https://www.pexels.com/photo/persons-hand-on-brown-textile-4568726/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels)*
 
 - [Introduction](#introduction)
 - [Installing Packer](#installing-packer)
