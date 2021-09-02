@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Ansible - Learning Docs & References
-categories: [ cloud ]
+categories: [ Ansible, Automation ]
 image: "assets/images/2020/ansible-automation.png"
-tags: [cloud, automation, containers, kubernetes]
+tags: [cloud, automation, containers, kubernetes, ansible automation platform, red hat ansible]
 permalink: /ansible
 featured: false
 hidden: false
