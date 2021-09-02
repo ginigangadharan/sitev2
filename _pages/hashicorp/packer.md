@@ -13,6 +13,21 @@ titleshort: packer
 
 Packer use cases and samples are kept in this [GitHub](https://github.com/ginigangadharan/packer-usecases) Repo.
 
+- [Introduction](#introduction)
+- [Installing Packer](#installing-packer)
+- [Create your first Packer file](#create-your-first-packer-file)
+  - [Init and Build Packer](#init-and-build-packer)
+  - [Adding provisioner](#adding-provisioner)
+  - [Variables](#variables)
+- [Packer Parallel Build](#packer-parallel-build)
+- [Packer Post-Processors](#packer-post-processors)
+- [Packer with AWS](#packer-with-aws)
+  - [Manage AWS Credentials for Packer](#manage-aws-credentials-for-packer)
+  - [Important: Managing the AMIs created by Packer](#important-managing-the-amis-created-by-packer)
+  - [Add provisioner to template](#add-provisioner-to-template)
+  - [Using Variable to Manage AMI Name](#using-variable-to-manage-ami-name)
+- [Creating Vagrant Boxes from AMI](#creating-vagrant-boxes-from-ami)
+
 # Introduction
 
 Packer is an open source tool for creating identical machine images for multiple platforms from a single source configuration.
@@ -208,4 +223,84 @@ $ export AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY
 $ export AWS_SECRET_ACCESS_KEY=YOUR_SECRET_KEY
 ```
 
+## Important: Managing the AMIs created by Packer
 
+- Packer only builds images, make sure you cleanup if AMI is not needed anymore
+- Remove the AMI by first deregistering it on the AWS AMI management page.
+- Remember to delete the associated snapshot on the AWS snapshot management page.
+
+## Add provisioner to template
+
+Using provisioners allows you to completely automate modifications to your image. You can use,
+
+- shell scripts
+- file uploads
+- tools like Chef or Puppet
+
+Inside the build block,
+
+```json
+  provisioner "shell" {
+    environment_vars = [
+      "FOO=hello world",
+    ]
+    inline = [
+      "echo Installing Redis",
+      "sleep 30",
+      "sudo apt-get update",
+      "sudo apt-get install -y redis-server",
+      "echo \"FOO is $FOO\" > example.txt",
+    ]
+  }
+```
+
+## Using Variable to Manage AMI Name
+
+Remember to clean up exising AMI or use different AMI name when you create as AMI name should be unique in AWS.
+
+Automate the AMI naming using local variable and timestamp.
+
+```json
+variable "ami_prefix" {
+  type    = string
+  default = "learn-packer-linux-aws-redis"
+}
+
+locals {
+  timestamp = regex_replace(timestamp(), "[- TZ:]", "")
+}
+```
+
+and
+
+```json
+source "amazon-ebs" "ubuntu" {
+   ami_name      = "${var.ami_prefix}-${local.timestamp}"
+   ## ...
+}
+```
+
+# Creating Vagrant Boxes from AMI
+
+Add vagrant post-processor
+
+```json
+build {
+  name    = "learn-packer"
+  sources = [
+    "source.amazon-ebs.ubuntu",
+    "source.amazon-ebs.ubuntu-focal"
+  ]
+  .
+  .
+
+  provisioner "shell" {
+    inline = ["echo This provisioner runs last"]
+  }
+
+  post-processors {
+    post-processor "vagrant" {}
+    post-processor "compress" {}
+  }
+}
+```
