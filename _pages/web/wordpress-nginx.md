@@ -5,7 +5,7 @@ author: gini
 categories: [ wordpress ]
 tags: []
 show-avatar: false
-permalink: /wordpress-nginx
+permalink: wordpress-nginx
 featured: false
 hidden: false
 titleshort: Wordpress nginx

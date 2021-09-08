@@ -6,7 +6,7 @@ categories: [ wordpress ]
 #image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
 tags: []
 show-avatar: false
-permalink: /wordpress-apache
+permalink: wordpress-apache
 featured: false
 hidden: false
 titleshort: Wordpress Apache
