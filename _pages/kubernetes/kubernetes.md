@@ -45,7 +45,12 @@ Check [**techbeatly.com/k8s](https://techbeatly.com/k8s)** for latest promos and
   - Certified Kubernetes Administrator (CKA) - [Kodekloud](https://www.techbeatly.com/kk-cka) / [Udemy](https://www.techbeatly.com/kk-cka-ud)
   - Certified Kubernetes Application Developer (CKAD) - [Kodekloud](https://www.techbeatly.com/kk-ckad) / [Udemy](https://www.techbeatly.com/kk-ckad-ud)
   - Certified Kubernetes Security Specialist (CKS) - [Kodekloud](https://www.techbeatly.com/kk-cks) / [Udemy](https://www.techbeatly.com/kw-cks)
-  
+
+<div class="videocontainer">
+<iframe src="https://www.youtube.com/embed/tpzA3AJt2jQ" 
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoiframe"></iframe>
+</div>
+
 ## CKS-Certified-Kubernetes-Security-Specialist
 
 - [CKSS-Certified-Kubernetes-Security-Specialist](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)
@@ -64,9 +69,10 @@ Check [**techbeatly.com/k8s](https://techbeatly.com/k8s)** for latest promos and
 - [WILD RYDES](https://webapp.serverlessworkshops.io/)
 
 <div class="videocontainer">
-<iframe src="https://www.youtube.com/embed/tpzA3AJt2jQ" 
+<iframe src="https://www.youtube.com/embed/daJs-09iLpY" 
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoiframe"></iframe>
 </div>
+
 # Kuberenets ToolBox
 
 ## Kubernetes Cluster Management Tools
@@ -83,7 +89,6 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 - **[kind](https://github.com/kubernetes-sigs/kind)** - Kubernetes IN Docker - local clusters for testing Kubernetes
 - **[KubeSphere](https://github.com/kubesphere/kubesphere)** - Enterprise-grade container platform tailored for multicloud and multi-cluster management
 - **[Kubernetes Instance Calculator](https://learnk8s.io/kubernetes-instance-calculator)** by [learnk8s](https://learnk8s.io) - You can use the calculator to explore the best instance types for your cluster based on your workloads.
-- 
 ## Kubernetes Development Tools
 
 - **[k8slens.dev](https://k8slens.dev/)** - Kuberenetes IDE for developers
