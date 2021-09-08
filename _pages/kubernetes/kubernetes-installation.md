@@ -6,7 +6,7 @@ categories: [ kubernetes ]
 #image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
 tags: []
 show-avatar: false
-permalink: /kubernetes-installation
+permalink: kubernetes-installation
 featured: false
 hidden: false
 titleshort: Kubernetes Installation
