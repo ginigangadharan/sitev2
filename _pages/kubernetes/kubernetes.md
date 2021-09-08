@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kubernetes Collection - Tools, Learning Guides, References
+title: Kubernetes - Tools, Guides, References
 author: gini
 categories: [ kubernets ]
 image: "assets/images/2021/boat-20427_1920-kubernetes-helm.jpg"
@@ -78,6 +78,7 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 - **[Rancher](https://github.com/rancher/rancher)** - Rancher is an open source project that provides a container management platform built for organizations that deploy containers in production. Rancher makes it easy to run Kubernetes everywhere, meet IT requirements, and empower DevOps teams.
 - **[kind](https://github.com/kubernetes-sigs/kind)** - Kubernetes IN Docker - local clusters for testing Kubernetes
 - **[KubeSphere](https://github.com/kubesphere/kubesphere)** - Enterprise-grade container platform tailored for multicloud and multi-cluster management
+- **[Kubernetes Instance Calculator](https://learnk8s.io/kubernetes-instance-calculator)** by [learnk8s](https://learnk8s.io) - You can use the calculator to explore the best instance types for your cluster based on your workloads.
 - 
 ## Kubernetes Development Tools
 
