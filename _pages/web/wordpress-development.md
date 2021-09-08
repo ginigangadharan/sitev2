@@ -13,6 +13,12 @@ titleshort: Wordpress Development
 
 - [Setting up a Wordpress Development Environments](https://developer.wordpress.org/themes/getting-started/setting-up-a-development-environment/)
 
+## Setting up Vagrant-VirtualBox-WordPress Dev
+
+```shell
+Install the vagrant-hostsupdater plugin. (Optional)
+$ vagrant plugin install vagrant-hostsupdater
+```
 
 ## References
 
