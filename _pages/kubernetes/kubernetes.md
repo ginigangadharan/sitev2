@@ -13,6 +13,8 @@ titleshort: Kubernetes
 
 These are collection of reference documents and blog posts from different experts around.
 
+Check [**techbeatly.com/k8s](https://techbeatly.com/k8s)** for latest promos and articles.
+
 - [Learn Kubernetes](#learn-kubernetes)
   - [Kubernetes Certification](#kubernetes-certification)
   - [CKS-Certified-Kubernetes-Security-Specialist](#cks-certified-kubernetes-security-specialist)
@@ -36,11 +38,13 @@ These are collection of reference documents and blog posts from different expert
 
 ## Kubernetes Certification
 
-- Read my article on Certification & Exam Tips, Learning Paths -  **[Certified Kubernetes Administrator (CKA) & Certified Kubernetes Application Developer (CKAD) – Learning Path and Certification](https://www.techbeatly.com/2020/05/kubernetes-certification-cka-ckad-exam-tips-learning-path.html)**
+- Read my article on Certification & Exam Tips, Learning Paths -  **[CKA, CKAD & CKS – Learning Path and Certification](https://www.techbeatly.com/2020/05/kubernetes-certification-cka-ckad-exam-tips-learning-path.html)**
 
-- **Recommended Courses** 
-  - Certified Kubernetes Administrator (CKA) - [kodekloud](http://bit.ly/ckacourse1) | [Udemy](http://bit.ly/ckacourse2)
-  - Certified Kubernetes Application Developer (CKAD) - [Kodekloud](https://bit.ly/ckadcourse2) | [Udemy](https://bit.ly/ckadcourse1)
+**Recommended Courses** 
+
+  - Certified Kubernetes Administrator (CKA) - [Kodekloud](https://www.techbeatly.com/kk-cka) / [Udemy](https://www.techbeatly.com/kk-cka-ud)
+  - Certified Kubernetes Application Developer (CKAD) - [Kodekloud](https://www.techbeatly.com/kk-ckad) / [Udemy](https://www.techbeatly.com/kk-ckad-ud)
+  - Certified Kubernetes Security Specialist (CKS) - [Kodekloud](https://www.techbeatly.com/kk-cks) / [Udemy](https://www.techbeatly.com/kw-cks)
   
 ## CKS-Certified-Kubernetes-Security-Specialist
 
