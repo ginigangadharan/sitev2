@@ -81,7 +81,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 - [Ansible Automation Platform Installation and Reference Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/installandreference/index.html)
 - [INSTALLING PRIVATE AUTOMATION HUB](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/installing_private_automation_hub/index)
-
+- [Tower - Previous versions](https://docs.ansible.com/automation-tower-prior-versions.html)
 ## Preparing for Ansible Automation Platform Installation
 
 [Download the Ansible Automation Platform Installation Program](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/download_tower.html)
