@@ -74,11 +74,14 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 - [Ansible Automation Platform 2.0 Early Access Homepage](https://access.redhat.com/articles/6145072) (Need to Login with Red Hat Account)
 - [What’s New in Ansible Automation Controller 4.0](https://access.redhat.com/articles/6184841) (Need to Login with Red Hat Account)
+
+**Other References**
+
 - [Red Hat Ansible Tower Life Cycle](https://access.redhat.com/support/policy/updates/ansible-tower): Details about Ansible Tower and Ansible Automation Platform Life Cycle, End of Life, End of Support etc.
 - [Preparing for the Ansible Automation Platform Installation](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/prepare.html)
 - [Ansible Automation Platform Quick Installation Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
 - [Installing Ansible Automation Platform](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/install_script.html)
-
+- [Ansible Tower Administration Guide](https://docs.ansible.com/ansible-tower/3.8.3/pdf/AnsibleTowerAdministrationGuide.pdf) (3.8.3) *[PDF]*
 - [Ansible Automation Platform Installation and Reference Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/installandreference/index.html)
 - [INSTALLING PRIVATE AUTOMATION HUB](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/installing_private_automation_hub/index)
 - [Tower - Previous versions](https://docs.ansible.com/automation-tower-prior-versions.html)
