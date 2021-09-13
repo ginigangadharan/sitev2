@@ -77,7 +77,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 **Other References**
 
-- [Red Hat Ansible Tower Life Cycle](https://access.redhat.com/support/policy/updates/ansible-tower): Details about Ansible Tower and Ansible Automation Platform Life Cycle, End of Life, End of Support etc.
+- [Red Hat Ansible Tower Life Cycle](https://access.redhat.com/support/policy/updates/ansible-tower) - Details about Ansible Tower and Ansible Automation Platform Life Cycle, End of Life, End of Support etc.
 - [Preparing for the Ansible Automation Platform Installation](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/prepare.html)
 - [Ansible Automation Platform Quick Installation Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
 - [Installing Ansible Automation Platform](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/install_script.html)
@@ -86,6 +86,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible Automation Platform Installation and Reference Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/installandreference/index.html)
 - [INSTALLING PRIVATE AUTOMATION HUB](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/installing_private_automation_hub/index)
 - [Tower - Previous versions](https://docs.ansible.com/automation-tower-prior-versions.html)
+
 ## Preparing for Ansible Automation Platform Installation
 
 [Download the Ansible Automation Platform Installation Program](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/download_tower.html)
@@ -115,17 +116,19 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [What Happens to an Ansible Tower Installation After the Subscription/License has Expired?](https://access.redhat.com/solutions/3389421)
 
 # Ansible and Python Modules
-[How to install pip on Red Hat Enterprise Linux?](https://access.redhat.com/solutions/1519803)
 
+- [How to set up and use Python virtual environments for Ansible](https://www.redhat.com/sysadmin/python-venv-ansible)
+- [Running in a virtualenv](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#running-in-a-virtualenv)
+- [How to install pip on Red Hat Enterprise Linux?](https://access.redhat.com/solutions/1519803)
 
+```shell
 pip install --target=/your/pyinstalldir loremipsum
 pip install fortiosapi --target=/var/lib/awx/venv/ansible/lib/python2.7/site-packages
 
 pip list --target=/var/lib/awx/venv/ansible/lib/python2.7/site-packages
-
-[Running in a virtualenv](https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#running-in-a-virtualenv)
-
 ```
+
+```shell
 # subscription-manager repos --enable rhel-server-rhscl-7-rpms
 # yum install python27-python-pip
 ```
