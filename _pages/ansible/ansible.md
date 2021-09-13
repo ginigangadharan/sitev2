@@ -12,8 +12,8 @@ titleshort: Ansible
 
 # Ansible for Absolute Beginners
 
-- [Ansible for Absolute Beginners - 30 Days of Ansible][techbeatly.com/ansible-course]{:target="_blank"} (YouTube)
-- [Ansible Real Life Scenarios][techbeatly.com/ansible-real-life]{:target="_blank"} (YouTube)
+- [Ansible for Absolute Beginners - 30 Days of Ansible](techbeatly.com/ansible-course){:target="_blank"} (YouTube)
+- [Ansible Real Life Scenarios](techbeatly.com/ansible-real-life){:target="_blank"} (YouTube)
 
 ## Ansible Guides
 
@@ -21,19 +21,19 @@ titleshort: Ansible
 
 You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is my attempt to cover Ansible in a simple and beginner level approach. Access all chapters on **[techbeatly.com](https://www.techbeatly.com/ansible/){:target="_blank"}**. 
 
-- **[Ansible – Part 1 – Introduction](https://www.techbeatly.com/2018/06/ansible-part-1-introduction.html/){:target="_blank"}**
-- **[Ansible – Part 2 – Installing Ansible](https://www.techbeatly.com/2018/06/ansible-part-2-installing-ansible.html/){:target="_blank"}**
-- **[Ansible – Part 3 – Deployment](https://www.techbeatly.com/2018/06/ansible-part-3-deployment.html/){:target="_blank"}**
-- **[Ansible – Part 4 – Managing Inventory](https://www.techbeatly.com/2018/06/ansible-part-4-managing-inventory.html/){:target="_blank"}**
-- **[Ansible – Part 5 – Running Ad-Hoc commands](https://www.techbeatly.com/2018/06/ansible-part-5-running-ad-hoc-commands.html/){:target="_blank"}**
-- **[Ansible – Part 6 – Play with Playbooks](https://www.techbeatly.com/2018/06/ansible-part-6-play-with-playbooks.html/){:target="_blank"}**
-- **[Ansible – Part 7 – Managing Variables](https://www.techbeatly.com/2019/08/ansible-part-7-managing-variables.html/){:target="_blank"}**
-- **[Ansible – Part 8 – Managing Facts](https://www.techbeatly.com/2019/09/ansible-part-8-managing-facts.html/){:target="_blank"}**
-- *(Ansible – Part 9 – Task Control <In Progress … >)*
-- *(Ansible – Part 10 – Jinja2 Templates with Ansible <In Progress … >)*
-- **[Ansible – Part 11 – Implementing Roles](https://www.techbeatly.com/2018/06/ansible-part-11-implementing-roles.html/){:target="_blank"}**
-- **[Ansible – Part 12 – Deploying Roles With Ansible Galaxy](https://www.techbeatly.com/2018/06/ansible-part-12-deploying-roles-with-ansible-galaxy.html/){:target="_blank"}**
-- *(More Chapters are coming, give me some more time to prepare)*
+- **[Introduction to Ansible](https://www.techbeatly.com/2018/06/ansible-part-1-introduction.html/){:target="_blank"}**
+- **[Installing Ansible](https://www.techbeatly.com/2018/06/ansible-part-2-installing-ansible.html/){:target="_blank"}**
+- **[Deploying Ansible](https://www.techbeatly.com/2018/06/ansible-part-3-deployment.html/){:target="_blank"}**
+- **[Managing Ansible Inventory](https://www.techbeatly.com/2018/06/ansible-part-4-managing-inventory.html/){:target="_blank"}**
+- **[Running Ad-Hoc commands](https://www.techbeatly.com/2018/06/ansible-part-5-running-ad-hoc-commands.html/){:target="_blank"}**
+- **[Play with Playbooks](https://www.techbeatly.com/2018/06/ansible-part-6-play-with-playbooks.html/){:target="_blank"}**
+- **[Managing Ansible Variables](https://www.techbeatly.com/2019/08/ansible-part-7-managing-variables.html/){:target="_blank"}**
+- **[Managing Ansible Facts](https://www.techbeatly.com/2019/09/ansible-part-8-managing-facts.html/){:target="_blank"}**
+- *(Task Control <In Progress … >)*
+- *(Jinja2 Templates<In Progress … >)*
+- **[Implementing Roles](https://www.techbeatly.com/2018/06/ansible-part-11-implementing-roles.html/){:target="_blank"}**
+- **[Deploying Roles With Ansible Galaxy](https://www.techbeatly.com/2018/06/ansible-part-12-deploying-roles-with-ansible-galaxy.html/){:target="_blank"}**
+- *(In progres)*
 
 <h3>Table of Contents</h3>
 
@@ -72,8 +72,8 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 
 # Ansible Automation Platform
 
-- [Ansible Automation Platform 2.0 Early Access Homepage](https://access.redhat.com/articles/6145072) (Need to Login with Red Hat Account)
-- [What’s New in Ansible Automation Controller 4.0](https://access.redhat.com/articles/6184841) (Need to Login with Red Hat Account)
+- [Ansible Automation Platform 2.0 Early Access Homepage](https://access.redhat.com/articles/6145072)
+- [What’s New in Ansible Automation Controller 4.0](https://access.redhat.com/articles/6184841)
 
 **Other References**
 
@@ -82,6 +82,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible Automation Platform Quick Installation Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
 - [Installing Ansible Automation Platform](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/install_script.html)
 - [Ansible Tower Administration Guide](https://docs.ansible.com/ansible-tower/3.8.3/pdf/AnsibleTowerAdministrationGuide.pdf) (3.8.3) *[PDF]*
+- [Which Ports and Services Should I Monitor for Ansible Tower?](https://access.redhat.com/solutions/3720511)
 - [Ansible Automation Platform Installation and Reference Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/installandreference/index.html)
 - [INSTALLING PRIVATE AUTOMATION HUB](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/installing_private_automation_hub/index)
 - [Tower - Previous versions](https://docs.ansible.com/automation-tower-prior-versions.html)

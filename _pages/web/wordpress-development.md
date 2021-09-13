@@ -16,7 +16,7 @@ titleshort: Wordpress Development
 ## Setting up Vagrant-VirtualBox-WordPress Dev
 
 ```shell
-Install the vagrant-hostsupdater plugin. (Optional)
+## Install the vagrant-hostsupdater plugin. (Optional)
 $ vagrant plugin install vagrant-hostsupdater
 ```
 
