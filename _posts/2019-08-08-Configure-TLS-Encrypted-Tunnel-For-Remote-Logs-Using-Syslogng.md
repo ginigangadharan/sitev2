@@ -1,0 +1,16 @@
+---
+layout: post
+title: Configure TLS Encrypted Tunnel For Remote Logs Using Syslogng
+author: gini
+categories: [Cloud,How To,Infrastructre & Hardware,]
+image: http://www.techbeatly.com/wp-content/uploads/2019/08/configure-tls-encrypted-tunnel-for-remote-logs-using-syslog-ng-1024x454.png
+tags: [cloud,how to,infrastructre & hardware,network,security,configure tls encrypted tunnel for remote logs using syslog-ng,syslog-ng,syslog-ng tls,tls logging,]
+ext_url: https://www.techbeatly.com/configure-tls-encrypted-tunnel-for-remote-logs-using-syslog-ng/
+show-avatar: true
+featured: false
+hidden: false
+---
+
+You might be a Sysadmin, developer, DBA or whatever, logs are like treasure boxes for anyone working in IT. And the best practice to keep&#46;&#46;&#46;
+
+Read [Configure TLS Encrypted Tunnel For Remote Logs Using Syslogng](https://www.techbeatly.com/configure-tls-encrypted-tunnel-for-remote-logs-using-syslog-ng/).

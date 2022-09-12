@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="container">
+<h3 class="font-weight-bold spanborder"><span>{{page.title}}</span></h3>
+<div class="page-content">
+
+{{ content }}
+<!-- google ads -->
+{% include google-adsense-horizontal-2.html %}
+<!-- Comments -->
+{% if page.comments == true %}
+{% include comments.html %}
+{% endif %}
+</div>
+</div>

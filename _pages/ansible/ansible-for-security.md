@@ -1,0 +1,20 @@
+---
+layout: post
+title: Ansible for Security
+categories: [ Ansible, Automation, Security]
+image: "assets/images/2020/ansible-automation.png"
+tags: [ aap, cloud, automation, containers, kubernetes, ansible automation platform, red hat ansible, security, cis]
+permalink: ansible-for-security
+featured: false
+hidden: false
+#titleshort: Ansible
+---
+
+
+## Ansible Security Hardening Playbook content
+
+- [RedHatOfficial/ansible-role-rhel8-cis](https://github.com/RedHatOfficial/ansible-role-rhel8-cis)
+- [ansible-lockdown/RHEL7-CIS](https://github.com/ansible-lockdown/RHEL7-CIS)
+- [ansible-lockdown/RHEL8-CIS](https://github.com/ansible-lockdown/RHEL8-CIS)
+- [ansible/ansible-lockdown](https://github.com/ansible/ansible-lockdown)
+- [dev-sec/hardening](https://github.com/dev-sec/hardening)
