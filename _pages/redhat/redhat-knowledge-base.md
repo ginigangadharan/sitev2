@@ -84,6 +84,7 @@ sosreport methods
 sosreport -k docker.all=on -k docker.logs=on --tmp-dir /root/sos
 ```
 
+- [How to provide files to Red Hat Support (vmcore, rhev logcollector, sosreports, heap dumps, log files, etc.)](https://access.redhat.com/solutions/2112)
 ### Subscription Reference
 
 - [How to register and subscribe a system offline to the Red Hat Customer Portal](https://access.redhat.com/solutions/3121571)
