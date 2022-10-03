@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ansible Use Case Gallery
+title: Ansible Automation - Use Case Gallery
 author: gini
 categories: [ ansible ]
 image: "assets/images/2021/lenny-kuhne-jHZ70nRk7Ns-unsplash -automation.jpg"
 tags: []
 show-avatar: false
-permalink: /ansible-use-case-gallery
+permalink: ansible-use-case-gallery
 featured: false
 hidden: false
-titleshort: Ansible Use Case
+titleshort: Ansible Use Cases
 ---
 
 - [Immutable Infrastructure](#immutable-infrastructure)
@@ -99,8 +99,10 @@ Remarkably easy to write, you can run commands across your environment for any n
 Several databases use outdated binary sets. Patch the binaries in accordance with the release of the latest patch.
 
 ## Service license agreements
-Mistakes cost time and money. Eliminate errors that can crop up in detailed software contracts.
 
+- Gather subscription information and generate reports.
+- Auto reminder emails on subscription and license renewal
+-  
 
 
 # Provisioning
