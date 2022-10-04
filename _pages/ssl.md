@@ -18,6 +18,7 @@ titleshort: ssl
 - [How to verify SSL Certificates](#how-to-verify-ssl-certificates)
   - [Verify Certificate and Key](#verify-certificate-and-key)
   - [Change or remove passhphrase](#change-or-remove-passhphrase)
+  - [Extract from PFX file](#extract-from-pfx-file)
 - [References](#references)
 
 ## Create SSL Certificate
@@ -60,6 +61,12 @@ Check and verify certificate details
 
 ```shell
 $ openssl x509 -in server.crt -text -noout
+```
+
+Check a PKCS#12 file (.pfx or .p12)
+
+```shell
+$ openssl pkcs12 -info -in keyStore.p12
 ```
 
 Check and verify Key file
@@ -129,6 +136,14 @@ Change the passphrase of the SSL Key
 ```shell
 $ openssl rsa -aes256 -in original.key -out new.key
 ```
+
+
+### Extract from PFX file
+
+```shell
+$ openssl pkcs12 -in [yourfile.pfx] -nocerts -out [drlive.key]
+```
+
 
 ## References
 
