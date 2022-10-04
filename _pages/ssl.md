@@ -17,6 +17,8 @@ titleshort: ssl
   - [Create Server Key, CSR and Certificate](#create-server-key-csr-and-certificate)
 - [How to verify SSL Certificates](#how-to-verify-ssl-certificates)
   - [Verify Certificate and Key](#verify-certificate-and-key)
+  - [Change or remove passhphrase](#change-or-remove-passhphrase)
+- [References](#references)
 
 ## Create SSL Certificate
 ### Create a Root CA
@@ -32,19 +34,48 @@ openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out myserver-C
 
 ### Create Server Key, CSR and Certificate
 
-```bash
+```shell
 ## Create a new SSL Key for server/app
 openssl genrsa -out myserver.key 2048
+```
 
-## Generate Certificate Signing Request
+Generate Certificate Signing Request and Key only
+
+```shell
+$ openssl req -newkey rsa:2048 \ 
+  -keyout server.key \
+  -out server.csr
+```
+
+Generate Certificate Signing Request with details as arguments
+
+```shell
 $ openssl req -new \
   -subj "/C=US/ST=North Carolina/L=Raleigh/O=Red Hat/CN=todo-https.apps.ocp4.example.com" \
   -key myserver.key \
   -out myserver.csr
+```
 
-## Verify CSR content
-$ openssl req -in myserver.csr -noout -text
+Check and verify certificate details
 
+```shell
+$ openssl x509 -in server.crt -text -noout
+```
+
+Check and verify Key file
+
+```shell
+$ openssl rsa -in server.key -check 
+```
+
+Verify CSR content
+
+```shell
+$ openssl req -in server.csr -noout -text
+$ openssl req -in server.csr -noout -text -verify 
+```
+
+```shell
 ## Generate Certificate using CSR and CA
 ## openssl x509 -req -in <CSR FILE> \
 ##   -CA <CA FILE> -CAkey myserver-CA.key -CAcreateserial \
@@ -84,3 +115,22 @@ Check the Key only
 $ openssl rsa -check -noout -in myserver.key
 RSA Key is ok
 ```
+
+### Change or remove passhphrase
+
+Remove Passphrase from SSL key
+
+```shell
+$ openssl rsa -in original.key -out new.key
+```
+
+Change the passphrase of the SSL Key
+
+```shell
+$ openssl rsa -aes256 -in original.key -out new.key
+```
+
+## References
+
+- [OpenSSL Commands](https://pleasantpasswords.com/info/pleasant-password-server/b-server-configuration/3-installing-a-3rd-party-certificate/openssl-commands)
+- 
