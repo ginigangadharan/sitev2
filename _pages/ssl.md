@@ -19,6 +19,7 @@ titleshort: ssl
   - [Verify Certificate and Key](#verify-certificate-and-key)
   - [Change or remove passhphrase](#change-or-remove-passhphrase)
   - [Extract from PFX file](#extract-from-pfx-file)
+  - [Extract Certificate from P7B file](#extract-certificate-from-p7b-file)
 - [References](#references)
 
 ## Create SSL Certificate
@@ -144,6 +145,11 @@ $ openssl rsa -aes256 -in original.key -out new.key
 $ openssl pkcs12 -in [yourfile.pfx] -nocerts -out [drlive.key]
 ```
 
+### Extract Certificate from P7B file
+
+```shell
+$ openssl pkcs7 -inform PEM -outform PEM -in certnew.p7b -print_certs > certificate.cer
+```
 
 ## References
 
