@@ -11,6 +11,6 @@ featured: false
 hidden: false
 ---
 
-In an automated world of IT, password based authentications are not a good choice and it will restrict so many abilities. For SSH access, you&#46;&#46;&#46;
+This method is more secure than password-based access since the authentication happens using private and public key pair values.
 
 Read [How to setup SSH key based authentication](https://www.techbeatly.com/how-to-setup-ssh-key-based-authentication/).

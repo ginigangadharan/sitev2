@@ -11,8 +11,21 @@ hidden: false
 titleshort: terraform
 ---
 
-# References
 
+- [Terraform Tools](#terraform-tools)
+- [References to Start](#references-to-start)
+- [Other References](#other-references)
+
+
+## Terraform Tools
+
+➡️ terragrunt
+➡️ terratest
+➡️ terrascan
+➡️ terratag
+➡️ tfswitch
+➡️ tflint
+➡️ terraform-docs
 ## References to Start
 
 - [Get Started](https://learn.hashicorp.com/terraform)
@@ -28,8 +41,10 @@ titleshort: terraform
 - [What is Mutable vs. Immutable Infrastructure?](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure/)(hashicorp)
 - [What Is Immutable Infrastructure?](https://www.digitalocean.com/community/tutorials/what-is-immutable-infrastructure)(digitalocean)
 
+## Other References
 
 ---
+
 - [250 Practice Questions For Terraform Associate Certification](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
 - [Terraform Beginners Track](https://github.com/collabnix/terraform/blob/master/beginners/README.md) - (collabnix - GitHub)
 - [Using Ansible to automate app deployment on Terraform-provided infrastructure](https://cloud.ibm.com/docs/terraform?topic=terraform-ansible)
