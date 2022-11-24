@@ -63,6 +63,34 @@ Manage your applications deployments, re-deployments, migration using simple ans
 
 - [Windows Package Management](https://www.ansible.com/blog/windows-package-management)
 
+## OpenShift Container Platform
+
+OpenShift Day 2
+  Cluster upgrade
+  Auto-scaling of worker nodes
+  AD group synchronization
+  Time synchronization
+  Housekeeping
+  Pruning objects (namespaces, builds, etc.)
+  Certificate update/rotation
+
+Business Continuity
+  etcd backup
+  Global Load Balancer (GTM) failover
+  Cluster rebuild and recovery
+  Master/Worker nodes VM snapshot
+
+Application Deployment/CD
+  Namespace creation
+  Network policy creation
+  Application deployment, resource provisioning and testing
+  Application upgrade
+
+Compliance
+  CIS OpenShift scanning and reporting 
+  Leveraging compliance operator and generating HTML reports
+
+
 ## Operating System Patching
 
 - [Linux OS Patching Using Ansible](https://www.youtube.com/watch?v=sGXTfsz-3-4) (techbeatly)
