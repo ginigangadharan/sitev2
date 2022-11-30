@@ -296,7 +296,7 @@ $ sudo yum install wget git vim
 ## Download VMWare root CA certificates to System trust
 
 ```bash
-$ wget https://vcenter.lab.local/certs/download.zip
+$ wget --no-check-certificate https://vcenter.lab.local/certs/download.zip
 $ unzip download.zip
 $ sudo cp certs/lin/* /etc/pki/ca-trust/source/anchors/
 $ sudo update-ca-trust extract
