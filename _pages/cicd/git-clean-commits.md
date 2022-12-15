@@ -21,13 +21,13 @@ git add -A
 git commit -am "the first commit"
 
 # Delete master Branch 
-git branch -D master
+git branch -D main
 
 # Rename temp/Current Branch to master
-git branch -m master
+git branch -m main
 
 # Push Changes to repo as master
-git push -f origin master
+git push -f origin main
 ```
 
 Original post: [How to Delete Commit History in Github](https://tecadmin.net/delete-commit-history-in-github/)
