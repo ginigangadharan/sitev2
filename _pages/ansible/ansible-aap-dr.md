@@ -24,3 +24,5 @@ These are official references to implement Disaster Recovery (DR) designs for An
 - [redhat-cop/ah_configuration](https://github.com/redhat-cop/ah_configuration) - Collection of modules and roles to configure Automation Hub.
 
 - [redhat-cop/ee_utilities](https://github.com/redhat-cop/ee_utilities) - This ansible collection includes a number of roles and tools which can be useful for managing Ansible Execution Environments.
+
+- [redhat-cop/services_catalog_configuration](https://github.com/redhat-cop/services_catalog_configuration) - This ansible collection includes a number of roles and modules which can be used to configure and manage Ansible Automation Services Catalog as code.
