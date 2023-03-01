@@ -14,7 +14,7 @@ Reference Documents for Red Hat Products
 
 - [sosreport methods](#sosreport-methods)
     - [Subscription Reference](#subscription-reference)
-  - [Repository & Satellite](#repository--satellite)
+  - [Repository \& Satellite](#repository--satellite)
   - [Useful Links](#useful-links)
   - [Appendix](#appendix)
 
@@ -59,9 +59,18 @@ subscription-manager repos \
   --enable=rhel-7-server-rpms \
   --enable=rhel-server-rhscl-7-2.9.rpms
 
+# or for RHEL8
+subscription-manager repos \
+  --enable=rhel-8-for-x86_64-baseos-rpms \
+  --enable=rhel-8-for-x86_64-appstream-rpms
+
 # enabling ansible repo
 subscription-manager repos \
   --enable ansible-2-for-rhel-8-x86_64-rpms
+
+# enabling AAP repo
+subscription-manager repos \
+  ansible-automation-platform-2.2-for-rhel-8-x86_64-rpms
 
 # Unregistering a system
 subscription-manager remove --all
