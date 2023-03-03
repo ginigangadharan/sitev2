@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Red Hat Knowledge Base
-categories: [ Red Hat, Ansible, OpenShift, OpenStack ]
+title: RHEL to Active Directory
+categories: [ Red Hat]
 tags: [ yum, redhat, satellite, ansible, openshift ]
 show-avatar: false
-permalink: redhat-kb
+permalink: redhat-active-directory
 featured: false
 hidden: false
 titleshort: Red Hat KB
