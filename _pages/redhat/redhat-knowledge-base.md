@@ -131,3 +131,4 @@ goto https://access.redhat.com/labs/rhpc/
 
 select the product -> version and arch
 -> follow scripted or manual
+
