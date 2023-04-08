@@ -4,10 +4,10 @@ title: Learn OpenShift 8211 A Comprehensive Guide for OpenShift Courses and Exam
 author: gini
 categories: [Automation,Developer,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/04/redhat-openshift-courses-1024x576.png
-tags: [automation,developer,devops,featured,free courses,kubernetes,openshift,a comprehensive guide for openshift courses and exams,free openshift training,how to learn openshift,openshift container platform,openshift course guide,openshift courses,openshift exam guide,what is openshift,]
+tags: [automation,developer,devops,free courses,kubernetes,openshift,a comprehensive guide for openshift courses and exams,free openshift training,how to learn openshift,openshift container platform,openshift course guide,openshift courses,openshift exam guide,what is openshift,]
 ext_url: https://www.techbeatly.com/learn-openshift/
 show-avatar: true
-featured: true
+featured: false
 hidden: false
 ---
 

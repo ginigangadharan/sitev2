@@ -11,6 +11,6 @@ featured: false
 hidden: false
 ---
 
-What is ansible-navigator ansible-navigator is the new command line utility (CLI) introduced in Ansible Automation Platform 2, for running and developing Ansible automation content New&#46;&#46;&#46;
+What is ansible-navigator ansible-navigator is the new command line utility (CLI) introduced in Ansible Automation Platform 2, for running and developing Ansible automation content. ansible-navigator&#46;&#46;&#46;
 
 Read [Ansible Navigator Cheat Sheet](https://www.techbeatly.com/ansible-navigator-cheat-sheet/).
