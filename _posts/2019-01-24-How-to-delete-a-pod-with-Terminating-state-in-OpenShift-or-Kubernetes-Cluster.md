@@ -4,7 +4,7 @@ title: How to delete a pod with Terminating state in OpenShift or Kubernetes Clu
 author: gini
 categories: [Automation,Cloud,Kubernetes,]
 image: https://www.techbeatly.com/wp-content/uploads/2019/01/how-to-delete-a-pod-with-terminating-state-in-openshift-or-kubernetes-cluster.jpg
-tags: [automation,cloud,kubernetes,openshift,delete a pod in openshift,delete pods in kubernetes,how to delete a pod with terminating state,how to delete pods hanging in terminating state,openshift api,openshift api object manipulation,openshift cluster,pods are stuck in 'terminating' state.,pods are stuck in 'unknown' state,pods can not be deleted,]
+tags: [automation,cloud,kubernetes,openshift,delete a pod in openshift,delete pods in kubernetes,how to delete a pod with terminating state,how to delete pods hanging in terminating state,openshift api,openshift api object manipulation,openshift cluster,pods are stuck in &#039;terminating&#039; state.,pods are stuck in &#039;unknown&#039; state,pods can not be deleted,]
 ext_url: https://www.techbeatly.com/how-to-delete-a-pod-with-terminating-state-in-openshift-or-kubernetes-cluster/
 show-avatar: true
 featured: false
