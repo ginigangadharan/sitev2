@@ -11,6 +11,6 @@ featured: true
 hidden: false
 ---
 
-CI/CD (Continuous integration and Continuous delivery or Continuous deployment) and GitOps are not new terminologies in the IT world. There are several softwares and tools&#46;&#46;&#46;
+CI/CD (Continuous integration and Continuous delivery or Continuous deployment) and GitOps are not new terminologies in the IT world. There are several software and tools&#46;&#46;&#46;
 
 Read [Free GitOps and CICD Courses and Certifications](https://www.techbeatly.com/gitops-cicd/).
