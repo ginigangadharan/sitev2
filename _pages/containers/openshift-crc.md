@@ -1,18 +1,16 @@
 ---
 layout: post
-title: CodeReady Containers - CRC
+title: OpenShift Local (Formerly CodeReady Containers - CRC)
 author: gini
-categories: [ openshift, crc ]
+categories: [ openshift, crc, openshift-local]
 tags: [ OpenShift Installation, crc ]
 show-avatar: false
-permalink: openshift-crc
+permalink: openshift-local
 featured: false
 hidden: false
-titleshort: openshift-crc
+titleshort: openshift-local
 ---
 
-- [Installing CRC on GCP (WIP)](#installing-crc-on-gcp-wip)
-  - [Create a GCP Instance with Nested Virtualization](#create-a-gcp-instance-with-nested-virtualization)
 - [Installing CodeReady Containers](#installing-codeready-containers)
   - [Download CRC Package](#download-crc-package)
   - [Required software packages](#required-software-packages)
@@ -21,36 +19,21 @@ titleshort: openshift-crc
   - [Access your Cluster](#access-your-cluster)
   - [Clean up](#clean-up)
 - [Troubleshooting](#troubleshooting)
+- [Installing CRC on GCP (WIP)](#installing-crc-on-gcp-wip)
+  - [Create a GCP Instance with Nested Virtualization](#create-a-gcp-instance-with-nested-virtualization)
 - [References:](#references)
 
 [Red Hat CodeReady Containers](https://developers.redhat.com/products/codeready-containers)
 
-## Installing CRC on GCP (WIP)
-
-### Create a GCP Instance with Nested Virtualization
-
-```shell
-# create the instance with nested virtualization
-# add other parameters as needed
-gcloud compute instances create VM_NAME \
-  --enable-nested-virtualization \
-  --zone=ZONE \
-  --min-cpu-platform="Intel Haswell"
-  
-# login to VM
-gcloud compute ssh VM_NAME
-
-# check nested virtualization
-grep -cw vmx /proc/cpuinfo
-```
 
 ## Installing CodeReady Containers
 
 ### Download CRC Package
 
 Refer : **[Install OpenShift on a laptop with CodeReady Containers](https://cloud.redhat.com/openshift/install/crc/installer-provisioned?intcmp=7013a000002CtetAAC)**
+Also check: [https://www.openshift.com/try](https://www.openshift.com/try)
 
-- Visit [https://www.openshift.com/try](https://www.openshift.com/try)
+- Visit [console.redhat.com/openshift/create/local](https://console.redhat.com/openshift/create/local)
 - Choose install on Laptop -> https://cloud.redhat.com/openshift/install/crc/installer-provisioned
 - Download for your OS choise (Windows10, MacOS, Linux)
 - Move package to your machine folder
@@ -126,6 +109,26 @@ $ crc cleanup
 $ crc ip
 $ nmcli conn show
 ```
+
+## Installing CRC on GCP (WIP)
+
+### Create a GCP Instance with Nested Virtualization
+
+```shell
+# create the instance with nested virtualization
+# add other parameters as needed
+gcloud compute instances create VM_NAME \
+  --enable-nested-virtualization \
+  --zone=ZONE \
+  --min-cpu-platform="Intel Haswell"
+  
+# login to VM
+gcloud compute ssh VM_NAME
+
+# check nested virtualization
+grep -cw vmx /proc/cpuinfo
+```
+
 
 ## References: 
 - [CodeRead Containers - Red Hat OpenShift 4 on your laptop](https://developers.redhat.com/blog/2019/09/05/red-hat-openshift-4-on-your-laptop-introducing-red-hat-codeready-containers/)
