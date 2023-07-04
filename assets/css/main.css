@@ -4,6 +4,35 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ @font-face {
+  font-family: 'GeneralSans';
+  src: url('https://fonts.techbeatly.com/GeneralSans-Regular.woff2') format('woff2'),
+    url('https://fonts.techbeatly.com/GeneralSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; // this is important for safari
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('https://fonts.techbeatly.com/GeneralSans-Medium.woff2') format('woff2'),
+    url('https://fonts.techbeatly.com/GeneralSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; // this is important for safari
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('https://fonts.techbeatly.com/GeneralSans-Bold.woff2') format('woff2'),
+    url('https://fonts.techbeatly.com/GeneralSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; // this is important for safari
+}
+
+
 :root {
   --blue: #7832e2;
   --indigo: #502c6c;
@@ -40,7 +69,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Segoe UI", "Helvetica Neue", "Arial";
+  --font-family-sans-serif: 'GeneralSans', "Segoe UI", "Helvetica Neue", "Arial";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -64,9 +93,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: 'Open Sans', "Segoe UI", "Helvetica Neue", "Arial";
-  font-size: 1rem;
-  font-weight: 400;
+  font-family: 'GeneralSans', 'Open Sans', "Segoe UI", "Helvetica Neue", "Arial";
+  font-size: 18px;
+  font-weight: 500;
   line-height: 1.6;
   color: #212529;
   text-align: left;
@@ -367,7 +396,8 @@ hr {
 small,
 .small {
   font-size: 85%;
-  font-weight: 400; }
+  /* font-weight: 400;  */
+}
 
 mark,
 .mark {
@@ -1709,7 +1739,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  /* font-weight: 400; */
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -1718,7 +1748,7 @@ textarea.form-control {
           user-select: none;
   border: 1px solid transparent;
   padding: 0.45rem 1.2rem;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   line-height: 1.6;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -2476,7 +2506,7 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(232, 243, 236, 0.5); }
 
 .btn-link {
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #03a87c;
   background-color: transparent; }
   .btn-link:hover {
@@ -2675,7 +2705,7 @@ input[type="button"].btn-block {
   width: 100%;
   padding: 0.45rem 1.5rem;
   clear: both;
-  font-weight: 400;
+  /* font-weight: 400; */
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -2884,7 +2914,7 @@ input[type="button"].btn-block {
   padding: 0.45rem 1.2rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 1.6;
   color: #495057;
   text-align: center;
@@ -4600,7 +4630,7 @@ button.close {
   display: block;
   margin: 0;
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 1.6;
   text-align: left;
   text-align: start;
@@ -4684,7 +4714,7 @@ button.close {
   display: block;
   max-width: 276px;
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 1.6;
   text-align: left;
   text-align: start;
