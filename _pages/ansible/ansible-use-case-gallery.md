@@ -19,16 +19,27 @@ titleshort: Ansible Use Cases
 - [Security Management](#security-management)
 - [Manage network configurations](#manage-network-configurations)
 - [Package Deployment](#package-deployment)
+- [OpenShift Container Platform - Automation](#openshift-container-platform---automation)
+  - [OpenShift Day 2 Operations](#openshift-day-2-operations)
+  - [Business Continuity](#business-continuity)
+  - [Application Deployment/CD](#application-deploymentcd)
+  - [Compliance](#compliance)
 - [Operating System Patching](#operating-system-patching)
 - [Weekly system reboot](#weekly-system-reboot)
 - [Enforce security guidelines](#enforce-security-guidelines)
-- [Configuration Management](#configuration-management)
 - [Disaster recovery](#disaster-recovery)
 - [Adhoc Commands](#adhoc-commands)
-- [Database](#database)
+- [Database and Middleware](#database-and-middleware)
   - [Ansible Oracles Modules](#ansible-oracles-modules)
   - [Database binary patching](#database-binary-patching)
 - [Service license agreements](#service-license-agreements)
+- [Infrastructure Provisioning](#infrastructure-provisioning)
+- [Network](#network)
+- [Application](#application)
+- [Config Management](#config-management)
+- [System and Server Automation](#system-and-server-automation)
+- [Cloud Related Automation](#cloud-related-automation)
+- [Operational Task](#operational-task)
   
 ## Immutable Infrastructure
 
@@ -52,6 +63,13 @@ Manage your applications deployments, re-deployments, migration using simple ans
 ## Security Management
 
 - Incident Response
+- Backup of Fortigate Config into Tectia
+- Failover and Failback of Fortigate
+- Install Security Agents for Imperva, TrendMicro, McAfee, Splunk UF, Nessus, Carbon EDR
+- CyberArk Credential retrievals
+- Palo Alto Patching
+- Palo Alto Provision/Deprovision and Firmware upgrades
+- F5 Patching
 
 ## Manage network configurations
 
@@ -63,32 +81,36 @@ Manage your applications deployments, re-deployments, migration using simple ans
 
 - [Windows Package Management](https://www.ansible.com/blog/windows-package-management)
 
-## OpenShift Container Platform
+## OpenShift Container Platform - Automation 
 
-OpenShift Day 2
-  Cluster upgrade
-  Auto-scaling of worker nodes
-  AD group synchronization
-  Time synchronization
-  Housekeeping
-  Pruning objects (namespaces, builds, etc.)
-  Certificate update/rotation
+### OpenShift Day 2 Operations
 
-Business Continuity
-  etcd backup
-  Global Load Balancer (GTM) failover
-  Cluster rebuild and recovery
-  Master/Worker nodes VM snapshot
+- Cluster upgrade
+- Auto-scaling of worker nodes
+- AD group synchronization
+- Time synchronization
+- Housekeeping
+- Pruning objects (namespaces, builds, etc.)
+- Certificate update/rotation
 
-Application Deployment/CD
-  Namespace creation
-  Network policy creation
-  Application deployment, resource provisioning and testing
-  Application upgrade
+### Business Continuity
 
-Compliance
-  CIS OpenShift scanning and reporting 
-  Leveraging compliance operator and generating HTML reports
+- etcd backup
+- Global Load Balancer (GTM) failover
+- Cluster rebuild and recovery
+- Master/Worker nodes VM snapshot
+
+### Application Deployment/CD
+
+- Namespace creation
+- Network policy creation
+- Application deployment, resource provisioning and testing
+- Application upgrade
+
+### Compliance 
+- 
+- CIS OpenShift scanning and reporting 
+- Leveraging compliance operator and generating HTML reports
 
 
 ## Operating System Patching
@@ -101,232 +123,142 @@ Compliance
 
 ## Weekly system reboot
 
-Eliminate repetitive, manual processes with automation.
-
+Eliminate repetitive, manual processes with automated [weekly syste reboot](https://www.techbeatly.com/system-reboot-with-ansible-reboot-module/).
 
 ## Enforce security guidelines
+
 Rules are rules. It’s best to automate in an effort to achieve strict security standards.
 
-## Configuration Management
-
-Keep your configurations as a code and also can check if someone made chages to the same.
+- CIS Scanning and Hardening for RHEL, SUSE and Windows
+- CIS benchmark for Kubernetes
+- Rapid 7 Nexpose / Tenable Nessus Integration
+- Anti-virus, e.g. Trend Micro, Symantec
 
 ## Disaster recovery
+
 Disaster recovery can involve a wide range of components. Act across different variables of the technology stack to identify problems and eliminate cross team dependencies.
 
 ## Adhoc Commands
+
 Remarkably easy to write, you can run commands across your environment for any number of servers.
 
-## Database
+## Database and Middleware
+
+- Installation and configuration of MySQL, MSSQL, Oracle DB, PostgreSQL, MariaDB
+- Installation and configuration of WebLogic, Apache, NGINX, Tomcat, WebSphere, JBoss EAP
+- DB health check for MySQL, MSSQL, Oracle DB
+- DB housekeeping and archival for MySQL, Oracle DB
+- DB ad-hoc backup/restore for MySQL, MSSQL, Oracle DB
+- DB patching for MySQL, MSSQL, Oracle DB
+- DB hardening and compliance for MySQL, MariaDB, MSSQL, PostgreSQL 
+- Platform build/installation for Bamboo, Jira, Bitbucket, Confluence, minio, MQ etc
+- Start/Stop/Restart DB and middleware services
+- Patching for WebLogic, JBoss EAP, Tomcat
 
 ### Ansible Oracles Modules
 
 - [ansible-oracle-modules](https://github.com/oravirt/ansible-oracle-modules)
 
 ### Database binary patching
+
 Several databases use outdated binary sets. Patch the binaries in accordance with the release of the latest patch.
 
 ## Service license agreements
 
 - Gather subscription information and generate reports.
 - Auto reminder emails on subscription and license renewal
--  
+
+## Infrastructure Provisioning
+
+- Provisioning VMs on RHV, VMware and Hyper-V using templates
+- Provisioning on AWS
+- VM Snapshots on RHV and VMware
+
+## Network
+
+- Firewall rules orchestration with AlgoSec, Tuffin
+- Load Balancer orchestration with OS updates
+- SD-WAN
+- Integration with Infoblox (IPAM)
+- Asset management with Solarwinds
+- FW rules management (Add, delete and modify
+- Cloud FW rules management (AWS and Azure)
+- Compliance check for Cisco ASR, CSR, 9K, ACI, SD-WAN, Allot, F5, AlgoSec, Palo Alto, Panorama
+- Hardening of Cisco ASR, CSR, 9K, ACI, SD-WAN, Allot, F5, AlgoSec, Palo Alto, Panorama
+- Patch management for F5, InfoBlox, vEdge
+- PKI Certificate management
+- Configuration backup for Cisco IOS/XE, Palo Alto, F5, ACI
+- Provisioning for vEdge, F5, ACI, Cisco IOS/XE, Palo Alto
+- Health Check for Cisco IOS/XE, NX-OS, Palo Alto, F5
+- Palo Alto user management, NSP, FW session, deprovisioning
+
+## Application 
+
+- Integration with CI/CD tools such as Azure DevOps
+- Application Deployment
+- Installation and lifecycle management of middleware
+- Installation of IIS, MS-SQL
+- Installation of .NET app on Windows
+- Application health check
+- Dynatrace webhook
+- Integration with Jira ServiceDesk
+
+## Config Management
+
+Keep your configurations as a code and also can check if someone made changes to the same.
+
+- RHEL and Windows patching with Red Hat Satellite and WSUS
+- Red Hat Clustering Setup
+- Health Check
+- Onboarding of Windows vm to Windows AD
+- Integration with CyberArk vault
+- DR failover for Ansible Tower
+- Golden Image management
+- Configuration drift management, with baseline configurations
 
 
-# Provisioning
-Provisioning VMs on RHV, VMware and Hyper-V using templates
-Provisioning on AWS
-VM Snapshots on RHV and VMware
+## System and Server Automation
 
-# Network 
-Firewall rules orchestration with AlgoSec, Tuffin
-Load Balancer orchestration with OS updates
-SD-WAN
-Integration with Infoblox (IPAM)
-Asset management with Solarwinds
-
-# Compliance and Security
-CIS Scanning and Hardening for RHEL, SUSE and Windows
-CIS benchmark for Kubernetes
-Rapid 7 Nexpose / Tenable Nessus Integration
-Anti-virus, e.g. Trend Micro, Symantec
-
-# Application 
-Integration with CI/CD tools such as Azure DevOps
-Application Deployment
-Installation and lifecycle management of middleware
-Installation of IIS, MS-SQL
-Installation of .NET app on Windows
-Application health check
-Dynatrace webhook
-Integration with Jira ServiceDesk
-
-# Config Management
-RHEL and Windows patching with Red Hat Satellite and WSUS
-Red Hat Clustering Setup
-Health Check
-Onboarding of Windows vm to Windows AD
-Integration with CyberArk vault
-DR failover for Ansible Tower
-Golden Image management
-Configuration drift management, with baseline configurations
-
-
-
-System and Server Automation
-1.
-VM provision and deprovision for Windows 2016/2019, RHEL 8.x 
-2.
-Scale up/down CPU and Memory of VMs
-3.
-Add/Delete Virtual Disks for VMs
-4.
-Agent Installations for APM, McAfee, SCCM, Backup, Monitoring etc.
-5.
-Join to Domains
-6.
-Patch Management with WSUS/Satellite
-7.
-Compliance Management for RHEL, Windows
-8.
-Server Hardening
-9.
-Health Check for Windows and Linux Servers
-10.
-Server Stop/Start/Restart
+- VM provision and deprovision for Windows 2016/2019, RHEL 8.x 
+- Scale up/down CPU and Memory of VMs
+- Add/Delete Virtual Disks for VMs
+- Agent Installations for APM, McAfee, SCCM, Backup, Monitoring etc.
+- Join to Domains
+- Patch Management with WSUS/Satellite
+- Compliance Management for RHEL, Windows
+- Server Hardening
+- Health Check for Windows and Linux Servers
+- Server Stop/Start/Restart
 
  
+## Cloud Related Automation
+
+- VMs and Kubernetes provisioning on AWS/Azure
+- Provisioning with Autoscaling Group on AWS
+- Configure ALB
+- Create Lambda Functions to update AMI
+- VPC provision and deprovision with related network services
+- Windows/Linux Patch Management
+- Windows/Linux Hardening and Rollback Management
+- Windows/Linux Compliance Management
+- Golden Image Builds
+- CloudWatch configurations
+- Logs management/archival
+- Lifecycle management of AWS accounts, organizations, roles and access
+- Network security and WAF policy configurations
+- AWS Resource backup
+- Set budget limits and budget monitoring
+- SFTP configurations with RBAC
+- Cloud DB provisioning
+- Azure SQL managed instance provisioning
+- SNS configurations and alarm settings
+- VAPT scanning
 
 
+## Operational Task
 
-
-Cloud Related Automation
-1.
-VMs and Kubernetes provisioning on AWS/Azure
-2.
-Provisioning with Autoscaling Group on AWS
-3.
-Configure ALB
-4.
-Create Lambda Functions to update AMI
-5.
-VPC provision and deprovision with related network services
-6.
-Windows/Linux Patch Management
-7.
-Windows/Linux Hardening and Rollback Management
-8.
-Windows/Linux Compliance Management
-9.
-Golden Image Builds
-10.
-CloudWatch configurations
-11.
-Logs management/archival
-12.
-Lifecycle management of AWS accounts, organizations, roles and access
-13.
-Network security and WAF policy configurations
-14.
-AWS Resource backup
-15.
-Set budget limits and budget monitoring
-16.
-SFTP configurations with RBAC
-17.
-Cloud DB provisioning
-18.
-Azure SQL managed instance provisioning
-19.
-SNS configurations and alarm settings
-20.
-VAPT scanning
-
-
-
-
-
-Database and Middleware
-1.
-Installation and configuration of MySQL, MSSQL, Oracle DB, PostgreSQL, MariaDB
-2.
-Installation and configuration of WebLogic, Apache, NGINX, Tomcat, WebSphere, JBoss EAP
-3.
-DB health check for MySQL, MSSQL, Oracle DB
-4.
-DB housekeeping and archival for MySQL, Oracle DB
-5.
-DB ad-hoc backup/restore for MySQL, MSSQL, Oracle DB
-6.
-DB patching for MySQL, MSSQL, Oracle DB
-7.
-DB hardening and compliance for MySQL, MariaDB, MSSQL, PostgreSQL 
-8.
-Platform build/installation for Bamboo, Jira, Bitbucket, Confluence, minio, MQ etc
-9.
-Start/Stop/Restart DB and middleware services
-10.
-Patching for WebLogic, JBoss EAP, Tomcat
-
-
-
-
-
-Network
-1.
-FW rules management (Add, delete and modify
-2.
-Cloud FW rules management (AWS and Azure)
-3.
-Compliance check for Cisco ASR, CSR, 9K, ACI, SD-WAN, Allot, F5, AlgoSec, Palo Alto, Panorama
-4.
-Hardening of Cisco ASR, CSR, 9K, ACI, SD-WAN, Allot, F5, AlgoSec, Palo Alto, Panorama
-5.
-Patch management for F5, InfoBlox, vEdge
-6.
-PKI Certificate management
-7.
-Configuration backup for Cisco IOS/XE, Palo Alto, F5, ACI
-8.
-Provisioning for vEdge, F5, ACI, Cisco IOS/XE, Palo Alto
-9.
-Health Check for Cisco IOS/XE, NX-OS, Palo Alto, F5
-10.
-Palo Alto user management, NSP, FW session, deprovisioning
-
-
-
-
-
-Security
-1.
-Backup of Fortigate Config into Tectia
-2.
-Failover and Failback of Fortigate
-3.
-Install Security Agents for Imperva, TrendMicro, McAfee, Splunk UF, Nessus, Carbon EDR
-4.
-CyberArk Credential retrievals
-5.
-Palo Alto Patching
-6.
-Palo Alto Provision/Deprovision and Firmware upgrades
-7.
-F5 Patching
-
-
-
-
-
-Operational Task
-1.
-System Health Check for Windows, Linux, MySQL, Oracle DB
-2.
-Network Health Check for AlgoSec, Infoblox, ACI, Firepower, Router, F5, Palo Alto
-3.
-Server, DB and Application Services Stop/Start/Restart
-4.
-Common Incident Remediations
-5.
-DB Operational Tasks
-
+- System Health Check for Windows, Linux, MySQL, Oracle DB
+- Network Health Check for AlgoSec, Infoblox, ACI, Firepower, Router, F5, Palo Alto
+- Server, DB and Application Services Stop/Start/Restart
+- Common Incident Remediations
+- DB Operational Tasks
