@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+/* 
  @font-face {
   font-family: 'GeneralSans';
   src: url('https://fonts.techbeatly.com/GeneralSans-Regular.woff2') format('woff2'),
@@ -30,7 +30,10 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap; // this is important for safari
-}
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;800&display=swap');
 
 
 :root {
@@ -69,7 +72,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: 'GeneralSans', "Segoe UI", "Helvetica Neue", "Arial";
+  --font-family-sans-serif: 'Plus Jakarta Sans','GeneralSans', "Segoe UI", "Helvetica Neue", "Arial";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -93,9 +96,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: 'GeneralSans', 'Open Sans', "Segoe UI", "Helvetica Neue", "Arial";
+  font-family: 'Plus Jakarta Sans','GeneralSans', 'Open Sans', "Segoe UI", "Helvetica Neue", "Arial";
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.6;
   color: #212529;
   text-align: left;
