@@ -1,6 +1,6 @@
 ---
 layout: post
-title: aaaaaImplementing Immutable ConfigMaps in Kubernetes A Practical Tutorial
+title: Implementing Immutable ConfigMaps in Kubernetes A Practical Tutorial
 author: gini
 categories: [DevOps,Kubernetes,Security,]
 image: https://www.techbeatly.com/wp-content/uploads/2023/07/immutable-configmaps-in-kubernetes-1024x576.png
