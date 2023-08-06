@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-In this article, you will learn how to deploy a multi-node Kubernetes cluster using Vagrant and VirtualBox.
+<p>In this article, you will learn how to deploy a multi-node Kubernetes cluster using Vagrant and VirtualBox. </p>
+<p>The post <a href="https://www.techbeatly.com/kubernets-cluster-in-10-minutes/" rel="nofollow">Multi-node Kubernets Cluster in 10 minutes</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Multinode Kubernets Cluster in 10 minutes](https://www.techbeatly.com/kubernets-cluster-in-10-minutes/).

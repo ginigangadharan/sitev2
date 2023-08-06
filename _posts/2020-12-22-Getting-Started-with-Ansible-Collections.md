@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Ansible Collection is a great way of getting content contributions from various Ansible Developers. Earlier there was a tagline for Ansible &#8211; “Batteries included”, but&#46;&#46;&#46;
+<p>Ansible Collection is a great way of getting content contributions from various Ansible Developers. Earlier there was a tagline for Ansible &#8211; “Batteries included”, but&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/getting-started-with-ansible-collections/" rel="nofollow">Getting Started with Ansible Collections</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Getting Started with Ansible Collections](https://www.techbeatly.com/getting-started-with-ansible-collections/).

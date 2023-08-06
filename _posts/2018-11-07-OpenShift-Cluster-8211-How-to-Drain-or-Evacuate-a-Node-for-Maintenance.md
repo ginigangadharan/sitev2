@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-As we know OpenShift clusters are bundled with multiple compute nodes, master nodes, infra nodes etc, it&#8217;s not a big deal to manage node maintenance&#46;&#46;&#46;
+<p>As we know OpenShift clusters are bundled with multiple compute nodes, master nodes, infra nodes etc, it&#8217;s not a big deal to manage node maintenance&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/openshift-cluster-how-to-drain-or-evacuate-a-node-for-maintenance/" rel="nofollow">OpenShift Cluster &#8211; How to Drain or Evacuate a Node for Maintenance</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [OpenShift Cluster 8211 How to Drain or Evacuate a Node for Maintenance](https://www.techbeatly.com/openshift-cluster-how-to-drain-or-evacuate-a-node-for-maintenance/).

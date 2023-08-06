@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Here see what I have curated based on my experience and personal notes.
+<p>Here see what I have curated based on my experience and personal notes. </p>
+<p>The post <a href="https://www.techbeatly.com/terraform-free-courses/" rel="nofollow">10 Free Courses to Learn Terraform</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [10 Free Courses to Learn Terraform](https://www.techbeatly.com/terraform-free-courses/).

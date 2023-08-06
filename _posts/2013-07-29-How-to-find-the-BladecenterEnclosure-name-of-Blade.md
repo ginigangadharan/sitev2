@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-You got a blade server details to work with and you need to find the enclosure name and details, the blade installed in, how ?&#46;&#46;&#46;
+<p>You got a blade server details to work with and you need to find the enclosure name and details, the blade installed in, how ?&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-find-the-bladecenterenclosure-name-of-blade/" rel="nofollow">How to find the Bladecenter/Enclosure name of Blade</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [How to find the BladecenterEnclosure name of Blade](https://www.techbeatly.com/how-to-find-the-bladecenterenclosure-name-of-blade/).

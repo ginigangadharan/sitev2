@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Terraform is an amazing tool for your infrastructure automation. Everything about your infrastructure can be write as code and maintain by team; means your infrastructure&#46;&#46;&#46;
+<p>Terraform is an amazing tool for your infrastructure automation. Everything about your infrastructure can be write as code and maintain by team; means your infrastructure&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-import-existing-vmware-vm-in-to-terraform/" rel="nofollow">How to Import Existing VMWare VM&#8217;s into Terraform</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [How to Import Existing VMWare VM8217s into Terraform](https://www.techbeatly.com/how-to-import-existing-vmware-vm-in-to-terraform/).

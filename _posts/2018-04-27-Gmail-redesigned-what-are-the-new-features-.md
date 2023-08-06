@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Gmail has revamped their web interface with awesome look and also added new features. Already changed the default font to &#8220;Roboto&#8221;, which is Google&#8217;s standard&#46;&#46;&#46;
+<p>Gmail has revamped their web interface with awesome look and also added new features. Already changed the default font to &#8220;Roboto&#8221;, which is Google&#8217;s standard&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/gmail-redesigned-what-are-the-new-features/" rel="nofollow">Gmail redesigned, what are the new features ?</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Gmail redesigned what are the new features ](https://www.techbeatly.com/gmail-redesigned-what-are-the-new-features/).

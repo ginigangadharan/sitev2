@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Introduction As we all know, learning Ansible is not just a reading process and you really need to do a lot of hands-on and practice&#46;&#46;&#46;
+<p>Introduction As we all know, learning Ansible is not just a reading process and you really need to do a lot of hands-on and practice&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/creating-a-free-ansible-lab-in-public-cloud/" rel="nofollow">How to Create a FREE Ansible Lab in Public Cloud (AWS, GCP, Azure)</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [How to Create a FREE Ansible Lab in Public Cloud AWS GCP Azure](https://www.techbeatly.com/creating-a-free-ansible-lab-in-public-cloud/).

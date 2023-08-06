@@ -11,6 +11,7 @@ featured: true
 hidden: false
 ---
 
-There are many reasons behind this and let us explore a few of them.
+<p>There are many reasons behind this and let us explore a few of them.</p>
+<p>The post <a href="https://www.techbeatly.com/why-is-kubernetes-certification-important/" rel="nofollow">Why is Kubernetes certification so important ? 5 reasons I noticed</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Why is Kubernetes certification so important 5 reasons I noticed](https://www.techbeatly.com/why-is-kubernetes-certification-important/).

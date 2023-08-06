@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-I am happy to announce the updated version of the Ansible Lab code, based on the valuable feedback from our incredible learning community! This lab&#46;&#46;&#46;
+<p>I am happy to announce the updated version of the Ansible Lab code, based on the valuable feedback from our incredible learning community! This lab&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/now-available-updated-ansible-lab-using-vagrant-and-virtualbox/" rel="nofollow">Now Available: Updated Ansible Lab using Vagrant and VirtualBox!</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Now Available Updated Ansible Lab using Vagrant and VirtualBox](https://www.techbeatly.com/now-available-updated-ansible-lab-using-vagrant-and-virtualbox/).

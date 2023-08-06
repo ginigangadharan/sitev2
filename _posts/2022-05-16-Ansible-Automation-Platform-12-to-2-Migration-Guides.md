@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-The information is collected from the official documents and aggregated to focus on the migration topic.
+<p>The information is collected from the official documents and aggregated to focus on the migration topic.</p>
+<p>The post <a href="https://www.techbeatly.com/aap-upgrade/" rel="nofollow">Ansible Automation Platform 1.2 to 2 Migration Guides</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Ansible Automation Platform 12 to 2 Migration Guides](https://www.techbeatly.com/aap-upgrade/).

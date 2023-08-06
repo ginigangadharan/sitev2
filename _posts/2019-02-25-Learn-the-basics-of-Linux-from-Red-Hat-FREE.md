@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Red Hat is offering its beginner level Linux course at no-cost; yes you heard it right &#8211; Its free ! Red Hat Enterprise Linux Technical&#46;&#46;&#46;
+<p>Red Hat is offering its beginner level Linux course at no-cost; yes you heard it right &#8211; Its free ! Red Hat Enterprise Linux Technical&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/learn-the-basics-of-linux-from-red-hat-free-course-rh024/" rel="nofollow">Learn the basics of Linux from Red Hat [FREE]</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Learn the basics of Linux from Red Hat FREE](https://www.techbeatly.com/learn-the-basics-of-linux-from-red-hat-free-course-rh024/).

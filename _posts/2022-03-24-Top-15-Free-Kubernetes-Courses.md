@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Here you will find the top 15 Kubernetes resources which you can use at no cost from your home or office.
+<p>Here you will find the top 15 Kubernetes resources which you can use at no cost from your home or office.</p>
+<p>The post <a href="https://www.techbeatly.com/kubernetes-free-courses/" rel="nofollow">Top 15 Free Kubernetes Courses</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Top 15 Free Kubernetes Courses](https://www.techbeatly.com/kubernetes-free-courses/).

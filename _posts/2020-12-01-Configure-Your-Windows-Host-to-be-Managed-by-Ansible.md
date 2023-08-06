@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Ansible is only available for Linux (or Unix); yes that is true (Ansible is not natively available for Windows yet) but you know, you can use Ansible to manage your Windows machines as well.
+<p>Ansible is only available for Linux (or Unix); yes that is true (Ansible is not natively available for Windows yet) but you know, you can use Ansible to manage your Windows machines as well.</p>
+<p>The post <a href="https://www.techbeatly.com/configure-your-windows-host-to-manage-by-ansible/" rel="nofollow">Configure Your Windows Host to be Managed by Ansible</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Configure Your Windows Host to be Managed by Ansible](https://www.techbeatly.com/configure-your-windows-host-to-manage-by-ansible/).

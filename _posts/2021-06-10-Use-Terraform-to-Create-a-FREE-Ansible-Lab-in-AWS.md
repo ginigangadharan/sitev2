@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Introduction When it comes to create an Ansible Lab, you can easily spin-up one using Terraform on AWS, GCP or Azure. Even though we are&#46;&#46;&#46;
+<p>Introduction When it comes to create an Ansible Lab, you can easily spin-up one using Terraform on AWS, GCP or Azure. Even though we are&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/use-terraform-to-create-a-free-ansible-lab-in-aws/" rel="nofollow">Use Terraform to Create a FREE Ansible Lab in AWS</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Use Terraform to Create a FREE Ansible Lab in AWS](https://www.techbeatly.com/use-terraform-to-create-a-free-ansible-lab-in-aws/).

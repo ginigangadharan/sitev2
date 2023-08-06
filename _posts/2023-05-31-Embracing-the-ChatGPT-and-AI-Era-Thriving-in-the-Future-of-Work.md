@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Technological revolution also resulted in the creation of new industries and job roles.
+<p>Technological revolution also resulted in the creation of new industries and job roles.</p>
+<p>The post <a href="https://www.techbeatly.com/embracing-the-chatgpt-and-ai-era/" rel="nofollow">Embracing the ChatGPT and AI Era: Thriving in the Future of Work</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Embracing the ChatGPT and AI Era Thriving in the Future of Work](https://www.techbeatly.com/embracing-the-chatgpt-and-ai-era/).

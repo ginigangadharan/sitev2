@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-We can identify the Unix Operating System architecture by uname or arch command. Try below examples. Linux kernel version and hardware architecture # uname -m&#46;&#46;&#46;
+<p>We can identify the Unix Operating System architecture by uname or arch command. Try below examples. Linux kernel version and hardware architecture # uname -m&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/check-linuxunix-operating-system-versionmaintenance-levelarchitecure/" rel="nofollow">How to Check Linux/Unix Operating System Version, Maintenance Level, Architecure</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [How to Check LinuxUnix Operating System Version Maintenance Level Architecure](https://www.techbeatly.com/check-linuxunix-operating-system-versionmaintenance-levelarchitecure/).

@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Usually application owner or project owner will specify the quota settings (Memory and CPU) during project creation. But sometimes, they realize that the requested resource&#46;&#46;&#46;
+<p>Usually application owner or project owner will specify the quota settings (Memory and CPU) during project creation. But sometimes, they realize that the requested resource&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-create-increase-or-decrease-project-quota-in-openshift/" rel="nofollow">How to Create, Increase or Decrease Project Quota in OpenShift</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [How to Create Increase or Decrease Project Quota in OpenShift](https://www.techbeatly.com/how-to-create-increase-or-decrease-project-quota-in-openshift/).

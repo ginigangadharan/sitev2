@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Google Cloud Platform has announced a new online training session &#8211; Cloud OnBoard : GCP Fundamentals Series which will be happening on 24th-26th March 2020.&#46;&#46;&#46;
+<p>Google Cloud Platform has announced a new online training session &#8211; Cloud OnBoard : GCP Fundamentals Series which will be happening on 24th-26th March 2020.&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/cloud-onboard-gcp-fundamentals-series-online-training/" rel="nofollow">Cloud OnBoard: GCP Fundamentals Series [Online Training]</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Cloud OnBoard GCP Fundamentals Series Online Training](https://www.techbeatly.com/cloud-onboard-gcp-fundamentals-series-online-training/).

@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-This is a collection of articles and references about Windows automation using Ansible, published in techbeatly and other platforms.
+<p>This is a collection of articles and references about Windows automation using Ansible, published in techbeatly and other platforms.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-windows/" rel="nofollow">Ansible Automation for Windows</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Ansible Automation for Windows](https://www.techbeatly.com/ansible-windows/).

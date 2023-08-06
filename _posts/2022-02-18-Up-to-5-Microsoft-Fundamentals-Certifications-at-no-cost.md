@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-A few weeks ago, I have shared about free AZ-900 and SC-900 certifications and I came to know that, you can get up to 5&#46;&#46;&#46;
+<p>A few weeks ago, I have shared about free AZ-900 and SC-900 certifications and I came to know that, you can get up to 5&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/up-to-5-microsoft-fundamentals-certifications-at-no-cost/" rel="nofollow">Up to 5 Microsoft Fundamentals Certifications at no cost!</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Up to 5 Microsoft Fundamentals Certifications at no cost](https://www.techbeatly.com/up-to-5-microsoft-fundamentals-certifications-at-no-cost/).

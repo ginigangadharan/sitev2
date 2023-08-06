@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-You might be a Sysadmin, developer, DBA or whatever, logs are like treasure boxes for anyone working in IT. And the best practice to keep&#46;&#46;&#46;
+<p>You might be a Sysadmin, developer, DBA or whatever, logs are like treasure boxes for anyone working in IT. And the best practice to keep&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/configure-tls-encrypted-tunnel-for-remote-logs-using-syslog-ng/" rel="nofollow">Configure TLS Encrypted Tunnel For Remote Logs Using Syslog-ng</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Configure TLS Encrypted Tunnel For Remote Logs Using Syslogng](https://www.techbeatly.com/configure-tls-encrypted-tunnel-for-remote-logs-using-syslog-ng/).

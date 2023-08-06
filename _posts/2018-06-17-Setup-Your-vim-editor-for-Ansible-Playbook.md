@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-You may ignore this article if you are already an expert in vim as this is a quick note for those who are new to&#46;&#46;&#46;
+<p>You may ignore this article if you are already an expert in vim as this is a quick note for those who are new to&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/setup-your-vim-editor-for-ansible-playbook/" rel="nofollow">Setup Your vim editor for Ansible Playbook</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Setup Your vim editor for Ansible Playbook](https://www.techbeatly.com/setup-your-vim-editor-for-ansible-playbook/).

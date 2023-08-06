@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-You may refer installation doc from official document as well. Requirement Controlnodes Controlnode is just the machine where we install the Ansible program and will&#46;&#46;&#46;
+<p>You may refer installation doc from official document as well. Requirement Controlnodes Controlnode is just the machine where we install the Ansible program and will&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-installation/" rel="nofollow">Installing Ansible</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Installing Ansible](https://www.techbeatly.com/ansible-installation/).

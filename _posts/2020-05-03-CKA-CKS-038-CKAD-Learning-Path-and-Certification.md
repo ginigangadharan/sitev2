@@ -11,6 +11,7 @@ featured: true
 hidden: false
 ---
 
-Since kubernetes is getting wide acceptance, Kubernetes Certification is the most trending one in IT circle now. I have completed both recently (March &#8211; April&#46;&#46;&#46;
+<p>Since kubernetes is getting wide acceptance, Kubernetes Certification is the most trending one in IT circle now. I have completed both recently (March &#8211; April&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/kubernetes-certification-cka-ckad-exam-tips-learning-path/" rel="nofollow">CKA, CKS &#038; CKAD Learning Path and Certification</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [CKA CKS 038 CKAD Learning Path and Certification](https://www.techbeatly.com/kubernetes-certification-cka-ckad-exam-tips-learning-path/).

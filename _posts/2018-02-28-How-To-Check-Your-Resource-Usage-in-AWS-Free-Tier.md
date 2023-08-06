@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Okay, you are in a learning path for AWS (Amazon Web Services) cloud services and you want to get your hands dirty. As we all&#46;&#46;&#46;
+<p>Okay, you are in a learning path for AWS (Amazon Web Services) cloud services and you want to get your hands dirty. As we all&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-check-your-resource-usage-in-aws-free-tier/" rel="nofollow">How To Check Your Resource Usage in AWS Free Tier</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [How To Check Your Resource Usage in AWS Free Tier](https://www.techbeatly.com/how-to-check-your-resource-usage-in-aws-free-tier/).

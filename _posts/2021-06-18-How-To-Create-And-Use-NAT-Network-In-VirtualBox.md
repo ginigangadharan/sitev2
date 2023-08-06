@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Introduction When we talk about local development or PoC (Proof of Concept) environments, VirtualBox is my first choice as it gives me the choice of&#46;&#46;&#46;
+<p>Introduction When we talk about local development or PoC (Proof of Concept) environments, VirtualBox is my first choice as it gives me the choice of&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-create-and-use-natnetwork-in-virtualbox/" rel="nofollow">How To Create And Use NAT Network In VirtualBox</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [How To Create And Use NAT Network In VirtualBox](https://www.techbeatly.com/how-to-create-and-use-natnetwork-in-virtualbox/).

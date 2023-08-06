@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-We have already&#160; run few ad-hoc command to list down the hosts in earlier sections. See all parts of&#160; Automation with Ansible Guides here Let&#8217;s&#46;&#46;&#46;
+<p>We have already&#160; run few ad-hoc command to list down the hosts in earlier sections. See all parts of&#160; Automation with Ansible Guides here Let&#8217;s&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/running-ansible-ad-hoc-commands/" rel="nofollow">Running Ansible Ad-Hoc commands</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Running Ansible AdHoc commands](https://www.techbeatly.com/running-ansible-ad-hoc-commands/).

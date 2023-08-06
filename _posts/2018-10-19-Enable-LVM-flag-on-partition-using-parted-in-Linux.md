@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Recently we have noticed some issue with one of our filesystem having issue and realized wrong flags on partition which was used as a Physical&#46;&#46;&#46;
+<p>Recently we have noticed some issue with one of our filesystem having issue and realized wrong flags on partition which was used as a Physical&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/enable-lvm-flag-on-partition-using-parted-in-linux/" rel="nofollow">Enable LVM flag on partition using parted in Linux</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Enable LVM flag on partition using parted in Linux](https://www.techbeatly.com/enable-lvm-flag-on-partition-using-parted-in-linux/).

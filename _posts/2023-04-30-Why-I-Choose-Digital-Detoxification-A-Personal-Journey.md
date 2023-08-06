@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-By disconnecting from technology, we can find balance in our lives, prioritize our well-being, and rediscover the joys of being present at the moment.
+<p>By disconnecting from technology, we can find balance in our lives, prioritize our well-being, and rediscover the joys of being present at the moment. </p>
+<p>The post <a href="https://www.techbeatly.com/digital-detoxification/" rel="nofollow">Why I Choose Digital Detoxification: A Personal Journey</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Why I Choose Digital Detoxification A Personal Journey](https://www.techbeatly.com/digital-detoxification/).

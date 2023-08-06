@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-From the Ansible control node, users can easily execute the ad hoc commands and in this section, we will learn how to execute similar ad hoc commands from an Ansible automation controller WebUI.
+<p>From the Ansible control node, users can easily execute the ad hoc commands and in this section, we will learn how to execute similar ad hoc commands from an Ansible automation controller WebUI. </p>
+<p>The post <a href="https://www.techbeatly.com/ansible-automation-controller-ad-hoc-commands/" rel="nofollow">Running Ad Hoc commands from Ansible Automation Controller (Ansible Automation Platform)</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Running Ad Hoc commands from Ansible Automation Controller Ansible Automation Platform](https://www.techbeatly.com/ansible-automation-controller-ad-hoc-commands/).

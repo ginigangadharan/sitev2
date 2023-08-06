@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-There are many cases where Ansible developers and users struggled to connect Windows machine from Ansible.
+<p>There are many cases where Ansible developers and users struggled to connect Windows machine from Ansible.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-for-windows-troubleshooting/" rel="nofollow">Ansible for Windows &#8211; Troubleshooting</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Ansible for Windows 8211 Troubleshooting](https://www.techbeatly.com/ansible-for-windows-troubleshooting/).

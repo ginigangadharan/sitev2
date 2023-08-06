@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Shutdown the machine immediately # shutdown -h now Reboot the machine immediately # shutdown -r now Shutdown the machine with user defined message # shutdown&#46;&#46;&#46;
+<p>Shutdown the machine immediately # shutdown -h now Reboot the machine immediately # shutdown -r now Shutdown the machine with user defined message # shutdown&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/unix-linux-shutdown-commands/" rel="nofollow">UNIX / Linux shutdown Commands</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [UNIX Linux shutdown Commands](https://www.techbeatly.com/unix-linux-shutdown-commands/).

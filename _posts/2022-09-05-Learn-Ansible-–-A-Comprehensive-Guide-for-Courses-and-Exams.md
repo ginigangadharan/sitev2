@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Either follow a beginner-level course or a certification track course designed for Ansible certification.
+<p>Either follow a beginner-level course or a certification track course designed for Ansible certification.</p>
+<p>The post <a href="https://www.techbeatly.com/learn-ansible/" rel="nofollow">Learn Ansible – A Comprehensive Guide for Courses and Exams</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Learn Ansible – A Comprehensive Guide for Courses and Exams](https://www.techbeatly.com/learn-ansible/).

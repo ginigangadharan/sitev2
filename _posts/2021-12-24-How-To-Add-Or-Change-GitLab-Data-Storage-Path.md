@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-In this article you will learn how to configure custom storage path for your GitLab servers.
+<p>In this article you will learn how to configure custom storage path for your GitLab servers.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-add-or-change-gitlab-data-storage-path/" rel="nofollow">How To Add Or Change GitLab Data Storage Path</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [How To Add Or Change GitLab Data Storage Path](https://www.techbeatly.com/how-to-add-or-change-gitlab-data-storage-path/).

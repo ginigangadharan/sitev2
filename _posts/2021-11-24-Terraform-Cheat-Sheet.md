@@ -11,6 +11,7 @@ featured: true
 hidden: false
 ---
 
-This cheat sheet is a living document and I will make changes whenever there is an update or changes in the Terraform CLI options or versions.
+<p>This cheat sheet is a living document and I will make changes whenever there is an update or changes in the Terraform CLI options or versions.</p>
+<p>The post <a href="https://www.techbeatly.com/terraform-cheat-sheet/" rel="nofollow">Terraform Cheat Sheet</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Terraform Cheat Sheet](https://www.techbeatly.com/terraform-cheat-sheet/).

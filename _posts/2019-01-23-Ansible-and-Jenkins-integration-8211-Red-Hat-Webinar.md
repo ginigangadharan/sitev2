@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Join this Red Hat webinar to see how to use Jenkins pipelines to deploy simple applications using Ansible Tower. Here see the quick overview of&#46;&#46;&#46;
+<p>Join this Red Hat webinar to see how to use Jenkins pipelines to deploy simple applications using Ansible Tower. Here see the quick overview of&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-and-jenkins-integration-red-hat-webinar/" rel="nofollow">Ansible and Jenkins integration &#8211; Red Hat Webinar</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Ansible and Jenkins integration 8211 Red Hat Webinar](https://www.techbeatly.com/ansible-and-jenkins-integration-red-hat-webinar/).

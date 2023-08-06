@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Google Container Registry (GCR) is a service in Google Cloud Platform (GCP) to manage your own docker container repository. This is fully managed service and&#46;&#46;&#46;
+<p>Google Container Registry (GCR) is a service in Google Cloud Platform (GCP) to manage your own docker container repository. This is fully managed service and&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/adding-container-images-to-google-container-registry-gcr/" rel="nofollow">Adding Container Images to Google Container Registry (GCR)</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Adding Container Images to Google Container Registry GCR](https://www.techbeatly.com/adding-container-images-to-google-container-registry-gcr/).

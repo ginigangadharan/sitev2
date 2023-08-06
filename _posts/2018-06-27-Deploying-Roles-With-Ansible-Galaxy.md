@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-So you have learned about Ansible Roles and the importance of using roles. Ansible Galaxy is a public library where you can find thousands of&#46;&#46;&#46;
+<p>So you have learned about Ansible Roles and the importance of using roles. Ansible Galaxy is a public library where you can find thousands of&#46;&#46;&#46;</p>
+<p>The post <a href="https://www.techbeatly.com/deploying-roles-with-ansible-galaxy/" rel="nofollow">Deploying Roles With Ansible Galaxy</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Deploying Roles With Ansible Galaxy](https://www.techbeatly.com/deploying-roles-with-ansible-galaxy/).

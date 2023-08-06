@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-Following are the five effective methods that I found, one can follow for continuous learning in AI, ML, and DevOps.
+<p>Following are the five effective methods that I found, one can follow for continuous learning in AI, ML, and DevOps.</p>
+<p>The post <a href="https://www.techbeatly.com/5-effective-methods-for-continuous-learning-in-ai-ml-and-devops-era/" rel="nofollow">5 Effective Methods for Continuous Learning in AI, ML, and DevOps Era</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [5 Effective Methods for Continuous Learning in AI ML and DevOps Era](https://www.techbeatly.com/5-effective-methods-for-continuous-learning-in-ai-ml-and-devops-era/).

@@ -11,6 +11,7 @@ featured: false
 hidden: false
 ---
 
-There are plenty of resources around to learn docker and most of them are FREE of cost.
+<p>There are plenty of resources around to learn docker and most of them are FREE of cost.</p>
+<p>The post <a href="https://www.techbeatly.com/top-5-free-resources-to-learn-docker/" rel="nofollow">Top 5 Free Resources to Learn Docker</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Top 5 Free Resources to Learn Docker](https://www.techbeatly.com/top-5-free-resources-to-learn-docker/).

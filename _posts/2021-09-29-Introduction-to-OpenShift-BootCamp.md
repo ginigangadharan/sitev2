@@ -11,6 +11,7 @@ featured: true
 hidden: false
 ---
 
-The plan is to start with the basics of OpenShift and slowly explain the OpenShift core components. Then we will learn how to deploy OpenShift clusters for you to practice labs and learn everyday.
+<p>The plan is to start with the basics of OpenShift and slowly explain the OpenShift core components. Then we will learn how to deploy OpenShift clusters for you to practice labs and learn everyday. </p>
+<p>The post <a href="https://www.techbeatly.com/introduction-to-openshift-bootcamp/" rel="nofollow">Introduction to OpenShift BootCamp</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
 
 Read [Introduction to OpenShift BootCamp](https://www.techbeatly.com/introduction-to-openshift-bootcamp/).
