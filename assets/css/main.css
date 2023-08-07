@@ -1933,6 +1933,29 @@ fieldset:disabled a.btn {
     .show > .btn-light.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
+.btn-light2 {
+  color: #000000;
+  background-color: #fff;
+  border-color: #f8f9fa; }
+  .btn-light2:hover {
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5; }
+  .btn-light2:focus, .btn-light2.focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
+  .btn-light2.disabled, .btn-light2:disabled {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa; }
+  .btn-light2:not(:disabled):not(.disabled):active, .btn-light2:not(:disabled):not(.disabled).active,
+  .show > .btn-light2.dropdown-toggle {
+    color: #212529;
+    background-color: #dae0e5;
+    border-color: #d3d9df; }
+    .btn-light2:not(:disabled):not(.disabled):active:focus, .btn-light2:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-light2.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }      
+
 .btn-dark {
   color: #fff;
   background-color: #212529;
@@ -2532,8 +2555,8 @@ fieldset:disabled a.btn {
   border-radius: 0.3rem; }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.25rem 1rem;
-  font-size: 0.875rem;
+  padding: 0.15rem 0.7rem;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
@@ -4027,7 +4050,7 @@ input[type="button"].btn-block {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #e9ecef;  
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
     .jumbotron {
@@ -4038,6 +4061,9 @@ input[type="button"].btn-block {
   padding-left: 0;
   border-radius: 0; }
 
+.jumbotron-fluid-round {
+  border-radius: 8px; }
+  
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -5179,6 +5205,19 @@ button.bg-orange:focus {
 .bg-lightcyan {
   background-color: #35bdffad !important; }
 
+.bg-lightgreen {
+  background-color: #e9ffee; }
+
+.bg-lightgreen2 {
+    background-color: #b5cbba; }
+  
+.header-background {
+  background-size: contain;
+	background-image: url("bg-2023.jpeg");
+	background-position: center top;
+  background-repeat: no-repeat;
+}
+  
 a.bg-lightblue:hover, a.bg-lightblue:focus,
 button.bg-lightblue:hover,
 button.bg-lightblue:focus {
@@ -6242,6 +6281,10 @@ button.bg-lightblue:focus {
 .py-6 {
   padding-top: 5rem !important; }
 
+.pt-10,
+.py-10{
+  padding-top: 10rem !important; }
+  
 .pr-6,
 .px-6 {
   padding-right: 5rem !important; }
@@ -7414,7 +7457,7 @@ html {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1070px; } }
+      max-width: 1140px; } }
 .container-lg {
     max-width:1140px;
     padding-right: 15px;

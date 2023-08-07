@@ -104,9 +104,9 @@ a.text-dark:hover {
 }
 .btn-sm,.btn-group-sm>.btn {
 	padding:0.15rem .7rem;
-	font-size:0.875rem;
+	font-size:18px;
 	line-height:1.5;
-	border-radius:0.2rem;
+	border-radius:2rem;
 }
 .btn-link:hover,.btn-link:focus {
 	box-shadow:none;
@@ -273,8 +273,11 @@ a.text-dark:hover {
 	margin-bottom:2rem;
 }
 .jumbotron {
-	background-size:cover;
 	padding:7rem 1rem;
+	/* background-size: contain;
+	background-image: url("bg-2023.jpeg");
+	background-position: center top;
+  background-repeat: no-repeat; */
 }
 @media (min-width:992px) {
 	.jumbotron-lg-withnav {

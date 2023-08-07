@@ -1,5 +1,5 @@
 ---
-title: "automate...containerize..."
+title: "#learningeveryday"
 layout: default
 pagination:
     enabled: true
@@ -10,12 +10,13 @@ description: "Personal Notes, Guides and Blogs"
 <div class="container">
     
 {% if page.url == "/" %}
-<!-- start short version of about section on top with read more button -->
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightcyan position-relative">
+
+<!-- start new about -->
+<div class="jumbotron jumbotron-fluid jumbotron-fluid-round header-background jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightgreen position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
         <div class="row justify-content-between">
-            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <img class="img-main-dp" src="assets/images/gineesh-152x152.png">
+            <div class="col-md-12 pt-10 pb-5 pr-lg-4 align-self-center">
+                <img class="img-main-dp" src="assets/images/gineesh-2023.jpeg">
                 <h1 class="mb-3" style="font-size: 24px;"><br>Gineesh Madapparambath</h1>
                 <!--
                 <p class="mb-3">
@@ -35,12 +36,22 @@ description: "Personal Notes, Guides and Blogs"
                 </p>
                 <a href="{{ site.baseurl }}/about" class="btn btn-dark">Read More</a>
             </div>
+        </div>
+    </div>
+</div> 
+<!-- end new about section -->
+
+
+<!-- start short version of about section on top with read more button -->
+<div class="jumbotron jumbotron-fluid-round jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightgreen2 position-relative">
+    <div class="pl-4 pr-0 h-100 tofront">
+        <div class="row justify-content-between">            
             <!-- removed d-none from below-->
-            <div class="col-md-6  d-md-block pr-0" style="vertical-align: middle; padding-left: 0xp;">	
-                <div style="padding: 20px; vertical-align: middle;">
+            <div class="col-md-12 pt-5 pb-5 d-md-block pr-0" style="vertical-align: middle; padding-left: 0xp;">	
+                <div style="vertical-align: middle;">
                     {% for post in site.pages %} 
                         {% if post.titleshort %}
-                            <a class="sscroll btn btn-light btn-sm" style="padding: 6px; margin: 6px;" href="{{site.baseurl}}{{post.url}}">{{ post.titleshort | downcase }}</a>
+                            <a class="sscroll btn btn-light2 btn-sm" style="margin: 6px;" href="{{site.baseurl}}{{post.url}}">{{ post.titleshort | downcase }}</a>
                         {% endif %}
                     {% endfor %}
                 </div>
@@ -194,7 +205,7 @@ description: "Personal Notes, Guides and Blogs"
 {% endif %}
 {% endfor %}
 
-{% endif %} <!--endif page url is / -->
+{% endif %} <!--endif page url is / or home-->
     
 
 
