@@ -10,7 +10,7 @@ ruby RUBY_VERSION
 
 # If you have any plugins, put them here!
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem "jekyll-sass-converter", "~> 2.0"
+gem "jekyll-sass-converter", "~> 3.0.0"
 # refer forestry.io/blog/how-i-reduced-my-jekyll-build-time-by-61/
 # gem "liquid-c"
 
