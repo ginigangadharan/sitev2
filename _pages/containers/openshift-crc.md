@@ -17,6 +17,7 @@ titleshort: openshift-local
   - [Enable sudo for user](#enable-sudo-for-user)
   - [Setup Cluster](#setup-cluster)
   - [Access your Cluster](#access-your-cluster)
+  - [Enable cluster monitoring (metrics)](#enable-cluster-monitoring-metrics)
   - [Clean up](#clean-up)
 - [Troubleshooting](#troubleshooting)
 - [Installing CRC on GCP (WIP)](#installing-crc-on-gcp-wip)
@@ -91,6 +92,14 @@ To login as an admin, run 'oc login -u kubeadmin -p 8rynV-SeYLc-h8Ij7-YPYcz http
 $ crc console
 Opening the OpenShift Web Console in the default browser...
 ```
+
+### Enable cluster monitoring (metrics)
+
+CodeReady Containers disables the machine-config and monitoring Operators by default.
+
+To enable: 
+
+`crc config set enable-cluster-monitoring true`
 
 ### Clean up
 

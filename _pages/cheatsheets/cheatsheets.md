@@ -14,5 +14,6 @@ titleshort: cheatsheets
 
 - [Ansible Cheatsheet](cheatsheet-ansible)
 - [OpenShift Kubernetes Docker Cheatsheet](https://okd.iamgini.com/)
+- [AWS CLI Cheatsheet](cheatsheet-aws.md)
 - [Vim Editor Cheatsheet](cheatsheet-vim-editor)
 - [Logical Volume Manager (LVM) Cheatsheet](cheatsheet-lvm)
