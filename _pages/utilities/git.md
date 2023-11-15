@@ -8,7 +8,7 @@ permalink: git
 featured: false
 hidden: false
 image: "assets/images/tools-1426927308491-6380b6a9936f.jpeg"
-#titleshort: Tools
+#titleshort: Git
 ---
 
 
