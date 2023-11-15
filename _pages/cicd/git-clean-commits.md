@@ -1,16 +1,18 @@
 ---
 layout: post
-title: How to clean Git commit history
+title: Git - Tips and Notes
 author: gini
 categories: [ cloud ]
-tags: [cloud, automation, containers]
-permalink: git-clean-commits
+tags: [cloud, automation, containers, devops]
+permalink: git
 featured: false
 hidden: false
 image: "assets/images/tools-1426927308491-6380b6a9936f.jpeg"
 #titleshort: Tools
 ---
 
+
+## How to clean Git commit history
 
 ```shell
 # Create Orphan Branch
