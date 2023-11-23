@@ -13,7 +13,9 @@ hidden: false
 
 ## Ansible Security Hardening Playbook content
 
+- [RedHatOfficial/ansible-role-rhel7-cis](https://github.com/RedHatOfficial/ansible-role-rhel7-cis)
 - [RedHatOfficial/ansible-role-rhel8-cis](https://github.com/RedHatOfficial/ansible-role-rhel8-cis)
+- [RedHatOfficial/ansible-role-rhel9-cis](https://github.com/RedHatOfficial/ansible-role-rhel9-cis)
 - [PCI-DSS v3.2.1 Control Baseline for Red Hat Enterprise Linux 8](https://github.com/RedHatOfficial/ansible-role-rhel8-pci-dss) - RedHatOfficial
 - [ansible-lockdown/RHEL7-CIS](https://github.com/ansible-lockdown/RHEL7-CIS)
 - [ansible-lockdown/RHEL8-CIS](https://github.com/ansible-lockdown/RHEL8-CIS)
