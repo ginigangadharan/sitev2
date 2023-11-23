@@ -10,7 +10,6 @@ hidden: false
 #titleshort: Ansible
 ---
 
-
 ## Ansible Security Hardening Playbook content
 
 - [RedHatOfficial/ansible-role-rhel7-cis](https://github.com/RedHatOfficial/ansible-role-rhel7-cis)
