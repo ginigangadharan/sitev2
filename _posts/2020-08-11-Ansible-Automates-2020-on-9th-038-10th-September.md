@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Another good news during this unusual time as Ansible Automate 2020 is a Virtual Event this year and we all will get the chance to&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-automates-2020-on-9th-and-10th-september/" rel="nofollow">Ansible Automates 2020 on 9th &#038; 10th September</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-automates-2020-on-9th-and-10th-september/">Ansible Automates 2020 on 9th &#038; 10th September</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Ansible Automates 2020 on 9th 038 10th September](https://www.techbeatly.com/ansible-automates-2020-on-9th-and-10th-september/).

@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Learn Ansible : Automation with Ansible – All You Want to Learn Ansible Tower&#160;is a wonderful product which help to implement a central hub for&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-tower-start-or-stop-tower-service/" rel="nofollow">ansible-tower-service, Start or Stop Ansible Tower</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-tower-start-or-stop-tower-service/">ansible-tower-service, Start or Stop Ansible Tower</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [ansibletowerservice Start or Stop Ansible Tower](https://www.techbeatly.com/ansible-tower-start-or-stop-tower-service/).

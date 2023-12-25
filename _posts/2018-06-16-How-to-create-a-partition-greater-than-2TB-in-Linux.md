@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Due to limitation of fdisk utility, you will not be able to create partition greater than 2TB in linux with fdisk. This is a quick&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-create-a-partition-greater-than-2tb-in-linux/" rel="nofollow">How to create a partition greater than 2TB in Linux</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-create-a-partition-greater-than-2tb-in-linux/">How to create a partition greater than 2TB in Linux</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to create a partition greater than 2TB in Linux](https://www.techbeatly.com/how-to-create-a-partition-greater-than-2tb-in-linux/).

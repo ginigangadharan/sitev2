@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>We need to make sure, ports 5985 and 5986 (HTTPS) are open in firewall (both OS as well as network side) for Ansible to connect to Windows machine.</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-open-winrm-ports-in-the-windows-firewall/" rel="nofollow">How to open WinRM ports in the Windows firewall</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-open-winrm-ports-in-the-windows-firewall/">How to open WinRM ports in the Windows firewall</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to open WinRM ports in the Windows firewall](https://www.techbeatly.com/how-to-open-winrm-ports-in-the-windows-firewall/).

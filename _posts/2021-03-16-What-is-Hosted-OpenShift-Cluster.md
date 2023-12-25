@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Red Hat OpenShift is the well known enterprise Kubernetes distribution and it is a platform with ready-to use features, compared to the default Kubernetes platform.&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/what-is-hosted-openshift-cluster/" rel="nofollow">What is Hosted OpenShift Cluster</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/what-is-hosted-openshift-cluster/">What is Hosted OpenShift Cluster</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [What is Hosted OpenShift Cluster](https://www.techbeatly.com/what-is-hosted-openshift-cluster/).

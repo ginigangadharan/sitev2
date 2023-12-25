@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Red Hat is offering multiple courses and certifications based on the Red Hat OpenShift platform and there are mainly two tracks (while writing this article), the OpenShift Administrator track and the OpenShift Developer track.</p>
-<p>The post <a href="https://www.techbeatly.com/learn-openshift/" rel="nofollow">Learn OpenShift &#8211; A Comprehensive Guide for OpenShift Courses and Exams</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/learn-openshift/">Learn OpenShift &#8211; A Comprehensive Guide for OpenShift Courses and Exams</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Learn OpenShift 8211 A Comprehensive Guide for OpenShift Courses and Exams](https://www.techbeatly.com/learn-openshift/).

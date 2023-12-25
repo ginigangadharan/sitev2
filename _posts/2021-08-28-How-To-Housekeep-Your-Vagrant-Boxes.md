@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>If you are using different Operating systems and virtual machines using Vagrant, there will be multiple Vagrant boxes downloaded on your local machine and indeed it will take a lot of space. </p>
-<p>The post <a href="https://www.techbeatly.com/how-to-housekeep-your-vagrant-boxes/" rel="nofollow">How To Housekeep Your Vagrant Boxes</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-housekeep-your-vagrant-boxes/">How To Housekeep Your Vagrant Boxes</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How To Housekeep Your Vagrant Boxes](https://www.techbeatly.com/how-to-housekeep-your-vagrant-boxes/).

@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Ansible Automation Platform also includes a command-line utility called ansible-builder to build container images for custom execution environments. The ansible-builder tool can be installed from the upstream Python repository or the Red Hat RPM repository:</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-execution-environment-unconnected/" rel="nofollow">How to build Ansible execution environment images for unconnected environments</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-execution-environment-unconnected/">How to build Ansible execution environment images for unconnected environments</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to build Ansible execution environment images for unconnected environments](https://www.techbeatly.com/ansible-execution-environment-unconnected/).

@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>The AWS Command Line Interface (CLI) is a unified tool to manage your AWS services. With just one tool to download and configure, you can control multiple AWS services from the command line and automate them through scripts.</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-install-and-configure-aws-command-line-interface-cli/" rel="nofollow">How to Install and Configure AWS Command Line Interface (CLI)</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-install-and-configure-aws-command-line-interface-cli/">How to Install and Configure AWS Command Line Interface (CLI)</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to Install and Configure AWS Command Line Interface CLI](https://www.techbeatly.com/how-to-install-and-configure-aws-command-line-interface-cli/).

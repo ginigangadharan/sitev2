@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>From a machine which is connected to internet, download the packages and dependancies using pip download command. </p>
-<p>The post <a href="https://www.techbeatly.com/install-python-modules-offline/" rel="nofollow">Install Python Modules offline</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/install-python-modules-offline/">Install Python Modules offline</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Install Python Modules offline](https://www.techbeatly.com/install-python-modules-offline/).

@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>A host is any virtual or physical Linux client that Red Hat Satellite manages. You have different ways to register a content host in Red Hat Satellite; </p>
-<p>The post <a href="https://www.techbeatly.com/how-to-register-content-host-to-red-hat-satellite/" rel="nofollow">How to Register Content Host to Red Hat Satellite</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-register-content-host-to-red-hat-satellite/">How to Register Content Host to Red Hat Satellite</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to Register Content Host to Red Hat Satellite](https://www.techbeatly.com/how-to-register-content-host-to-red-hat-satellite/).

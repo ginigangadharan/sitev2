@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>In this demo, we will deploy a simple nginx application using helm charts and access it from the host machine.</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-access-applications-deployed-in-minikube-kubernetes-cluster/" rel="nofollow">How to access applications deployed in minikube Kubernetes cluster using NodePort</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-access-applications-deployed-in-minikube-kubernetes-cluster/">How to access applications deployed in minikube Kubernetes cluster using NodePort</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to access applications deployed in minikube Kubernetes cluster using NodePort](https://www.techbeatly.com/how-to-access-applications-deployed-in-minikube-kubernetes-cluster/).

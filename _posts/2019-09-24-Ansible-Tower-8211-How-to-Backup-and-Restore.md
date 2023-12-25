@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Ansible Tower is a wonderful product which help to implement a central hub for IT automation. Ansible Tower is basically a web console and REST&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-tower-backup-and-restore-operations/" rel="nofollow">Ansible Tower &#8211; How to Backup and Restore</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-tower-backup-and-restore-operations/">Ansible Tower &#8211; How to Backup and Restore</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Ansible Tower 8211 How to Backup and Restore](https://www.techbeatly.com/ansible-tower-backup-and-restore-operations/).

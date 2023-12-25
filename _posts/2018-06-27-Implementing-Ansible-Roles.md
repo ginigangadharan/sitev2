@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>In a production environment, we will have hundreds and thousands of different types machines to handle. Hence the type of operations and implementation methods will&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/implementing-ansible-roles/" rel="nofollow">Implementing Ansible Roles</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/implementing-ansible-roles/">Implementing Ansible Roles</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Implementing Ansible Roles](https://www.techbeatly.com/implementing-ansible-roles/).

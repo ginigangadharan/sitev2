@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>I used to get a&#160; lot of queries on AWS learning path and exam preparation procedures via emails or chats. Honestly I am not an&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/aws-certified-solution-architect-associate-learning-path-and-certification/" rel="nofollow">AWS Certified Solution Architect &#8211; Associate &#8211; Learning Path and Certification</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/aws-certified-solution-architect-associate-learning-path-and-certification/">AWS Certified Solution Architect &#8211; Associate &#8211; Learning Path and Certification</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [AWS Certified Solution Architect 8211 Associate 8211 Learning Path and Certification](https://www.techbeatly.com/aws-certified-solution-architect-associate-learning-path-and-certification/).

@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>What is smtpLib We can easily send email from python script using smtplib module, which defines an SMTP client session object that can be used&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/sending-email-using-python-and-smtplib-quick-howto/" rel="nofollow">Sending Email Using Python and smtplib &#8211; Quick HowTo</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/sending-email-using-python-and-smtplib-quick-howto/">Sending Email Using Python and smtplib &#8211; Quick HowTo</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Sending Email Using Python and smtplib 8211 Quick HowTo](https://www.techbeatly.com/sending-email-using-python-and-smtplib-quick-howto/).

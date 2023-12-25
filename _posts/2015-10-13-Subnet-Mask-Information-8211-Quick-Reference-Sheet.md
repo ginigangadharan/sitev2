@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Address Bits Pref NetMask 1  0 /32 255.255.255.255 2  1 /31 255.255.255.254 4  2 /30 255.255.255.252 8  3 /29 255.255.255.248 16  4 /28 255.255.255.240 32 &#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/subnet-mask-information-quick-reference-sheet/" rel="nofollow">Subnet Mask Information &#8211; Quick Reference Sheet</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/subnet-mask-information-quick-reference-sheet/">Subnet Mask Information &#8211; Quick Reference Sheet</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Subnet Mask Information 8211 Quick Reference Sheet](https://www.techbeatly.com/subnet-mask-information-quick-reference-sheet/).

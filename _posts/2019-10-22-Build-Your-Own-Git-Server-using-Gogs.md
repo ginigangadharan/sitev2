@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>When it comes to VCS (Version Control System), we will have confusion as we have many products in the market with almost the same capabilities.&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/build-your-own-git-server-using-gogs/" rel="nofollow">Build Your Own Git Server using Gogs</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/build-your-own-git-server-using-gogs/">Build Your Own Git Server using Gogs</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Build Your Own Git Server using Gogs](https://www.techbeatly.com/build-your-own-git-server-using-gogs/).

@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>You can have different versions of Ansible and other important Python modules in a dedicated test directory with a virtual environment.</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-set-up-and-use-python-virtual-environments-for-ansible/" rel="nofollow">How to set up and use Python virtual environments for Ansible</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-set-up-and-use-python-virtual-environments-for-ansible/">How to set up and use Python virtual environments for Ansible</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to set up and use Python virtual environments for Ansible](https://www.techbeatly.com/how-to-set-up-and-use-python-virtual-environments-for-ansible/).

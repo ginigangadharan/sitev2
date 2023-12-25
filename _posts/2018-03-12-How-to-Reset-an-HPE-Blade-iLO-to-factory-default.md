@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>During a bulk deployment you noticed that, one of the HPE blade iLO in an HPE c7000 enclosure is not responding properly or configurations are&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-reset-an-hpe-blade-ilo-to-factory-default/" rel="nofollow">How to Reset an HPE Blade iLO to factory default</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-reset-an-hpe-blade-ilo-to-factory-default/">How to Reset an HPE Blade iLO to factory default</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to Reset an HPE Blade iLO to factory default](https://www.techbeatly.com/how-to-reset-an-hpe-blade-ilo-to-factory-default/).

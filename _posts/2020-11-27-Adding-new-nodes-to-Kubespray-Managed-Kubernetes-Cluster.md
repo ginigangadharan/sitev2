@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Kubespray is a combination of Ansible and Kubernetes and you can use Kubespray for deploying production ready Kubernetes clusters. Read how to deploy a Kubernetes&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/adding-new-nodes-to-kubespray-managed-kubernetes-cluster/" rel="nofollow">Adding new nodes to Kubespray Managed Kubernetes Cluster</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/adding-new-nodes-to-kubespray-managed-kubernetes-cluster/">Adding new nodes to Kubespray Managed Kubernetes Cluster</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Adding new nodes to Kubespray Managed Kubernetes Cluster](https://www.techbeatly.com/adding-new-nodes-to-kubespray-managed-kubernetes-cluster/).

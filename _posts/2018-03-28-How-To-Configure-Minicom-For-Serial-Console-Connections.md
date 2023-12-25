@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Those who work with infrastructure/server deployment knows how difficult it is to get a console for those devices having no display like switches, routers and&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-configure-minicom-for-serial-console-connections/" rel="nofollow">How To Configure Minicom For Serial Console Connections</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-configure-minicom-for-serial-console-connections/">How To Configure Minicom For Serial Console Connections</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How To Configure Minicom For Serial Console Connections](https://www.techbeatly.com/how-to-configure-minicom-for-serial-console-connections/).

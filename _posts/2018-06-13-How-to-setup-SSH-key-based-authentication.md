@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>This method is more secure than password-based access since the authentication happens using private and public key pair values.</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-setup-ssh-key-based-authentication/" rel="nofollow">How to setup SSH key based authentication</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-setup-ssh-key-based-authentication/">How to setup SSH key based authentication</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to setup SSH key based authentication](https://www.techbeatly.com/how-to-setup-ssh-key-based-authentication/).

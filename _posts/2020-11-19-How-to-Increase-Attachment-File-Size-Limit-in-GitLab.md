@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>We know GitLab is one of the best and easy to use git server solutions available in the market now. And GitLab CE is available&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-increase-attachment-file-size-limit-in-gitlab/" rel="nofollow">How to Increase Attachment File Size Limit in GitLab</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-increase-attachment-file-size-limit-in-gitlab/">How to Increase Attachment File Size Limit in GitLab</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to Increase Attachment File Size Limit in GitLab](https://www.techbeatly.com/how-to-increase-attachment-file-size-limit-in-gitlab/).

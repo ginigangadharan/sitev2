@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Introduction In today&#8217;s rapidly evolving digital landscape, security automation has become a crucial aspect of ensuring the safety and integrity of IT environments. By leveraging&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/openguard-to-event-driven-ansible/" rel="nofollow">A Shift in Focus: Why I Redirected My Efforts from OpenGuard to Event-Driven Ansible</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/openguard-to-event-driven-ansible/">A Shift in Focus: Why I Redirected My Efforts from OpenGuard to Event-Driven Ansible</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [A Shift in Focus Why I Redirected My Efforts from OpenGuard to EventDriven Ansible](https://www.techbeatly.com/openguard-to-event-driven-ansible/).

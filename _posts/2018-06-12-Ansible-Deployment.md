@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Hope you are clear on the concept and installation of Ansible program. Lets configure our Ansible environment now. See all parts of&#160; Automation with Ansible&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-deployment/" rel="nofollow">Ansible Deployment</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-deployment/">Ansible Deployment</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Ansible Deployment](https://www.techbeatly.com/ansible-deployment/).

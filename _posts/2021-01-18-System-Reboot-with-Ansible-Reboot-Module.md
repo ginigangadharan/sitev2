@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>A reboot operation in a Linux Operating System is very rare as most of the time we can achieve the result by individual service restart&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/system-reboot-with-ansible-reboot-module/" rel="nofollow">System Reboot with Ansible Reboot Module</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/system-reboot-with-ansible-reboot-module/">System Reboot with Ansible Reboot Module</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [System Reboot with Ansible Reboot Module](https://www.techbeatly.com/system-reboot-with-ansible-reboot-module/).

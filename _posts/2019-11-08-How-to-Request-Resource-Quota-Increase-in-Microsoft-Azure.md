@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>As we know public cloud is offering unlimited* amount of resources and as an end user of public cloud we don&#8217;t need to worry about&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-request-resource-quota-increase-in-microsoft-azure/" rel="nofollow">How to Request Resource Quota Increase in Microsoft Azure</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-request-resource-quota-increase-in-microsoft-azure/">How to Request Resource Quota Increase in Microsoft Azure</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to Request Resource Quota Increase in Microsoft Azure](https://www.techbeatly.com/how-to-request-resource-quota-increase-in-microsoft-azure/).

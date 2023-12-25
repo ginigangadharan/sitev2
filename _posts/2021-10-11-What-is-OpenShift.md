@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>In this article you will  learn what OpenShift is and why we are using OpenShift. We will also learn the features of OpenShift compared to other similar products.</p>
-<p>The post <a href="https://www.techbeatly.com/what-is-openshift/" rel="nofollow">What is OpenShift</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/what-is-openshift/">What is OpenShift</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [What is OpenShift](https://www.techbeatly.com/what-is-openshift/).

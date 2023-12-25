@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>In this article you will learn how to connect Windows from Ansible using HTTPS and SSL certificate</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-windows-management-using-https-and-ssl/" rel="nofollow">Ansible Windows Management using HTTPS and SSL</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-windows-management-using-https-and-ssl/">Ansible Windows Management using HTTPS and SSL</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Ansible Windows Management using HTTPS and SSL](https://www.techbeatly.com/ansible-windows-management-using-https-and-ssl/).

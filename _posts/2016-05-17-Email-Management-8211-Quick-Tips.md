@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Keep your inbox as empty as possible Move important messages to proper sub-folders or delete unwanted right away. Delete e-mails that are no longer required&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/email-management-quick-tips/" rel="nofollow">Email Management &#8211; Quick Tips</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/email-management-quick-tips/">Email Management &#8211; Quick Tips</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Email Management 8211 Quick Tips](https://www.techbeatly.com/email-management-quick-tips/).

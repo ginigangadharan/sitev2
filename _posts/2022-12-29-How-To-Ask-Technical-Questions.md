@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>This is not something new and we are facing this issue every day! Even sometimes we also do this as well. It can be a&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/learn-to-ask/" rel="nofollow">How To Ask Technical Questions</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/learn-to-ask/">How To Ask Technical Questions</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How To Ask Technical Questions](https://www.techbeatly.com/learn-to-ask/).

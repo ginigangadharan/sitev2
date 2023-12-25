@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Kubernetes is an opensource project and OpenShift is an enterprise opensource product; more like an engine vs car.</p>
-<p>The post <a href="https://www.techbeatly.com/kubernetes-vs-openshift/" rel="nofollow">Kubernetes vs OpenShift &#8211; 15 Facts You Should Know</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/kubernetes-vs-openshift/">Kubernetes vs OpenShift &#8211; 15 Facts You Should Know</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Kubernetes vs OpenShift 8211 15 Facts You Should Know](https://www.techbeatly.com/kubernetes-vs-openshift/).

@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>You are browsing some sites or testing your own web applications, and suddenly you receive a white screen with some error number ! No worries,&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/http-status-codes-quick-reference/" rel="nofollow">HTTP Status Codes- Quick Reference</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/http-status-codes-quick-reference/">HTTP Status Codes- Quick Reference</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [HTTP Status Codes Quick Reference](https://www.techbeatly.com/http-status-codes-quick-reference/).

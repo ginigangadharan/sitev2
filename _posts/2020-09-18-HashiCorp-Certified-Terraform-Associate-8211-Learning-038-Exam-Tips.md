@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Introduction I started using Terraform somewhere in 2018, but very limited usage as I thought it is just another tool for provisioning infrastructure and other&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/hashicorp-certified-terraform-associate-learning-exam-tips/" rel="nofollow">HashiCorp Certified Terraform Associate &#8211; Learning &#038; Exam Tips</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/hashicorp-certified-terraform-associate-learning-exam-tips/">HashiCorp Certified Terraform Associate &#8211; Learning &#038; Exam Tips</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [HashiCorp Certified Terraform Associate 8211 Learning 038 Exam Tips](https://www.techbeatly.com/hashicorp-certified-terraform-associate-learning-exam-tips/).

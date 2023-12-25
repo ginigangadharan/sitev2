@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>I noticed many users are using different and wrong methods to convert a list data to string format. You can use existing filters and functions&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-convert-list-to-string/" rel="nofollow">Ansible Convert List to String</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-convert-list-to-string/">Ansible Convert List to String</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Ansible Convert List to String](https://www.techbeatly.com/ansible-convert-list-to-string/).

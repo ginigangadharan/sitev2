@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Here see some of the best Linux training you can start with at no cost; check out and sign up today.</p>
-<p>The post <a href="https://www.techbeatly.com/learn-linux/" rel="nofollow">Start your Linux journey with free Linux training courses</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/learn-linux/">Start your Linux journey with free Linux training courses</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Start your Linux journey with free Linux training courses](https://www.techbeatly.com/learn-linux/).

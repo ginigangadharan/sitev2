@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Introduction You have multiple ways to deploy a production ready Kubernetes cluster and Kuberspray is another method in which we will use Ansible for configuring&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/deploying-kubernetes-with-kubespray/" rel="nofollow">Deploying Kubernetes with Kubespray</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/deploying-kubernetes-with-kubespray/">Deploying Kubernetes with Kubespray</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Deploying Kubernetes with Kubespray](https://www.techbeatly.com/deploying-kubernetes-with-kubespray/).

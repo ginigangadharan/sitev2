@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Plays are ordered set of tasks to execute against host selections from your inventory. A playbook is a file containing one or more plays. See&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-playbooks/" rel="nofollow">Play with Ansible Playbooks</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/ansible-playbooks/">Play with Ansible Playbooks</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Play with Ansible Playbooks](https://www.techbeatly.com/ansible-playbooks/).

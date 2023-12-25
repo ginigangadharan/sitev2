@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>There might be situations where you have already deleted pods (or already removed dc aka deployment configuration) but pods are stuck in Terminating state. There&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-delete-a-pod-with-terminating-state-in-openshift-or-kubernetes-cluster/" rel="nofollow">How to delete a pod with Terminating state in OpenShift or Kubernetes Cluster</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-delete-a-pod-with-terminating-state-in-openshift-or-kubernetes-cluster/">How to delete a pod with Terminating state in OpenShift or Kubernetes Cluster</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How to delete a pod with Terminating state in OpenShift or Kubernetes Cluster](https://www.techbeatly.com/how-to-delete-a-pod-with-terminating-state-in-openshift-or-kubernetes-cluster/).

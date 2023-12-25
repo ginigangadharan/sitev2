@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Learn the OpenShift architecture, control plane, compute nodes, infrastructure nodes and sample reference architecture.</p>
-<p>The post <a href="https://www.techbeatly.com/openshift-architecture/" rel="nofollow">OpenShift Architecture</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/openshift-architecture/">OpenShift Architecture</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [OpenShift Architecture](https://www.techbeatly.com/openshift-architecture/).

@@ -21,3 +21,10 @@ hidden: false
 - [ansible/ansible-lockdown](https://github.com/ansible/ansible-lockdown)
 - [dev-sec/hardening](https://github.com/dev-sec/hardening)
 
+
+## ComplianceAsCode
+
+
+- [OpenSCAP](https://www.open-scap.org/security-policies/scap-security-guide/)
+- [Compliance As Code Git Repo](https://github.com/complianceascode/content)
+- - [Compliance As Code Documentation](https://complianceascode.readthedocs.io/en/latest/index.html)

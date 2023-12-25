@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Check some of the lab resources you can refer to practice and learn Kubernetes.</p>
-<p>The post <a href="https://www.techbeatly.com/practicing-kubernetes/" rel="nofollow">Practicing Kubernetes</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/practicing-kubernetes/">Practicing Kubernetes</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Practicing Kubernetes](https://www.techbeatly.com/practicing-kubernetes/).

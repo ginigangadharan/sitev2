@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>minikube is the easiest method to deploy a Kubernetes cluster for testing purpose. You can simply spin up a cluster in minutes on your laptop&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/installing-a-kubernetes-cluster-using-minikube/" rel="nofollow">Installing a Kubernetes Cluster using minikube</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/installing-a-kubernetes-cluster-using-minikube/">Installing a Kubernetes Cluster using minikube</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Installing a Kubernetes Cluster using minikube](https://www.techbeatly.com/installing-a-kubernetes-cluster-using-minikube/).

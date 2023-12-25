@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Read this article if you are planning to attend any of the Kubernetes exams in the near future. Because many shared in the forums or&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/5-mistakes-you-should-avoid-during-kubernetes-exam/" rel="nofollow">5 Mistakes You Should Avoid During Kubernetes Exam</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/5-mistakes-you-should-avoid-during-kubernetes-exam/">5 Mistakes You Should Avoid During Kubernetes Exam</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [5 Mistakes You Should Avoid During Kubernetes Exam](https://www.techbeatly.com/5-mistakes-you-should-avoid-during-kubernetes-exam/).

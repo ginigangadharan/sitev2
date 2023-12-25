@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Ansible Variables You can use variables in ansible plays to store values like users to create, packages to install etc. By using variables, you can&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/managing-ansible-variables/" rel="nofollow">Managing Ansible Variables</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/managing-ansible-variables/">Managing Ansible Variables</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Managing Ansible Variables](https://www.techbeatly.com/managing-ansible-variables/).

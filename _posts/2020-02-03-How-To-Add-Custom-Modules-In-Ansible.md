@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>Okay, we all know Ansible installation is coming with default modules and you don&#8217;t need to download or configure any additional modules for normal cases,&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-add-custom-modules-in-ansible/" rel="nofollow">How To Add Custom Modules In Ansible</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/how-to-add-custom-modules-in-ansible/">How To Add Custom Modules In Ansible</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [How To Add Custom Modules In Ansible](https://www.techbeatly.com/how-to-add-custom-modules-in-ansible/).

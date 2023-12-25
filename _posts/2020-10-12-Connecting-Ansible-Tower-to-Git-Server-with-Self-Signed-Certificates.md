@@ -12,6 +12,6 @@ hidden: false
 ---
 
 <p>So many questioned me when I mention git server in an Ansible Tower environment; and later I realized that, most of them are keeping their&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/connecting-ansible-tower-to-git-server-with-self-signed-certificates/" rel="nofollow">Connecting Ansible Tower to Git Server with Self Signed Certificates</a> appeared first on <a href="https://www.techbeatly.com" rel="nofollow">techbeatly</a>.</p>
+<p>The post <a href="https://www.techbeatly.com/connecting-ansible-tower-to-git-server-with-self-signed-certificates/">Connecting Ansible Tower to Git Server with Self Signed Certificates</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
 Read [Connecting Ansible Tower to Git Server with Self Signed Certificates](https://www.techbeatly.com/connecting-ansible-tower-to-git-server-with-self-signed-certificates/).
