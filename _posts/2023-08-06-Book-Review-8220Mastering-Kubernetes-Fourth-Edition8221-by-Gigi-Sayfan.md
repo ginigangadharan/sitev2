@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book Review 8220Mastering Kubernetes Fourth Edition8221 by Gigi Sayfan
+title: Book Review: Mastering Kubernetes Fourth Edition8221 by Gigi Sayfan
 author: gini
 categories: [Books,Cloud,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2023/08/mastering-kubernetes-fourth-edition-by-gigi-sayfan-1024x819.jpeg
