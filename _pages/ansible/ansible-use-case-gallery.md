@@ -33,7 +33,8 @@ titleshort: Ansible Use Cases
   - [Ansible Oracles Modules](#ansible-oracles-modules)
   - [Database binary patching](#database-binary-patching)
 - [Service license agreements](#service-license-agreements)
-- [Infrastructure Provisioning](#infrastructure-provisioning)
+- [Infrastructure Management](#infrastructure-management)
+  - [VMWare](#vmware)
 - [Network](#network)
 - [Application](#application)
 - [Config Management](#config-management)
@@ -168,11 +169,82 @@ Several databases use outdated binary sets. Patch the binaries in accordance wit
 - Gather subscription information and generate reports.
 - Auto reminder emails on subscription and license renewal
 
-## Infrastructure Provisioning
+## Infrastructure Management
 
-- Provisioning VMs on RHV, VMware and Hyper-V using templates
-- Provisioning on AWS
-- VM Snapshots on RHV and VMware
+- Provisioning VMs on RHV, VMware and Hyper-V using templates.
+- Provisioning on AWS.
+- VM Snapshots on RHV and VMware.
+- Maintain server consistency: Ensure all VMs are configured identically and adhere to company standards, promoting stability and security.
+
+### VMWare
+
+- **Datacenter and Cluster Management:**
+   - Create and manage datacenters and clusters within vCenter.
+   - Configure cluster settings for resource allocation, high availability, and security.
+   - Optimize resource distribution across clusters for workload balancing.
+
+- **Resource Pool Management:**
+   - Create and manage resource pools to allocate CPU, memory, and storage resources effectively.
+   - Set resource limits and shares for different workloads to ensure fair distribution.
+   - Automatically adjust resource allocation based on dynamic needs.
+
+- **Network Management:**
+   - Configure virtual networks, switches, port groups, and VLANs within vCenter.
+   - Manage network security policies and firewall rules to protect virtual environments.
+   - Automate network provisioning and changes for new applications and environments.
+
+- **Storage Management:**
+   - Provision and manage datastores, including NFS, VMFS, and vSAN.
+   - Create and manage storage policies for different VM requirements, such as performance and data protection.
+   - Perform storage maintenance tasks like rescanning datastores and extending volumes.
+
+- **Datastore Cluster Management:**
+   - Create and manage datastore clusters for aggregated storage capacity and performance.
+   - Enable Storage DRS for automatic load balancing of VMs across datastores within a cluster.
+   - Configure Storage I/O Control (SIOC) to manage storage resources and prevent contention.
+
+- **Content Library Management:**
+   - Create and manage content libraries to store and distribute VM templates, ISO images, and other files.
+   - Automate the deployment of VMs and applications from content libraries for consistency and efficiency.
+   - Synchronize content libraries across multiple vCenter instances for multi-site deployments.
+
+- **vSphere Update Manager (VUM) Integration:**
+   - Automate patching and updating of ESXi hosts, virtual appliances, and VMware tools using Ansible and VUM.
+   - Orchestrate compliance checks and remediation of vulnerabilities across the VMware environment.
+   - Schedule and manage patching windows for minimal disruption to workloads.
+
+- **vSphere Lifecycle Manager (vLCM) Integration (if available):**
+   - Automate image-based management of ESXi hosts using Ansible and vLCM.
+   - Enforce desired states for ESXi host configurations and firmware updates.
+   - Simplify lifecycle operations and reduce manual intervention.
+
+- **Role-Based Access Control (RBAC) Management:**
+   - Automate the creation and assignment of roles and permissions within vCenter.
+   - Enforce security policies and compliance requirements through role-based access.
+   - Delegate administrative tasks to specific users or groups while maintaining control over privileges.
+
+- **vSphere Alarms and Events Management:**
+   - Configure vSphere alarms for proactive monitoring and alerting on critical events.
+   - Integrate with external monitoring systems to trigger actions based on vSphere alarms.
+   - Automate incident response workflows to address issues quickly and efficiently.
+
+- Deploying VMWare Clusters.
+- Building ESXi Servers and adding to vCenter.
+- Cluster Configuration: Automate the configuration of VMware clusters in vCenter, ensuring consistent settings across your infrastructure.
+- Resource Pool Management: Use Ansible to create, modify, or delete resource pools within vCenter to efficiently allocate and manage computing resources.
+- Datastore Provisioning: Automate the provisioning and management of datastores on your ESXi hosts through vCenter, streamlining storage administration.
+- Network Configuration: Manage network settings and configurations for ESXi hosts and vCenter using Ansible playbooks to ensure consistency and security.
+- Template Deployment: Automate the deployment of virtual machine templates, making it easier to scale up or replace instances as needed.
+- Distributed Switch Management: Use Ansible to configure and manage distributed switches in vCenter, simplifying network administration across multiple hosts.
+- vSphere Update Manager: Automate the process of updating and patching ESXi hosts through vSphere Update Manager to ensure all hosts are running the latest software.
+- Host Profiles and Configuration: Implement Ansible playbooks to manage host profiles, ensuring that ESXi hosts adhere to specific configuration standards.
+- Alarm and Event Handling: Automate the setup and management of alarms and events within vCenter to receive notifications for critical events or issues.
+- vCenter User Management: Use Ansible to manage user roles, permissions, and access controls within vCenter, maintaining a secure and organized virtual infrastructure.
+- Managing vCenter resources such as nodes, storage, network.
+- Patch management: Automate patching of operating systems and applications on VMs, increasing security and compliance.
+- Patching and security compliance of vCenter and ESXi nodes.
+- vCenter health check and reporting with dashboard and notification/alerts.
+- 
 
 ## Network
 
