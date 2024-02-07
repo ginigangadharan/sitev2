@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mastering Tekton: Your Guide to Cloud-Native CI/CD Workflows
+title: Mastering Tekton- Your Guide to Cloud-Native CI/CD Workflows
 author: gini
 categories: [Automation,Courses,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2023/11/learn-tekton-1024x576.png
@@ -14,4 +14,4 @@ hidden: false
 <p>Here are some of the best and free resources to learn Tekton from base.</p>
 <p>The post <a href="https://www.techbeatly.com/learn-tekton/">Mastering Tekton: Your Guide to Cloud-Native CI/CD Workflows</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
-Read [Mastering Tekton: Your Guide to Cloud-Native CI/CD Workflows](https://www.techbeatly.com/learn-tekton/).
+Read [Mastering Tekton- Your Guide to Cloud-Native CI/CD Workflows](https://www.techbeatly.com/learn-tekton/).
