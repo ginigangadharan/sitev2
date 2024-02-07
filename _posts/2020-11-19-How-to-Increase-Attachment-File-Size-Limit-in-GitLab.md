@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Increase Attachment File Size Limit in GitLab
+title: "How to Increase Attachment File Size Limit in GitLab"
 author: gini
 categories: [Automation,Cloud,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2020/11/how-to-increase-attachment-file-size-limit-in-gitlab-1.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>We know GitLab is one of the best and easy to use git server solutions available in the market now. And GitLab CE is available&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-increase-attachment-file-size-limit-in-gitlab/">How to Increase Attachment File Size Limit in GitLab</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+We know GitLab is one of the best and easy to use git server solutions available in the market now. And GitLab CE is available...
 
-Read [How to Increase Attachment File Size Limit in GitLab](https://www.techbeatly.com/how-to-increase-attachment-file-size-limit-in-gitlab/).
+Read ["How to Increase Attachment File Size Limit in GitLab"](https://www.techbeatly.com/how-to-increase-attachment-file-size-limit-in-gitlab/).

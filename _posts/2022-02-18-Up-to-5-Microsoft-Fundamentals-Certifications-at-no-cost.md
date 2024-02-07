@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Up to 5 Microsoft Fundamentals Certifications at no cost!
+title: "Up to 5 Microsoft Fundamentals Certifications at no cost!"
 author: gini
 categories: [Cloud,DevOps,azure exam vouchers,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/02/ms-free-certifications-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>A few weeks ago, I have shared about free AZ-900 and SC-900 certifications and I came to know that, you can get up to 5&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/up-to-5-microsoft-fundamentals-certifications-at-no-cost/">Up to 5 Microsoft Fundamentals Certifications at no cost!</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+A few weeks ago, I have shared about free AZ-900 and SC-900 certifications and I came to know that, you can get up to 5...
 
-Read [Up to 5 Microsoft Fundamentals Certifications at no cost!](https://www.techbeatly.com/up-to-5-microsoft-fundamentals-certifications-at-no-cost/).
+Read ["Up to 5 Microsoft Fundamentals Certifications at no cost!"](https://www.techbeatly.com/up-to-5-microsoft-fundamentals-certifications-at-no-cost/).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Create And Use NAT Network In VirtualBox
+title: "How To Create And Use NAT Network In VirtualBox"
 author: gini
 categories: [Cloud,CyberSecurity,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/06/pexels-brett-sayles-2881233-1024x681.jpg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Introduction When we talk about local development or PoC (Proof of Concept) environments, VirtualBox is my first choice as it gives me the choice of&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-create-and-use-natnetwork-in-virtualbox/">How To Create And Use NAT Network In VirtualBox</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Introduction When we talk about local development or PoC (Proof of Concept) environments, VirtualBox is my first choice as it gives me the choice of...
 
-Read [How To Create And Use NAT Network In VirtualBox](https://www.techbeatly.com/how-to-create-and-use-natnetwork-in-virtualbox/).
+Read ["How To Create And Use NAT Network In VirtualBox"](https://www.techbeatly.com/how-to-create-and-use-natnetwork-in-virtualbox/).

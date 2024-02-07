@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 10 Free Courses to Learn Terraform
+title: "10 Free Courses to Learn Terraform"
 author: gini
 categories: [Courses,DevOps,Free Courses,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/02/terraform-free-courses-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Here see what I have curated based on my experience and personal notes. </p>
-<p>The post <a href="https://www.techbeatly.com/terraform-free-courses/">10 Free Courses to Learn Terraform</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Here see what I have curated based on my experience and personal notes. 
 
-Read [10 Free Courses to Learn Terraform](https://www.techbeatly.com/terraform-free-courses/).
+Read ["10 Free Courses to Learn Terraform"](https://www.techbeatly.com/terraform-free-courses/).

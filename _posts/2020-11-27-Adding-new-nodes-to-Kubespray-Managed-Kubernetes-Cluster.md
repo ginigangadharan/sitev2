@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding new nodes to Kubespray Managed Kubernetes Cluster
+title: "Adding new nodes to Kubespray Managed Kubernetes Cluster"
 author: gini
 categories: [Ansible,Automation,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2020/11/pexels-albin-berlin-kubespray-add-node-kubernetes-cluster-new-ship-1024x683.jpg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Kubespray is a combination of Ansible and Kubernetes and you can use Kubespray for deploying production ready Kubernetes clusters. Read how to deploy a Kubernetes&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/adding-new-nodes-to-kubespray-managed-kubernetes-cluster/">Adding new nodes to Kubespray Managed Kubernetes Cluster</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Kubespray is a combination of Ansible and Kubernetes and you can use Kubespray for deploying production ready Kubernetes clusters. Read how to deploy a Kubernetes...
 
-Read [Adding new nodes to Kubespray Managed Kubernetes Cluster](https://www.techbeatly.com/adding-new-nodes-to-kubespray-managed-kubernetes-cluster/).
+Read ["Adding new nodes to Kubespray Managed Kubernetes Cluster"](https://www.techbeatly.com/adding-new-nodes-to-kubespray-managed-kubernetes-cluster/).

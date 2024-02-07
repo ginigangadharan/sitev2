@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Pass Environment Variables to Ansible Navigator
+title: "How To Pass Environment Variables to Ansible Navigator"
 author: gini
 categories: [Ansible,Ansible Resources,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2023/03/how-to-pass-environment-variables-to-ansible-navigator-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>ansible-navigator is the new command line utility (CLI) introduced in Ansible Automation Platform 2, for running and developing Ansible automation content. ansible-navigator can be used to&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-pass-environment-variables-to-ansible-navigator/">How To Pass Environment Variables to Ansible Navigator</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+ansible-navigator is the new command line utility (CLI) introduced in Ansible Automation Platform 2, for running and developing Ansible automation content. ansible-navigator can be used to...
 
-Read [How To Pass Environment Variables to Ansible Navigator](https://www.techbeatly.com/how-to-pass-environment-variables-to-ansible-navigator/).
+Read ["How To Pass Environment Variables to Ansible Navigator"](https://www.techbeatly.com/how-to-pass-environment-variables-to-ansible-navigator/).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure Red Hat Satellite Content Host with Remote Execution
+title: "Configure Red Hat Satellite Content Host with Remote Execution"
 author: gini
 categories: [Automation,DevOps,Infrastructre & Hardware,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/11/configure-red-hat-satellite-content-host-with-remote-execution-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>A new method for remote content management was introduced with Satellite 6.2 which is called Remote Execution.</p>
-<p>The post <a href="https://www.techbeatly.com/configure-red-hat-satellite-content-host-with-remote-execution/">Configure Red Hat Satellite Content Host with Remote Execution</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+A new method for remote content management was introduced with Satellite 6.2 which is called Remote Execution.
 
-Read [Configure Red Hat Satellite Content Host with Remote Execution](https://www.techbeatly.com/configure-red-hat-satellite-content-host-with-remote-execution/).
+Read ["Configure Red Hat Satellite Content Host with Remote Execution"](https://www.techbeatly.com/configure-red-hat-satellite-content-host-with-remote-execution/).

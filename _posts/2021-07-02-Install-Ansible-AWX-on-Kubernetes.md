@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Install Ansible AWX on Kubernetes
+title: "Install Ansible AWX on Kubernetes"
 author: gini
 categories: [Ansible,Automation,DevOps,]
 image: 
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Ansible AWX is one of the upstream project for Red Hat Ansible Tower. AWX provides a web-based user interface, REST API, and task engine built&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/install-ansible-awx-on-kubernetes/">Install Ansible AWX on Kubernetes</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Ansible AWX is one of the upstream project for Red Hat Ansible Tower. AWX provides a web-based user interface, REST API, and task engine built...
 
-Read [Install Ansible AWX on Kubernetes](https://www.techbeatly.com/install-ansible-awx-on-kubernetes/).
+Read ["Install Ansible AWX on Kubernetes"](https://www.techbeatly.com/install-ansible-awx-on-kubernetes/).

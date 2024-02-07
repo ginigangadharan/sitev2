@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Register Content Host to Red Hat Satellite
+title: "How to Register Content Host to Red Hat Satellite"
 author: gini
 categories: [Automation,Infrastructre & Hardware,Satellite,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/11/how-to-register-content-host-to-red-hat-satellite-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>A host is any virtual or physical Linux client that Red Hat Satellite manages. You have different ways to register a content host in Red Hat Satellite; </p>
-<p>The post <a href="https://www.techbeatly.com/how-to-register-content-host-to-red-hat-satellite/">How to Register Content Host to Red Hat Satellite</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+A host is any virtual or physical Linux client that Red Hat Satellite manages. You have different ways to register a content host in Red Hat Satellite; 
 
-Read [How to Register Content Host to Red Hat Satellite](https://www.techbeatly.com/how-to-register-content-host-to-red-hat-satellite/).
+Read ["How to Register Content Host to Red Hat Satellite"](https://www.techbeatly.com/how-to-register-content-host-to-red-hat-satellite/).

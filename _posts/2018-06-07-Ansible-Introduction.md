@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible Introduction
+title: "Ansible Introduction"
 author: gini
 categories: [Ansible,Ansible Course,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2018/06/ansible-introduction-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is our attempt to cover Ansible in a simple&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-introduction/">Ansible Introduction</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is our attempt to cover Ansible in a simple...
 
-Read [Ansible Introduction](https://www.techbeatly.com/ansible-introduction/).
+Read ["Ansible Introduction"](https://www.techbeatly.com/ansible-introduction/).

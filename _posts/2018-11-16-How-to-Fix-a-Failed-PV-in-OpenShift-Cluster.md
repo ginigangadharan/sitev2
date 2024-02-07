@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Fix a Failed PV in OpenShift Cluster
+title: "How to Fix a Failed PV in OpenShift Cluster"
 author: gini
 categories: [Cloud,Kubernetes,OpenShift,]
 image: https://www.techbeatly.com/wp-content/uploads/2018/11/how-to-fix-a-failed-pv-in-openshift-cluster.jpg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>There are several cases a PV (PersistentVolume) appear as Failed in OpenShift or Kubernetes cluster. Once of the reason is wrong ClaimRef by which PV&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-fix-a-failed-pv-in-openshift-cluster/">How to Fix a Failed PV in OpenShift Cluster</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+There are several cases a PV (PersistentVolume) appear as Failed in OpenShift or Kubernetes cluster. Once of the reason is wrong ClaimRef by which PV...
 
-Read [How to Fix a Failed PV in OpenShift Cluster](https://www.techbeatly.com/how-to-fix-a-failed-pv-in-openshift-cluster/).
+Read ["How to Fix a Failed PV in OpenShift Cluster"](https://www.techbeatly.com/how-to-fix-a-failed-pv-in-openshift-cluster/).

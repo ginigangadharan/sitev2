@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Request Resource Quota Increase in Microsoft Azure
+title: "How to Request Resource Quota Increase in Microsoft Azure"
 author: gini
 categories: [Cloud,How To,Infrastructre & Hardware,]
 image: http://www.techbeatly.com/wp-content/uploads/2019/07/how-to-request-resource-quota-increase-in-microsoft-azure-01-1024x216.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>As we know public cloud is offering unlimited* amount of resources and as an end user of public cloud we don&#8217;t need to worry about&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-request-resource-quota-increase-in-microsoft-azure/">How to Request Resource Quota Increase in Microsoft Azure</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+As we know public cloud is offering unlimited* amount of resources and as an end user of public cloud we don’t need to worry about...
 
-Read [How to Request Resource Quota Increase in Microsoft Azure](https://www.techbeatly.com/how-to-request-resource-quota-increase-in-microsoft-azure/).
+Read ["How to Request Resource Quota Increase in Microsoft Azure"](https://www.techbeatly.com/how-to-request-resource-quota-increase-in-microsoft-azure/).

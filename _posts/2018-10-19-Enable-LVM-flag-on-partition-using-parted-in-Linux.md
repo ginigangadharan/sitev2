@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable LVM flag on partition using parted in Linux
+title: "Enable LVM flag on partition using parted in Linux"
 author: gini
 categories: [Infrastructre & Hardware,Enable LVM flag on partition using parted in Linux,fdisk,]
 image: 
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Recently we have noticed some issue with one of our filesystem having issue and realized wrong flags on partition which was used as a Physical&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/enable-lvm-flag-on-partition-using-parted-in-linux/">Enable LVM flag on partition using parted in Linux</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Recently we have noticed some issue with one of our filesystem having issue and realized wrong flags on partition which was used as a Physical...
 
-Read [Enable LVM flag on partition using parted in Linux](https://www.techbeatly.com/enable-lvm-flag-on-partition-using-parted-in-linux/).
+Read ["Enable LVM flag on partition using parted in Linux"](https://www.techbeatly.com/enable-lvm-flag-on-partition-using-parted-in-linux/).

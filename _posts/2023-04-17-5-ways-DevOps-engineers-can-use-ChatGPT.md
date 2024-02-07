@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5 ways DevOps engineers can use ChatGPT
+title: "5 ways DevOps engineers can use ChatGPT"
 author: gini
 categories: [Automation,DevOps,chatgpt,]
 image: https://www.techbeatly.com/wp-content/uploads/2023/04/5-ways-devops-can-use-chatgpt-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>In this article, we will explore 5 potential ways DevOps engineers can use ChatGPT to improve the DevOps workflow.</p>
-<p>The post <a href="https://www.techbeatly.com/5-ways-devops-engineers-can-use-chatgpt/">5 ways DevOps engineers can use ChatGPT</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+In this article, we will explore 5 potential ways DevOps engineers can use ChatGPT to improve the DevOps workflow.
 
-Read [5 ways DevOps engineers can use ChatGPT](https://www.techbeatly.com/5-ways-devops-engineers-can-use-chatgpt/).
+Read ["5 ways DevOps engineers can use ChatGPT"](https://www.techbeatly.com/5-ways-devops-engineers-can-use-chatgpt/).

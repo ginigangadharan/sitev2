@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Install VMWare vCenter Server Appliance
+title: "How to Install VMWare vCenter Server Appliance"
 author: gini
 categories: [Cloud,Infrastructre & Hardware,Virtualization,]
 image: https://www.techbeatly.com/wp-content/uploads/2020/11/techbeatly-youtube-cover-vmware-vcenter-appliance-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>When we talk about virtualization, VMWare is one of the best choice and most popular in town. You can download VMware vSphere Hypervisor 6.7 for&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-install-vmware-vcenter-server-appliance/">How to Install VMWare vCenter Server Appliance</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+When we talk about virtualization, VMWare is one of the best choice and most popular in town. You can download VMware vSphere Hypervisor 6.7 for...
 
-Read [How to Install VMWare vCenter Server Appliance](https://www.techbeatly.com/how-to-install-vmware-vcenter-server-appliance/).
+Read ["How to Install VMWare vCenter Server Appliance"](https://www.techbeatly.com/how-to-install-vmware-vcenter-server-appliance/).

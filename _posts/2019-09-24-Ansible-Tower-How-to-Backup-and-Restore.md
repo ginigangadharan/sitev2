@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible Tower – How to Backup and Restore
+title: "Ansible Tower – How to Backup and Restore"
 author: gini
 categories: [Ansible,Automation,Cloud,]
 image: http://www.techbeatly.com/wp-content/uploads/2019/09/ansible-tower-backup-and-restore-operations-1.jpg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Ansible Tower is a wonderful product which help to implement a central hub for IT automation. Ansible Tower is basically a web console and REST&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-tower-backup-and-restore-operations/">Ansible Tower &#8211; How to Backup and Restore</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Ansible Tower is a wonderful product which help to implement a central hub for IT automation. Ansible Tower is basically a web console and REST...
 
-Read [Ansible Tower – How to Backup and Restore](https://www.techbeatly.com/ansible-tower-backup-and-restore-operations/).
+Read ["Ansible Tower – How to Backup and Restore"](https://www.techbeatly.com/ansible-tower-backup-and-restore-operations/).

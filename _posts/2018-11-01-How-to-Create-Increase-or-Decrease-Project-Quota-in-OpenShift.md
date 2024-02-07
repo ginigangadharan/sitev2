@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Create, Increase or Decrease Project Quota in OpenShift
+title: "How to Create, Increase or Decrease Project Quota in OpenShift"
 author: gini
 categories: [Automation,Cloud,Infrastructre & Hardware,]
 image: https://www.techbeatly.com/wp-content/uploads/2018/11/how-to-create-increase-or-decrease-project-quota-in-openshift.jpg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Usually application owner or project owner will specify the quota settings (Memory and CPU) during project creation. But sometimes, they realize that the requested resource&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-create-increase-or-decrease-project-quota-in-openshift/">How to Create, Increase or Decrease Project Quota in OpenShift</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Usually application owner or project owner will specify the quota settings (Memory and CPU) during project creation. But sometimes, they realize that the requested resource...
 
-Read [How to Create, Increase or Decrease Project Quota in OpenShift](https://www.techbeatly.com/how-to-create-increase-or-decrease-project-quota-in-openshift/).
+Read ["How to Create, Increase or Decrease Project Quota in OpenShift"](https://www.techbeatly.com/how-to-create-increase-or-decrease-project-quota-in-openshift/).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible Deployment
+title: "Ansible Deployment"
 author: gini
 categories: [Ansible,Ansible Course,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2018/06/ansible-deployment-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Hope you are clear on the concept and installation of Ansible program. Lets configure our Ansible environment now. See all parts of&#160; Automation with Ansible&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-deployment/">Ansible Deployment</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Hope you are clear on the concept and installation of Ansible program. Lets configure our Ansible environment now. See all parts of  Automation with Ansible...
 
-Read [Ansible Deployment](https://www.techbeatly.com/ansible-deployment/).
+Read ["Ansible Deployment"](https://www.techbeatly.com/ansible-deployment/).

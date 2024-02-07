@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to pass extra variables to an Ansible playbook
+title: "How to pass extra variables to an Ansible playbook"
 author: gini
 categories: [Ansible,Automation,Ansible Course,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/01/ansible-general-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Learn the ability to pass extra variables to an Ansible playbook. This feature is available when using the Ansible CLI or Ansible Tower.</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-extra-variables/">How to pass extra variables to an Ansible playbook</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Learn the ability to pass extra variables to an Ansible playbook. This feature is available when using the Ansible CLI or Ansible Tower.
 
-Read [How to pass extra variables to an Ansible playbook](https://www.techbeatly.com/ansible-extra-variables/).
+Read ["How to pass extra variables to an Ansible playbook"](https://www.techbeatly.com/ansible-extra-variables/).

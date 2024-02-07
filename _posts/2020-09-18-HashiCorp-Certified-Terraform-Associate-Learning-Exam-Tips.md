@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HashiCorp Certified Terraform Associate – Learning & Exam Tips
+title: "HashiCorp Certified Terraform Associate – Learning & Exam Tips"
 author: gini
 categories: [Ansible,Automation,Cloud,]
 image: https://www.techbeatly.com/wp-content/uploads/2020/09/terraform-certification-exam-tips-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Introduction I started using Terraform somewhere in 2018, but very limited usage as I thought it is just another tool for provisioning infrastructure and other&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/hashicorp-certified-terraform-associate-learning-exam-tips/">HashiCorp Certified Terraform Associate &#8211; Learning &#038; Exam Tips</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Introduction I started using Terraform somewhere in 2018, but very limited usage as I thought it is just another tool for provisioning infrastructure and other...
 
-Read [HashiCorp Certified Terraform Associate – Learning & Exam Tips](https://www.techbeatly.com/hashicorp-certified-terraform-associate-learning-exam-tips/).
+Read ["HashiCorp Certified Terraform Associate – Learning & Exam Tips"](https://www.techbeatly.com/hashicorp-certified-terraform-associate-learning-exam-tips/).

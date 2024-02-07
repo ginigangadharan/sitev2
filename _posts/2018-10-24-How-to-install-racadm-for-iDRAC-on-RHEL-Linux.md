@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to install racadm for iDRAC on RHEL / Linux
+title: "How to install racadm for iDRAC on RHEL / Linux"
 author: gini
 categories: [Dell,Infrastructre & Hardware,How to install racadm for iDrac on RHEL / Linux,]
 image: http://www.techbeatly.com/wp-content/uploads/2018/10/how-to-install-racadm-for-idrac-on-rhel-linux-cover.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Dell has a beautiful tool for remote server management called iDRAC which is almost same like HPE iLO, but with different features. You can access&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-install-racadm-for-idrac-on-rhel-linux/">How to install racadm for iDRAC on RHEL / Linux</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Dell has a beautiful tool for remote server management called iDRAC which is almost same like HPE iLO, but with different features. You can access...
 
-Read [How to install racadm for iDRAC on RHEL / Linux](https://www.techbeatly.com/how-to-install-racadm-for-idrac-on-rhel-linux/).
+Read ["How to install racadm for iDRAC on RHEL / Linux"](https://www.techbeatly.com/how-to-install-racadm-for-idrac-on-rhel-linux/).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible Automation for Windows
+title: "Ansible Automation for Windows"
 author: gini
 categories: [Infrastructre & Hardware,Ansible,Ansible Doc,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/01/ansible-windows-techbeatly-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>This is a collection of articles and references about Windows automation using Ansible, published in techbeatly and other platforms.</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-windows/">Ansible Automation for Windows</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+This is a collection of articles and references about Windows automation using Ansible, published in techbeatly and other platforms.
 
-Read [Ansible Automation for Windows](https://www.techbeatly.com/ansible-windows/).
+Read ["Ansible Automation for Windows"](https://www.techbeatly.com/ansible-windows/).

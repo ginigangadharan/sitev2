@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Terraform Cheat Sheet
+title: "Terraform Cheat Sheet"
 author: gini
 categories: [DevOps,Featured,Infrastructre & Hardware,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/11/terraform-cheat-sheet-techbeatly-new-1024x576.png
@@ -11,7 +11,6 @@ featured: true
 hidden: false
 ---
 
-<p>This cheat sheet is a living document and I will make changes whenever there is an update or changes in the Terraform CLI options or versions.</p>
-<p>The post <a href="https://www.techbeatly.com/terraform-cheat-sheet/">Terraform Cheat Sheet</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+This cheat sheet is a living document and I will make changes whenever there is an update or changes in the Terraform CLI options or versions.
 
-Read [Terraform Cheat Sheet](https://www.techbeatly.com/terraform-cheat-sheet/).
+Read ["Terraform Cheat Sheet"](https://www.techbeatly.com/terraform-cheat-sheet/).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Start your Linux journey with free Linux training courses
+title: "Start your Linux journey with free Linux training courses"
 author: gini
 categories: [Careers,Courses,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/02/free-linux-course-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Here see some of the best Linux training you can start with at no cost; check out and sign up today.</p>
-<p>The post <a href="https://www.techbeatly.com/learn-linux/">Start your Linux journey with free Linux training courses</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Here see some of the best Linux training you can start with at no cost; check out and sign up today.
 
-Read [Start your Linux journey with free Linux training courses](https://www.techbeatly.com/learn-linux/).
+Read ["Start your Linux journey with free Linux training courses"](https://www.techbeatly.com/learn-linux/).

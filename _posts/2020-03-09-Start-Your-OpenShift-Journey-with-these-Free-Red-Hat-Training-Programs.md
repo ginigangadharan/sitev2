@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Start Your OpenShift Journey with these Free Red Hat Training Programs
+title: "Start Your OpenShift Journey with these Free Red Hat Training Programs"
 author: gini
 categories: [Cloud,Online Events,OpenShift,]
 image: https://www.techbeatly.com/wp-content/uploads/2020/03/redhat-openshift-free-courses-1024x683.jpg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Red Hat OpenShift Container Platform is one of the best kubernetes platform for enterprises. As we know kubernetes and OpenShift are multi-component stack and not&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/start-your-openshift-journey-with-these-free-red-hat-training-programs/">Start Your OpenShift Journey with these Free Red Hat Training Programs</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Red Hat OpenShift Container Platform is one of the best kubernetes platform for enterprises. As we know kubernetes and OpenShift are multi-component stack and not...
 
-Read [Start Your OpenShift Journey with these Free Red Hat Training Programs](https://www.techbeatly.com/start-your-openshift-journey-with-these-free-red-hat-training-programs/).
+Read ["Start Your OpenShift Journey with these Free Red Hat Training Programs"](https://www.techbeatly.com/start-your-openshift-journey-with-these-free-red-hat-training-programs/).

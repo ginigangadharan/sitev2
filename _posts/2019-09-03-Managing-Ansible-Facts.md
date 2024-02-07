@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Ansible Facts
+title: "Managing Ansible Facts"
 author: gini
 categories: [Ansible,Ansible Course,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2019/09/managing-ansible-facts-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Ansible facts are nothing but some variables which are automatically discovered by the Ansible on managed hosts while running ansible adhoc commands or playbooks. See&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/managing-ansible-facts/">Managing Ansible Facts</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Ansible facts are nothing but some variables which are automatically discovered by the Ansible on managed hosts while running ansible adhoc commands or playbooks. See...
 
-Read [Managing Ansible Facts](https://www.techbeatly.com/managing-ansible-facts/).
+Read ["Managing Ansible Facts"](https://www.techbeatly.com/managing-ansible-facts/).

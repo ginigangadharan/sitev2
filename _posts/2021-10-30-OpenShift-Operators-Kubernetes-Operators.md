@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenShift Operators (Kubernetes Operators)
+title: "OpenShift Operators (Kubernetes Operators)"
 author: gini
 categories: [Cloud,DevOps,Kubernetes,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/10/openshift-bootcamp-operators-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>An Operator is a method of packaging, deploying and managing a Kubernetes-native application. </p>
-<p>The post <a href="https://www.techbeatly.com/openshift-operators-kubernetes-operators/">OpenShift Operators (Kubernetes Operators)</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+An Operator is a method of packaging, deploying and managing a Kubernetes-native application. 
 
-Read [OpenShift Operators (Kubernetes Operators)](https://www.techbeatly.com/openshift-operators-kubernetes-operators/).
+Read ["OpenShift Operators (Kubernetes Operators)"](https://www.techbeatly.com/openshift-operators-kubernetes-operators/).

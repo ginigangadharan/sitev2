@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Ask Technical Questions
+title: "How To Ask Technical Questions"
 author: gini
 categories: [Automation,Careers,Cloud,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/12/learn-to-ask-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>This is not something new and we are facing this issue every day! Even sometimes we also do this as well. It can be a&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/learn-to-ask/">How To Ask Technical Questions</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+This is not something new and we are facing this issue every day! Even sometimes we also do this as well. It can be a...
 
-Read [How To Ask Technical Questions](https://www.techbeatly.com/learn-to-ask/).
+Read ["How To Ask Technical Questions"](https://www.techbeatly.com/learn-to-ask/).

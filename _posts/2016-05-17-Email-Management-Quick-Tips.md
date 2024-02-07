@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email Management – Quick Tips
+title: "Email Management – Quick Tips"
 author: gini
 categories: [Workplace,Email,Email Management,]
 image: http://techbeats.colorvibes.in/wp-content/uploads/2016/05/Emails.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Keep your inbox as empty as possible Move important messages to proper sub-folders or delete unwanted right away. Delete e-mails that are no longer required&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/email-management-quick-tips/">Email Management &#8211; Quick Tips</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Keep your inbox as empty as possible Move important messages to proper sub-folders or delete unwanted right away. Delete e-mails that are no longer required...
 
-Read [Email Management – Quick Tips](https://www.techbeatly.com/email-management-quick-tips/).
+Read ["Email Management – Quick Tips"](https://www.techbeatly.com/email-management-quick-tips/).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Play with Ansible Playbooks
+title: "Play with Ansible Playbooks"
 author: gini
 categories: [Ansible,Ansible Course,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2018/06/ansible-playbooks-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Plays are ordered set of tasks to execute against host selections from your inventory. A playbook is a file containing one or more plays. See&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-playbooks/">Play with Ansible Playbooks</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Plays are ordered set of tasks to execute against host selections from your inventory. A playbook is a file containing one or more plays. See...
 
-Read [Play with Ansible Playbooks](https://www.techbeatly.com/ansible-playbooks/).
+Read ["Play with Ansible Playbooks"](https://www.techbeatly.com/ansible-playbooks/).

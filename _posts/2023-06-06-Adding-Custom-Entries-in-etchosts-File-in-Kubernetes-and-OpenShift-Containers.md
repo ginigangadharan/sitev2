@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Custom Entries in /etc/hosts File in Kubernetes and OpenShift Containers
+title: "Adding Custom Entries in /etc/hosts File in Kubernetes and OpenShift Containers"
 author: gini
 categories: [Infrastructre & Hardware,custom /etc/hosts in containers,custom /etc/hosts in kubernetes pods,]
 image: https://www.techbeatly.com/wp-content/uploads/2023/06/adding-custom-entries-in-etc-hosts-file-in-kubernetes-and-openshift-containers-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Introduction: In Kubernetes and OpenShift container environments, it is sometimes necessary to add custom entries to the /etc/hosts file within pods. These entries allow pods&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/adding-custom-entries-in-etc-hosts-file-in-kubernetes-and-openshift-containers/">Adding Custom Entries in /etc/hosts File in Kubernetes and OpenShift Containers</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Introduction: In Kubernetes and OpenShift container environments, it is sometimes necessary to add custom entries to the /etc/hosts file within pods. These entries allow pods...
 
-Read [Adding Custom Entries in /etc/hosts File in Kubernetes and OpenShift Containers](https://www.techbeatly.com/adding-custom-entries-in-etc-hosts-file-in-kubernetes-and-openshift-containers/).
+Read ["Adding Custom Entries in /etc/hosts File in Kubernetes and OpenShift Containers"](https://www.techbeatly.com/adding-custom-entries-in-etc-hosts-file-in-kubernetes-and-openshift-containers/).

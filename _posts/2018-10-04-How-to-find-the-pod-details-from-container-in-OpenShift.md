@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to find the pod details from container in OpenShift
+title: "How to find the pod details from container in OpenShift"
 author: gini
 categories: [Automation,Cloud,Infrastructre & Hardware,]
 image: 
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>When we have issue with container and we are not sure which pod the container belongs to; we can find the pods details as below.&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-find-the-pod-details-from-container-details/">How to find the pod details from container in OpenShift</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+When we have issue with container and we are not sure which pod the container belongs to; we can find the pods details as below....
 
-Read [How to find the pod details from container in OpenShift](https://www.techbeatly.com/how-to-find-the-pod-details-from-container-details/).
+Read ["How to find the pod details from container in OpenShift"](https://www.techbeatly.com/how-to-find-the-pod-details-from-container-details/).

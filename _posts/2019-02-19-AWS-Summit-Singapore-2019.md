@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AWS Summit Singapore 2019
+title: "AWS Summit Singapore 2019"
 author: gini
 categories: [AWS,Cloud,Technical Events,]
 image: https://www.techbeatly.com/wp-content/uploads/2019/02/aws-summit-singapore-2019.jpg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>This year AWS Summit Singapore will happen on April 10–11, 2019 at Singapore Expo Convention &#38; Exhibition Centre. AWS is introducing a new session called&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/aws-summit-singapore-2019/">AWS Summit Singapore 2019</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+This year AWS Summit Singapore will happen on April 10–11, 2019 at Singapore Expo Convention & Exhibition Centre. AWS is introducing a new session called...
 
-Read [AWS Summit Singapore 2019](https://www.techbeatly.com/aws-summit-singapore-2019/).
+Read ["AWS Summit Singapore 2019"](https://www.techbeatly.com/aws-summit-singapore-2019/).

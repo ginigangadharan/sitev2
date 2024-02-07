@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenShift Container Platform 3.11 Installation Documents
+title: "OpenShift Container Platform 3.11 Installation Documents"
 author: gini
 categories: [Automation,Cloud,Infrastructre & Hardware,]
 image: http://www.techbeatly.com/wp-content/uploads/2018/11/openshift-container-platform-3-11-installation-documents.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Since OCP 3.11 is available now, you may refer below documents for OpenShift Container Platform 3.11 Installation on different infrastructure or platforms. Those are very&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/openshift-container-platform-3-11-installation-documents/">OpenShift Container Platform 3.11 Installation Documents</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Since OCP 3.11 is available now, you may refer below documents for OpenShift Container Platform 3.11 Installation on different infrastructure or platforms. Those are very...
 
-Read [OpenShift Container Platform 3.11 Installation Documents](https://www.techbeatly.com/openshift-container-platform-3-11-installation-documents/).
+Read ["OpenShift Container Platform 3.11 Installation Documents"](https://www.techbeatly.com/openshift-container-platform-3-11-installation-documents/).

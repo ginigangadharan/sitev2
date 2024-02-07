@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configure Custom SSL to Secure GitLab Server
+title: "Configure Custom SSL to Secure GitLab Server"
 author: gini
 categories: [Automation,DevOps,configure lets encrypt ssl for gitlab,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/12/gitlab-custom-ssl-techbeatly-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>I have explained How to Install GitLab in a Disconnected Environment in a past article. In this article you will learn how to use self-signed or custom SSL certificates to secure your GitLab servers.</p>
-<p>The post <a href="https://www.techbeatly.com/configure-custom-ssl-to-secure-gitlab-server/">Configure Custom SSL to Secure GitLab Server</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+I have explained How to Install GitLab in a Disconnected Environment in a past article. In this article you will learn how to use self-signed or custom SSL certificates to secure your GitLab servers.
 
-Read [Configure Custom SSL to Secure GitLab Server](https://www.techbeatly.com/configure-custom-ssl-to-secure-gitlab-server/).
+Read ["Configure Custom SSL to Secure GitLab Server"](https://www.techbeatly.com/configure-custom-ssl-to-secure-gitlab-server/).

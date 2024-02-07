@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book Review- -Technology Operating Models for Cloud and Edge-
+title: "Book Review: -Technology Operating Models for Cloud and Edge-"
 author: gini
 categories: [Books,Cloud,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2023/08/book-review-technology-operating-models-for-cloud-and-edge-1024x775.jpeg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Authors: Ahilan Ponnusamy and Andreas Spanner Reviewed by: John Heaton, Guillaume Poulet-Mathis, Sharad Gupta, and Thenna Raj I just finished diving into the pages of&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/book-review-technology-operating-models-for-cloud-and-edge/">Book Review: &#8220;Technology Operating Models for Cloud and Edge&#8221;</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Authors: Ahilan Ponnusamy and Andreas Spanner Reviewed by: John Heaton, Guillaume Poulet-Mathis, Sharad Gupta, and Thenna Raj I just finished diving into the pages of...
 
-Read [Book Review- -Technology Operating Models for Cloud and Edge-](https://www.techbeatly.com/book-review-technology-operating-models-for-cloud-and-edge/).
+Read ["Book Review: -Technology Operating Models for Cloud and Edge-"](https://www.techbeatly.com/book-review-technology-operating-models-for-cloud-and-edge/).

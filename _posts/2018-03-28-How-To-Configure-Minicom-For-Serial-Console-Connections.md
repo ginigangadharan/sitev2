@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Configure Minicom For Serial Console Connections
+title: "How To Configure Minicom For Serial Console Connections"
 author: gini
 categories: [Infrastructre & Hardware,Utilities,console connection,]
 image: http://techbeats.colorvibes.in/wp-content/uploads/2018/03/how-to-configure-minicom-for-serial-console-connections.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Those who work with infrastructure/server deployment knows how difficult it is to get a console for those devices having no display like switches, routers and&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-configure-minicom-for-serial-console-connections/">How To Configure Minicom For Serial Console Connections</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Those who work with infrastructure/server deployment knows how difficult it is to get a console for those devices having no display like switches, routers and...
 
-Read [How To Configure Minicom For Serial Console Connections](https://www.techbeatly.com/how-to-configure-minicom-for-serial-console-connections/).
+Read ["How To Configure Minicom For Serial Console Connections"](https://www.techbeatly.com/how-to-configure-minicom-for-serial-console-connections/).

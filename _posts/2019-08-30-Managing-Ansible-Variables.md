@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Ansible Variables
+title: "Managing Ansible Variables"
 author: gini
 categories: [Ansible,Ansible Course,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2019/08/managing-ansible-variables-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Ansible Variables You can use variables in ansible plays to store values like users to create, packages to install etc. By using variables, you can&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/managing-ansible-variables/">Managing Ansible Variables</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Ansible Variables You can use variables in ansible plays to store values like users to create, packages to install etc. By using variables, you can...
 
-Read [Managing Ansible Variables](https://www.techbeatly.com/managing-ansible-variables/).
+Read ["Managing Ansible Variables"](https://www.techbeatly.com/managing-ansible-variables/).

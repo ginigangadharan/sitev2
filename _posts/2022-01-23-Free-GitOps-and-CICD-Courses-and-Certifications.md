@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Free GitOps and CI/CD Courses and Certifications
+title: "Free GitOps and CI/CD Courses and Certifications"
 author: gini
 categories: [ArgoCD,DevOps,Featured,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/01/gitops-cicd-1024x576.png
@@ -11,7 +11,6 @@ featured: true
 hidden: false
 ---
 
-<p>CI/CD (Continuous integration and Continuous delivery or Continuous deployment) and GitOps are not new terminologies in the IT world. There are several software and tools&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/gitops-cicd/">Free GitOps and CI/CD Courses and Certifications</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+CI/CD (Continuous integration and Continuous delivery or Continuous deployment) and GitOps are not new terminologies in the IT world. There are several software and tools...
 
-Read [Free GitOps and CI/CD Courses and Certifications](https://www.techbeatly.com/gitops-cicd/).
+Read ["Free GitOps and CI/CD Courses and Certifications"](https://www.techbeatly.com/gitops-cicd/).

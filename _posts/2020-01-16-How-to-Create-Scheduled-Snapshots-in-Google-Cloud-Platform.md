@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Create Scheduled Snapshots in Google Cloud Platform
+title: "How to Create Scheduled Snapshots in Google Cloud Platform"
 author: gini
 categories: [Automation,Cloud,Google Cloud Platform,]
 image: https://www.techbeatly.com/wp-content/uploads/2020/01/how-to-create-scheduled-snapshots-in-google-cloud-platform.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Yes, your server and data are on cloud, but to avoid the risk of unexpected data loss still you need to follow standard backup mechanisms&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-create-scheduled-snapshots-in-google-cloud-platform/">How to Create Scheduled Snapshots in Google Cloud Platform</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Yes, your server and data are on cloud, but to avoid the risk of unexpected data loss still you need to follow standard backup mechanisms...
 
-Read [How to Create Scheduled Snapshots in Google Cloud Platform](https://www.techbeatly.com/how-to-create-scheduled-snapshots-in-google-cloud-platform/).
+Read ["How to Create Scheduled Snapshots in Google Cloud Platform"](https://www.techbeatly.com/how-to-create-scheduled-snapshots-in-google-cloud-platform/).

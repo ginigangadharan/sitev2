@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible for Windows – Troubleshooting
+title: "Ansible for Windows – Troubleshooting"
 author: gini
 categories: [Ansible,Automation,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/09/ansible-for-windows-troubleshooting-1024x683.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>There are many cases where Ansible developers and users struggled to connect Windows machine from Ansible.</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-for-windows-troubleshooting/">Ansible for Windows &#8211; Troubleshooting</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+There are many cases where Ansible developers and users struggled to connect Windows machine from Ansible.
 
-Read [Ansible for Windows – Troubleshooting](https://www.techbeatly.com/ansible-for-windows-troubleshooting/).
+Read ["Ansible for Windows – Troubleshooting"](https://www.techbeatly.com/ansible-for-windows-troubleshooting/).

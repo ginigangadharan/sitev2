@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Install GitLab in a Disconnected Environment
+title: "How to Install GitLab in a Disconnected Environment"
 author: gini
 categories: [Automation,DevOps,How To,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/12/install-gitlab-offline-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Installing GitLab is a simple job as you just need to install the dependancies and then GitLab package. </p>
-<p>The post <a href="https://www.techbeatly.com/install-gitlab-offline/">How to Install GitLab in a Disconnected Environment</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Installing GitLab is a simple job as you just need to install the dependancies and then GitLab package. 
 
-Read [How to Install GitLab in a Disconnected Environment](https://www.techbeatly.com/install-gitlab-offline/).
+Read ["How to Install GitLab in a Disconnected Environment"](https://www.techbeatly.com/install-gitlab-offline/).

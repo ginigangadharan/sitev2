@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OpenShift Architecture
+title: "OpenShift Architecture"
 author: gini
 categories: [Cloud,DevOps,Infrastructre & Hardware,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/10/openshift-bootcamp-architecture-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Learn the OpenShift architecture, control plane, compute nodes, infrastructure nodes and sample reference architecture.</p>
-<p>The post <a href="https://www.techbeatly.com/openshift-architecture/">OpenShift Architecture</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Learn the OpenShift architecture, control plane, compute nodes, infrastructure nodes and sample reference architecture.
 
-Read [OpenShift Architecture](https://www.techbeatly.com/openshift-architecture/).
+Read ["OpenShift Architecture"](https://www.techbeatly.com/openshift-architecture/).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Build Your Own Git Server using Gogs
+title: "Build Your Own Git Server using Gogs"
 author: gini
 categories: [Ansible Course,Ansible Resources,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2019/10/build-your-own-git-server-using-gogs-1024x498.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>When it comes to VCS (Version Control System), we will have confusion as we have many products in the market with almost the same capabilities.&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/build-your-own-git-server-using-gogs/">Build Your Own Git Server using Gogs</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+When it comes to VCS (Version Control System), we will have confusion as we have many products in the market with almost the same capabilities....
 
-Read [Build Your Own Git Server using Gogs](https://www.techbeatly.com/build-your-own-git-server-using-gogs/).
+Read ["Build Your Own Git Server using Gogs"](https://www.techbeatly.com/build-your-own-git-server-using-gogs/).

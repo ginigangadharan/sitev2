@@ -1,6 +1,6 @@
 ---
 layout: post
-title: oc edit – How To Customize Your OpenShift / Kubernetes CLI Editor
+title: "oc edit – How To Customize Your OpenShift / Kubernetes CLI Editor"
 author: gini
 categories: [DevOps,Kubernetes,OpenShift,]
 image: https://www.techbeatly.com/wp-content/uploads/2023/10/customize-openshift-kubernetes-cli-editor-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>We'll explain what the oc command is, demystify the concept of shell configuration files, discuss the importance of the EDITOR variable, and suggest some common CLI editors.</p>
-<p>The post <a href="https://www.techbeatly.com/customize-openshift-kubernetes-cli-editor/">oc edit &#8211; How To Customize Your OpenShift / Kubernetes CLI Editor</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+We'll explain what the oc command is, demystify the concept of shell configuration files, discuss the importance of the EDITOR variable, and suggest some common CLI editors.
 
-Read [oc edit – How To Customize Your OpenShift / Kubernetes CLI Editor](https://www.techbeatly.com/customize-openshift-kubernetes-cli-editor/).
+Read ["oc edit – How To Customize Your OpenShift / Kubernetes CLI Editor"](https://www.techbeatly.com/customize-openshift-kubernetes-cli-editor/).

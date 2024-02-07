@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System Reboot with Ansible Reboot Module
+title: "System Reboot with Ansible Reboot Module"
 author: gini
 categories: [Ansible,Automation,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/01/system-reboot-with-ansible-reboot-module-1024x683.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>A reboot operation in a Linux Operating System is very rare as most of the time we can achieve the result by individual service restart&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/system-reboot-with-ansible-reboot-module/">System Reboot with Ansible Reboot Module</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+A reboot operation in a Linux Operating System is very rare as most of the time we can achieve the result by individual service restart...
 
-Read [System Reboot with Ansible Reboot Module](https://www.techbeatly.com/system-reboot-with-ansible-reboot-module/).
+Read ["System Reboot with Ansible Reboot Module"](https://www.techbeatly.com/system-reboot-with-ansible-reboot-module/).

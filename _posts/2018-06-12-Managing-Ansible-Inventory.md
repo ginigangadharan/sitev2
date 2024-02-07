@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Managing Ansible Inventory
+title: "Managing Ansible Inventory"
 author: gini
 categories: [Ansible,Ansible Course,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2018/06/managing-ansible-inventory-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Inventory File An inventory file is a simple and plain text file where we store those host information ansible has to deal with. It can&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/managing-ansible-inventory/">Managing Ansible Inventory</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Inventory File An inventory file is a simple and plain text file where we store those host information ansible has to deal with. It can...
 
-Read [Managing Ansible Inventory](https://www.techbeatly.com/managing-ansible-inventory/).
+Read ["Managing Ansible Inventory"](https://www.techbeatly.com/managing-ansible-inventory/).

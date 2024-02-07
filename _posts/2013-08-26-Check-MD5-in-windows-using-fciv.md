@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check MD5 in windows using fciv
+title: "Check MD5 in windows using fciv"
 author: gini
 categories: [Infrastructre & Hardware,Utilities,checksum,]
 image: 
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>The File Checksum Integrity Verifier (FCIV) is a command-prompt utility that computes and verifies cryptographic hash values of files. FCIV can compute MD5 or SHA-1&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/check-md5-in-windows-using-fciv/">Check MD5 in windows using fciv</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+The File Checksum Integrity Verifier (FCIV) is a command-prompt utility that computes and verifies cryptographic hash values of files. FCIV can compute MD5 or SHA-1...
 
-Read [Check MD5 in windows using fciv](https://www.techbeatly.com/check-md5-in-windows-using-fciv/).
+Read ["Check MD5 in windows using fciv"](https://www.techbeatly.com/check-md5-in-windows-using-fciv/).

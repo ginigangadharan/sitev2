@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to open WinRM ports in the Windows firewall
+title: "How to open WinRM ports in the Windows firewall"
 author: gini
 categories: [Ansible,Ansible Course,Automation,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/09/winrm-ports-windows-firewall-2-1024x683.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>We need to make sure, ports 5985 and 5986 (HTTPS) are open in firewall (both OS as well as network side) for Ansible to connect to Windows machine.</p>
-<p>The post <a href="https://www.techbeatly.com/how-to-open-winrm-ports-in-the-windows-firewall/">How to open WinRM ports in the Windows firewall</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+We need to make sure, ports 5985 and 5986 (HTTPS) are open in firewall (both OS as well as network side) for Ansible to connect to Windows machine.
 
-Read [How to open WinRM ports in the Windows firewall](https://www.techbeatly.com/how-to-open-winrm-ports-in-the-windows-firewall/).
+Read ["How to open WinRM ports in the Windows firewall"](https://www.techbeatly.com/how-to-open-winrm-ports-in-the-windows-firewall/).

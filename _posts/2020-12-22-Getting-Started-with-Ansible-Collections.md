@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Ansible Collections
+title: "Getting Started with Ansible Collections"
 author: gini
 categories: [Ansible,Automation,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2020/12/karen-vardazaryan-JBrfoV-BZts-unsplash-collections-1024x666.jpg
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Ansible Collection is a great way of getting content contributions from various Ansible Developers. Earlier there was a tagline for Ansible &#8211; “Batteries included”, but&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/getting-started-with-ansible-collections/">Getting Started with Ansible Collections</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Ansible Collection is a great way of getting content contributions from various Ansible Developers. Earlier there was a tagline for Ansible – “Batteries included”, but...
 
-Read [Getting Started with Ansible Collections](https://www.techbeatly.com/getting-started-with-ansible-collections/).
+Read ["Getting Started with Ansible Collections"](https://www.techbeatly.com/getting-started-with-ansible-collections/).

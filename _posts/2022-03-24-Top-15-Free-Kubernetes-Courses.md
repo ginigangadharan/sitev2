@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Top 15 Free Kubernetes Courses
+title: "Top 15 Free Kubernetes Courses"
 author: gini
 categories: [Cloud,DevOps,Kubernetes,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/03/kubernetes-free-courses-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>Here you will find the top 15 Kubernetes resources which you can use at no cost from your home or office.</p>
-<p>The post <a href="https://www.techbeatly.com/kubernetes-free-courses/">Top 15 Free Kubernetes Courses</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+Here you will find the top 15 Kubernetes resources which you can use at no cost from your home or office.
 
-Read [Top 15 Free Kubernetes Courses](https://www.techbeatly.com/kubernetes-free-courses/).
+Read ["Top 15 Free Kubernetes Courses"](https://www.techbeatly.com/kubernetes-free-courses/).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ansible Navigator Cheat Sheet
+title: "Ansible Navigator Cheat Sheet"
 author: gini
 categories: [Ansible,Automation,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2021/12/ansible-navigator-cheatsheet-techbeatly-new-1024x576.png
@@ -11,7 +11,6 @@ featured: false
 hidden: false
 ---
 
-<p>What is ansible-navigator ansible-navigator is the new command line utility (CLI) introduced in Ansible Automation Platform 2, for running and developing Ansible automation content. ansible-navigator&#46;&#46;&#46;</p>
-<p>The post <a href="https://www.techbeatly.com/ansible-navigator-cheat-sheet/">Ansible Navigator Cheat Sheet</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
+What is ansible-navigator ansible-navigator is the new command line utility (CLI) introduced in Ansible Automation Platform 2, for running and developing Ansible automation content. ansible-navigator...
 
-Read [Ansible Navigator Cheat Sheet](https://www.techbeatly.com/ansible-navigator-cheat-sheet/).
+Read ["Ansible Navigator Cheat Sheet"](https://www.techbeatly.com/ansible-navigator-cheat-sheet/).
