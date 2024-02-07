@@ -11,6 +11,6 @@ featured: false
 hidden: false
 ---
 
-his post guides you through setting up minikube with the latest Kubernetes goodness, so you can be a testing trailblazer.
+This post guides you through setting up minikube with the latest Kubernetes goodness, so you can be a testing trailblazer.
 
 Read ["Let us test Kubernetes 1.29 with minikube"](https://www.techbeatly.com/kubernetes-1-29-with-minikube/).
