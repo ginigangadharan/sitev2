@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to find iLO MAC address for BladeCenterEnclosure
+title: How to find iLO MAC address for BladeCenter/Enclosure
 author: gini
 categories: [HP,Infrastructre & Hardware,Utilities,]
 image: http://techbeats.colorvibes.in/wp-content/uploads/2013/07/find-mac-address-in-iLO.png
@@ -14,4 +14,4 @@ hidden: false
 <p>Open the iLO console (HP here in example) goto to the menu as described in the screenshot.</p>
 <p>The post <a href="https://www.techbeatly.com/how-to-find-ilo-mac-address-for-bladecenterenclosure/">How to find iLO MAC address for BladeCenter/Enclosure</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
-Read [How to find iLO MAC address for BladeCenterEnclosure](https://www.techbeatly.com/how-to-find-ilo-mac-address-for-bladecenterenclosure/).
+Read [How to find iLO MAC address for BladeCenter/Enclosure](https://www.techbeatly.com/how-to-find-ilo-mac-address-for-bladecenterenclosure/).

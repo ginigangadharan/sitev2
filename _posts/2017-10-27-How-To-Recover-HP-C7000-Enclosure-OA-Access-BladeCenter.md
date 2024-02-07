@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Recover HP C7000 Enclosure OA Access BladeCenter
+title: How To Recover HP C7000 Enclosure OA Access (BladeCenter)
 author: gini
 categories: [Infrastructre & Hardware,HP C7000,HP OA,]
 image: http://techbeats.colorvibes.in/wp-content/uploads/2017/10/how-to-recover-hp-c7000-enclosure-oa-access-bladecenter.png
@@ -14,4 +14,4 @@ hidden: false
 <p>We have cases where we lost OA access due to failed VLAN configurations, Wrong IP/VLAN configured on Active OA, OA not responding etc. Here explained&#46;&#46;&#46;</p>
 <p>The post <a href="https://www.techbeatly.com/how-to-recover-hp-c7000-enclosure-oa-access-bladecenter/">How To Recover HP C7000 Enclosure OA Access (BladeCenter)</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
-Read [How To Recover HP C7000 Enclosure OA Access BladeCenter](https://www.techbeatly.com/how-to-recover-hp-c7000-enclosure-oa-access-bladecenter/).
+Read [How To Recover HP C7000 Enclosure OA Access (BladeCenter)](https://www.techbeatly.com/how-to-recover-hp-c7000-enclosure-oa-access-bladecenter/).

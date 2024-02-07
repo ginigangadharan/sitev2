@@ -10,6 +10,17 @@ hidden: false
 titleshort: molecule
 ---
 
+- [Setting up your environment](#setting-up-your-environment)
+  - [Python Virtual Environment (Optional)](#python-virtual-environment-optional)
+  - [Configure Podman for Mac (Optional)](#configure-podman-for-mac-optional)
+- [Installing Molecule](#installing-molecule)
+- [Molecule Drivers](#molecule-drivers)
+- [Create a new Role with Molecule](#create-a-new-role-with-molecule)
+  - [Update your molecule.yml](#update-your-moleculeyml)
+- [References](#references)
+
+
+
 # Setting up your environment
 
 ## Python Virtual Environment (Optional)
@@ -34,8 +45,6 @@ podman machine start
 podman info
 ```
 
-- [Using podman-machine on MacOS](https://github.com/containers/podman/blob/main/docs/tutorials/mac_experimental.md)
-- [Podman Installation Instructions](https://podman.io/getting-started/installation)
 
 
 # Installing Molecule

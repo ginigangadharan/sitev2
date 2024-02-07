@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get Microsoft Certifications AZ900 and SC900 at no cost 
+title: How to get Microsoft Certifications AZ-900 and SC-900 at no cost !
 author: gini
 categories: [Cloud,DevOps,Microsoft Azure,]
 image: https://www.techbeatly.com/wp-content/uploads/2022/01/microsoft-free-certification-new-1024x576.png
@@ -14,4 +14,4 @@ hidden: false
 <p>Check this opportunity from Microsoft to get their foundation certifications at no cost. </p>
 <p>The post <a href="https://www.techbeatly.com/az-900-sc-900-free/">How to get Microsoft Certifications AZ-900 and SC-900 at no cost !</a> appeared first on <a href="https://www.techbeatly.com">techbeatly</a>.</p>
 
-Read [How to get Microsoft Certifications AZ900 and SC900 at no cost ](https://www.techbeatly.com/az-900-sc-900-free/).
+Read [How to get Microsoft Certifications AZ-900 and SC-900 at no cost !](https://www.techbeatly.com/az-900-sc-900-free/).
