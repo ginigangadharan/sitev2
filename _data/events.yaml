@@ -267,7 +267,7 @@
   remarks: Google Meet
   reference: ''
   url: 'https://techbeatly.com/youtube'
-  
+
 - num: '29'
   date: 2023-05-25
   event: techbeatly Live
@@ -317,3 +317,12 @@
   remarks: Online
   reference: ''
   url: 'https://www.linkedin.com/posts/gineesh_kubernetes-cloudcomputing-devops-activity-7092776235516231680-Q9wF?utm_source=share&utm_medium=member_desktop'
+
+- date: 2024-02-29
+  event: Ansible Singapore Meetup
+  title: 'Testing Ansible Content With Molecule'
+  speakers: Gineesh Madapparambath
+  role: Speaker
+  remarks: in-person
+  reference: ''
+  url: 'https://www.linkedin.com/posts/gineesh_ansiblesingapore-ansiblemeetup-ansible-activity-7164878427253141505-IkV-?utm_source=share&utm_medium=member_desktop'
