@@ -17,9 +17,9 @@ titleshort: Ansible
 
 ### Ansible Guides
 
-**[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/){:target="_blank"}** 
+**[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/){:target="_blank"}**
 
-You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is my attempt to cover Ansible in a simple and beginner level approach. Access all chapters on **[techbeatly.com](https://www.techbeatly.com/ansible/){:target="_blank"}**. 
+You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is my attempt to cover Ansible in a simple and beginner level approach. Access all chapters on **[techbeatly.com](https://www.techbeatly.com/ansible/){:target="_blank"}**.
 
 - [ANSIBLE LEARNFEST GUIDE](https://ansible-learnfest.github.io/)
   - Track 1 “Ansible Automation Platform Administrator”
@@ -40,7 +40,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
     - [Configure Ansible Automation Platform Installation Inventory](#configure-ansible-automation-platform-installation-inventory)
     - [Run Setup Script](#run-setup-script)
   - [Ansible Tower HA and DR](#ansible-tower-ha-and-dr)
-    - [Verify Streaming Replication**](#verify-streaming-replication)
+    - [Verify Streaming Replication\*\*](#verify-streaming-replication)
     - [Ansible Tower HA Failover](#ansible-tower-ha-failover)
     - [Database tips](#database-tips)
   - [Ansible Tower with database SSL connection enabled](#ansible-tower-with-database-ssl-connection-enabled)
@@ -59,11 +59,12 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible for IBM Power](#ansible-for-ibm-power)
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
 - [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
+- [Ansible](#ansible)
 
 ## Ansible - Frequently Asked Questions
 
 1.	What is Ansible?
-2.	What is IaC? 
+2.	What is IaC?
 3.	What can Ansible do?
 4.	What are the advantages of Ansible?
 5.	How does Ansible work?
@@ -108,7 +109,7 @@ Update required repo for AAP 2.1
   --enable=ansible-automation-platform-2.1-for-rhel-8-x86_64-rpms
 ```
 
-#### Prepare for Ansible Automation Platform Installation 
+#### Prepare for Ansible Automation Platform Installation
 
 1. Download the latest Ansible Automation Platform Installation Program from [access.redhat.com/downloads](https://access.redhat.com/downloads/content/480?extIdCarryOver=true&intcmp=7013a000002CtetAAC&sc_cid=701f2000001OH6uAAG) or from [releases.ansible.com](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz). Refer [Download the Ansible Automation Platform Installation Program](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/download_tower.html) for more details.
 
@@ -175,29 +176,29 @@ swtich to `postgres` user.
 [ansible@AAP-DB-1 ~]$ sudo su - postgres
 ```
 
-Then, 
+Then,
 
 ```shell
 [postgres@AAP-DB-1 ~]$ psql -c 'select application_name, state, sync_priority, sync_state from pg_stat_replication;'
- application_name |   state   | sync_priority | sync_state 
+ application_name |   state   | sync_priority | sync_state
 ------------------+-----------+---------------+------------
  awx              | streaming |             1 | sync
 (1 row)
 ```
 
-or 
+or
 
 ```shell
 [postgres@AAP-DB-1 ~]$ psql -c 'select client_addr, state, sent_lsn, write_lsn,flush_lsn, replay_lsn from pg_stat_replication;'
-  client_addr  |   state   | sent_lsn  | write_lsn | flush_lsn | replay_lsn 
+  client_addr  |   state   | sent_lsn  | write_lsn | flush_lsn | replay_lsn
 ---------------+-----------+-----------+-----------+-----------+------------
  192.168.56.32 | streaming | 0/402AF38 | 0/402AF38 | 0/402AF38 | 0/402AF38
 (1 row)
 
 [postgres@AAP-DB-1 ~]$ psql -c 'select * from pg_stat_replication;'
-  pid  | usesysid |  usename   | application_name |  client_addr  | client_hostname | client_port |         
+  pid  | usesysid |  usename   | application_name |  client_addr  | client_hostname | client_port |
 backend_start         | backend_xmin |   state   | sent_lsn  | write_lsn | flush_lsn | replay_lsn |    write
-_lag    |    flush_lag    |   replay_lag    | sync_priority | sync_state 
+_lag    |    flush_lag    |   replay_lag    | sync_priority | sync_state
 -------+----------+------------+------------------+---------------+-----------------+-------------+---------
 ----------------------+--------------+-----------+-----------+-----------+-----------+------------+---------
 --------+-----------------+-----------------+---------------+------------
@@ -214,18 +215,18 @@ Switch to `postgres` user
 ```shell
 [ansible@AAP-DB-2 ~]$ sudo su - postgres
 Last login: Thu Feb  3 07:59:07 UTC 2022 on pts/1
-[postgres@AAP-DB-2 ~]$ 
+[postgres@AAP-DB-2 ~]$
 ```
 
-Then, 
+Then,
 
 ```shell
 [postgres@AAP-DB-2 ~]$ psql -c 'select * from pg_stat_wal_receiver;'
   pid  |  status   | receive_start_lsn | receive_start_tli | received_lsn | received_tli |      last_msg_send_time
-       |     last_msg_receipt_time     | latest_end_lsn |        latest_end_time        | slot_name |             
-                                                                                                                  
-                      conninfo                                                                                    
-                                                                  
+       |     last_msg_receipt_time     | latest_end_lsn |        latest_end_time        | slot_name |
+
+                      conninfo
+
 -------+-----------+-------------------+-------------------+--------------+--------------+------------------------
 -------+-------------------------------+----------------+-------------------------------+-----------+-------------
 ------------------------------------------------------------------------------------------------------------------
@@ -243,7 +244,7 @@ or,
 
 ```shell
 [postgres@AAP-DB-2 ~]$ psql -c 'SELECT pg_last_xact_replay_timestamp();'
- pg_last_xact_replay_timestamp 
+ pg_last_xact_replay_timestamp
 -------------------------------
  2022-02-03 08:15:54.592737+00
 (1 row)
@@ -286,7 +287,7 @@ pg_ctl: server is running (PID: 51581)
 /usr/bin/postgres "-D" "/var/lib/pgsql/data"
 
 [postgres@AAP-DB-2 ~]$ psql -c "SHOW data_directory;"
-   data_directory    
+   data_directory
 ---------------------
  /var/lib/pgsql/data
 (1 row)
@@ -356,12 +357,12 @@ $ openssl req -noout -modulus -in <file>.csr | openssl md5
 
 - Installing [Ansible Galaxy NG](https://github.com/ansible/galaxy_ng/wiki/End-User-Installation)
 - [INSTALLING PRIVATE AUTOMATION HUB](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/1.2/html/installing_private_automation_hub/index)
-  
+
 ## Ansible Playbook References
 
 - [Ansible Examples](https://github.com/ginigangadharan/ansible-examples){:target="_blank"}
 (*Forked from [@ansible](https://github.com/ansible/ansible-examples)*)
-- [Ansible for DevOps](https://github.com/ginigangadharan/ansible-for-devops){:target="_blank"} 
+- [Ansible for DevOps](https://github.com/ginigangadharan/ansible-for-devops){:target="_blank"}
 (*Forked from [geerlingguy](https://github.com/geerlingguy/ansible-for-devops)*)
 - [Ansible NXOS Samples](https://github.com/ginigangadharan/Ansible-NXOS){:target="_blank"} (Network Automation)
 
@@ -456,3 +457,43 @@ Ansible 2.5 and above work with Python 3.
 
 ## Ansible for CIS Hardening/CIS Check
 - [DevSec Hardening Framework](https://github.com/dev-sec) / [devops + security - Server Hardening Automation](https://dev-sec.io/)
+
+## Ansible
+
+
+```shell
+$ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -b "dc=example,dc=com" -w yourbindpassword
+
+# search for a specific user
+$ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -w yourbindpassword -b "cn=devops,cn=Users,dc=example,dc=com"
+```
+
+**LDAP Organization Map**
+
+```json
+{
+  "XYZCorp-CaC": {
+    "users": true,
+    "admins": "CN=ansible_admins,OU=AAP,DC=example,DC=com",
+    "remove_users": false,
+    "remove_admins": false
+  }
+}
+```
+
+**LDAP Team Map**
+
+```json
+{
+  "cac-admins": {
+    "users": "cn=ansible_admins,ou=AAP,dc=example,dc=com",
+    "remove": true,
+    "organization": "XYZCorp-CaC"
+  },
+  "cac-operators": {
+    "users": "cn=ansible_operators,ou=AAP,dc=example,dc=com",
+    "remove": true,
+    "organization": "XYZCorp-CaC"
+  }
+}
+```
