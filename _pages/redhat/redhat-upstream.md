@@ -10,6 +10,10 @@ hidden: false
 #titleshort: Red Hat Upstream
 ---
 
+<script>
+  window.location.replace("https://www.iamgini.com/projects-products");
+</script>
+
 - Red Hat Directory Server - https://en.wikipedia.org/wiki/389_Directory_Server
 - Red Hat Single Sign On (RHSSO) - https://www.keycloak.org/
 - Red Hat OpenShift -https://www.okd.io/ (https://www.redhat.com/en/blog/what-open-source-upstream)
