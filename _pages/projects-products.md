@@ -1,14 +1,16 @@
 ---
 layout: postpage
 title: Open Source Projects and Products
-categories: [open source]
+categories: [open source, community]
 image: "assets/images/2024/rh-communities-to-enterprise-full-graphic-white-202002pr_white.png"
-tags: [ aap, cloud, automation, containers, kubernetes, ansible automation platform, red hat ansible]
-permalink: projects-products
+tags: [ aap, cloud, automation, containers, kubernetes, ansible automation platform, red hat ansible, redhat project vs downstream product,]
+permalink: open-source
 featured: false
 hidden: false
-titleshort: projects-products
+titleshort: open-source
 ---
+
+Open source refers to software where the source code is freely available for anyone to see, modify, and distribute. This fosters collaboration, innovation, and transparency. Open source projects often evolve into popular products through active community development and adoption. The following list explores some well-known open source projects and the products they have helped create.
 
 ## Open source Products and Upstream Open source Projects
 

@@ -11,5 +11,5 @@ hidden: false
 ---
 
 <script>
-  window.location.replace("https://www.iamgini.com/projects-products");
+  window.location.replace("https://www.iamgini.com/open-source");
 </script>
