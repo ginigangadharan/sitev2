@@ -24,7 +24,7 @@ Open source refers to software where the source code is freely available for any
 | [Builds for Red Hat OpenShift](https://access.redhat.com/documentation/en-us/builds_for_red_hat_openshift) | [Shipwright](https://shipwright.io/) | Red Hat |
 | [Red Hat Advanced Cluster Management for Kubernetes](https://www.redhat.com/en/technologies/management/advanced-cluster-management) | stolos = fleet, tron = tool, [Open Cluster Management](https://github.com/open-cluster-management-io) | Red Hat |
 | [Red Hat Application Foundations](https://www.redhat.com/en/products/application-foundations) | [OptaPlanner](https://www.optaplanner.org/) | Red Hat |
-
+| [Red Hat Ansible Lightspeed with IBM watsonx Code Assistant](https://www.redhat.com/en/technologies/management/ansible/ansible-lightspeed) | Project Wisdom | Red Hat |
 
 **Resources**
 
