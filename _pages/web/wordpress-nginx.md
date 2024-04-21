@@ -9,6 +9,7 @@ permalink: wordpress-nginx
 featured: false
 hidden: false
 titleshort: Wordpress nginx
+
 ---
 - [Install LEMP stack on Debian 10](#install-lemp-stack-on-debian-10)
   - [Set Up a Firewall with UFW on Debian](#set-up-a-firewall-with-ufw-on-debian)
@@ -30,31 +31,39 @@ titleshort: Wordpress nginx
     - [Verify and reload nginx config](#verify-and-reload-nginx-config)
     - [Obtaining an SSL Certificate](#obtaining-an-ssl-certificate)
     - [Verifying Certbot Auto-Renewal](#verifying-certbot-auto-renewal)
-- [extract](#extract)
-- [copy sample wp-config.php](#copy-sample-wp-configphp)
-- [copy content to our domain location](#copy-content-to-our-domain-location)
-- [adjust permission](#adjust-permission)
-    - [from old server](#from-old-server)
-    - [on new server](#on-new-server)
-    - [on new server](#on-new-server-1)
-  - [Update and Verify your wp-config.php](#update-and-verify-your-wp-configphp)
+- [Configure Wordpress on LEMP Stack](#configure-wordpress-on-lemp-stack)
+  - [Create Database and User](#create-database-and-user)
+  - [Installing Additional PHP Extensions](#installing-additional-php-extensions)
+  - [Configuring Nginx](#configuring-nginx)
+- [Downloading WordPress](#downloading-wordpress)
+  - [Setting up the WordPress Configuration File](#setting-up-the-wordpress-configuration-file)
+- [Access the site and finish wordpress setup](#access-the-site-and-finish-wordpress-setup)
+- [Migrating or Moving a Wordpress site](#migrating-or-moving-a-wordpress-site)
+  - [Export Database](#export-database)
+  - [Backup website files in zip file](#backup-website-files-in-zip-file)
+  - [Copy database and website backup to new server](#copy-database-and-website-backup-to-new-server)
+  - [Restore database on new server](#restore-database-on-new-server)
+  - [Restore website files](#restore-website-files)
+  - [Update and Verify your `wp-config.php`](#update-and-verify-your-wp-configphp)
 - [Troubleshooting](#troubleshooting)
   - [How to fix 404 not found nginx problem?](#how-to-fix-404-not-found-nginx-problem)
+  - [How to fix `mysqli_real_connect(): (HY000/2002):`](#how-to-fix-mysqli_real_connect-hy0002002)
 - [Appendix:](#appendix)
 
-# Install LEMP stack on Debian 10
+
+## Install LEMP stack on Debian 10
 (Linux, Nginx, MariaDB, PHP)
 
 
-## Set Up a Firewall with UFW on Debian
+### Set Up a Firewall with UFW on Debian
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-debian-9)
 
-### Install firewall - ufw
+#### Install firewall - ufw
 ```
 sudo apt install ufw
 ```
 
-### Configure Firewall policy
+#### Configure Firewall policy
 
 ```
 sudo ufw default deny incoming
@@ -66,7 +75,7 @@ sudo ufw allow http
 sudo ufw allow https
 ```
 
-### Enable ufw and check status
+#### Enable ufw and check status
 
 ```
 sudo ufw enable
@@ -79,17 +88,18 @@ sudo ufw disable
 # Any rules that you created with UFW will no longer be active. You can always run sudo ufw enable if you need to activate it later.
 
 sudo ufw reset
-# This will disable UFW and delete any rules that were previously defined. 
+# This will disable UFW and delete any rules that were previously defined.
 ```
 
-## Install nginx
+### Install nginx
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10)
 ```
 sudo apt update
 sudo apt install nginx
 ```
 
-## Installing MariaDB
+### Installing MariaDB
+
 ```
 sudo apt install mariadb-server
 ```
@@ -105,6 +115,14 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'MY_NEW_PASSWORD';
 FLUSH PRIVILEGES;
 ```
 
+Note: Install the MySQL client if the database server is outside and you want to test connection from WordPress server.
+
+```shell
+$ sudo apt install default-mysql-client
+
+$ mysql -h example.com:12345 -u user -p
+```
+
 **Login to mariadb**
 
 ```
@@ -117,7 +135,7 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-MariaDB [(none)]> 
+MariaDB [(none)]>
 ```
 
 **Sample tests:**
@@ -134,25 +152,29 @@ MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> exit;
 ```
 
-## Installing PHP
-```
+### Installing PHP
+
+```shell
 sudo apt install php-fpm php-mysql
 ```
 
-## Configuring Nginx to Use the PHP Processor
+### Configuring Nginx to Use the PHP Processor
 
-### Create your project directory
-```
+#### Create your project directory
+
+```shell
 sudo mkdir /var/www/your_domain
 ```
 
 Assign ownership of the directory with the $USER environment variable, which should reference your current system user:
-```
+
+```shell
 sudo chown -R $USER:$USER /var/www/wp-test
 ```
 
-### Create a configuration for your domain
-```
+#### Create a configuration for your domain
+
+```shell
 sudo nano /etc/nginx/sites-available/wp-test
 
 # Sample Content
@@ -176,14 +198,15 @@ server {
 }
 ```
 
-### Activate new configuration
+#### Activate new configuration
 
-```
+```shell
 sudo ln -s /etc/nginx/sites-available/wp-test /etc/nginx/sites-enabled/
 ```
 
-### Test config and reload nginx
-```
+#### Test config and reload nginx
+
+```shell
 # test configuration
 sudo nginx -t
 
@@ -191,64 +214,72 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-### Create Test php file
+#### Create Test php file
 
-```
+```shell
 $ cat /var/www/wp-test/info.php
 <?php
 phpinfo();
 ```
 
-## Secure Nginx with Let's Encrypt on Debian 9
+### Secure Nginx with Let's Encrypt on Debian 9
 
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-debian-9)
 
-### Installing Certbot
+#### Installing Certbot
+
 To add the backports repository, first open `/etc/apt/sources.list` and add below lines.
 
-```
+```shell
 deb http://deb.debian.org/debian stretch-backports main contrib non-free
 deb-src http://deb.debian.org/debian stretch-backports main contrib non-free
 ```
 
 Then,
-```
+
+```shell
 sudo apt update
 ```
 
 Install Certbot’s Nginx package with apt:
-```
+
+```shell
 sudo apt install python-certbot-nginx -t stretch-backports
 ```
 
-### Confirming Nginx’s Configuration
+#### Confirming Nginx’s Configuration
+
 Make sure your server block configuration contains correct `server_name` value for your domain.
 
-```
-$ sudo cat /etc/nginx/sites-available/wp-test |grep server_name 
+```shell
+$ sudo cat /etc/nginx/sites-available/wp-test |grep server_name
     server_name dev.yourdomain.com;
 ```
 
-### Verify and reload nginx config
-```
+#### Verify and reload nginx config
+
+```shell
 sudo nginx -t
 sudo systemctl reload nginx
 ```
 Certbot can now find the correct server block and update it.
 
-### Obtaining an SSL Certificate
+#### Obtaining an SSL Certificate
 
-```
+```shell
 sudo certbot --nginx -d dev.yourdomain.com -d mail.dev.yourdomain.com
 ```
+
 It will ask for email address for notifications; also auto-redirect to https
 
-### Verifying Certbot Auto-Renewal
+#### Verifying Certbot Auto-Renewal
 
 Test the renewal process, you can do a dry run with certbot:
-```
+
+```shell
 sudo certbot renew --dry-run
 ```
+
 [Enable certbot automatic renewal for cloudflare CDN](https://omicx.cc/posts/2020-08-04-enable-certbot-automatic-renewal-for-cloudflare-cdn/)
 
 ```shell
@@ -259,14 +290,15 @@ sudo certbot certonly \
 
 # list certificates
 $ sudo certbot certificates
-````
+```
 
-# Configure Wordpress on LEMP Stack
+## Configure Wordpress on LEMP Stack
 
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lemp-nginx-mariadb-and-php-on-debian-10)
 
-## Create Database and User
-```
+### Create Database and User
+
+```shell
 sudo mariadb -u root -p
 CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 GRANT ALL ON wordpress.* TO 'wordpress_user'@'localhost' IDENTIFIED BY 'password';
@@ -274,23 +306,24 @@ FLUSH PRIVILEGES;
 exit;
 ```
 
-## Installing Additional PHP Extensions
+### Installing Additional PHP Extensions
 
-```
+```shell
 sudo apt update
 sudo apt install php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
 ```
 
 **Restart php-fpm process**
-```
+
+```shell
 sudo systemctl restart php7.3-fpm.service
 ```
 
-## Configuring Nginx
+### Configuring Nginx
 
 Please ntoes, if you have enabled SSL (using Certbot) there will be two server blocks in your nginx configuration. Find the one with `root /var/www/your_domain` and add some entries as below.
 
-```
+```json
 server {
     . . .
 
@@ -305,7 +338,8 @@ server {
 ```
 
 Also adjust `try_files`
-```
+
+```json
     . . .
     location / {
         #try_files $uri $uri/ =404;
@@ -316,7 +350,7 @@ Also adjust `try_files`
 
 ## Downloading WordPress
 
-```
+```shell
 cd /tmp
 curl -LO https://wordpress.org/latest.tar.gz
 
@@ -333,10 +367,11 @@ sudo cp -a /tmp/wordpress/. /var/www/wp-test
 sudo chown -R www-data:www-data /var/www/wp-test
 ```
 
-## Setting up the WordPress Configuration File
+### Setting up the WordPress Configuration File
 
 **Generate secret keys and use it inside the config.**
-```
+
+```shell
 curl -s https://api.wordpress.org/secret-key/1.1/salt/
 ```
 
@@ -345,7 +380,8 @@ Copy the content inside `wp-config.php` where you can find same entries with dum
 **Adjust database values**
 
 Configure db entries as we generated in firt steps.
-```
+
+```shell
 . . .
 
 define('DB_NAME', 'wordpress');
@@ -365,61 +401,75 @@ define('FS_METHOD', 'direct');
 
 Access the url over browser and complete wordpress configuration.
 
-# Migrating or Moving a Wordpress site
+## Migrating or Moving a Wordpress site
+
 Now we login to old server and export our database and website files (media, scripts, plugins etc)
 
-## Export Database
-```
-### from old server
+### Export Database
+
+```shell
+# from old server
 $ mysqldump -u root -p old_databse |gzip > old_databse_20190104.gz
 ```
 
-## Backup website files in zip file
+### Backup website files in zip file
+
 Let's gzip all web folder into a single file for easy transfer.
 
-```
+```shell
 $ cd /var/www/
 $ tar -cv html | gzip > mywpsite.tar.gz
 ```
 
-## Copy databse and website backup to new server
-```
+### Copy database and website backup to new server
+
+```shell
 scp user@old_server:/home/user/old_databse_20190104.gz .
 scp user@old_server:/home/user/mywpsite.tar.gz .
 ```
 
-## Restore database on new server
-```
+### Restore database on new server
+
+```shell
 ### on new server
 gunzip < old_databse_20190104.gz  | mysql -u root -pMyPasswd wordpress101
-
 ```
 
-## Restore website files
-```
+### Restore website files
+
+```shell
 ### on new server
 gunzip mywpsite.tar.gz
 tar -xvf mywpsite.tar -C /web/pe/
 ```
-Where -C is to point the destination directory.
 
-## Update and Verify your wp-config.php
+Where `-C` is to point the destination directory.
+
+### Update and Verify your `wp-config.php`
+
 Check your database name, username and password are properly configured.
 
+## Troubleshooting
 
-# Troubleshooting
-
-## How to fix 404 not found nginx problem?
+### How to fix 404 not found nginx problem?
 
 Change the line in the location block to:
 
-`try_files $uri $uri/ /index.php?q=$uri&$args;`
+```
+  try_files $uri $uri/ /index.php?q=$uri&$args;
+```
 
 and reload nginx
 
 `sudo systemctl reload nginx`
 
-# Appendix:
-bitnami deployment
-https://docs.bitnami.com/google/apps/wordpress-pro/configuration/create-vhost-nginx/
+### How to fix `mysqli_real_connect(): (HY000/2002):`
 
+- [Fixing PHP Warning: mysqli_real_connect(): (HY000/2002): with WP CLI and MAMP](https://jeffreyeverhart.com/2019/02/21/fixing-php-warning-mysqli_real_connect-hy000-2002-with-wp-cli-and-mamp/)
+
+
+## Appendix:
+
+**bitnami deployment**
+
+- https://docs.bitnami.com/google/apps/wordpress-pro/configuration/create-vhost-nginx/

@@ -32,8 +32,10 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible for Absolute Beginners](#ansible-for-absolute-beginners)
   - [Ansible Guides](#ansible-guides)
 - [Ansible - Frequently Asked Questions](#ansible---frequently-asked-questions)
-- [Ansible Automation Platform (Ansible Tower)](#ansible-automation-platform-ansible-tower)
-  - [Installing Ansible Automation Platform (Ansible Tower)](#installing-ansible-automation-platform-ansible-tower)
+- [Ansible Automation Platform (Formerly Ansible Tower)](#ansible-automation-platform-formerly-ansible-tower)
+  - [Ansible Automation Platform - Containerized Setup](#ansible-automation-platform---containerized-setup)
+  - [Removing instance from cluster](#removing-instance-from-cluster)
+  - [Installing Ansible Automation Platfom](#installing-ansible-automation-platfom)
     - [Enable RHEL and AAP Subscriptions](#enable-rhel-and-aap-subscriptions)
     - [Prepare for Ansible Automation Platform Installation](#prepare-for-ansible-automation-platform-installation)
     - [Get Registry Credential](#get-registry-credential)
@@ -75,9 +77,44 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 10.	Who is Ansible for? Who should learn Ansible?
 11.	What are prerequisites to learning Ansible?s
 
-## Ansible Automation Platform (Ansible Tower)
+## Ansible Automation Platform (Formerly Ansible Tower)
 
-### Installing Ansible Automation Platform (Ansible Tower)
+### Ansible Automation Platform - Containerized Setup
+
+```shell
+$ export ANSIBLE_COLLECTIONS_PATH=/home/devops/ansible-automation-platform-containerized-setup-bundle-2.4-1-x86_64/collections/
+
+$ ansible-playbook -i inventory ansible.containerized_installer.install
+```
+
+To uninstall a containerized deployment, execute the uninstall.yml playbook.
+
+
+```shell
+$ ansible-playbook -i inventory ansible.containerized_installer.uninstall
+```
+
+This will stop all systemd units and containers and then delete all resources used by the containerized installer such as:
+
+- config and data directories/files
+- systemd unit files
+- podman containers and images
+- RPM packages
+
+References:
+ - [Containerized Ansible Automation Platform Installation Guide](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html-single/containerized_ansible_automation_platform_installation_guide/index)
+
+
+### Removing instance from cluster
+
+```shell
+bash-4.4$ awx-manage deprovision_instance --hostname aap-rhel-92-2.lab.local
+Instance Removed
+Successfully deprovisioned aap-rhel-92-2.lab.local
+(changed: True)
+```
+
+### Installing Ansible Automation Platfom
 
 *Note : The Ansible Automation Platform installer only supports Red Hat Enterprise Linux and CentOS.*
 
