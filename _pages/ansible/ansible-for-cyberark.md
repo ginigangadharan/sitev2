@@ -13,6 +13,17 @@ titleshort: Ansible CyberArk
 
 - [References](#references)
 
+## Explore CyberArk
+
+- [Free Trial](https://www.cyberark.com/try-buy/)
+- [conjur](https://www.conjur.org/)
+- [Ansible and Conjur integration](https://docs.cyberark.com/conjur-open-source/Latest/en/Content/Integrations/ansible.html)
+
+## CyberArk Learning Resources
+
+- [training.cyberark.com](https://training.cyberark.com)
+-
+
 
 # References
 

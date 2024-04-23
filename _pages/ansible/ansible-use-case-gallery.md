@@ -41,7 +41,7 @@ titleshort: Ansible Use Cases
 - [System and Server Automation](#system-and-server-automation)
 - [Cloud Related Automation](#cloud-related-automation)
 - [Operational Task](#operational-task)
-  
+
 ## Immutable Infrastructure
 
 - Configure your re-buildable replicas of server set or application stack.
@@ -51,7 +51,7 @@ titleshort: Ansible Use Cases
 
 Provision your bare-metal, private cloud and public cloud infrastructure using modules and configure them to use for day 2 operations.
 
-### AWS 
+### AWS
 
 - Instance Provisioning
 - LoadBalancer /  TargetGroup Creation
@@ -67,7 +67,7 @@ Manage your applications deployments, re-deployments, migration using simple ans
 - Backup of Fortigate Config into Tectia
 - Failover and Failback of Fortigate
 - Install Security Agents for Imperva, TrendMicro, McAfee, Splunk UF, Nessus, Carbon EDR
-- CyberArk Credential retrievals
+- CyberArk Credential retrievals ([Integrating Ansible Automation Platform with CyberArk to retrieve credentials](https://www.techbeatly.com/ansible-cyberark/))
 - Palo Alto Patching
 - Palo Alto Provision/Deprovision and Firmware upgrades
 - F5 Patching
@@ -82,7 +82,7 @@ Manage your applications deployments, re-deployments, migration using simple ans
 
 - [Windows Package Management](https://www.ansible.com/blog/windows-package-management)
 
-## OpenShift Container Platform - Automation 
+## OpenShift Container Platform - Automation
 
 ### OpenShift Day 2 Operations
 
@@ -108,9 +108,9 @@ Manage your applications deployments, re-deployments, migration using simple ans
 - Application deployment, resource provisioning and testing
 - Application upgrade
 
-### Compliance 
-- 
-- CIS OpenShift scanning and reporting 
+### Compliance
+-
+- CIS OpenShift scanning and reporting
 - Leveraging compliance operator and generating HTML reports
 
 
@@ -151,7 +151,7 @@ Remarkably easy to write, you can run commands across your environment for any n
 - DB housekeeping and archival for MySQL, Oracle DB
 - DB ad-hoc backup/restore for MySQL, MSSQL, Oracle DB
 - DB patching for MySQL, MSSQL, Oracle DB
-- DB hardening and compliance for MySQL, MariaDB, MSSQL, PostgreSQL 
+- DB hardening and compliance for MySQL, MariaDB, MSSQL, PostgreSQL
 - Platform build/installation for Bamboo, Jira, Bitbucket, Confluence, minio, MQ etc
 - Start/Stop/Restart DB and middleware services
 - Patching for WebLogic, JBoss EAP, Tomcat
@@ -244,7 +244,7 @@ Several databases use outdated binary sets. Patch the binaries in accordance wit
 - Patch management: Automate patching of operating systems and applications on VMs, increasing security and compliance.
 - Patching and security compliance of vCenter and ESXi nodes.
 - vCenter health check and reporting with dashboard and notification/alerts.
-- 
+-
 
 ## Network
 
@@ -264,7 +264,7 @@ Several databases use outdated binary sets. Patch the binaries in accordance wit
 - Health Check for Cisco IOS/XE, NX-OS, Palo Alto, F5
 - Palo Alto user management, NSP, FW session, deprovisioning
 
-## Application 
+## Application
 
 - Integration with CI/CD tools such as Azure DevOps
 - Application Deployment
@@ -291,7 +291,7 @@ Keep your configurations as a code and also can check if someone made changes to
 
 ## System and Server Automation
 
-- VM provision and deprovision for Windows 2016/2019, RHEL 8.x 
+- VM provision and deprovision for Windows 2016/2019, RHEL 8.x
 - Scale up/down CPU and Memory of VMs
 - Add/Delete Virtual Disks for VMs
 - Agent Installations for APM, McAfee, SCCM, Backup, Monitoring etc.
@@ -302,7 +302,7 @@ Keep your configurations as a code and also can check if someone made changes to
 - Health Check for Windows and Linux Servers
 - Server Stop/Start/Restart
 
- 
+
 ## Cloud Related Automation
 
 - VMs and Kubernetes provisioning on AWS/Azure
