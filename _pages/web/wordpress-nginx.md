@@ -125,7 +125,7 @@ $ mysql -h example.com:12345 -u user -p
 
 **Login to mariadb**
 
-```
+```shell
 $ sudo mariadb
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 61
@@ -136,6 +136,24 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 MariaDB [(none)]>
+```
+
+Check user access
+
+```shell
+MariaDB [(none)]> SHOW GRANTS FOR 'dbuser'@'localhost';
+```
+
+Show users
+
+```shell
+MariaDB [(none)]> SELECT user FROM mysql.user;
+```
+
+Delete database (troubleshooting purpose)
+```shell
+MariaDB [(none)]> DROP DATABASE wp_demosite;
+Query OK, 12 rows affected (0.029 sec)
 ```
 
 **Sample tests:**
