@@ -17,6 +17,8 @@ Open source refers to software where the source code is freely available for any
 | Product | Open Source Project | Company |
 |---|---|---|
 | [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) | [Ansible AWX](https://github.com/ansible/awx) |
+| [Ansible automation hub](https://www.redhat.com/en/technologies/management/ansible/automation-hub) | [Galaxy NG](https://github.com/ansible/galaxy_ng/) | Red Hat |
+| [Event Driven Ansible (EDA)](https://www.redhat.com/en/technologies/management/ansible/event-driven-ansible) | [EDA Server](https://github.com/ansible/eda-server) | Red Hat
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | [okd](https://www.okd.io/) | Red Hat |
 | [Red Hat Directory Server](https://www.redhat.com/en/technologies/cloud-computing/directory-server) | [389 Directory Server](https://www.port389.org/) | Red Hat |
 | [Red Hat Single Sign On (RHSSO)](https://access.redhat.com/products/red-hat-single-sign-on/) | [keycloak](https://www.keycloak.org/) | Red Hat |
