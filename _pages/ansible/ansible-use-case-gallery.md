@@ -12,6 +12,11 @@ hidden: false
 titleshort: Ansible Use Cases
 ---
 
+This is not an article, but rather an ever-growing list of Ansible automation use cases that I update whenever I find new or potential use cases. Ansible is a powerful tool that can be used for infrastructure as code (IaC), security management, application deployment, configuration management, system and server automation, and cloud-related automation. Some of the important benefits of using Ansible include its ease of use, ability to automate repetitive tasks, and ability to enforce security guidelines and achieve compliance.
+
+Let me know if you would like learn more about [Ansible](https://www.techbeatly.com/ansible-course) or if you have other questions.
+
+
 - [Immutable Infrastructure](#immutable-infrastructure)
 - [Provisioning](#provisioning)
   - [AWS](#aws)
