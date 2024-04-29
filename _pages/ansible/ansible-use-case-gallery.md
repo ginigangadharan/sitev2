@@ -3,7 +3,7 @@ layout: post
 title: Ansible Automation - Use Case Gallery
 author: gini
 categories: [ ansible ]
-image: "assets/images/2021/lenny-kuhne-jHZ70nRk7Ns-unsplash -automation.jpg"
+image: "assets/images/2024/ansible-use-case-gallery.png"
 tags: []
 show-avatar: false
 permalink: ansible-use-case-gallery
