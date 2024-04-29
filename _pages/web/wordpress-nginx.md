@@ -119,6 +119,8 @@ Note: Install the MySQL client if the database server is outside and you want to
 
 ```shell
 $ sudo apt install default-mysql-client
+# or
+$ sudo apt install mycli
 
 $ mysql -h example.com:12345 -u user -p
 ```
@@ -264,6 +266,12 @@ Install Certbot’s Nginx package with apt:
 ```shell
 sudo apt install python-certbot-nginx -t stretch-backports
 ```
+or
+
+```shell
+$ apt install certbot python3-certbot-nginx
+```
+
 
 #### Confirming Nginx’s Configuration
 
@@ -285,7 +293,11 @@ Certbot can now find the correct server block and update it.
 #### Obtaining an SSL Certificate
 
 ```shell
-sudo certbot --nginx -d dev.yourdomain.com -d mail.dev.yourdomain.com
+$ certbot --nginx -d dev.yourdomain.com -d mail.dev.yourdomain.com
+
+# or
+
+$ certbot --nginx -m admin@local -d beta.iamgini.com
 ```
 
 It will ask for email address for notifications; also auto-redirect to https

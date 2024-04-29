@@ -17,7 +17,6 @@ titleshort: Ansible Use Cases
   - [AWS](#aws)
 - [Application Deployment](#application-deployment)
 - [Security Management](#security-management)
-- [Manage network configurations](#manage-network-configurations)
 - [Package Deployment](#package-deployment)
 - [OpenShift Container Platform - Automation](#openshift-container-platform---automation)
   - [OpenShift Day 2 Operations](#openshift-day-2-operations)
@@ -35,7 +34,7 @@ titleshort: Ansible Use Cases
 - [Service license agreements](#service-license-agreements)
 - [Infrastructure Management](#infrastructure-management)
   - [VMWare](#vmware)
-- [Network](#network)
+- [Manage Network Configurations](#manage-network-configurations)
 - [Application](#application)
 - [Config Management](#config-management)
 - [System and Server Automation](#system-and-server-automation)
@@ -71,12 +70,6 @@ Manage your applications deployments, re-deployments, migration using simple ans
 - Palo Alto Patching
 - Palo Alto Provision/Deprovision and Firmware upgrades
 - F5 Patching
-
-## Manage network configurations
-
-- Configure new network devices with same configurations as we need
-- Add new rules or changes in configurations (eg: new VLAN, new Virtual Interface)
-- Add/Remove rule in firewall
 
 ## Package Deployment
 
@@ -244,10 +237,12 @@ Several databases use outdated binary sets. Patch the binaries in accordance wit
 - Patch management: Automate patching of operating systems and applications on VMs, increasing security and compliance.
 - Patching and security compliance of vCenter and ESXi nodes.
 - vCenter health check and reporting with dashboard and notification/alerts.
--
 
-## Network
+## Manage Network Configurations
 
+- Configure new network devices with same configurations as we need
+- Add new rules or changes in configurations (eg: new VLAN, new Virtual Interface)
+- Add/Remove rule in firewall
 - Firewall rules orchestration with AlgoSec, Tuffin
 - Load Balancer orchestration with OS updates
 - SD-WAN
