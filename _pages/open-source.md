@@ -1,10 +1,11 @@
 ---
-layout: postpage
+layout: post
 title: Open Source Projects and Products
 categories: [open source, community]
 image: "assets/images/2024/rh-communities-to-enterprise-full-graphic-white-202002pr_white.png"
 tags: [ aap, cloud, automation, containers, kubernetes, ansible automation platform, red hat ansible, redhat project vs downstream product,]
 permalink: open-source
+show-avatar: true
 featured: false
 hidden: false
 titleshort: open-source
