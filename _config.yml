@@ -22,7 +22,7 @@ include: ["_pages"]
 permalink: /:title/
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
@@ -36,9 +36,9 @@ authors:
     avatar: 'assets/images/avatar.png'
     gravatar: 1558aaf0c06196e6b9cb24c21e5ca858
     email: gini@techbeatly.com
-    bio: "Backpacker, Foodie, Techie"
+    bio: "Author, Automation and Containerization Guy, techbeatly.com/youtube"
     web: https://www.iamgini.com
-    twitter: https://twitter.com/ginigangadharan
+    twitter: https://twitter.com/iamgineesh
     description: "Backpacker, Foodie, Techie"
 
 # Defaults
