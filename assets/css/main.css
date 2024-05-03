@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/* 
+/*
  @font-face {
   font-family: 'GeneralSans';
   src: url('https://fonts.techbeatly.com/GeneralSans-Regular.woff2') format('woff2'),
@@ -223,6 +223,9 @@ svg {
 
 table {
   border-collapse: collapse; }
+
+tr {
+  border-bottom: 1px solid #707070; }
 
 caption {
   padding-top: 0.75rem;
@@ -480,7 +483,7 @@ kbd {
     font-size: 100%;
     font-weight: 700; }
 
-pre {    
+pre {
     background: #eee;
     padding: 15px;
     font-size:14px;
@@ -1954,7 +1957,7 @@ fieldset:disabled a.btn {
     border-color: #d3d9df; }
     .btn-light2:not(:disabled):not(.disabled):active:focus, .btn-light2:not(:disabled):not(.disabled).active:focus,
     .show > .btn-light2.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }      
+      box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
 
 .btn-dark {
   color: #fff;
@@ -3822,7 +3825,7 @@ input[type="button"].btn-block {
   display: flex;
   padding-left: 0;
   list-style: none;
-  border-radius: 0.25rem; 
+  border-radius: 0.25rem;
   font-size: 14px;
   font-weight: 600;
 }
@@ -4050,7 +4053,7 @@ input[type="button"].btn-block {
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;  
+  background-color: #e9ecef;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
     .jumbotron {
@@ -4063,7 +4066,7 @@ input[type="button"].btn-block {
 
 .jumbotron-fluid-round {
   border-radius: 8px; }
-  
+
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -4785,7 +4788,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -4805,7 +4808,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -4822,7 +4825,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -4851,7 +4854,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -5210,14 +5213,14 @@ button.bg-orange:focus {
 
 .bg-lightgreen2 {
     background-color: #b5cbba; }
-  
+
 .header-background {
   background-size: contain;
 	background-image: url("bg-2023.jpeg");
 	background-position: center top;
   background-repeat: no-repeat;
 }
-  
+
 a.bg-lightblue:hover, a.bg-lightblue:focus,
 button.bg-lightblue:hover,
 button.bg-lightblue:focus {
@@ -6284,7 +6287,7 @@ button.bg-lightblue:focus {
 .pt-10,
 .py-10{
   padding-top: 10rem !important; }
-  
+
 .pr-6,
 .px-6 {
   padding-right: 5rem !important; }
