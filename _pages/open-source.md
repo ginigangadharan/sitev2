@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Open Source Projects and Products
+author: gini
 categories: [open source, community]
 image: "assets/images/2024/rh-communities-to-enterprise-full-graphic-white-202002pr_white.png"
 tags: [ aap, cloud, automation, containers, kubernetes, ansible automation platform, red hat ansible, redhat project vs downstream product,]
