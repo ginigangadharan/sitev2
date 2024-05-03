@@ -30,7 +30,8 @@ Open source refers to software where the source code is freely available for any
 | [Red Hat Application Foundations](https://www.redhat.com/en/products/application-foundations) | [OptaPlanner](https://www.optaplanner.org/) |
 | [Red Hat Ansible Lightspeed with IBM watsonx Code Assistant](https://www.redhat.com/en/technologies/management/ansible/ansible-lightspeed) | Project Wisdom |
 | [Red Hat Service Interconnect](https://www.redhat.com/en/technologies/cloud-computing/service-interconnect) | [Skupper](https://skupper.io/) |
-|
+| [Red Hat JBoss Enterprise Application Platform](https://www.redhat.com/en/technologies/jboss-middleware/application-platform) | [WildFly](https://www.wildfly.org/)
+
 
 **Resources**
 
