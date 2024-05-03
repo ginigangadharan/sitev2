@@ -18,7 +18,7 @@ Open source refers to software where the source code is freely available for any
 
 | Product | Open Source Project |
 |---|---|
-| [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) | [Ansible AWX](https://github.com/ansible/awx) |
+| [Red Hat Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible) (RHAAP) | [Ansible AWX](https://github.com/ansible/awx) |
 | [Ansible automation hub](https://www.redhat.com/en/technologies/management/ansible/automation-hub) | [Galaxy NG](https://github.com/ansible/galaxy_ng/) |
 | [Event Driven Ansible (EDA)](https://www.redhat.com/en/technologies/management/ansible/event-driven-ansible) | [EDA Server](https://github.com/ansible/eda-server) |
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) | [okd](https://www.okd.io/) |
@@ -30,7 +30,8 @@ Open source refers to software where the source code is freely available for any
 | [Red Hat Application Foundations](https://www.redhat.com/en/products/application-foundations) | [OptaPlanner](https://www.optaplanner.org/) |
 | [Red Hat Ansible Lightspeed with IBM watsonx Code Assistant](https://www.redhat.com/en/technologies/management/ansible/ansible-lightspeed) | Project Wisdom |
 | [Red Hat Service Interconnect](https://www.redhat.com/en/technologies/cloud-computing/service-interconnect) | [Skupper](https://skupper.io/) |
-| [Red Hat JBoss Enterprise Application Platform](https://www.redhat.com/en/technologies/jboss-middleware/application-platform) | [WildFly](https://www.wildfly.org/)
+| [Red Hat JBoss Enterprise Application Platform](https://www.redhat.com/en/technologies/jboss-middleware/application-platform) | [WildFly](https://www.wildfly.org/) |
+| [Red Hat build of Keycloak](https://access.redhat.com/products/red-hat-build-of-keycloak) (RHBK) | [Keycloak](https://www.keycloak.org/) | Keycloak provides user federation, strong authentication, user management, fine-grained authorization, and more.
 
 
 **Resources**
