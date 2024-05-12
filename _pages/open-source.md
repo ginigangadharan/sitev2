@@ -34,7 +34,7 @@ Open source refers to software where the source code is freely available for any
 | [Red Hat Service Interconnect](https://www.redhat.com/en/technologies/cloud-computing/service-interconnect) | [Skupper](https://skupper.io/) |
 | [Red Hat JBoss Enterprise Application Platform](https://www.redhat.com/en/technologies/jboss-middleware/application-platform) | [WildFly](https://www.wildfly.org/) |
 | [Red Hat build of Keycloak](https://access.redhat.com/products/red-hat-build-of-keycloak) (RHBK) | [Keycloak](https://www.keycloak.org/) | Keycloak provides user federation, strong authentication, user management, fine-grained authorization, and more.
-| [Red Hat Single Sign-On](https://access.redhat.com/products/red-hat-single-sign-on) | [Keycloa Legacy](https://www.keycloak.org/docs/latest/upgrading/index.html) |
+| [Red Hat Single Sign-On](https://access.redhat.com/products/red-hat-single-sign-on) | [Keycloak Legacy](https://www.keycloak.org/docs/latest/upgrading/index.html) |
 | [Red Hat Data Grid](https://www.redhat.com/en/technologies/jboss-middleware/data-grid) | [Infinispan](https://infinispan.org/) | In-memory data grid
 | [Red Hat AMQ](https://www.redhat.com/en/technologies/jboss-middleware/amq) | [ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) | The Next Generation Message Broker by ActiveMQ
 | [Red Hat AMQ Streams](https://access.redhat.com/products/red-hat-amq-streams) | [Apache Kafka](https://kafka.apache.org/) | Distributed event streaming platform

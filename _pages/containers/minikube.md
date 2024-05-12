@@ -66,10 +66,10 @@ You can also mention the kubernetes version you need to install.
 
 ```shell
 $ minikube start --kubernetes-version v1.16.0
-## or 
+## or
 $ minikube start \
-  driver=docker 
-  --wait=false \ 
+  driver=docker
+  --wait=false \
   --kubernetes-version=v1.18.3
 
 ## start minikube with ingress and flannel cni
@@ -85,6 +85,7 @@ You have many other useful arguments to pass to control the minikube cluster con
 $ minikube config set driver none
 $ minikube config set cpus 2
 $ minikube config set memory 4096
+$ minikube config defaults kubernetes-version v1.30.0
 $ minikube start --wait=false --kubernetes-version=v1.23.1
 ```
 
@@ -111,7 +112,7 @@ Below steps are for Debian and you can refer [documentation](https://docs.docker
 ## remove any existing package
 $ sudo apt-get remove docker docker-engine docker.io containerd runc
 
-## Update the apt package index and install packages 
+## Update the apt package index and install packages
 ## to allow apt to use a repository over HTTPS:
 $ sudo apt-get update
 sudo apt-get install \
@@ -122,7 +123,7 @@ sudo apt-get install \
     lsb-release
 
 ## Add Docker’s official GPG key:
-$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg  
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
 $  echo \
   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
@@ -145,7 +146,7 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 $ curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
 $ echo "$(<kubectl.sha256) kubectl" | sha256sum --check
 
-## Install 
+## Install
 $ sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 ```
 
@@ -169,7 +170,7 @@ kubectl version --client
 ```
 # download and install package
 $ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
- 
+
 $ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 # check version
@@ -180,13 +181,13 @@ commit: 76d74191d82c47883dc7e1319ef7cebd3e00ee11
 
 ## 3.4. Configure to Run docker without `sudo`
 
-Add your user to the `docker` group: 
+Add your user to the `docker` group:
 
 ```shell
 $ sudo usermod -aG docker $USER && newgrp docker
 ```
 
-## 3.5. Start minikube 
+## 3.5. Start minikube
 
 
 ### 3.5.1. Start minikube cluster
@@ -201,7 +202,7 @@ $ sudo minikube start -driver=none --wait=false
 💾  Downloading kubelet v1.16.2
 💾  Downloading kubeadm v1.16.2
 🚜  Pulling images ...
-🚀  Launching Kubernetes ... 
+🚀  Launching Kubernetes ...
 🤹  Configuring local host environment ...
 
 ⚠️  The 'none' driver provides limited isolation and may reduce system security and reliability.
@@ -252,7 +253,7 @@ $ sudo minikube dashboard
 http://127.0.0.1:39067/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
 ```
 
-Usually `minikube` will open the browser with the dashboard URL if you are with GUI. Access the url and check. 
+Usually `minikube` will open the browser with the dashboard URL if you are with GUI. Access the url and check.
 
 ### 3.6.1. If you are running minikube inside a VM
 
@@ -263,7 +264,7 @@ In above example, I have deployed the minikube inside a GCP (Google Cloud Platfo
 **on minikube VM**
 
 ```
-## 
+##
 $ minikube dashboard
 🤔  Verifying dashboard health ...
 🚀  Launching proxy ...
@@ -275,12 +276,12 @@ $ minikube dashboard
 **On my Laptop/Workstation**
 
 ```shell
-## Open an SSH tunnel 
+## Open an SSH tunnel
 ## ssh -L LOCAL_PORT:localhost:REMOTE_PORT user@REMOTE_VM_IP
 $ ssh -L 36959:localhost:36959 gini@123.123.234.234
 .
 .
-gini@minikube-vm:~$ 
+gini@minikube-vm:~$
 ```
 
 Open a browser and access the same url (output of `minikube dashboard` command)
@@ -317,7 +318,7 @@ And access the url fromlocal  browser - `localhost:7080`
 To access a LoadBalancer deployment, use the “minikube tunnel” command. Here is an example deployment:
 
 ```shell
-kubectl create deployment balanced --image=k8s.gcr.io/echoserver:1.4  
+kubectl create deployment balanced --image=k8s.gcr.io/echoserver:1.4
 kubectl expose deployment balanced --type=LoadBalancer --port=8080
 
 
@@ -360,7 +361,7 @@ docker run hello-world
 ```
 
 
-# 4. Troubleshooting 
+# 4. Troubleshooting
 
 ## 4.1. `minikube start` exits with error on `GUEST_MISSING_CONNTRACK`
 
