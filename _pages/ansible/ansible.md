@@ -48,6 +48,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
   - [Ansible Tower with database SSL connection enabled](#ansible-tower-with-database-ssl-connection-enabled)
   - [Troubleshooting](#troubleshooting)
   - [References](#references)
+- [Updating and Upgrading AAP](#updating-and-upgrading-aap)
 - [Ansible Automation Hub](#ansible-automation-hub)
 - [Ansible Playbook References](#ansible-playbook-references)
 - [Tools for Ansible](#tools-for-ansible)
@@ -387,6 +388,11 @@ $ openssl req -noout -modulus -in <file>.csr | openssl md5
 - [Ansible Automation Platform Installation and Reference Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/installandreference/index.html)
 - [Tower - Previous versions](https://docs.ansible.com/automation-tower-prior-versions.html)
 - [Guidelines, Troubleshooting, and Recommended Configurations for Ansible Tower](https://access.redhat.com/articles/3344101)
+
+## Updating and Upgrading AAP
+
+- [On-Prem Ansible Automation Platform Patching Procedure - OS Packages Update & AAP Packages Update](https://access.redhat.com/solutions/7034370)
+- [Frequently Asked Questions (FAQs) on OS Patching for Ansible Automation Platform 2.3 and later](https://access.redhat.com/articles/7050473)
 
 ## Ansible Automation Hub
 
