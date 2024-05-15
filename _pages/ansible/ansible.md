@@ -48,7 +48,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
   - [Ansible Tower with database SSL connection enabled](#ansible-tower-with-database-ssl-connection-enabled)
   - [Troubleshooting](#troubleshooting)
   - [References](#references)
-- [Updating and Upgrading AAP](#updating-and-upgrading-aap)
+- [Migrating, Updating and Upgrading AAP](#migrating-updating-and-upgrading-aap)
 - [Ansible Automation Hub](#ansible-automation-hub)
 - [Ansible Playbook References](#ansible-playbook-references)
 - [Tools for Ansible](#tools-for-ansible)
@@ -389,10 +389,12 @@ $ openssl req -noout -modulus -in <file>.csr | openssl md5
 - [Tower - Previous versions](https://docs.ansible.com/automation-tower-prior-versions.html)
 - [Guidelines, Troubleshooting, and Recommended Configurations for Ansible Tower](https://access.redhat.com/articles/3344101)
 
-## Updating and Upgrading AAP
+## Migrating, Updating and Upgrading AAP
 
 - [On-Prem Ansible Automation Platform Patching Procedure - OS Packages Update & AAP Packages Update](https://access.redhat.com/solutions/7034370)
 - [Frequently Asked Questions (FAQs) on OS Patching for Ansible Automation Platform 2.3 and later](https://access.redhat.com/articles/7050473)
+- [Migrating Red Hat Ansible Automation Platform to Ansible Automation Platform Operator](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/aap-migration)
+
 
 ## Ansible Automation Hub
 
