@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Minikube
-#author: gini
+author: gini
 categories: [ kubernetes, minikube ]
-#image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
+image: "assets/images/2024/minikube-main.png"
 tags: []
 show-avatar: false
-permalink: minikube
+permalink: true
 featured: false
 hidden: false
 titleshort: minikube
