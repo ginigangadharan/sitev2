@@ -12,30 +12,31 @@ hidden: false
 titleshort: minikube
 ---
 
-- [1. Introduction](#1-introduction)
+- [Introduction](#introduction)
     - [Install minikube](#install-minikube)
-- [2. Just to test ? Use this Lab](#2-just-to-test--use-this-lab)
-- [3. Deploy minikube](#3-deploy-minikube)
-  - [3.1. Setup Docker or Virtualization](#31-setup-docker-or-virtualization)
-  - [3.2. Install and Configure kubectl](#32-install-and-configure-kubectl)
-  - [3.3. Download and Install minikube](#33-download-and-install-minikube)
-  - [3.4. Configure to Run docker without `sudo`](#34-configure-to-run-docker-without-sudo)
-  - [3.5. Start minikube](#35-start-minikube)
-    - [3.5.1. Start minikube cluster](#351-start-minikube-cluster)
-    - [3.5.2. Verify cluster information](#352-verify-cluster-information)
+- [Just to test ? Use this Lab](#just-to-test--use-this-lab)
+- [Deploy minikube](#deploy-minikube)
+  - [Setup Docker or Virtualization](#setup-docker-or-virtualization)
+  - [Install and Configure kubectl](#install-and-configure-kubectl)
+  - [Download and Install minikube](#download-and-install-minikube)
+  - [Configure to Run docker without `sudo`](#configure-to-run-docker-without-sudo)
+  - [Start minikube](#start-minikube)
+    - [Start minikube cluster](#start-minikube-cluster)
+    - [Verify cluster information](#verify-cluster-information)
   - [Enable Kubernetes metrics-server](#enable-kubernetes-metrics-server)
-  - [3.6. Kubernetes Dashboard](#36-kubernetes-dashboard)
-    - [3.6.1. If you are running minikube inside a VM](#361-if-you-are-running-minikube-inside-a-vm)
-  - [3.7. Get your hands dirty !](#37-get-your-hands-dirty-)
-    - [3.7.1. If you are on Remote VM](#371-if-you-are-on-remote-vm)
-  - [3.8. LoadBalancer deployments](#38-loadbalancer-deployments)
-  - [3.9. Finished Testing ?](#39-finished-testing-)
+  - [Kubernetes Dashboard](#kubernetes-dashboard)
+    - [If you are running minikube inside a VM](#if-you-are-running-minikube-inside-a-vm)
+  - [Get your hands dirty !](#get-your-hands-dirty-)
+    - [If you are on Remote VM](#if-you-are-on-remote-vm)
+  - [LoadBalancer deployments](#loadbalancer-deployments)
+  - [Multi-node Kubernetes Cluster using minikubeMulti-Node](#multi-node-kubernetes-cluster-using-minikubemulti-node)
+  - [Finished Testing ?](#finished-testing-)
   - [Using Docker or Podman with minikube](#using-docker-or-podman-with-minikube)
-- [4. Troubleshooting](#4-troubleshooting)
-  - [4.1. `minikube start` exits with error on `GUEST_MISSING_CONNTRACK`](#41-minikube-start-exits-with-error-on-guest_missing_conntrack)
-- [5. References](#5-references)
+- [Troubleshooting](#troubleshooting)
+  - [`minikube start` exits with error on `GUEST_MISSING_CONNTRACK`](#minikube-start-exits-with-error-on-guest_missing_conntrack)
+- [References](#references)
 
-# 1. Introduction
+# Introduction
 
 ### Install minikube
 
@@ -46,7 +47,7 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 **Note: Before you start minikube cluster**
 
-minikube will need a hypervisor (VirtualBox, Hyperkit or KVM) but if you are already inside a virtual machine (and nested virtualization is not possible), then it is possible to skip the creation of an additional VM layer by using the none driver. But please note, you need to install and setup docker environment in that vm.
+minikube will need a hypervisor (VirtualBox, Hyperkit or KVM) but if you are already inside a virtual machine (and nested virtualization is not possible), then it is possible to skip the creation of an additional VM layer by using the none driver. But please note, you need to install and setup Docker or Podman environment in that vm.
 
 Since `vm-driver` is deprecated, use `driver` option
 
@@ -95,14 +96,14 @@ Check minikube capacity
 $ kubectl get node minikube -o jsonpath='{.status.capacity}'
 ```
 
-# 2. Just to test ? Use this Lab
+# Just to test ? Use this Lab
 
 There is a simple lab to see and test minikube; use it **[here](https://kubernetes.io/docs/tutorials/hello-minikube/#create-a-minikube-cluster)**
 
 
-# 3. Deploy minikube
+# Deploy minikube
 
-## 3.1. Setup Docker or Virtualization
+## Setup Docker or Virtualization
 
 We are using docker here instead of Virtualization (VirtualBox etc.). Hence we need to install docker for the same.
 
@@ -134,7 +135,7 @@ $ sudo apt-get update
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-## 3.2. Install and Configure kubectl
+## Install and Configure kubectl
 
 You need `kubectl` to manage your cluster resources.
 
@@ -165,7 +166,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 kubectl version --client
 ```
 
-## 3.3. Download and Install minikube
+## Download and Install minikube
 
 ```
 # download and install package
@@ -179,7 +180,7 @@ minikube version: v1.21.0
 commit: 76d74191d82c47883dc7e1319ef7cebd3e00ee11
 ```
 
-## 3.4. Configure to Run docker without `sudo`
+## Configure to Run docker without `sudo`
 
 Add your user to the `docker` group:
 
@@ -187,10 +188,10 @@ Add your user to the `docker` group:
 $ sudo usermod -aG docker $USER && newgrp docker
 ```
 
-## 3.5. Start minikube
+## Start minikube
 
 
-### 3.5.1. Start minikube cluster
+### Start minikube cluster
 
 ```
 $ sudo minikube start -driver=none --wait=false
@@ -224,7 +225,7 @@ $ sudo minikube start -driver=none --wait=false
 
 Now we have a running kubernetes cluster and let us see the status.
 
-### 3.5.2. Verify cluster information
+### Verify cluster information
 
 ```
 $ kubectl cluster-info
@@ -241,7 +242,7 @@ $ minikube addons enable metrics-server
 🌟  The 'metrics-server' addon is enabled
 ```
 
-## 3.6. Kubernetes Dashboard
+## Kubernetes Dashboard
 
 You can enable the dashboard as below. (Take another console to run it)
 
@@ -255,7 +256,7 @@ http://127.0.0.1:39067/api/v1/namespaces/kubernetes-dashboard/services/http:kube
 
 Usually `minikube` will open the browser with the dashboard URL if you are with GUI. Access the url and check.
 
-### 3.6.1. If you are running minikube inside a VM
+### If you are running minikube inside a VM
 
 Then accessing Dashboard from host machine (or from your laptop) is bit tricky. By default minikube dashboard will exposed as `localhost:PORT`.
 
@@ -290,7 +291,7 @@ Open a browser and access the same url (output of `minikube dashboard` command)
 
 Bingo !
 
-## 3.7. Get your hands dirty !
+## Get your hands dirty !
 
 ```shell
 ## Deploy an app
@@ -306,14 +307,14 @@ $ minikube service hello-minikube
 kubectl port-forward service/hello-minikube 7080:8080
 ```
 
-### 3.7.1. If you are on Remote VM
+### If you are on Remote VM
 
 ```shell
 $ ssh -L 7080:localhost:7080 gini@123.123.234.234
 ```
 And access the url fromlocal  browser - `localhost:7080`
 
-## 3.8. LoadBalancer deployments
+## LoadBalancer deployments
 
 To access a LoadBalancer deployment, use the “minikube tunnel” command. Here is an example deployment:
 
@@ -332,7 +333,34 @@ kubectl get services balanced
 
 Your deployment is now available at <EXTERNAL-IP>:8080
 
-## 3.9. Finished Testing ?
+## Multi-node Kubernetes Cluster using minikubeMulti-Node
+
+```shell
+
+$ minikube start \
+  --driver=virtualbox \
+  --nodes 3 \
+  --cni calico \
+  --cpus=2 \
+  --memory=2g \
+  --kubernetes-version=v1.30.0
+
+$ kubectl get nodes
+NAME           STATUS   ROLES           AGE     VERSION
+minikube       Ready    control-plane   3m28s   v1.30.0
+minikube-m02   Ready    <none>          2m29s   v1.30.0
+minikube-m03   Ready    <none>          91s     v1.30.0
+```
+
+NOTE: Make sure, a CNI is installed and configured before adding the node. You can use any supported CNI or use `--cni calico` while initiating a `minikube` cluster.
+
+Then use `minikube node add` to add nodes to an existing cluster.
+
+```shell
+
+```
+
+## Finished Testing ?
 
 ```shell
 ## Pause Kubernetes without impacting deployed applications
@@ -361,9 +389,9 @@ docker run hello-world
 ```
 
 
-# 4. Troubleshooting
+# Troubleshooting
 
-## 4.1. `minikube start` exits with error on `GUEST_MISSING_CONNTRACK`
+## `minikube start` exits with error on `GUEST_MISSING_CONNTRACK`
 
 **Error**
 ❌  Exiting due to GUEST_MISSING_CONNTRACK: Sorry, Kubernetes 1.20.7 requires conntrack to be installed in root's path
@@ -374,7 +402,7 @@ docker run hello-world
 sudo apt-get install -y conntrack
 ```
 
-# 5. References
+# References
 
 - https://github.com/kubernetes/minikube
 - https://minikube.sigs.k8s.io/docs/start/
