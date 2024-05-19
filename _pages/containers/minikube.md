@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minikube
+title: minikube
 author: gini
 categories: [ kubernetes, minikube ]
 image: "assets/images/2024/minikube-main.png"
