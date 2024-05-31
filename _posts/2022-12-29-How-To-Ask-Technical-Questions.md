@@ -11,6 +11,6 @@ featured: false
 hidden: false
 ---
 
-This is not something new and we are facing this issue every day! Even sometimes we also do this as well. It can be a...
+Stop the “Hi” Epidemic: Mastering Technical Questions in Online Communities Have you ever received a one-word message like “Hi” in a group chat or forum?...
 
 Read ["How To Ask Technical Questions"](https://www.techbeatly.com/learn-to-ask/).
