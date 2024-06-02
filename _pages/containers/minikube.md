@@ -71,6 +71,12 @@ $ sudo minikube config set driver none
 ❗  These changes will take effect upon a minikube delete and then a minikube start
 ```
 
+Set container runtime
+
+```shell
+$ minikube config set container-runtime containerd
+❗  These changes will take effect upon a minikube delete and then a minikube start
+```
 You can also mention the kubernetes version you need to install.
 
 ```shell
