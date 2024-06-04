@@ -347,7 +347,7 @@ kubectl get services balanced
 
 Your deployment is now available at <EXTERNAL-IP>:8080
 
-## Multi-node Kubernetes Cluster using minikubeMulti-Node
+## Multi-node Kubernetes Cluster using minikube
 
 ```shell
 
@@ -367,6 +367,29 @@ minikube-m03   Ready    <none>          91s     v1.30.0
 ```
 
 NOTE: Make sure, a CNI is installed and configured before adding the node. You can use any supported CNI or use `--cni calico` while initiating a `minikube` cluster.
+
+## Create multi-master minikube
+
+```shell
+$ minikube start \
+  --driver=virtualbox \
+  --nodes 5 \
+  --ha \
+  --cni calico \
+  --cpus=2 \
+  --memory=2g \
+  --kubernetes-version=v1.30.0 \
+  --container-runtime=containerd
+
+
+$ kubectl get nodes
+NAME           STATUS   ROLES           AGE     VERSION
+minikube       Ready    control-plane   6m28s   v1.30.0
+minikube-m02   Ready    control-plane   4m36s   v1.30.0
+minikube-m03   Ready    control-plane   2m45s   v1.30.0
+minikube-m04   Ready    <none>          112s    v1.30.0
+minikube-m05   Ready    <none>          62s     v1.30.0
+```
 
 Then use `minikube node add` to add nodes to an existing cluster.
 
