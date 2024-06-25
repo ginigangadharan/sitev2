@@ -11,6 +11,6 @@ featured: false
 hidden: false
 ---
 
-Check some of the lab resources you can refer to practice and learn Kubernetes.
+To truly solidify your understanding, hands-on practice is essential. Here are some excellent lab resources to help you get started!
 
 Read ["Practicing Kubernetes"](https://www.techbeatly.com/practicing-kubernetes/).
