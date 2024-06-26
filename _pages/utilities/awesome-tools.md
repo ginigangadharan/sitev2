@@ -4,7 +4,7 @@ title: Awesome DevSecSysOps Tools on Internet
 author: gini
 categories: [ cloud ]
 tags: [cloud, automation, containers, kubernetes]
-permalink: awesome-tools
+permalink: tools
 featured: false
 hidden: false
 image: "assets/images/tools-1426927308491-6380b6a9936f.jpeg"
@@ -43,7 +43,7 @@ This is a page where I keep all those list of tools on internet, which we use fo
 
 ## Network Tools
 
-- **[Websites For Subnet Calculation](https://www.techbeatly.com/2018/01/4-websites-you-can-use-for-subnet-calculation.html)** - Calculate and Understand Network subnets | 
+- **[Websites For Subnet Calculation](https://www.techbeatly.com/2018/01/4-websites-you-can-use-for-subnet-calculation.html)** - Calculate and Understand Network subnets |
 - **[Subnet Masks Sheet](https://www.techbeatly.com/2015/10/subnet-mask-information-quick-reference-sheet.html/)** - Quick Reference Sheet
 
 - **[ngrok.com - public dns for your local machines](https://ngrok.com/)**
@@ -53,7 +53,7 @@ This is a page where I keep all those list of tools on internet, which we use fo
 ### Unattened Remote Access
 - **[zerotier.com](https://www.zerotier.com/)** - Easily connect cloud, mobile, desktop, and data center resources anywhere.
 - **[Apache Guacamole™](https://guacamole.apache.org/)**
-   
+
 ## Diagram and Flowcharts Maker
 
 - **[Draw.io](https://www.draw.io/)** - Online tool Diagrams and Flowchart
@@ -62,15 +62,14 @@ This is a page where I keep all those list of tools on internet, which we use fo
 - **[Cloudcraft](https://cloudcraft.co/)** - Tool for making AWS Related diagrams and charts
 - **[AWWAPP - Online Whiteboard](https://awwapp.com/)** - Quick Whiteboards for explanations.
 - **[Carbon](https://carbon.now.sh/)** - Create and share beautiful images of your source code.
-Start typing or drop a file into the text area to get started.
+- **[sketchwow.com](https://sketchwow.com/)** - Create fast, super-engaging simple sketches
 
+## Collaboration Tools
 
-## Collaboration Tools 
-
-- **[mattermost](https://mattermost.com/)** - Mattermost is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack 
+- **[mattermost](https://mattermost.com/)** - Mattermost is an open-source, self-hostable online chat service with file sharing, search, and integrations. It is designed as an internal chat for organisations and companies, and mostly markets itself as an open-source alternative to Slack
 - **[Open Source Catalogue Manager](https://openservicecatalogmanager.org/)** -  Cloud Services Management Software where you can provide easy to access and self service poral for your underlying infrastructure.
 
-## Email/SMTP Servers with Free Trials 
+## Email/SMTP Servers with Free Trials
 
 This is useful for testing email functionality from your application or solutions as you dont need to setup an SMTP server by your own.
 - [SendinBlue](https://app.sendinblue.com/account/billing)
