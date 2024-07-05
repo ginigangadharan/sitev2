@@ -12,9 +12,8 @@ showindex: true
 titleshort: ssl
 ---
 
-- [Create SSL Certificate](#create-ssl-certificate)
-  - [Create a Root CA](#create-a-root-ca)
-  - [Create Server Key, CSR and Certificate](#create-server-key-csr-and-certificate)
+- [Create a Root CA](#create-a-root-ca)
+- [Create Server Key, CSR and Certificate](#create-server-key-csr-and-certificate)
 - [How to verify SSL Certificates](#how-to-verify-ssl-certificates)
   - [Verify Certificate and Key](#verify-certificate-and-key)
   - [Change or remove passhphrase](#change-or-remove-passhphrase)
@@ -22,29 +21,47 @@ titleshort: ssl
   - [Extract Certificate from P7B file](#extract-certificate-from-p7b-file)
 - [References](#references)
 
-## Create SSL Certificate
-### Create a Root CA
-
-```bash
-## create CA key
-## remove the -des3 option for non-password protected key 
-openssl genrsa -des3 -out myserver-CA.key  4096
-
-## self-sign CA Certificate
-openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 1024 -out myserver-CA.pem
-```
-
-### Create Server Key, CSR and Certificate
+## Create a Root CA
 
 ```shell
-## Create a new SSL Key for server/app
-openssl genrsa -out myserver.key 2048
+$ mkdir RootCA && cd RootCA
+
+# Create RootCA Key
+$ openssl genrsa -des3 -out rootCA.key 4096
 ```
 
-Generate Certificate Signing Request and Key only
+Remove the `-des3` option for non-password protected key.
+
+The -des3 option specifies how the private key is encrypted with a password. Without a cipher option, the private key is not encrypted, and no password is required.
+
+Note: Optionally you can create the RootCA.csr and sign it.
+```shell
+$ openssl req -new -key ca.key -subj "/CN=MYROOT-CA" -out rootCA.csr
+$ openssl x509 -req -in rootCA.csr -signkey rootCA.key -out rootCA.crt
+```
 
 ```shell
-$ openssl req -newkey rsa:2048 \ 
+# Create self-sign CA Certificate with 10 years validity
+$ openssl req -x509 -new -nodes -key rootCA.key -sha512 -days 3650 -out rootCA.pem
+```
+
+
+## Create Server Key, CSR and Certificate
+
+```shell
+$ cd .. && mkdir SSL_CERTS  && cd SSL_CERTS
+```
+
+Create a new SSL Key for server/application
+
+```shell
+$ openssl genrsa -out myserver.key 4096
+```
+
+Note: Optionally generate Certificate Signing Request and Key only
+
+```shell
+$ openssl req -newkey rsa:2048 \
   -keyout server.key \
   -out server.csr
 ```
@@ -53,16 +70,29 @@ Generate Certificate Signing Request with details as arguments
 
 ```shell
 $ openssl req -new \
-  -subj "/C=US/ST=North Carolina/L=Raleigh/O=Red Hat/CN=todo-https.apps.ocp4.example.com" \
+  -subj "/C=SG/ST=Singapore/L=CBD/O=iamgini/CN=aap.lab.iamgini.com" \
   -key myserver.key \
   -out myserver.csr
 ```
 
-Check and verify certificate details
+Generate `myserver.crt` Certificate using CSR and CA
 
 ```shell
-$ openssl x509 -in server.crt -text -noout
+$ openssl x509 -req \
+  -CA ../RootCA/rootCA.pem \
+  -CAkey ../RootCA/rootCA.key \
+  -CAcreateserial \
+  -in myserver.csr \
+  -out myserver.crt \
+  -days 1825 -sha512
 ```
+
+Verify certificte content
+
+```shell
+$ openssl x509 -in myserver.crt -text -noout
+```
+
 
 Check a PKCS#12 file (.pfx or .p12)
 
@@ -73,14 +103,14 @@ $ openssl pkcs12 -info -in keyStore.p12
 Check and verify Key file
 
 ```shell
-$ openssl rsa -in server.key -check 
+$ openssl rsa -in server.key -check
 ```
 
 Verify CSR content
 
 ```shell
 $ openssl req -in server.csr -noout -text
-$ openssl req -in server.csr -noout -text -verify 
+$ openssl req -in server.csr -noout -text -verify
 ```
 
 ```shell
@@ -151,7 +181,7 @@ $ openssl pkcs12 -in [yourfile.pfx] -nocerts -out [drlive.key]
 $ openssl pkcs7 -inform PEM -outform PEM -in certnew.p7b -print_certs > certificate.cer
 ```
 
+
 ## References
 
 - [OpenSSL Commands](https://pleasantpasswords.com/info/pleasant-password-server/b-server-configuration/3-installing-a-3rd-party-certificate/openssl-commands)
-- 
