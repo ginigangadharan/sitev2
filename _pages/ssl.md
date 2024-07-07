@@ -185,3 +185,35 @@ $ openssl pkcs7 -inform PEM -outform PEM -in certnew.p7b -print_certs > certific
 ## References
 
 - [OpenSSL Commands](https://pleasantpasswords.com/info/pleasant-password-server/b-server-configuration/3-installing-a-3rd-party-certificate/openssl-commands)
+
+
+```shell
+ # openssl genrsa -out pgsql.key 4096
+
+ # vi pgsql_csr.conf
+
+   [req]
+   default_md = sha512
+   prompt = no
+   req_extensions = req_ext
+   distinguished_name = req_distinguished_name
+   [req_distinguished_name]
+   commonName = database.ansible.com
+   countryName = US
+   [req_ext]
+   subjectAltName = @alt_names
+   [alt_names]
+   DNS.0 = database.ansible.com
+   IP.0 = 192.168.7.19
+
+ # openssl req -new -nodes -key pgsql.key -config pgsql_csr.conf -out pgsql.csr
+
+ # openssl x509 -req -in pgsql.csr -days 3650 -CA ~/RootCA/rootCA.pem -CAkey ~/RootCA/rootCA.key -CAcreateserial -extensions req_ext -out pgsql.crt -extfile pgsql_csr.conf
+
+  please transfer the rootCA.pem to the Controller node
+
+ # cp rootCA.pem /etc/pki/ca-trust/source/anchors/
+ # restorecon -Rv /etc/pki/ca-trust/source/anchors/
+ # update-ca-trust
+
+```

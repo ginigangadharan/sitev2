@@ -161,7 +161,7 @@ Note: You can download either installation package or bundled package (for disco
 Note:
 - Download the old versions of Ansible Tower - [setup](https://releases.ansible.com/ansible-tower/setup/), [bundle](https://releases.ansible.com/ansible-tower/setup-bundle/) or [OpenShift installer](https://releases.ansible.com/ansible-tower/setup_openshift/).
 
-1. Extract the content
+2. Extract the content
 
 ```shell
 $ tar xvzf ansible-tower-setup-latest.tar.gz
