@@ -63,6 +63,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
 - [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
 - [Ansible](#ansible)
+- [Utilities and References](#utilities-and-references)
 
 ## Ansible - Frequently Asked Questions
 
@@ -550,3 +551,8 @@ $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=ex
   }
 }
 ```
+
+## Utilities and References
+
+- [Janus](https://github.com/ansible-middleware/janus) - The project ansible-middleware/janus holds a set of playbooks used to transform upstream collection (such as ansible-middleware/wildfly) to downstream collection (redhat/eap) using [FQCN migration|https://github.com/ansible-collections/community.fqcn_migration]. Please refers to this project for more information.
+- [community.fqcn_migration](https://github.com/ansible-collections/community.fqcn_migration) - This project, called fqcn_migration, is a set of Ansible roles designed to rename a collection and even changed its namespace.
