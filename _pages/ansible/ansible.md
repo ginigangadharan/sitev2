@@ -63,6 +63,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
 - [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
 - [Ansible](#ansible)
+- [Best practices](#best-practices)
 - [Utilities and References](#utilities-and-references)
 
 ## Ansible - Frequently Asked Questions
@@ -551,6 +552,10 @@ $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=ex
   }
 }
 ```
+
+## Best practices
+
+- [Performance tuning for automation controller](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/assembly-controller-improving-performance)
 
 ## Utilities and References
 
