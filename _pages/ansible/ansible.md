@@ -62,7 +62,7 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Ansible for IBM Power](#ansible-for-ibm-power)
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
 - [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
-- [Ansible](#ansible)
+- [Ansible AD/LDAP Integration](#ansible-adldap-integration)
 - [Best practices](#best-practices)
 - [Utilities and References](#utilities-and-references)
 
@@ -513,7 +513,7 @@ Ansible 2.5 and above work with Python 3.
 ## Ansible for CIS Hardening/CIS Check
 - [DevSec Hardening Framework](https://github.com/dev-sec) / [devops + security - Server Hardening Automation](https://dev-sec.io/)
 
-## Ansible
+## Ansible AD/LDAP Integration
 
 
 ```shell
