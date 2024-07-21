@@ -357,7 +357,8 @@ $ minikube start \
   --cni calico \
   --cpus=2 \
   --memory=2g \
-  --kubernetes-version=v1.30.0
+  --kubernetes-version=v1.30.0 \
+  --container-runtime=containerd
 
 $ kubectl get nodes
 NAME           STATUS   ROLES           AGE     VERSION
