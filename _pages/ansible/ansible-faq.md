@@ -49,6 +49,10 @@ titleshort: Ansible FAQ
 
 ## Ansible - Frequently Asked Questions
 
+**Disclaimer:**
+
+This FAQ is a compilation of questions and answers gathered from various discussions. It also incorporates information from the [official Ansible FAQ](https://www.ansible.com/faq/). The answers are provided to the best of our ability based on currently available information. While we strive for accuracy, there's always a chance for improvement. If you have any further questions, discover an inaccuracy, or have additional topics you'd like covered, please don't hesitate to reach out to [gini@iamgini.com](mailto:gini@iamgini.com).
+
 ### What is Ansible?
 
 Ansible is an open-source automation tool used for configuration management, application deployment, orchestration, and task automation. It uses human-readable YAML templates to describe automation jobs, making it easy for anyone to understand and write Ansible playbooks.
