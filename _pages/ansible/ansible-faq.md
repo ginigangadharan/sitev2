@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Ansible - Frequently Asked Questions
-# 1. author: gini
-categories: [ cloud ]
-# 2. image: "assets/images/gini-redhat-cloudevent-2019-2.jpg"
-tags: [cloud, automation, containers, kubernetes]
-show-avatar: false
+# author: gini
+categories: [ Ansible, Automation ]
+image: "assets/images/2020/ansible-automation.png"
+tags: [ aap, cloud, automation, containers, kubernetes, ansible automation platform, red hat ansible]
+# show-avatar: false
 permalink: ansible-faq
 featured: false
 hidden: false
-titleshort: AWX
+titleshort: Ansible FAQ
 ---
 
 - [Ansible - Frequently Asked Questions](#ansible---frequently-asked-questions)
