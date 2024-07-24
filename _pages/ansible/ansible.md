@@ -14,24 +14,16 @@ titleshort: Ansible
 
 - [Ansible for Absolute Beginners - 30 Days of Ansible](techbeatly.com/ansible-course){:target="_blank"} (YouTube)
 - [Ansible Real Life Scenarios](techbeatly.com/ansible-real-life){:target="_blank"} (YouTube)
-
-### Ansible Guides
-
-**[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/){:target="_blank"}**
-
-You have hundreds and thousands of online documentation and wiki pages for learning Ansible, and this is my attempt to cover Ansible in a simple and beginner level approach. Access all chapters on **[techbeatly.com](https://www.techbeatly.com/ansible/){:target="_blank"}**.
-
+- **[Automation with Ansible – All You Want to Learn](https://www.techbeatly.com/ansible/){:target="_blank"}**
+- **[techbeatly.com](https://www.techbeatly.com/ansible/){:target="_blank"}**.
 - [ANSIBLE LEARNFEST GUIDE](https://ansible-learnfest.github.io/)
   - Track 1 “Ansible Automation Platform Administrator”
   - Track 2 “Automation Content Developer”
-
-
+- [Ansible - Frequently Asked Questions](ansible-faq)
 
 **Table of Contents**
 
 - [Ansible for Absolute Beginners](#ansible-for-absolute-beginners)
-  - [Ansible Guides](#ansible-guides)
-- [Ansible - Frequently Asked Questions](#ansible---frequently-asked-questions)
 - [Ansible Automation Platform (Formerly Ansible Tower)](#ansible-automation-platform-formerly-ansible-tower)
   - [Ansible Automation Platform - Containerized Setup](#ansible-automation-platform---containerized-setup)
   - [Removing instance from cluster](#removing-instance-from-cluster)
@@ -66,19 +58,8 @@ You have hundreds and thousands of online documentation and wiki pages for learn
 - [Best practices](#best-practices)
 - [Utilities and References](#utilities-and-references)
 
-## Ansible - Frequently Asked Questions
 
-1.	What is Ansible?
-2.	What is IaC?
-3.	What can Ansible do?
-4.	What are the advantages of Ansible?
-5.	How does Ansible work?
-6.	What is a Playbook?
-7.	Are there any requirements for using Ansible?
-8.	What is DevOps?
-9.	How does Ansible fit into DevOps?
-10.	Who is Ansible for? Who should learn Ansible?
-11.	What are prerequisites to learning Ansible?s
+
 
 ## Ansible Automation Platform (Formerly Ansible Tower)
 
