@@ -25,10 +25,11 @@ titleshort: Ansible Network
   - [Change config](#change-config)
   - [Add VLAN nxos](#add-vlan-nxos)
   - [Add ACL (Access Control List)](#add-acl-access-control-list)
-  - [Add config iso_config](#add-config-iso_config)
+  - [Add config iso\_config](#add-config-iso_config)
   - [Resources](#resources)
   - [Appendix](#appendix)
     - [Download IOS Images](#download-ios-images)
+  - [Reference Repos](#reference-repos)
 
 <!-- /TOC -->
 
@@ -47,7 +48,7 @@ Read : [How Network Automation is Different](https://docs.ansible.com/ansible/la
 - [Using Ansible to Mitigate Network Vulnerabilities](https://www.ansible.com/blog/using-ansible-to-mitigate-network-vulnerabilities)
 
 
-# Privilege Escalation for Network Devices in Ansible 
+# Privilege Escalation for Network Devices in Ansible
 
 Sample environment variable
 
@@ -124,7 +125,7 @@ This role provides the foundation for building network roles by providing module
 This role is designed to provide a network platform agnostic approach to managing the active (running) configuration file on a remote device. This role requires one (or more) platform provider roles to execute properly.
 [Galaxy](https://galaxy.ansible.com/ansible-network/config_manager)
 
-Install roles 
+Install roles
 
 ```
 ansible-galaxy install ansible-network.cisco_ios
@@ -170,9 +171,9 @@ ansible-galaxy install ansible-network.network_engine,v2.7.0 --force
      - y
      - y
 
-  # To make sure the current connection to the network device 
-  # is closed so that the socket can be reestablished to the network 
-  # device after the reboot takes place. 
+  # To make sure the current connection to the network device
+  # is closed so that the socket can be reestablished to the network
+  # device after the reboot takes place.
 - name: reset the connection
   meta: reset_connection
 
@@ -197,7 +198,7 @@ Backup configuration
     - name: BACKUP CONFIG
       eos_config:
         backup: yes
-```        
+```
 
 Backup using `cli_command`
 
@@ -220,7 +221,7 @@ Backup using `cli_command`
       copy:
         content: "{{backup.stdout}}"
         dest: "{{inventory_hostname}}.backup"
-```        
+```
 
 ## Change config
 
@@ -255,7 +256,7 @@ ntp_commands: ntp server 192.168.1.1
       cli_command:
         command: "{{show_interfaces}}"
       register: command_output
-```        
+```
 
 ## Add VLAN nxos
 
@@ -264,7 +265,7 @@ ntp_commands: ntp server 192.168.1.1
 - name: deploy vlans
   hosts: cisco
   gather_facts: no
-  
+
   tasks:
     - name: ensure vlans exist
       nxos_vlan:
@@ -291,7 +292,7 @@ https://dodgydudes.se/ansible-net104/
         lines:
           - snmp-server community ansible-public RO
           - snmp-server community ansible-private RW
-``` 
+```
 
 ## Resources
 
@@ -302,7 +303,7 @@ https://dodgydudes.se/ansible-net104/
 
 - DEVNET developer.cisco.com -> https://developer.cisco.com/site/sandbox/ -> https://devnetsandbox.cisco.com/
 
-eg:  IOS XE on CSR Latest Code Always On 
+eg:  IOS XE on CSR Latest Code Always On
 https://devnetsandbox.cisco.com/RM/Diagram/Index/38ded1f0-16ce-43f2-8df5-43a40ebf752e?diagramType=Topology
 
 add variables
@@ -317,3 +318,9 @@ ansible_port=8181 #if diff port
 ### Download IOS Images
 - [Where do I get IOS images?](https://docs.gns3.com/1vJwh4_whwtfjb8pQ8vKekcWrA1galIqA1eHgeClOsPY/index.html)
 - Virl.cisco.com
+
+## Reference Repos
+
+- https://github.com/nleiva/ansible-networking
+- https://github.com/zjleblanc/ansible-network-mgmt/tree/master
+- https://github.com/zjleblanc/ansible-cisco-demos
