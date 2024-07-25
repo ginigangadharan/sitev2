@@ -134,8 +134,9 @@ Update required repo for AAP 2.1
 
 1. Download the latest Ansible Automation Platform Installation Program
 
-- Option A: From [access.redhat.com/downloads](https://access.redhat.com/downloads/content/480?extIdCarryOver=true&intcmp=7013a000002CtetAAC&sc_cid=701f2000001OH6uAAG)
-- Option B: from [releases.ansible.com](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz).
+- Option A: From [access.redhat.com/downloads](https://access.redhat.com/downloads/content/480)(Note, you must have a Red Hat customer account to access the downloads)
+- Option B: From [releases.ansible.com](https://releases.ansible.com/ansible-tower/setup/).
+- Option C: From [developers.redhat.com](https://developers.redhat.com/products/ansible/download?source=sso)
 
 Refer to [Download the Ansible Automation Platform Installation Program](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/download_tower.html) for more details.
 
@@ -144,7 +145,7 @@ Note: You can download either installation package or bundled package (for disco
 Note:
 - Download the old versions of Ansible Tower - [setup](https://releases.ansible.com/ansible-tower/setup/), [bundle](https://releases.ansible.com/ansible-tower/setup-bundle/) or [OpenShift installer](https://releases.ansible.com/ansible-tower/setup_openshift/).
 
-2. Extract the content
+1. Extract the content
 
 ```shell
 $ tar xvzf ansible-tower-setup-latest.tar.gz
