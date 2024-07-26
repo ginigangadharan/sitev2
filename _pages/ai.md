@@ -164,6 +164,12 @@ Now we can ask questions here.
 >>>                                                                                           [S][default]
 ```
 
+Exit from the chat prompt.
+
+```shell
+>>> exit
+```
+
 
 ## Glossary
 
