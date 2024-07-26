@@ -2,7 +2,7 @@
 layout: postpage
 title: Artificial Intelligence (AI) - Learning and Development
 categories: [ AI, Automation, ML ]
-image: "assets/images/2024/igor-omilaev-eGGFZ5X2LnA-unsplash.jpg"
+image: "assets/images/2024/igor-omilaev-eGGFZ5X2LnA-unsplash-ai.jpg"
 tags: [ ai, ml, mlops, chatgpt, instructlab, openshift, podman ai]
 permalink: ai
 featured: false
