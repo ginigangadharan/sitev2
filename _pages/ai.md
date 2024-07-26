@@ -34,6 +34,7 @@ titleshort: Artificial Intelligence
   - [Installing InstructLab](#installing-instructlab)
   - [Initialize `ilab`](#initialize-ilab)
   - [Download a Model](#download-a-model)
+  - [Serving model](#serving-model)
 - [Glossary](#glossary)
 - [Some facts](#some-facts)
 - [References](#references)
@@ -111,6 +112,56 @@ Initialization completed successfully, you're ready to start using `ilab`. Enjoy
 
 ```shell
 $ ilab download --repository instructlab/granite-7b-lab-GGUF --filename=granite-7b-lab-Q4_K_M.gguf
+
+$ ls models/
+granite-7b-lab-Q4_K_M.gguf
+```
+
+### Serving model
+
+With the model downloaded, we're ready to serve it. Serving means setting up a system that allows other programs to interact with the model. It's like creating an API where other applications can send requests and receive responses.
+
+```shell
+$ ilab serve --model-path models/granite-7b-lab-Q4_K_M.gguf
+INFO 2024-07-26 13:12:46,897 lab.py:340 Using model 'models/granite-7b-lab-Q4_K_M.gguf' with -1 gpu-layers and 4096 max context size.
+INFO 2024-07-26 13:12:48,483 server.py:206 Starting server process, press CTRL+C to shutdown server...
+INFO 2024-07-26 13:12:48,483 server.py:207 After application startup complete see http://127.0.0.1:8000/docs for API.
+```
+
+Now the model is serving and waiting for any request.
+
+You can test the model by starting `ilab model chat` (or `ilab chat`) in another terminal as follows.
+
+Activate Python venv
+
+```shell
+$ cd ~/aienv/
+$ source bin/activate
+(aienv)
+```
+
+Goto the InstructLab directory (or use absoluate path)
+
+```shell
+$ cd ~/workarea/ilab/
+
+$ ilab chat -m models/granite-7b-lab-Q4_K_M.gguf
+╭──────────────────────────────────────────────── system ────────────────────────────────────────────────╮
+│ Welcome to InstructLab Chat w/ MODELS/GRANITE-7B-LAB-Q4_K_M.GGUF (type /h for help)                    │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+>>>                                                                                           [S][default]
+```
+
+Now we can ask questions here.
+
+```shell
+>>> what is a container in 20 words?                                                          [S][default]
+╭────────────────────────────────── models/granite-7b-lab-Q4_K_M.gguf ───────────────────────────────────╮
+│ A container is a lightweight, portable, and executable software package containing code, libraries,    │
+│ dependencies, and system tools. It offers consistent, efficient, scalable, and isolated application    │
+│ deployment across various environments.                                                                │
+╰─────────────────────────────────────────────────────────────────────────────── elapsed 13.398 seconds ─╯
+>>>                                                                                           [S][default]
 ```
 
 
