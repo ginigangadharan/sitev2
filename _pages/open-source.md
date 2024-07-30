@@ -39,7 +39,7 @@ Open source refers to software where the source code is freely available for any
 | [Red Hat AMQ](https://www.redhat.com/en/technologies/jboss-middleware/amq) | [ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) | The Next Generation Message Broker by ActiveMQ
 | [Red Hat AMQ Streams](https://access.redhat.com/products/red-hat-amq-streams) | [Apache Kafka](https://kafka.apache.org/) | Distributed event streaming platform
 | [Red Hat build of Apache Camel 4.0](https://access.redhat.com/documentation/en-us/red_hat_build_of_apache_camel/4.0?overridden_route_name=red_hat_documentation.product_page&base_route_name=red_hat_documentation.product_page&page_manager_page=product_page&page_manager_page_variant=product_page-panels_variant-0&page_manager_page_variant_weight=0) | [Apache Camel](https://camel.apache.org/) |
-
+| [Red Hat OpenShift AI](https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-ai) | [Open Data Hub](https://opendatahub.io/) |
 
 **Resources**
 

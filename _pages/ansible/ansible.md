@@ -385,7 +385,7 @@ $ openssl req -noout -modulus -in <file>.csr | openssl md5
 
 - [On-Prem Ansible Automation Platform Patching Procedure - OS Packages Update & AAP Packages Update](https://access.redhat.com/solutions/7034370)
 - [Frequently Asked Questions (FAQs) on OS Patching for Ansible Automation Platform 2.3 and later](https://access.redhat.com/articles/7050473)
-- [Migrating Red Hat Ansible Automation Platform to Ansible Automation Platform Operator](https://access.redhat.com/documentation/en-us/red_hat_ansible_automation_platform/2.4/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/aap-migration)
+- [Migrating Red Hat Ansible Automation Platform to Ansible Automation Platform Operator](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/aap-migration)
 
 
 ## Ansible Automation Hub
