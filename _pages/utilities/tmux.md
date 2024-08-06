@@ -2,7 +2,7 @@
 layout: post
 title: tmux cheatsheet
 categories: [ Utilities ]
-#image: "assets/images/2020/ansible-automation.png"
+image: "assets/images/2024/tmux.png"
 tags: [ tmux, screen ]
 permalink: tmux
 featured: false
@@ -28,7 +28,7 @@ Ctrl + B D                    # detach a session
 Ctrl + B S                    # list tmux sessions
 Ctrl + B $                    # rename tmux session
 $ tmux ls                     # list tmux sessions
-$ tmux attach-session -t test 
+$ tmux attach-session -t test
                               # attach an existing session
 
 
@@ -38,7 +38,7 @@ Ctrl + B and Up, Down, Left, or Right Arrow
                               # move between splitted screens
 Ctrl + B Q                    # flash the screen number
 
-Ctrl-b + [                    # use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). 
+Ctrl-b + [                    # use your normal navigation keys to scroll around (eg. Up Arrow or PgDn).
                               # Press q to quit scroll mode.
 
 $ tmux kill-server            # reset tmux
