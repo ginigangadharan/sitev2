@@ -41,6 +41,10 @@ titleshort: Ansible FAQ
   - [Does Red Hat’s Open Source Assurance Program apply to AWX?](#does-red-hats-open-source-assurance-program-apply-to-awx)
   - [What is Red Hat Ansible Inside (RHAI)](#what-is-red-hat-ansible-inside-rhai)
   - [What is Private Partner Automation Hub (PPAH)](#what-is-private-partner-automation-hub-ppah)
+  - [Ansible Development Tools (ADT)](#ansible-development-tools-adt)
+  - [Ansible-Creator](#ansible-creator)
+  - [ansible-navigator](#ansible-navigator)
+  - [Execution Environments](#execution-environments)
 - [AAP on OpenShift](#aap-on-openshift)
   - [What are user\_id will be created in each server/container . (Ex- In controller , hub , db and execution node )](#what-are-user_id-will-be-created-in-each-servercontainer--ex--in-controller--hub--db-and-execution-node-)
   - [What are file system and directory will be created/needed in each AAP component(server/container).](#what-are-file-system-and-directory-will-be-createdneeded-in-each-aap-componentservercontainer)
@@ -191,6 +195,37 @@ No, it does not.
 ### What is Private Partner Automation Hub (PPAH)
 
 The [**Private Partner Automation Hub**](https://connect.redhat.com/en/blog/private-partner-automation-hub) offering enables partners to protect their investment in Ansible automation, giving them a platform to be able to serve up their property with greater security and scalability capabilities. Using the Private Partner Automation Hub offering, the partner has the tools to curate their content and serve it to their target audience  of Red Hat Ansible customers.
+
+### Ansible Development Tools (ADT)
+
+[Ansible Development Tools](https://ansible.readthedocs.io/projects/dev-tools/) or ADT for short, aims to streamline the setup and usage of several tools needed to create Ansible content. When it comes to creating automation content using Ansible, there are several packages available that can help users in different parts of the content-creating journey. From bootstrapping new projects, all the way to ensuring content follows best practices and verifying it behaves as intended via well-established test frameworks.
+
+**Included Packages**
+
+- ansible-builder: Ansible Builder automates the process of building execution environments using the schemas and tooling defined in various Ansible Collections and by the user.
+- ansible-core: Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems.
+- ansible-creator: The fastest way to generate all your ansible content!
+- ansible-dev-environment: A pip-like install for Ansible collections.
+- ansible-lint: Checks playbooks for practices and behavior that could potentially be improved.
+- ansible-navigator A text-based user interface (TUI) for Ansible.
+- ansible-sign: Utility for signing and verifying Ansible project directory contents.
+- molecule: Molecule aids in the development and testing of Ansible content: collections, playbooks and roles
+- pytest-ansible: A pytest plugin that enables the use of ansible in tests, enables the use of pytest as a collection unit test runner, and exposes molecule scenarios using a pytest fixture.
+- tox-ansible: The tox-ansible plugin dynamically creates a full matrix of python interpreter and ansible-core version environments for running integration, sanity, and unit for an ansible collection both locally and in a Github action. tox virtual environments are leveraged for collection building, collection installation, dependency installation, and testing.
+
+### Ansible-Creator
+
+The [`ansible-creator`](https://ansible.readthedocs.io/projects/creator/) is a Command-Line Interface (CLI) tool designed for effortlessly scaffolding all your Ansible content. Whether you are initializing an Ansible Collection or creating the framework for specific plugins, this tool streamlines the process with efficiency and precision based on your requirements.
+
+### ansible-navigator
+
+[`ansible-navigator`](https://ansible.readthedocs.io/projects/navigator/) is a command-line tool and a text-based user interface (TUI) for creating, reviewing, running and troubleshooting Ansible content, including inventories, playbooks, collections, documentation and container images (execution environments).
+
+### Execution Environments
+
+You can run Ansible automation in containers, like any other modern software application. Ansible uses container images known as [Execution Environments](https://ansible.readthedocs.io/en/latest/getting_started_ee/index.html) (EE) that act as control nodes.
+
+
 
 ## AAP on OpenShift
 

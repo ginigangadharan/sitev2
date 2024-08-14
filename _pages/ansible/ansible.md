@@ -40,7 +40,9 @@ titleshort: Ansible
   - [Ansible Tower with database SSL connection enabled](#ansible-tower-with-database-ssl-connection-enabled)
   - [Troubleshooting](#troubleshooting)
   - [References](#references)
+- [Red Hat Ansible Automation Platform Hardening Guide](#red-hat-ansible-automation-platform-hardening-guide)
 - [Migrating, Updating and Upgrading AAP](#migrating-updating-and-upgrading-aap)
+- [Tools](#tools)
 - [Ansible Automation Hub](#ansible-automation-hub)
 - [Ansible Playbook References](#ansible-playbook-references)
 - [Tools for Ansible](#tools-for-ansible)
@@ -57,8 +59,6 @@ titleshort: Ansible
 - [Ansible AD/LDAP Integration](#ansible-adldap-integration)
 - [Best practices](#best-practices)
 - [Utilities and References](#utilities-and-references)
-
-
 
 
 ## Ansible Automation Platform (Formerly Ansible Tower)
@@ -381,12 +381,21 @@ $ openssl req -noout -modulus -in <file>.csr | openssl md5
 - [Tower - Previous versions](https://docs.ansible.com/automation-tower-prior-versions.html)
 - [Guidelines, Troubleshooting, and Recommended Configurations for Ansible Tower](https://access.redhat.com/articles/3344101)
 
+## Red Hat Ansible Automation Platform Hardening Guide
+
+- [Red Hat Ansible Automation Platform hardening guide](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_hardening_guide/index)(Doc)
+- [Red Hat Ansible Automation Platform Hardening Guide](https://access.redhat.com/articles/7025278)
+
 ## Migrating, Updating and Upgrading AAP
 
 - [On-Prem Ansible Automation Platform Patching Procedure - OS Packages Update & AAP Packages Update](https://access.redhat.com/solutions/7034370)
 - [Frequently Asked Questions (FAQs) on OS Patching for Ansible Automation Platform 2.3 and later](https://access.redhat.com/articles/7050473)
 - [Migrating Red Hat Ansible Automation Platform to Ansible Automation Platform Operator](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/aap-migration)
 
+## Tools
+
+- [Ansible Automation Platform Inventory File Generator](https://access.redhat.com/labsinfo/aapifg)
+- [Ansible Automation Platform Upgrade Assistant](https://access.redhat.com/labs/aapua/)
 
 ## Ansible Automation Hub
 
@@ -496,7 +505,6 @@ Ansible 2.5 and above work with Python 3.
 - [DevSec Hardening Framework](https://github.com/dev-sec) / [devops + security - Server Hardening Automation](https://dev-sec.io/)
 
 ## Ansible AD/LDAP Integration
-
 
 ```shell
 $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -b "dc=example,dc=com" -w yourbindpassword
