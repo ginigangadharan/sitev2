@@ -35,18 +35,18 @@ This is the upstream file for the Docker Cheat Sheet in [techbeatly](https://www
 
 ## Essential Docker Registry Commands
 
-```
+```shell
 docker login -u USER_NAME -p TOKEN REGISTRY_URL
-                                # before we push images, we need to 
+                                # before we push images, we need to
                                   login to docker registry.
-                                  
+
 docker login -u developer -p ${TOKEN} \
-  docker-registry-default.apps.lab.example.com                                
+  docker-registry-default.apps.lab.example.com
                                 # TOKEN can be get as TOKEN=$(oc whoami)
-                                
+
 docker images --no-trunc --format '{{.ID}} {{.CreatedSince}}' --filter "dangling=true" --filter "before=IMAGE_ID"
-                                # list image with format and 
-                                # using multiple filters                                
+                                # list image with format and
+                                # using multiple filters
 ```
 
 ### Private Docker Registry and Access
@@ -62,7 +62,7 @@ Then specify the image pull secret under the `imagePullSecrets` of pod/deploymen
 ```
     imagePullSecrets:
     - name: private-docker-cred
-```        
+```
 
 ## Docker Commands
 
@@ -98,8 +98,8 @@ docker exec -ti [CONTAINER] [command]
 docker run -ti — image [IMAGE] [CONTAINER] [command]
                                 # Create and start a container at the same time, and then run a command inside it.
 docker run -ti — rm — image [IMAGE] [CONTAINER] [command]
-                                # Create and start a container at the same time, 
-                                # run a command inside it, and then remove the container 
+                                # Create and start a container at the same time,
+                                # run a command inside it, and then remove the container
                                 # after executing the command.
 docker pause [CONTAINER]        # Pause all processes running within a particular container.
 ```
@@ -130,7 +130,7 @@ FROM -  to set the base image
 RUN - to execute a command
 COPY & ADD  - to copy files from host to the container
 CMD - to set the default command to execute when the container starts
-EXPOSE - to expose an application port 
+EXPOSE - to expose an application port
 
 ## Advanced Dockerfile Instructions
 
@@ -148,39 +148,39 @@ RUN yum --disablerepo=* --enablerepo="rhel-7-server-rpms" && \
     yum update && \
     yum install -y httpd && \
     yum clean all -y
-```    
+```
 
 ### The LABEL Instruction
 
-- `LABEL` - defines image metadata as key-value pair.   
+- `LABEL` - defines image metadata as key-value pair.
   OpenShift supported labels
   - io.openshift.tags
   - io.k8s.description
   - io.openshift.expose-services
-  - 
+  -
   ```
   LABEL version="2.0" \
       description="This is an example container image" \
       creationDate="01-09-2017"
   ```
 
-### The WORKDIR Instruction 
+### The WORKDIR Instruction
 - `WORKDIR` - set the working directory for any following `RUN`, `CMD`, `ENTRYPOINT`, `COPY`, `ADD` instructions. Recommended to use absolute path.
-  
+
 ### The ENV Instruction
 - `ENV` - defines the environment variables inside the container.
   - use `env` command to list environment variables inside a container.
-  
+
   ```
   ENV MYSQL_DATABASE_USER="my_database_user" \
     MYSQL_DATABASE="my_database"
   ```
 
-### The USER Instruction  
+### The USER Instruction
 - `USER` - run image as a specific user (recommended to run as non-root user). OpenShift will ignore the `USER` instruction and will use a random userid other than root (0).
 
 ###  The VOLUME Instruction
-- `VOLUME` - crate a mount point inside the container and keep the data persistent. 
+- `VOLUME` - crate a mount point inside the container and keep the data persistent.
 
 ## Building Images with the ONBUILD Instruction
 
