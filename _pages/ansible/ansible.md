@@ -134,16 +134,14 @@ Update required repo for AAP 2.1
 
 1. Download the latest Ansible Automation Platform Installation Program
 
+Download Options:
+
 - Option A: From [access.redhat.com/downloads](https://access.redhat.com/downloads/content/480)(Note, you must have a Red Hat customer account to access the downloads)
 - Option B: From [releases.ansible.com](https://releases.ansible.com/ansible-tower/setup/).
 - Option C: From [developers.redhat.com](https://developers.redhat.com/products/ansible/download?source=sso)
-
-Refer to [Download the Ansible Automation Platform Installation Program](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/download_tower.html) for more details.
-
-Note: You can download either installation package or bundled package (for disconnected setup).
-
-Note:
-- Download the old versions of Ansible Tower - [setup](https://releases.ansible.com/ansible-tower/setup/), [bundle](https://releases.ansible.com/ansible-tower/setup-bundle/) or [OpenShift installer](https://releases.ansible.com/ansible-tower/setup_openshift/).
+- Download the old versions of Ansible Tower - [setup](https://releases.ansible.com/ansible-tower/setup/) | [bundle](https://releases.ansible.com/ansible-tower/setup-bundle/) | [OpenShift installer](https://releases.ansible.com/ansible-tower/setup_openshift/) - For migration activities.
+- [AAP Nightly Builds](http://nightlies.testing.ansible.com/ansible-tower_nightlies_m8u16fz56qr6q7/released/2.4/setup-bundle/x86_64/)
+- [aap-containerized-nightlies](http://nightlies.testing.ansible.com/aap-containerized-installer_o145Sdsti5fcoUJi/)
 
 1. Extract the content
 
