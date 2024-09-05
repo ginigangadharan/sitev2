@@ -33,6 +33,7 @@ titleshort: Ansible
     - [Get Registry Credential](#get-registry-credential)
     - [Configure Ansible Automation Platform Installation Inventory](#configure-ansible-automation-platform-installation-inventory)
     - [Run Setup Script](#run-setup-script)
+  - [Disaster Recovery for the Ansible Automation Platform](#disaster-recovery-for-the-ansible-automation-platform)
   - [Ansible Tower HA and DR](#ansible-tower-ha-and-dr)
     - [Verify Streaming Replication\*\*](#verify-streaming-replication)
     - [Ansible Tower HA Failover](#ansible-tower-ha-failover)
@@ -191,6 +192,14 @@ $ ansible_user=root ansible_ssh_private_key_file=”path_to_your_keyfile.pem” 
 # or
 $ ANSIBLE_BECOME_METHOD=’sudo’ ANSIBLE_BECOME=True ./setup.sh
 ```
+
+### Disaster Recovery for the Ansible Automation Platform
+
+Please note DR and High Availability (“HA”) are not currently supported. Current Ansible Automation Platform customers are needing to configure their DR instances to accurately reflect their node usage and need guidance based on changes due to manifest files. This can be for cold, warm, or hot DR/HA. This article regards how manifests are handled in DR and HA environments.
+
+Refer to the [documentation](https://access.redhat.com/articles/6967148).
+
+
 ### Ansible Tower HA and DR
 
 _(TODO)_
