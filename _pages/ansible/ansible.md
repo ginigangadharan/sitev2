@@ -41,6 +41,7 @@ titleshort: Ansible
   - [Ansible Tower with database SSL connection enabled](#ansible-tower-with-database-ssl-connection-enabled)
   - [Troubleshooting](#troubleshooting)
   - [References](#references)
+- [Ansible on Clouds](#ansible-on-clouds)
 - [Red Hat Ansible Automation Platform Hardening Guide](#red-hat-ansible-automation-platform-hardening-guide)
 - [Migrating, Updating and Upgrading AAP](#migrating-updating-and-upgrading-aap)
 - [Tools](#tools)
@@ -387,6 +388,11 @@ $ openssl req -noout -modulus -in <file>.csr | openssl md5
 - [Ansible Automation Platform Installation and Reference Guide v3.8.0](https://docs.ansible.com/ansible-tower/latest/html/installandreference/index.html)
 - [Tower - Previous versions](https://docs.ansible.com/automation-tower-prior-versions.html)
 - [Guidelines, Troubleshooting, and Recommended Configurations for Ansible Tower](https://access.redhat.com/articles/3344101)
+
+## Ansible on Clouds
+
+- [Ansible Automation Platform - Cloud Deployments](https://docs.redhat.com/en/documentation/ansible_on_clouds/2.4)
+- [Ansible on Azure Articles](https://access.redhat.com/articles/6983528)
 
 ## Red Hat Ansible Automation Platform Hardening Guide
 
