@@ -27,7 +27,6 @@ titleshort: Artificial Intelligence
 - [Some facts](#some-facts)
 - [References](#references)
 
-
 ## Introduction - AI, ML, DL, and Gen AI
 
 - **Artificial Intelligence (AI)**: The broader field of creating intelligent agents, aiming to mimic human intelligence.

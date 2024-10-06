@@ -44,7 +44,6 @@ titleshort: Ansible
 - [Ansible on Clouds](#ansible-on-clouds)
 - [Red Hat Ansible Automation Platform Hardening Guide](#red-hat-ansible-automation-platform-hardening-guide)
 - [Migrating, Updating and Upgrading AAP](#migrating-updating-and-upgrading-aap)
-- [Tools](#tools)
 - [Ansible Automation Hub](#ansible-automation-hub)
 - [Ansible Playbook References](#ansible-playbook-references)
 - [Tools for Ansible](#tools-for-ansible)
@@ -405,10 +404,6 @@ $ openssl req -noout -modulus -in <file>.csr | openssl md5
 - [Frequently Asked Questions (FAQs) on OS Patching for Ansible Automation Platform 2.3 and later](https://access.redhat.com/articles/7050473)
 - [Migrating Red Hat Ansible Automation Platform to Ansible Automation Platform Operator](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/deploying_the_red_hat_ansible_automation_platform_operator_on_openshift_container_platform/aap-migration)
 
-## Tools
-
-- [Ansible Automation Platform Inventory File Generator](https://access.redhat.com/labsinfo/aapifg)
-- [Ansible Automation Platform Upgrade Assistant](https://access.redhat.com/labs/aapua/)
 
 ## Ansible Automation Hub
 
@@ -427,7 +422,10 @@ $ openssl req -noout -modulus -in <file>.csr | openssl md5
 
 ## Tools for Ansible
 
+- [Ansible Automation Platform Inventory File Generator](https://access.redhat.com/labsinfo/aapifg){:target="_blank"}
+- [Ansible Automation Platform Upgrade Assistant](https://access.redhat.com/labs/aapua/){:target="_blank"}
 - [Ansible Silo](https://groupon.github.io/ansible-silo){:target="_blank"}
+- [ansible-risk-insight](https://github.com/ansible/ansible-risk-insight){:target="_blank"}: Ansible Risk Insight (ARI) is the tool to evaluate the quality and risk of the ansible content.
 
 ## Ansible for Network Automation
 
