@@ -11,6 +11,6 @@ featured: false
 hidden: false
 ---
 
-Stop the “Hi” Epidemic: Mastering Technical Questions in Online Communities Have you ever received a one-word message like “Hi” in a group chat or forum?...
+Skip unnecessary introductions like “Hello, how are you?” and get straight to the point by briefly describing your issue and the technology involved. Have you...
 
 Read ["How To Ask Technical Questions"](https://www.techbeatly.com/learn-to-ask/).
