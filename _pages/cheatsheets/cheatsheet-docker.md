@@ -2,7 +2,7 @@
 layout: post
 title: Docker Cheat Sheet
 author: gini
-categories: [ cheatsheets ]
+categories: [ cheat sheets ]
 #image: "assets/images/2020/jon-moore-bBavss4ZQcA-unsplash-locks.jpg"
 tags: [cloud, automation, containers, kubernetes]
 permalink: docker-cheat-sheet

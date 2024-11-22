@@ -2,7 +2,7 @@
 layout: post
 title: Ansible Cheatsheet
 author: gini
-categories: [ cheatsheets ]
+categories: [ cheat sheets ]
 image: "assets/images/2020/jon-moore-bBavss4ZQcA-unsplash-locks.jpg"
 tags: [cloud, automation, containers, kubernetes]
 permalink: cheatsheet-ansible
@@ -14,7 +14,7 @@ titleshort: ansible cheatsheet
 
 # Ansible Cheat Sheet
 
-[Ansible](hhttps://www.techbeatly.com/ansible/) is an open-source IT automation engine which can help you to automate most of your repetitive tasks in your work life. Ansible can also improve the consistency, scalability, reliability and easiness of your IT environment. 
+[Ansible](hhttps://www.techbeatly.com/ansible/) is an open-source IT automation engine which can help you to automate most of your repetitive tasks in your work life. Ansible can also improve the consistency, scalability, reliability and easiness of your IT environment.
 
 Ansible Cheat Sheet for Quick Reference and understanding
 
@@ -40,7 +40,7 @@ Visit [techbeatly.com](http://www.techbeatly.com) for more articles.
 | `with_items` | then “item” inside action |
 | `with_nested` | for nested loops
 | `with_file` | |
-| `with_fileglob` | |  
+| `with_fileglob` | |
 | `with_sequence` | |
 | `with_random_choice` | |
 | `when` | meet a condition |
@@ -188,7 +188,7 @@ https://galaxy.ansible.com
 | `--diff` | will show the expected changes if you run the playbook, but will not do any changes (kind of dry run) |
 | `uri` | module for testing url |
 | `script` | module for running script and return success code |
-| `stat` | module to check the status of files/dir | 
+| `stat` | module to check the status of files/dir |
 | `assert` | check file exist |
 
 *if you find any mistakes, please feel free to update or let me know*

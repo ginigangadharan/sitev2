@@ -2,7 +2,7 @@
 layout: post
 title: AWS CLI Cheatsheet
 author: gini
-categories: [ cheatsheets ]
+categories: [ cheat sheets ]
 image: "assets/images/2020/jon-moore-bBavss4ZQcA-unsplash-locks.jpg"
 tags: [cloud, automation, containers ]
 permalink: cheatsheet-aws
@@ -22,7 +22,7 @@ The AWS Command Line Interface (CLI) is a powerful tool that provides a streamli
 ## Configure AWS CLI
 
 ```shell
-$ aws configure 
+$ aws configure
 ```
 
 ## User Management

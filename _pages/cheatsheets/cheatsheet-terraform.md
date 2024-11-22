@@ -2,7 +2,7 @@
 layout: post
 title: Terraform Cheatsheet
 author: gini
-categories: [ cheatsheets ]
+categories: [ cheat sheets ]
 image: "assets/images/2020/jon-moore-bBavss4ZQcA-unsplash-locks.jpg"
 tags: [cloud, automation, containers, Terraform]
 permalink: cheatsheet-terraform
@@ -44,7 +44,7 @@ $ terraform --version
 Terraform v0.11.10
 Init Terraform
 $ terraform init
-It’s the 
+It’s the
 State
 Pull remote state in a local copy
 $ terraform state pull > terraform.tfstate
