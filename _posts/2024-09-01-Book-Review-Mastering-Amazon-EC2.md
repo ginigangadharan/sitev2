@@ -4,7 +4,7 @@ title: "Book Review: Mastering Amazon EC2"
 author: gini
 categories: [Books,Cloud,DevOps,]
 image: https://www.techbeatly.com/wp-content/uploads/2024/09/book-review-mastering-amazon-ec2-1024x768.jpg
-tags: [books,cloud,devops,learning,amazon ec2 book,aws ec2 book,book review,mastering amazon ec2,mastering amazon ec2 book review,]
+tags: [books,cloud,devops,amazon ec2 book,aws ec2 book,book review,mastering amazon ec2,mastering amazon ec2 book review,]
 ext_url: https://www.techbeatly.com/book-review-mastering-amazon-ec2/
 show-avatar: true
 featured: false
