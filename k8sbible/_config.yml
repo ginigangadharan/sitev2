@@ -1,0 +1,92 @@
+# url: '' #https://y7kim.github.io
+# baseurl: '' # /agency-jekyll-theme/
+url: "https://iamgini.com"
+baseurl: "/k8sbible"
+
+# Site settings
+title: The Kubernetes Bible
+email: gini@iamgini.com
+description: "The definitive guide to deploying and managing Kubernetes across cloud and on-prem environments"
+
+
+# Team names, titles and social links
+people:
+- name: Kay Garland
+  pic: 1
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+- name: Larry Parker
+  pic: 2
+  position: Lead Marketer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Diana Petersen
+  pic: 3
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  # - title: twitter
+  #   url: https://twitter.com/GiniGangadharan
+  #   icon: "fab fa-twitter"
+  #- url: https://facebook.com
+  #  icon: "fab fa-facebook-f"
+
+  - title: linkedin
+    url: https://www.linkedin.com/in/gineesh/
+    icon: "fab fa-linkedin-in"
+  - title: github
+    url: https://github.com/iamgini/
+    icon: "fab fa-github"
+  - title: instagram
+    url: https://www.instagram.com/iamgineesh/
+    icon: "fab fa-instagram"
+  - title: twitter
+    url: https://twitter.com/iamgineesh
+
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
+# FAQs
+faqs:
+  - question: Is there a PDF or soft copy available?
+    answer: Yes, the book is available in paperback (Hard copy or print) and eBook (PDF, Mobi, Kindly) formats.
+  - question: When can I expect to receive my copy of The Kubernetes Bible, Second Edition?
+    answer: The book is scheduled for publication on September 4th, 2024. If you purchase the e-book or PDF version, you'll receive it immediately upon publication on September 4th. For print copies, there will be a short delay for shipping after publication. You'll receive a notification with tracking information once your book is shipped.
+  - question: Can I get my book delivered to India?
+    answer: "Yes, it also depends on from which site you are ordering. Eg: if you are ordering from Amazon, then follow the Amazon delivery availability."
+  - question: Can I learn everything about Kubernetes by reading this book?
+    answer: This book equips you with a strong foundation in core Kubernetes concepts and best practices, covering essential functionalities and strategies for successful container orchestration. However, it's important to remember that Kubernetes is a rapidly evolving platform. New features are constantly being added, while some older ones might be deprecated.
+  - question: "How to access the ebook once I bought it on Packt?"
+    answer: Login to https://subscription.packtpub.com. Click on “My Library” (Right top) and select “Owned”. You will find the eBooks you bought.
+
+reviews:
+  - name: image

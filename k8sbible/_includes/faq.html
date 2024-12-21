@@ -1,0 +1,33 @@
+<!-- About -->
+<section class="page-section" id="{{ site.data.sitetext[site.locale].about.section | default: "about" }}" style="bbackground-color: #eaf9f2;">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading " id="faq">Frequently Asked Questions</h2>
+
+          <div class="team-member-single text-muted" style="text-align: left;"> 
+
+           
+              {% for faq in site.faqs %}
+                <p>
+                <strong>
+                 Q. {{ faq.question }}
+                </strong>
+                 <br>
+                 A. {{ faq.answer }}
+                 </p>
+              {% endfor %}      
+            </div>
+
+
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+
+
+<!-- End About -->
+

@@ -1,0 +1,10 @@
+# frozen_string_literal: true
+source "https://rubygems.org"
+ruby RUBY_VERSION
+
+# gem "rails"
+gem "jekyll", "~> 4.2"
+
+group :jekyll_plugins do
+    gem "public_suffix", "~> 5.0.5"
+  end
