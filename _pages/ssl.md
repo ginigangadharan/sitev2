@@ -13,6 +13,7 @@ titleshort: ssl
 ---
 
 - [Create a Root CA](#create-a-root-ca)
+- [Trusting new RootCA in system](#trusting-new-rootca-in-system)
 - [Create Server Key, CSR and Certificate](#create-server-key-csr-and-certificate)
 - [How to verify SSL Certificates](#how-to-verify-ssl-certificates)
   - [Verify Certificate and Key](#verify-certificate-and-key)
@@ -35,6 +36,7 @@ Remove the `-des3` option for non-password protected key.
 The -des3 option specifies how the private key is encrypted with a password. Without a cipher option, the private key is not encrypted, and no password is required.
 
 Note: Optionally you can create the RootCA.csr and sign it.
+
 ```shell
 $ openssl req -new -key ca.key -subj "/CN=MYROOT-CA" -out rootCA.csr
 $ openssl x509 -req -in rootCA.csr -signkey rootCA.key -out rootCA.crt
@@ -43,6 +45,16 @@ $ openssl x509 -req -in rootCA.csr -signkey rootCA.key -out rootCA.crt
 ```shell
 # Create self-sign CA Certificate with 10 years validity
 $ openssl req -x509 -new -nodes -key rootCA.key -sha512 -days 3650 -out rootCA.pem
+```
+
+## Trusting new RootCA in system
+
+Eg: Fedora workstation
+
+```shell
+$ sudo cp ../RootCA/rootCA.pem /etc/pki/ca-trust/source/anchor
+s/iamgini-rootCA.pem
+$ sudo update-ca-trust
 ```
 
 
@@ -61,7 +73,7 @@ $ openssl genrsa -out myserver.key 4096
 Note: Optionally generate Certificate Signing Request and Key only
 
 ```shell
-$ openssl req -newkey rsa:2048 \
+$ openssl req -newkey rsa:4096 \
   -keyout server.key \
   -out server.csr
 ```
