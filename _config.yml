@@ -1,10 +1,11 @@
 # Site
 name: 'Gineesh Madapparambath'
 title: "i am gini"
-description: 'Systems Engineer, Automation Specialist, and content author'
+description: 'Author of Kubernetes and Ansible books, Automation and Containerization Explorer, techbeatly.com/youtube'
 logo: 'assets/images/logo-g-v1.png'
 favicon: 'assets/images/logo-g-v1.png'
 footer_name: "Gineesh"
+keywords: "Personal Notes, Guides, Blogs"
 #url: "https://www.iamgini.com/"
 my_base_site: "https://www.iamgini.com"
 baseurl: ''
