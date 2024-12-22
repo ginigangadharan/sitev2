@@ -1,12 +1,13 @@
 ---
 #layout: post
 layout: book
-title: The Kubernetes Bible
+title: The Kubernetes Bible, Second Edition
 subtitle: The definitive guide to deploying and managing Kubernetes across cloud and on-prem environments.
 #author: gini
 categories: [ cloud ]
 book_image: "/assets/images/books/k8sbible/B22019_k8s2E-400.png"
 book_background: "/assets/images/books/k8sbible/header-bg.jpg"
+book_preview_image: "/assets/images/books/k8sbible/k8sbible2E-preview-1.png"
 #tags: [cloud, automation, containers, kubernetes]
 show-avatar: false
 permalink: /k8sbible
