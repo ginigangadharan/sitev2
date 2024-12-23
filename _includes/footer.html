@@ -1,0 +1,35 @@
+<footer class="bg-white border-top p-3 text-muted small">
+    <div class="container">
+    <div class="row align-items-center justify-content-between">
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+    </div>
+</footer>
+
+<footer class="bg-white border-top p-3 text-muted small">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-muted">
+                <span class="navbar-brand mr-2 mb-0"><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.footer_name }}">&nbsp;&nbsp;<strong>{{site.footer_name}}</strong></span>
+                <span>(<script>document.write(new Date().getFullYear())</script>) CC BY-NC-SA.</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    {% for network in site.social %}
+                    <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <a target="_blank" class="text-dark font-weight-bold" href="https://www.techbeatly.com">techbeatly.com</a> |
+                <a target="_blank" class="text-dark font-weight-bold" href="https://www.rovervibes.com">rovervibes.com</a>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -19,6 +19,11 @@ meta_keywords: "Kubernetes Book, Kubernetes Hand Book, Best Kubernetes Book, The
 meta_author: "Gineesh Madapparambath, Russ McKendrick"
 book_links:
 #   - name:
+
+authors:
+  - name: Gineesh Madapparambath
+    image: "/assets/images/books/k8sbible/gineesh-250x250.png"
+    description: "[**Gineesh**](https://www.linkedin.com/in/gineesh/) has over 15+ years of experience in IT Service Management and consultancy with experience in planning, deploying and supporting Linux based projects."
 ---
 
 ## About this book

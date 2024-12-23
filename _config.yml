@@ -42,6 +42,27 @@ authors:
     twitter: https://twitter.com/iamgineesh
     description: "Backpacker, Foodie, Techie"
 
+social:
+  # - title: twitter
+  #   url: https://twitter.com/GiniGangadharan
+  #   icon: "fab fa-twitter"
+  #- url: https://facebook.com
+  #  icon: "fab fa-facebook-f"
+
+  - title: linkedin
+    url: https://www.linkedin.com/in/gineesh/
+    icon: "fab fa-linkedin-in"
+  - title: github
+    url: https://github.com/iamgini/
+    icon: "fab fa-github"
+  - title: instagram
+    url: https://www.instagram.com/iamgineesh/
+    icon: "fab fa-instagram"
+  - title: twitter
+    url: https://x.com/iamgineesh
+  - title: youtube
+    url: https://www.youtube.com/techbeatly
+
 # Defaults
 defaults:
 
