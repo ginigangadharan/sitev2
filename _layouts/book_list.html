@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="container">
+    <h1 class="display-4 mb-4 article-headline">{{ page.title }}</h1>
+    <div class="row">
+        {% assign book_pages = site.pages | where_exp: "page", "page.path contains '_pages/books/'" %}
+        {% for book in book_pages %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <!-- Book Image -->
+                <img src="{{ book.book_image }}" class="card-img-top" alt="{{ book.title }}" style="height: 300px; object-fit: contain;">
+
+                <div class="card-body">
+                    <!-- Book Title -->
+                    <h5 class="card-title">{{ book.title }}</h5>
+                    <!-- Book Description -->
+                    <p class="card-text">{{ book.description | truncate: 100 }}</p>
+                    <!-- Author -->
+                    <p><strong>Author:</strong> {{ book.authors | map: 'name' | join: ', ' }}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <!-- Link to Book Subpage -->
+                    <a href="{{ book.url }}" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

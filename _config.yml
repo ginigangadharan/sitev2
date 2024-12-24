@@ -108,3 +108,10 @@ jekyll_admin:
     #- staticfiles
     - datafiles
     #- configuration
+
+
+collections:
+  books:
+    output: true
+    permalink: /books/:name/
+    source: _pages/books
