@@ -75,12 +75,14 @@ layout: default
 
 	<div class="page-content">
 			<article class="article-post">
-			<p><h1>Frequently Asked Questions</h1></p>
+				<div class="divcentral">
+					<p><h1>Frequently Asked Questions</h1></p>
+				</div>
 
 			{% assign faq_list = page.faq %}
 			{% for faq_item in faq_list %}
-			<p><strong>Question: {{ faq_item.q }}</strong></p>
-			<p>Answer: {{ faq_item.a }}</p>
+			<p><strong>{{ faq_item.q | markdownify }}</strong></p>
+			<p>{{ faq_item.a | markdownify }}</p>
 			{% endfor %}
 			</article>
 
