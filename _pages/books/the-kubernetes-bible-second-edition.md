@@ -5,7 +5,7 @@ title: The Kubernetes Bible, Second Edition
 subtitle: The definitive guide to deploying and managing Kubernetes across cloud and on-prem environments.
 #author: gini
 categories: [ cloud ]
-book_image: "/assets/images/books/k8sbible/B22019_k8s2E-400.png"
+book_image: "/assets/images/books/k8sbible/k8sbook-transparent-3d-v1.png"
 book_background: "/assets/images/books/k8sbible/header-bg.jpg"
 book_preview_image: "/assets/images/books/k8sbible/k8sbible2E-preview-1.png"
 #tags: [cloud, automation, containers, kubernetes]
@@ -22,13 +22,13 @@ book_links:
 
 authors:
   - name: Gineesh Madapparambath
-    image: "/assets/images/books/k8sbible/gineesh-250x250.png"
+    image: "/assets/images/books/authors/gineesh-250x250.png"
     descriptions:
         - "[**Gineesh**](https://www.linkedin.com/in/gineesh/) has over 15+ years of experience in IT Service Management and consultancy with experience in planning, deploying and supporting Linux based projects."
         - "He has designed, developed and deployed Automation solutions based on Ansible and Ansible Automation Platform (Formerly Ansible Tower), for bare metal/Virtual server build, patching, license management, Network Operations and custom monitoring. Gineesh has coordinated, designed and deployed servers in data centers globally and has cross-cultural experience in classic, private cloud (OpenStack, VMWare)virtual and public cloud environments (AWS, Azure, Google Cloud). Gineesh has handled multiple roles such as Systems Engineer, Automation Specialist, Infrastructure Designer and content author."
         - "His primary focus is on IT and application automation using Ansible, containerization using OpenShift and Kubernetes and Infrastructure automation using Terraform."
   - name: Russ McKendrick
-    image: "/assets/images/books/k8sbible/russ-250x250.jpeg"
+    image: "/assets/images/books/authors/russ-250x250.jpeg"
     descriptions:
         - "[**Russ McKendrick**](https://www.linkedin.com/in/russmckendrick) is an experienced DevOps practitioner and system administrator with a passion for automation and containers. He has been working in IT and related industries for the better part of 30 years. During his career, he has had responsibilities in many different sectors, including first-line, second-line, and senior support in client-facing and internal teams for small and large organizations."
         - "He works almost exclusively with Linux, using open source systems and tools across dedicated hardware and virtual machines hosted in public and private clouds at Node4, where he holds the title of practice manager (SRE and DevOps). He also buys way too many records!"

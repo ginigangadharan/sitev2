@@ -5,9 +5,9 @@ title: Ansible for Real Life Automation
 subtitle: A complete Ansible handbook filled with real life IT automation use cases
 #author: gini
 categories: [ cloud ]
-book_image: "/assets/images/books/k8sbible/B22019_k8s2E-400.png"
-book_background: "/assets/images/books/k8sbible/header-bg.jpg"
-book_preview_image: "/assets/images/books/k8sbible/k8sbible2E-preview-1.png"
+book_image: "/assets/images/books/ansible-real-life/ansiblebook-transparent-3d-v1.png"
+book_background: "/assets/images/books/ansible-real-life/header-bg.jpg"
+book_preview_image: "/assets/images/books/ansible-real-life/ansiblebook.png"
 #tags: [cloud, automation, containers, kubernetes]
 show-avatar: false
 permalink: /ansible-for-real-life-automation
@@ -15,14 +15,14 @@ featured: false
 hidden: false
 # comments: true
 meta_description: "A complete Ansible handbook filled with real life IT automation use cases"
-meta_keywords: "Kubernetes Book, Kubernetes Hand Book, Best Kubernetes Book, The Kubernetes Bible"
+meta_keywords: "Ansible Real Life Use cases, Ansible Automation, Ansible Hand Book, Ansible for Enterprise"
 meta_author: "Gineesh Madapparambath"
 book_links:
   - name: Buy
 
 authors:
   - name: Gineesh Madapparambath
-    image: "/assets/images/books/k8sbible/gineesh-250x250.png"
+    image: "/assets/images/books/authors/gineesh-250x250.png"
     descriptions:
         - "[**Gineesh**](https://www.linkedin.com/in/gineesh/) has over 15+ years of experience in IT Service Management and consultancy with experience in planning, deploying and supporting Linux based projects."
         - "He has designed, developed and deployed Automation solutions based on Ansible and Ansible Automation Platform (Formerly Ansible Tower), for bare metal/Virtual server build, patching, license management, Network Operations and custom monitoring. Gineesh has coordinated, designed and deployed servers in data centers globally and has cross-cultural experience in classic, private cloud (OpenStack, VMWare)virtual and public cloud environments (AWS, Azure, Google Cloud). Gineesh has handled multiple roles such as Systems Engineer, Automation Specialist, Infrastructure Designer and content author."
