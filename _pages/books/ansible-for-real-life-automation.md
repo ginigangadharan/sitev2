@@ -10,7 +10,7 @@ book_background: "/assets/images/books/ansible-real-life/header-bg.jpg"
 book_preview_image: "/assets/images/books/ansible-real-life/ansiblebook.png"
 #tags: [cloud, automation, containers, kubernetes]
 show-avatar: false
-permalink: /ansible-for-real-life-automation
+permalink: /ansible-handbook
 featured: false
 hidden: false
 # comments: true
@@ -18,7 +18,12 @@ meta_description: "A complete Ansible handbook filled with real life IT automati
 meta_keywords: "Ansible Real Life Use cases, Ansible Automation, Ansible Hand Book, Ansible for Enterprise"
 meta_author: "Gineesh Madapparambath"
 book_links:
-  - name: Buy
+  - name: Buy on Packt
+    url: http://techbeatly.com/ansiblebookpkt
+  - name: Buy on Amazon
+    url: http://techbeatly.com/ansiblebookamazon
+  - name: Buy on Barnes & Noble
+    url: http://techbeatly.com/ansiblebookbn
 
 authors:
   - name: Gineesh Madapparambath

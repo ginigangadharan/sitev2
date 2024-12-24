@@ -21,15 +21,12 @@ layout: default
 									{{ page.subtitle }}
 								</h4>
 
+								{% assign book_links = page.book_links %}
+								{% for book_link in book_links %}
 								<div style="padding: 10px;">
-								<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="http://techbeatly.com/k8sbiblepkt">Buy on Packt</a>
+									<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ book_link.url }}" target="_blank">{{ book_link.name }}</a>
 								</div>
-								<div style="padding: 10px;">
-								<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="http://techbeatly.com/k8sbibleamz">Buy on Amazon</a>
-								</div>
-								<div style="padding: 10px;">
-								<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://www.techbeatly.com/k8sbiblebn">Buy on Barnes & Noble</a>
-								</div>
+								{% endfor %}
 							</div>
 							</div>
 

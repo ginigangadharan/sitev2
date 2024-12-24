@@ -10,7 +10,7 @@ book_background: "/assets/images/books/k8sbible/header-bg.jpg"
 book_preview_image: "/assets/images/books/k8sbible/k8sbible2E-preview-1.png"
 #tags: [cloud, automation, containers, kubernetes]
 show-avatar: false
-permalink: /the-kubernetes-bible-second-edition
+permalink: /k8sbible
 featured: false
 hidden: false
 # comments: true
@@ -18,7 +18,12 @@ meta_description: "The definitive guide to deploying and managing Kubernetes acr
 meta_keywords: "Kubernetes Book, Kubernetes Hand Book, Best Kubernetes Book, The Kubernetes Bible"
 meta_author: "Gineesh Madapparambath, Russ McKendrick"
 book_links:
-#   - name:
+  - name: Buy on Packt
+    url: http://techbeatly.com/k8sbiblepkt
+  - name: Buy on Amazon
+    url: http://techbeatly.com/k8sbibleamz
+  - name: Buy on Barnes & Noble
+    url: https://www.techbeatly.com/k8sbiblebn
 
 authors:
   - name: Gineesh Madapparambath
