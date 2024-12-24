@@ -25,11 +25,16 @@ $ sudo subscription-manager release --list
 9.0
 9.1
 9.2
+9.3
+9.4
+9.5
 
 # Set the target release
-$ sudo subscription-manager release --set 9.2
+$ sudo subscription-manager release --set 9.5
 Release set to: 9.2
 
 # Update all packages
 $ sudo dnf update
+
+# Reboot the system and check the version
 ```

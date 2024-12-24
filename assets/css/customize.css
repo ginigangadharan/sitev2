@@ -21,6 +21,10 @@
   padding-bottom: 50px;
 }
 
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
 /* .portfolio-modal .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;

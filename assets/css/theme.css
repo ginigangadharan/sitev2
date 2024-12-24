@@ -660,11 +660,11 @@ article {
   #font-family:apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Lora;
 }
 .article-headline {
-    #font-family: Georgia,Times,"Times New Roman",serif;
     font-size: 3.2rem;
     font-weight: 800;
     line-height: 1.15;
     color: #222222;
+	padding-top: 30px;
 }
 article p,article pre,article figure,article img,article blockquote,article iframed,article embed {
 	margin-bottom:2rem;
@@ -685,7 +685,7 @@ article blockquote:before {
 	float:left;
 	line-height:1;
 }
-/*article:first-letter 
+/*article:first-letter
 article {
 	float:left;
 	font-size:5em;
@@ -795,12 +795,12 @@ a.a2a_i, i.a2a_i, .a2a_menu a.a2a_i:visited, .a2a_menu a.a2a_more {
 div.a2a_full_footer {display:none;}
 @media (min-width: 1920px) {
 	html {font-size:17px;}
-	.container, .container-lg {    
+	.container, .container-lg {
 	 width: 1280px;
 	 max-width: 1280px;
 	 }
-	 h6,.h6 { 
-		 font-size: 1.1rem; 
+	 h6,.h6 {
+		 font-size: 1.1rem;
 	 }
 	 article {
 		 font-size:1.24rem;
@@ -809,4 +809,3 @@ div.a2a_full_footer {display:none;}
 		 height:280px !Important;
 	 }
  }
- 
