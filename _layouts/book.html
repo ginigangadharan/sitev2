@@ -37,22 +37,54 @@ layout: default
 				<!-- end of 2column header -->
             </div>
 
-	<!-- <div style="align-items: center; text-align: center;">
+			<div class="page-content">
+				<article class="article-post">
+					{{ content }}
+				</article>
+			</div>
+
+		<!-- Author section -->
+		<div class="divcentral">
+			<article class="article-post">
+				<h1>About the authors</h1>
+			</article>
+		</div>
+
 		{% assign authors_list = page.authors %}
-            {% for author in authors_list %}
-				<div class="team-member-single" >
-					<img class="mx-auto rounded-circle" src="{{ author.image}}" alt="{{ author.name }}" style="border-radius: 50%; padding: 50px 0px 50px 0px;">
-				  </div>
-				  <div>
-					{{ author.description}}
-				  </div>
-            {% endfor %}
-	</div> -->
-    <div cclass="page-content">
-		<article class="article-post">
-			{{ content }}
-		</article>
-    </div>
+        {% for author in authors_list %}
+		<div class="divcentral">
+			<div class="team-member-single" >
+				<img class="mx-auto rounded-circle" src="{{ author.image}}" alt="{{ author.name }}" style="border-radius: 50%; padding: 50px 0px 50px 0px;">
+			  </div>
+			  <div>
+				<article class="article-post">
+				<h2>{{ author.name | markdowify }}</h2>
+				</article>
+			  </div>
+		</div>
+		{% assign author_descriptions = author.descriptions %}
+		<div>
+			<article class="article-post">
+			{% for desc in author_descriptions %}
+				{{ desc | markdownify }}
+			{% endfor %}
+			</article>
+		</div>
+        {% endfor %}
+		<!-- end of author section -->
+
+	<div class="page-content">
+			<article class="article-post">
+			<p><h1>Frequently Asked Questions</h1></p>
+
+			{% assign faq_list = page.faq %}
+			{% for faq_item in faq_list %}
+			<p><strong>Question: {{ faq_item.q }}</strong></p>
+			<p>Answer: {{ faq_item.a }}</p>
+			{% endfor %}
+			</article>
+
+	</div>
     </div>
 
 </div>

@@ -23,7 +23,26 @@ book_links:
 authors:
   - name: Gineesh Madapparambath
     image: "/assets/images/books/k8sbible/gineesh-250x250.png"
-    description: "[**Gineesh**](https://www.linkedin.com/in/gineesh/) has over 15+ years of experience in IT Service Management and consultancy with experience in planning, deploying and supporting Linux based projects."
+    descriptions:
+        - "[**Gineesh**](https://www.linkedin.com/in/gineesh/) has over 15+ years of experience in IT Service Management and consultancy with experience in planning, deploying and supporting Linux based projects."
+        - "He has designed, developed and deployed Automation solutions based on Ansible and Ansible Automation Platform (Formerly Ansible Tower), for bare metal/Virtual server build, patching, license management, Network Operations and custom monitoring. Gineesh has coordinated, designed and deployed servers in data centers globally and has cross-cultural experience in classic, private cloud (OpenStack, VMWare)virtual and public cloud environments (AWS, Azure, Google Cloud). Gineesh has handled multiple roles such as Systems Engineer, Automation Specialist, Infrastructure Designer and content author."
+        - "His primary focus is on IT and application automation using Ansible, containerization using OpenShift and Kubernetes and Infrastructure automation using Terraform."
+  - name: Russ McKendrick
+    image: "/assets/images/books/k8sbible/russ-250x250.jpeg"
+    descriptions:
+        - "[**Russ McKendrick**](https://www.linkedin.com/in/russmckendrick) is an experienced DevOps practitioner and system administrator with a passion for automation and containers. He has been working in IT and related industries for the better part of 30 years. During his career, he has had responsibilities in many different sectors, including first-line, second-line, and senior support in client-facing and internal teams for small and large organizations."
+        - "He works almost exclusively with Linux, using open source systems and tools across dedicated hardware and virtual machines hosted in public and private clouds at Node4, where he holds the title of practice manager (SRE and DevOps). He also buys way too many records!"
+faq:
+    - q: "Is there a PDF or soft copy available?"
+      a: "Yes, the book is available in paperback (Hard copy or print) and eBook (PDF, Mobi, Kindly) formats."
+    - q: "When can I expect to receive my copy of The Kubernetes Bible, Second Edition?"
+      a: "The book has published on November 29, 2024. If you purchase the e-book or PDF version, you'll receive it immediately. For print copies, there will be a short delay for shipping after publication. You'll receive a notification with tracking information once your book is shipped."
+    - q: "Can I get my book delivered to India?"
+      a: "Yes, it also depends on from which site you are ordering. Eg: if you are ordering from Amazon, then follow the Amazon delivery availability."
+    - q: "Can I learn everything about Kubernetes by reading this book?"
+      a: "This book equips you with a strong foundation in core Kubernetes concepts and best practices, covering essential functionalities and strategies for successful container orchestration. However, it's important to remember that Kubernetes is a rapidly evolving platform. New features are constantly being added, while some older ones might be deprecated."
+    - q: "How to access the ebook once I bought it on Packt?"
+      a: "Login to [subscription.packtpub.com](https://subscription.packtpub.com). Click on “My Library” (Right top) and select “Owned”. You will find the eBooks you bought."
 ---
 
 ## About this book
@@ -54,41 +73,3 @@ Existing Kubernetes Users: Take your Kubernetes skills to the next level and mas
 ### Prior Knowledge:
 
 While a foundational understanding of Kubernetes, Docker, and leading cloud providers (AWS, Azure, GCP) is recommended, this book provides a comprehensive learning experience for those new to container orchestration concepts. This revised edition equips you with the knowledge and skills to navigate complex deployments and become a Kubernetes expert.
-
-## About the authors
-
-### Gineesh Madapparambath
-
-[**Gineesh**](https://www.linkedin.com/in/gineesh/) has over 15+ years of experience in IT Service Management and consultancy with experience in planning, deploying and supporting Linux based projects.
-
-He has designed, developed and deployed Automation solutions based on Ansible and Ansible Automation Platform (Formerly Ansible Tower), for bare metal/Virtual server build, patching, license management, Network Operations and custom monitoring. Gineesh has coordinated, designed and deployed servers in data centers globally and has cross-cultural experience in classic, private cloud (OpenStack, VMWare)virtual and public cloud environments (AWS, Azure, Google Cloud). Gineesh has handled multiple roles such as Systems Engineer, Automation Specialist, Infrastructure Designer and content author.
-
-His primary focus is on IT and application automation using Ansible, containerization using OpenShift and Kubernetes and Infrastructure automation using Terraform.
-
-### Russ McKendrick
-
-[**Russ McKendrick**](https://www.linkedin.com/in/russmckendrick) is an experienced DevOps practitioner and system administrator with a passion for automation and containers. He has been working in IT and related industries for the better part of 30 years. During his career, he has had responsibilities in many different sectors, including first-line, second-line, and senior support in client-facing and internal teams for small and large organizations.
-
-He works almost exclusively with Linux, using open source systems and tools across dedicated hardware and virtual machines hosted in public and private clouds at Node4, where he holds the title of practice manager (SRE and DevOps). He also buys way too many records!
-
-## Frequently Asked Questions
-
-**Q. Is there a PDF or soft copy available?**
-
-A. Yes, the book is available in paperback (Hard copy or print) and eBook (PDF, Mobi, Kindly) formats.
-
-**Q. When can I expect to receive my copy of The Kubernetes Bible, Second Edition?**
-
-A. The book is scheduled for publication on September 4th, 2024. If you purchase the e-book or PDF version, you'll receive it immediately upon publication on September 4th. For print copies, there will be a short delay for shipping after publication. You'll receive a notification with tracking information once your book is shipped.
-
-**Q. Can I get my book delivered to India?**
-
-A. Yes, it also depends on from which site you are ordering. Eg: if you are ordering from Amazon, then follow the Amazon delivery availability.
-
-**Q. Can I learn everything about Kubernetes by reading this book?**
-
-A. This book equips you with a strong foundation in core Kubernetes concepts and best practices, covering essential functionalities and strategies for successful container orchestration. However, it's important to remember that Kubernetes is a rapidly evolving platform. New features are constantly being added, while some older ones might be deprecated.
-
-**Q. How to access the ebook once I bought it on Packt?**
-
-A. Login to [subscription.packtpub.com](https://subscription.packtpub.com). Click on “My Library” (Right top) and select “Owned”. You will find the eBooks you bought.

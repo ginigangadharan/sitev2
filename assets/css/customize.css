@@ -25,6 +25,11 @@
     margin: 15px 0;
     text-transform: none;
 }
+
+.divcentral {
+  align-items: center;
+  text-align: center;
+}
 /* .portfolio-modal .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;
