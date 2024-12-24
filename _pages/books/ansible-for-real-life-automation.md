@@ -22,7 +22,7 @@ book_links:
 
 authors:
   - name: Gineesh Madapparambath
-    image: "/assets/images/books/authors/gineesh-250x250.png"
+    image: "/assets/images/books/authors/gineesh-250x250-v2.jpg"
     descriptions:
         - "[**Gineesh**](https://www.linkedin.com/in/gineesh/) has over 15+ years of experience in IT Service Management and consultancy with experience in planning, deploying and supporting Linux based projects."
         - "He has designed, developed and deployed Automation solutions based on Ansible and Ansible Automation Platform (Formerly Ansible Tower), for bare metal/Virtual server build, patching, license management, Network Operations and custom monitoring. Gineesh has coordinated, designed and deployed servers in data centers globally and has cross-cultural experience in classic, private cloud (OpenStack, VMWare)virtual and public cloud environments (AWS, Azure, Google Cloud). Gineesh has handled multiple roles such as Systems Engineer, Automation Specialist, Infrastructure Designer and content author."
