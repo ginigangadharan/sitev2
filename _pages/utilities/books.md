@@ -5,7 +5,7 @@ author: gini
 categories: [ books, devops ]
 image: "assets/images/2021/pexels-rfstudio-3060324-books.jpg"
 tags: [books]
-permalink: books
+permalink: /free-books
 featured: false
 hidden: false
 showindex: true

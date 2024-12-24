@@ -110,8 +110,8 @@ jekyll_admin:
     #- configuration
 
 
-collections:
-  books:
-    output: true
-    permalink: /books/:name/
-    source: _pages/books
+# collections:
+#   books:
+#     output: true
+#     permalink: /books/:name/
+#     source: _pages/books

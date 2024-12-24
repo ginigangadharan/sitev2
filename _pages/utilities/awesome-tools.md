@@ -4,7 +4,7 @@ title: Awesome DevSecSysOps Tools on Internet
 author: gini
 categories: [ cloud ]
 tags: [cloud, automation, containers, kubernetes]
-permalink: tools
+permalink: /tools
 featured: false
 hidden: false
 image: "assets/images/tools-1426927308491-6380b6a9936f.jpeg"
