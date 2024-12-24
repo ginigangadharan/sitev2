@@ -10,7 +10,7 @@ book_background: "/assets/images/books/k8sbible/header-bg.jpg"
 book_preview_image: "/assets/images/books/k8sbible/k8sbible2E-preview-1.png"
 #tags: [cloud, automation, containers, kubernetes]
 show-avatar: false
-permalink: /k8sbible
+permalink: /the-kubernetes-bible-second-edition
 featured: false
 hidden: false
 # comments: true
