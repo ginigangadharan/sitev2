@@ -240,13 +240,31 @@
 
 - num: '26'
   date: 2022-10-11
-  event: NUS National University of Singapore
-  title: DevOps Tools and Best Practices
+  event: 'National University of Singapore (NUS)'
+  title: 'Software Development & DevOps Practices'
   speakers: Gineesh Madapparambath
   role: Speaker
   remarks: in-person
   reference: ''
-  url: 'https://techbeatly.com/youtube'
+  url: 'https://www.linkedin.com/posts/gineesh_nus-nus-nationaluniversitysingapore-activity-6986266289224765440-YBsd?utm_source=share&utm_medium=member_desktop'
+
+- date: 2023-10-17
+  event: 'National University of Singapore (NUS)'
+  title: 'Software Development and DevOps Practices'
+  speakers: Gineesh Madapparambath
+  role: Speaker
+  remarks: in-person
+  reference: ''
+  url: 'https://www.linkedin.com/posts/gineesh_nus-nus-nationaluniversityofsingapore-activity-7120582257953714177-iy6A?utm_source=share&utm_medium=member_desktop'
+
+- date: 2023-08-08
+  event: 'National University of Singapore (NUS)'
+  title: 'DevSecOps Practices  In Software Development'
+  speakers: Gineesh Madapparambath
+  role: Speaker
+  remarks: in-person
+  reference: ''
+  url: 'https://www.linkedin.com/posts/gineesh_sharingiscaring-teachingandlearning-learningeveryday-activity-7159150665812910080-myaj?utm_source=share&utm_medium=member_desktop'
 
 - num: '27'
   date: 2022-11-12
