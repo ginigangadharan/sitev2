@@ -58,6 +58,7 @@ titleshort: Ansible
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
 - [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
 - [Ansible AD/LDAP Integration](#ansible-adldap-integration)
+  - [Troubleshooting and testing](#troubleshooting-and-testing)
   - [Example LDAP Configuration for Ansible Automation Platform](#example-ldap-configuration-for-ansible-automation-platform)
 - [Best practices](#best-practices)
 - [Utilities and References](#utilities-and-references)
@@ -518,6 +519,12 @@ Ansible 2.5 and above work with Python 3.
 
 ## Ansible AD/LDAP Integration
 
+### Troubleshooting and testing
+
+```shell
+$ sudo yum install openldap-clients -y
+```
+
 ```shell
 $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -b "dc=example,dc=com" -w yourbindpassword
 
@@ -527,8 +534,8 @@ $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=ex
 
 ### Example LDAP Configuration for Ansible Automation Platform
 
-- **LDAP Server URI**: ldap://192.168.57.137:389
-- **LDAP Bind DN**: CN=ansible_bind,CN=users,DC=example,DC=com
+- **LDAP Server URI**: `ldap://192.168.57.137:389`
+- **LDAP Bind DN**: `CN=ansible_bind,CN=users,DC=example,DC=com`
 - **LDAP Bind Password**: <password>
 - **LDAP Group Type**: MemberDNGroupType
 - **LDAP Start TLS**: Off/On
