@@ -536,8 +536,8 @@ $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=ex
 
 - **LDAP Server URI**: `ldap://192.168.57.137:389`
 - **LDAP Bind DN**: `CN=ansible_bind,CN=users,DC=example,DC=com`
-- **LDAP Bind Password**: <password>
-- **LDAP Group Type**: MemberDNGroupType
+- **LDAP Bind Password**: your-bind-user-password
+- **LDAP Group Type**: `MemberDNGroupType`
 - **LDAP Start TLS**: Off/On
 - **LDAP User Search**:
 
