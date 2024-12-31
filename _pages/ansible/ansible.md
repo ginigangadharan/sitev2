@@ -58,6 +58,7 @@ titleshort: Ansible
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
 - [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
 - [Ansible AD/LDAP Integration](#ansible-adldap-integration)
+  - [Example LDAP Configuration for Ansible Automation Platform](#example-ldap-configuration-for-ansible-automation-platform)
 - [Best practices](#best-practices)
 - [Utilities and References](#utilities-and-references)
 
@@ -524,15 +525,67 @@ $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=ex
 $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -w yourbindpassword -b "cn=devops,cn=Users,dc=example,dc=com"
 ```
 
+### Example LDAP Configuration for Ansible Automation Platform
+
+- **LDAP Server URI**: ldap://192.168.57.137:389
+- **LDAP Bind DN**: CN=ansible_bind,CN=users,DC=example,DC=com
+- **LDAP Bind Password**: <password>
+- **LDAP Group Type**: MemberDNGroupType
+- **LDAP Start TLS**: Off/On
+- **LDAP User Search**:
+
+```json
+[
+  "DC=example,DC=com",
+  "SCOPE_SUBTREE",
+  "(sAMAccountName=%(user)s)"
+]
+```
+
+- **LDAP Group Search**:
+
+```json
+[
+  "DC=example,DC=com",
+  "SCOPE_SUBTREE",
+  "(objectClass=group)"
+]
+```
+
+- **LDAP User Attribute Map**:
+
+```json
+{
+  "email": "mail",
+  "first_name": "givenName",
+  "last_name": "sn"
+}
+```
+
+- **LDAP Group Type Parameters**:
+
+```json
+{
+  "member_attr": "member",
+  "name_attr": "cn"
+}
+```
+
 **LDAP Organization Map**
 
 ```json
 {
-  "XYZCorp-CaC": {
-    "users": true,
-    "admins": "CN=ansible_admins,OU=AAP,DC=example,DC=com",
+  "Network-Ops": {
+    "admins": "CN=network_admins,OU=AAP,DC=example,DC=com",
+    "remove_admins": false,
     "remove_users": false,
-    "remove_admins": false
+    "users": true
+  },
+  "XYZCorp-CaC": {
+    "admins": "CN=ansible_admins,OU=AAP,DC=example,DC=com",
+    "remove_admins": false,
+    "remove_users": false,
+    "users": true
   }
 }
 ```
@@ -542,14 +595,24 @@ $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=ex
 ```json
 {
   "cac-admins": {
-    "users": "cn=ansible_admins,ou=AAP,dc=example,dc=com",
+    "organization": "XYZCorp-CaC",
     "remove": true,
-    "organization": "XYZCorp-CaC"
+    "users": "cn=ansible_admins,ou=AAP,dc=example,dc=com"
   },
   "cac-operators": {
-    "users": "cn=ansible_operators,ou=AAP,dc=example,dc=com",
+    "organization": "XYZCorp-CaC",
     "remove": true,
-    "organization": "XYZCorp-CaC"
+    "users": "cn=ansible_operators,ou=AAP,dc=example,dc=com"
+  },
+  "network-admins": {
+    "organization": "Network-Ops",
+    "remove": true,
+    "users": "cn=network_admins,ou=AAP,dc=example,dc=com"
+  },
+  "network-operators": {
+    "organization": "Network-Ops",
+    "remove": true,
+    "users": "cn=network_operators,ou=AAP,dc=example,dc=com"
   }
 }
 ```
