@@ -13,6 +13,7 @@ titleshort: Troubleshooting Ansible
 - [Error with Self Signed SSL Cert on SCM server](#error-with-self-signed-ssl-cert-on-scm-server)
 - [Error:module 'enum' has no attribute 'IntFlag'](#errormodule-enum-has-no-attribute-intflag)
 - [Error with `nosuid` when read/write files](#error-with-nosuid-when-readwrite-files)
+- [Checking container logs](#checking-container-logs)
 
 
 ## Error with Self Signed SSL Cert on SCM server
@@ -121,5 +122,13 @@ It isn't possible to use Tower with local action to escalate to the root user. I
 
 Root Cause: The AWX service user is intentionally restricted from sudo operations.
 
-https://access.redhat.com/solutions/3223501 
+https://access.redhat.com/solutions/3223501
 
+## Checking container logs
+
+```shell
+$ journalctl CONTAINER_NAME=<container_name>
+
+# or
+$ journalctl CONTAINER_NAME=<container_name> -n 100 --no-pager -f
+```
