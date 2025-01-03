@@ -621,7 +621,7 @@ $ sudo yum install openldap-clients -y
 $ sudo yum install nmap-ncat -y
 ```
 
-Ensure you can reach the LDAP server and port:
+**Ensure you can reach the LDAP server and port:**
 
 ```shell
 $ nc -zv 192.168.57.137 389
@@ -630,6 +630,94 @@ Ncat: Connected to 192.168.57.137:389.
 Ncat: 0 bytes sent, 0 bytes received in 0.06 seconds.
 ```
 
+**Test LDAP Bind Credentials**
+
+Verify if the ansible_bind account can bind to LDAP:
+
+```shell
+$ ldapwhoami -x -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=users,DC=example,DC=com" -w 'Welcome123'
+```
+
+**Test LDAP User Search**
+
+Validate the user search query:
+
+```shell
+$ ldapsearch -x -H ldap://192.168.57.137:389 \
+-D "CN=ansible_bind,CN=users,DC=example,DC=com" \
+-w 'Welcome123' \
+-b "DC=example,DC=com" \
+"(sAMAccountName=user1)"
+```
+
+**Test LDAP Group Search**
+
+Validate the group search query:
+
+```shell
+$ ldapsearch -x -H ldap://192.168.57.137:389 \
+-D "CN=ansible_bind,CN=users,DC=example,DC=com" \
+-w 'Welcome123' \
+-b "DC=example,DC=com" \
+"(objectClass=ansible_operators)"
+```
+
+**Verify LDAP User Attribute Mapping**
+
+Check if email, givenName, and sn attributes are available for a user:
+
+```shell
+$ ldapsearch -x -H ldap://192.168.57.137:389 \
+-D "CN=ansible_bind,CN=users,DC=example,DC=com" \
+-w 'Welcome123' \
+-b "DC=example,DC=com" \
+"(sAMAccountName=user1)" mail givenName sn
+```
+
+**Verify Group Membership**
+
+If you want to validate if a user belongs to a specific group:
+
+```shell
+$ ldapsearch -x -H ldap://192.168.57.137:389 \
+-D "CN=ansible_bind,CN=users,DC=example,DC=com" \
+-w 'Welcome123' \
+-b "DC=example,DC=com" \
+"(member=CN=user1,CN=users,DC=example,DC=com)"
+```
+
+- Replace `user1` with an actual LDAP username.
+
+**Verify TLS Configuration (if enabled)**
+
+If LDAP Start TLS is On, test the TLS connection:
+
+```shell
+$ ldapsearch -x -H ldap://192.168.57.137:389 \
+-Z \
+-D "CN=ansible_bind,CN=users,DC=example,DC=com" \
+-w 'Welcome123' \
+-b "DC=example,DC=com" \
+"(sAMAccountName=user1)"
+```
+
+- `-Z` enables StartTLS.
+
+**Test from the Automation Controller Container (if applicable)**
+
+If Ansible Automation Platform is running in a container:
+
+```shell
+$ podman exec -it <container_name> bash
+ldapsearch -x -H ldap://192.168.57.137:389 \
+-D "CN=ansible_bind,CN=users,DC=example,DC=com" \
+-w 'Welcome123' \
+-b "DC=example,DC=com" \
+"(sAMAccountName=user1)"
+```
+
+- Replace `<container_name>` with the appropriate container name.
+
 ```shell
 $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -b "dc=example,dc=com" -w yourbindpassword
 
@@ -637,11 +725,7 @@ $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=ex
 $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -w yourbindpassword -b "cn=devops,cn=Users,dc=example,dc=com"
 ```
 
-Verify if the ansible_bind account can bind to LDAP:
 
-```shell
-$ ldapwhoami -x -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=users,DC=example,DC=com" -w 'Welcome123'
-```
 
 ## Best practices
 
