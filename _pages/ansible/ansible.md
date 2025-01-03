@@ -58,8 +58,8 @@ titleshort: Ansible
 - [Ansible for Arista Networks](#ansible-for-arista-networks)
 - [Ansible for CIS Hardening/CIS Check](#ansible-for-cis-hardeningcis-check)
 - [Ansible AD/LDAP Integration](#ansible-adldap-integration)
-  - [Troubleshooting and testing](#troubleshooting-and-testing)
   - [Example LDAP Configuration for Ansible Automation Platform](#example-ldap-configuration-for-ansible-automation-platform)
+  - [LDAP Troubleshooting and testing](#ldap-troubleshooting-and-testing)
 - [Best practices](#best-practices)
 - [Utilities and References](#utilities-and-references)
 
@@ -519,19 +519,6 @@ Ansible 2.5 and above work with Python 3.
 
 ## Ansible AD/LDAP Integration
 
-### Troubleshooting and testing
-
-```shell
-$ sudo yum install openldap-clients -y
-```
-
-```shell
-$ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -b "dc=example,dc=com" -w yourbindpassword
-
-# search for a specific user
-$ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -w yourbindpassword -b "cn=devops,cn=Users,dc=example,dc=com"
-```
-
 ### Example LDAP Configuration for Ansible Automation Platform
 
 - **LDAP Server URI**: `ldap://192.168.57.137:389`
@@ -622,6 +609,38 @@ $ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=ex
     "users": "cn=network_operators,ou=AAP,dc=example,dc=com"
   }
 }
+```
+
+### LDAP Troubleshooting and testing
+
+```shell
+# install ldap client if doe
+$ sudo yum install openldap-clients -y
+
+# install nc
+$ sudo yum install nmap-ncat -y
+```
+
+Ensure you can reach the LDAP server and port:
+
+```shell
+$ nc -zv 192.168.57.137 389
+Ncat: Version 7.92 ( https://nmap.org/ncat )
+Ncat: Connected to 192.168.57.137:389.
+Ncat: 0 bytes sent, 0 bytes received in 0.06 seconds.
+```
+
+```shell
+$ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -b "dc=example,dc=com" -w yourbindpassword
+
+# search for a specific user
+$ ldapsearch -x  -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=Users,DC=example,DC=com" -w yourbindpassword -b "cn=devops,cn=Users,dc=example,dc=com"
+```
+
+Verify if the ansible_bind account can bind to LDAP:
+
+```shell
+$ ldapwhoami -x -H ldap://192.168.57.137:389 -D "CN=ansible_bind,CN=users,DC=example,DC=com" -w 'Welcome123'
 ```
 
 ## Best practices
