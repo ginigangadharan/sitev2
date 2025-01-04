@@ -525,6 +525,20 @@ Ansible 2.5 and above work with Python 3.
 - **LDAP Bind DN**: `CN=ansible_bind,CN=users,DC=example,DC=com`
 - **LDAP Bind Password**: your-bind-user-password
 - **LDAP Group Type**: `MemberDNGroupType`
+- **LDAP User DN Template**:
+
+NOTE: This LDAP User DN Template configuration has not tested successfully.
+
+```shell
+sAMAccountName=%(user)s,OU=AAP,DC=example,DC=com
+```
+
+For openLDAP style it would be of below format
+
+```shell
+uid=%(user)s,cn=users,cn=accounts,dc=example,dc=com
+```
+
 - **LDAP Start TLS**: Off/On
 - **LDAP User Search**:
 
