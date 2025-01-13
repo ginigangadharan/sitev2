@@ -47,6 +47,14 @@ export CONTROLLER_VERIFY_SSL=false
 export CONTROLLER_USERNAME=admin
 export CONTROLLER_PASSWORD=aapadmin
 export CONTROLLER_OAUTH_TOKEN='eRVUrESPle657GUyRVSvd5E0rdJ8VB'
+# or
+export CONTROLLER_OAUTH_TOKEN=$(awx login \
+    --conf.host https://aap25.lab.iamgini.com \
+    --conf.username admin \
+    --conf.password aapadmin \
+    -k | jq -r '.token')
+# or, using environment variable
+export CONTROLLER_OAUTH_TOKEN=$(awx login -k | jq -r '.token')
 ```
 
 Fetch the token and execute the commands.
