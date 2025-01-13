@@ -521,6 +521,8 @@ Ansible 2.5 and above work with Python 3.
 
 ### Example LDAP Configuration for Ansible Automation Platform
 
+- **Name**: `ActiveDirectoryExampleCom`
+- **Type**: `LDAP`
 - **LDAP Server URI**: `ldap://192.168.57.137:389`
 - **LDAP Bind DN**: `CN=ansible_bind,CN=users,DC=example,DC=com`
 - **LDAP Bind Password**: your-bind-user-password

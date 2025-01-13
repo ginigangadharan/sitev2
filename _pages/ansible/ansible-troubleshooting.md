@@ -127,8 +127,17 @@ https://access.redhat.com/solutions/3223501
 ## Checking container logs
 
 ```shell
+$ podman logs -f automation-gateway
+
 $ journalctl CONTAINER_NAME=<container_name>
 
 # or
 $ journalctl CONTAINER_NAME=<container_name> -n 100 --no-pager -f
 ```
+
+true | openssl s_client -connect awesome.corp.root:636 -showcerts -CAfile awesomecorp_bundle.pem
+
+openssl x509 -in <filename.cert> -noout -subject -issuer
+
+bundle cert
+cat rootca intermediate | tee bundle.pem

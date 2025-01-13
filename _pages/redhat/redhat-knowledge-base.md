@@ -12,11 +12,15 @@ titleshort: Red Hat KB
 
 Reference Documents for Red Hat Products
 
+- [Red Hat Subscription Management Cheatsheet](#red-hat-subscription-management-cheatsheet)
 - [sosreport methods](#sosreport-methods)
-    - [Subscription Reference](#subscription-reference)
-  - [Repository \& Satellite](#repository--satellite)
-  - [Useful Links](#useful-links)
-  - [Appendix](#appendix)
+  - [Subscription Reference](#subscription-reference)
+- [Troubleshooting](#troubleshooting)
+  - [Failed to connect to bus: No medium found](#failed-to-connect-to-bus-no-medium-found)
+- [Repository \& Satellite](#repository--satellite)
+- [Useful Links](#useful-links)
+- [Appendix](#appendix)
+
 
 ## Red Hat Subscription Management Cheatsheet
 
@@ -85,8 +89,7 @@ yum install --downloadonly --downloaddir=<directory> <package>
 ```
 
 
-sosreport methods
-========================
+## sosreport methods
 
 ```shell
 # Generate report to a specific path
@@ -100,6 +103,23 @@ sosreport -k docker.all=on -k docker.logs=on --tmp-dir /root/sos
 - [How to register and subscribe a system to the Red Hat Customer Portal using Red Hat Subscription-Manager](https://access.redhat.com/solutions/253273)
 - [Common administrative commands in Red Hat Enterprise Linux 5, 6, 7, and 8](https://access.redhat.com/articles/1189123) (Subscription Details, RHN ID, UUID)
 
+## Troubleshooting
+
+### Failed to connect to bus: No medium found
+
+```shell
+$ systemctl --user status automation-gateway
+Failed to connect to bus: No medium found
+```
+
+The user account changed to user by su and sudo does not have the XDG* environment variables set, so rootless containers cannot be started as services via systemd.
+
+**Solution**
+
+```shell
+$ export XDG_RUNTIME_DIR=/run/user/1008
+```
+
 ## Repository & Satellite
 
 - [How to create a local mirror of the latest update for Red Hat Enterprise Linux 5, 6, 7, 8 without using Satellite server?](https://access.redhat.com/solutions/23016)
@@ -108,8 +128,8 @@ sosreport -k docker.all=on -k docker.logs=on --tmp-dir /root/sos
 
 - [Yum Repository Configuration Helper](https://access.redhat.com/labs/yumrepoconfighelper/)
 
-  This tool will help you set up a simple Yum repository for your local machine or a small number of other machines to use. 
-  
+  This tool will help you set up a simple Yum repository for your local machine or a small number of other machines to use.
+
 - [How to create local repository distributed through apache of Red Hat Enterprise Linux 5/6/7/8 using DVD iso for update or installation?](https://access.redhat.com/solutions/7227)
 
 
@@ -118,9 +138,12 @@ sosreport -k docker.all=on -k docker.logs=on --tmp-dir /root/sos
 - [Getting Started with Simple Content Access](https://access.redhat.com/documentation/en-us/subscription_central/2021/html/getting_started_with_simple_content_access/index)
 
 - [Does Red Hat Satellite 6 and Red Hat Satellite Capsule 6 support hardening?](https://access.redhat.com/solutions/3198782)
+
 ## Useful Links
 
 - [Red Hat on GitHub](https://redhatofficial.github.io/)
+
+
 
 
 ## Appendix
@@ -132,3 +155,5 @@ goto https://access.redhat.com/labs/rhpc/
 select the product -> version and arch
 -> follow scripted or manual
 
+[svc-ansible@PL-PRD-ANS-PG-1 ~]$ systemctl --user status automation-gateway
+Failed to connect to bus: No medium found
