@@ -542,6 +542,7 @@ uid=%(user)s,cn=users,cn=accounts,dc=example,dc=com
 ```
 
 - **LDAP Start TLS**: Off/On
+- **LDAP Require Group** (optional): `CN=aap-users,OU=AAP,DC=example,DC=com`
 - **LDAP User Search**:
 
 ```json

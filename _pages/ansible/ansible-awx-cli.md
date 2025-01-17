@@ -68,8 +68,46 @@ awx --conf.host https://aap25.lab.iamgini.com/ \
     users list
 ```
 
+## Gateway API
+
+NOTE: awx is not supporting the gateway and we need to use alternative cli methods.
+
+### Fetching Token
+
+- In the AAP UI, Goto `Access Management` -> `OAuth Applications` -> Create a new `OAuth application` (Authorization grant type: Authorization code)
+- Goto API ($CONTROLLER_HOST/api/gateway/v1/tokens/) -> Select the application (you created from UI) and request token. (You can also do the same via CLI using curl command)
+- Note down the token and use it for authentication.
+
+### Set the Gateway token
+
+```shell
+$ export GATEWAY_OAUTH_TOKEN='WFawgvtSCQkXS7Owi2paPfMaEwjVYc'
+```
+
+Examples:
+
+Show Authenticator List with the type `ansible_base.authentication.authenticator_plugins.ldap`
+
+```shell
+curl -s -k \
+  -H "Authorization: Bearer $GATEWAY_OAUTH_TOKEN" \
+  -H "Content-Type: application/json" \
+  "$CONTROLLER_HOST/api/gateway/v1/authenticators/" | \
+  jq '.results[] | select(.type == "ansible_base.authentication.authenticator_plugins.ldap")'
+```
+
+Ensure LDAP is configured with `ldaps`
+
+```shell
+$ curl -s -k \
+  -H "Authorization: Bearer $GATEWAY_OAUTH_TOKEN" \
+  -H "Content-Type: application/json" \
+  "$CONTROLLER_HOST/api/gateway/v1/authenticators/" | \
+  jq '[.results[] | select(.type == "ansible_base.authentication.authenticator_plugins.ldap")] | any(.configuration.SERVER_URI[]? | test("ldaps:"))'
+```
 
 ## References
 
+- [AWX Command Line Interface](https://docs.ansible.com/automation-controller/latest/html/controllercli/index.html?extIdCarryOver=true&intcmp=7015Y000003t7aWQAQ&sc_cid=RHCTG0240000434975)
 - [How to get the awx CLI to work with AAP 2.5 GA](https://access.redhat.com/solutions/7091403)
 - [AWX Command Line Interface](https://docs.ansible.com/automation-controller/latest/html/controllercli/index.html) (v4.5)
