@@ -106,6 +106,13 @@ $ curl -s -k \
   jq '[.results[] | select(.type == "ansible_base.authentication.authenticator_plugins.ldap")] | any(.configuration.SERVER_URI[]? | test("ldaps:"))'
 ```
 
+Check if logo or Custom login info
+
+```shell
+$ curl -s -k   -H "Authorization: Bearer $GATEWAY_OAUTH_TOKEN"   -H "Content-Type: application/json"   "$CONTROLLER_HOST/api/gateway/v1/settings/all/" |   jq -r '.custom_login_info'
+```
+
+
 ## References
 
 - [AWX Command Line Interface](https://docs.ansible.com/automation-controller/latest/html/controllercli/index.html?extIdCarryOver=true&intcmp=7015Y000003t7aWQAQ&sc_cid=RHCTG0240000434975)
